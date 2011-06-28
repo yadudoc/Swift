@@ -1,0 +1,44 @@
+<program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <variable name="a" type="int[][]" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 4">
+   <arraySubscript>
+    <arraySubscript>
+     <variableReference>a</variableReference>
+     <stringConstant>hi</stringConstant>
+    </arraySubscript>
+    <stringConstant>!</stringConstant>
+   </arraySubscript>
+   <integerConstant>10</integerConstant>
+  </assign>
+  <assign src="line 5">
+   <arraySubscript>
+    <arraySubscript>
+     <variableReference>a</variableReference>
+     <stringConstant>hi</stringConstant>
+    </arraySubscript>
+    <stringConstant>!</stringConstant>
+   </arraySubscript>
+   <integerConstant>20</integerConstant>
+  </assign>
+  <assign src="line 7">
+   <arraySubscript>
+    <arraySubscript>
+     <variableReference>a</variableReference>
+     <stringConstant>hi</stringConstant>
+    </arraySubscript>
+    <stringConstant>!</stringConstant>
+   </arraySubscript>
+   <integerConstant>30</integerConstant>
+  </assign>
+  <foreach var="value"  indexVar="index" src="line 7">
+  <in><arraySubscript>
+   <variableReference>a</variableReference>
+   <stringConstant>hi</stringConstant>
+  </arraySubscript></in>
+  <body><call proc="trace" src="line 8">
+      <input><variableReference>value</variableReference></input>
+    </call></body>
+  </foreach>
+</program>

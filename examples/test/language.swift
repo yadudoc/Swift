@@ -1,0 +1,2 @@
+int array[int][string];
+

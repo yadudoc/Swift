@@ -1,0 +1,13 @@
+2011-05-26 22:25:15,623+0530 DEBUG Loader Max heap: 238616576
+2011-05-26 22:25:42,095+0530 INFO  Loader array_index.swift: source file is new. Recompiling.
+2011-05-26 22:26:47,100+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-05-26 22:53:57,705+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@1107c05
+
+

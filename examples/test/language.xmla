@@ -1,0 +1,12 @@
+<program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <variable name="array" type="int[][]" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 3">
+   <arraySubscript>
+    <variableReference>array</variableReference>
+    <stringConstant>key</stringConstant>
+   </arraySubscript>
+   <integerConstant>10</integerConstant>
+  </assign>
+</program>

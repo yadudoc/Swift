@@ -1,0 +1,72 @@
+2011-06-29 01:10:36,132+0530 DEBUG Loader Max heap: 238616576
+2011-06-29 01:10:36,157+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[];
+
+array += 1;
+array += 2;
+array += 3;
+
+foreach dummy in [1..2] {
+trace(dummy);
+}
+
+
+2011-06-29 01:10:36,157+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-06-29 01:10:36,157+0530 INFO  Loader test.swift: source file is new. Recompiling.
+2011-06-29 01:10:36,157+0530 DEBUG Loader kmlversion is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-29 01:10:36,158+0530 DEBUG Loader build version is >72eabc28-781c-4874-8b94-926f0d1d5a5c<
+2011-06-29 01:10:36,158+0530 INFO  Loader test.swift: source file was compiled with a different version of Swift. Recompiling.
+2011-06-29 01:10:36,381+0530 ERROR VDLt2VDLx Could not compile SwiftScript source: line 7:21: unexpected char: '.'
+2011-06-29 01:10:36,397+0530 DEBUG VDLt2VDLx Full parser exception
+line 7:21: unexpected char: '.'
+	at org.globus.swift.parser.SwiftScriptLexer.nextToken(SwiftScriptLexer.java:283)
+	at antlr.TokenBuffer.fill(TokenBuffer.java:69)
+	at antlr.TokenBuffer.LA(TokenBuffer.java:80)
+	at antlr.LLkParser.LA(LLkParser.java:52)
+	at org.globus.swift.parser.SwiftScriptParser.arrayInitializer(SwiftScriptParser.java:1415)
+	at org.globus.swift.parser.SwiftScriptParser.constant(SwiftScriptParser.java:1808)
+	at org.globus.swift.parser.SwiftScriptParser.primExpr(SwiftScriptParser.java:3214)
+	at org.globus.swift.parser.SwiftScriptParser.unaryExpr(SwiftScriptParser.java:3179)
+	at org.globus.swift.parser.SwiftScriptParser.multiExpr(SwiftScriptParser.java:3080)
+	at org.globus.swift.parser.SwiftScriptParser.additiveExpr(SwiftScriptParser.java:3026)
+	at org.globus.swift.parser.SwiftScriptParser.condExpr(SwiftScriptParser.java:2963)
+	at org.globus.swift.parser.SwiftScriptParser.equalExpr(SwiftScriptParser.java:2880)
+	at org.globus.swift.parser.SwiftScriptParser.andExpr(SwiftScriptParser.java:2847)
+	at org.globus.swift.parser.SwiftScriptParser.orExpr(SwiftScriptParser.java:2817)
+	at org.globus.swift.parser.SwiftScriptParser.expression(SwiftScriptParser.java:1403)
+	at org.globus.swift.parser.SwiftScriptParser.foreachStat(SwiftScriptParser.java:2119)
+	at org.globus.swift.parser.SwiftScriptParser.ll1statement(SwiftScriptParser.java:581)
+	at org.globus.swift.parser.SwiftScriptParser.topLevelStatement(SwiftScriptParser.java:212)
+	at org.globus.swift.parser.SwiftScriptParser.program(SwiftScriptParser.java:121)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:62)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:45)
+	at org.griphyn.vdl.karajan.Loader.compile(Loader.java:301)
+	at org.griphyn.vdl.karajan.Loader.main(Loader.java:147)
+2011-06-29 01:10:36,403+0530 DEBUG Loader Exception when compiling test.swift
+org.griphyn.vdl.toolkit.VDLt2VDLx$ParsingException: Could not compile SwiftScript source: unexpected char: '.'
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:67)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:45)
+	at org.griphyn.vdl.karajan.Loader.compile(Loader.java:301)
+	at org.griphyn.vdl.karajan.Loader.main(Loader.java:147)
+Caused by: line 7:21: unexpected char: '.'
+	at org.globus.swift.parser.SwiftScriptLexer.nextToken(SwiftScriptLexer.java:283)
+	at antlr.TokenBuffer.fill(TokenBuffer.java:69)
+	at antlr.TokenBuffer.LA(TokenBuffer.java:80)
+	at antlr.LLkParser.LA(LLkParser.java:52)
+	at org.globus.swift.parser.SwiftScriptParser.arrayInitializer(SwiftScriptParser.java:1415)
+	at org.globus.swift.parser.SwiftScriptParser.constant(SwiftScriptParser.java:1808)
+	at org.globus.swift.parser.SwiftScriptParser.primExpr(SwiftScriptParser.java:3214)
+	at org.globus.swift.parser.SwiftScriptParser.unaryExpr(SwiftScriptParser.java:3179)
+	at org.globus.swift.parser.SwiftScriptParser.multiExpr(SwiftScriptParser.java:3080)
+	at org.globus.swift.parser.SwiftScriptParser.additiveExpr(SwiftScriptParser.java:3026)
+	at org.globus.swift.parser.SwiftScriptParser.condExpr(SwiftScriptParser.java:2963)
+	at org.globus.swift.parser.SwiftScriptParser.equalExpr(SwiftScriptParser.java:2880)
+	at org.globus.swift.parser.SwiftScriptParser.andExpr(SwiftScriptParser.java:2847)
+	at org.globus.swift.parser.SwiftScriptParser.orExpr(SwiftScriptParser.java:2817)
+	at org.globus.swift.parser.SwiftScriptParser.expression(SwiftScriptParser.java:1403)
+	at org.globus.swift.parser.SwiftScriptParser.foreachStat(SwiftScriptParser.java:2119)
+	at org.globus.swift.parser.SwiftScriptParser.ll1statement(SwiftScriptParser.java:581)
+	at org.globus.swift.parser.SwiftScriptParser.topLevelStatement(SwiftScriptParser.java:212)
+	at org.globus.swift.parser.SwiftScriptParser.program(SwiftScriptParser.java:121)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:62)
+	... 3 more

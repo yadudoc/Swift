@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/4471/trunk/src/org/griphyn/vdl/karajan/lib/cache
+END
+File.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4471/trunk/src/org/griphyn/vdl/karajan/lib/cache/File.java
+END
+VDLFileCacheFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/vdl2/!svn/ver/133/trunk/src/org/griphyn/vdl/karajan/lib/cache/VDLFileCacheFactory.java
+END
+CacheMapAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4375/trunk/src/org/griphyn/vdl/karajan/lib/cache/CacheMapAdapter.java
+END
+ProcessingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/443/trunk/src/org/griphyn/vdl/karajan/lib/cache/ProcessingListener.java
+END
+CacheReturn.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/133/trunk/src/org/griphyn/vdl/karajan/lib/cache/CacheReturn.java
+END
+Site.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/2103/trunk/src/org/griphyn/vdl/karajan/lib/cache/Site.java
+END
+LRUFileCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4375/trunk/src/org/griphyn/vdl/karajan/lib/cache/LRUFileCache.java
+END
+VDLFileCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/2105/trunk/src/org/griphyn/vdl/karajan/lib/cache/VDLFileCache.java
+END

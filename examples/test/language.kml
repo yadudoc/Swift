@@ -1,0 +1,20 @@
+<project><!-- CACHE ID 19937e78-991a-4cb9-babe-c9ccbb8e64c4 -->
+  <import file="sys.xml"/>
+  <import file="scheduler.xml"/>
+  <import file="rlog.xml"/>
+  <import file="vdl.k"/>
+  <set name="array">
+    <vdl:new type="int[][]" dbgname="array">
+      <vdl:mapping descriptor="concurrent_mapper">
+        <vdl:parameter name="prefix">array-6e02b041-08b6-472b-8603-44d1c319478a</vdl:parameter>
+        <vdl:parameter name="input" value="true" />
+      </vdl:mapping>
+    </vdl:new>
+  </set>
+  <parameterlog>
+  <string>intermediate</string>
+  <string>array</string>
+  <vdl:getdatasetprovenanceid var="{array}" />
+  <string>{#thread}</string>
+  </parameterlog>
+</project>

@@ -1,0 +1,32 @@
+2011-06-28 23:56:51,120+0530 DEBUG Loader Max heap: 238616576
+2011-06-28 23:56:51,127+0530 DEBUG Loader kmlversion is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-28 23:56:51,127+0530 DEBUG Loader build version is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-28 23:56:51,127+0530 DEBUG Loader Recompilation suppressed.
+2011-06-28 23:56:51,408+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@cb6009
+
+
+2011-06-28 23:56:52,827+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-06-28 23:56:52,873+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-06-28 23:56:53,079+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-06-28 23:56:53,857+0530 INFO  unknown Swift svn swift-r4525 (swift modified locally) cog-r3167
+
+2011-06-28 23:56:53,858+0530 INFO  unknown RUNID id=run:20110628-2356-az7a4lgb
+2011-06-28 23:56:53,994+0530 INFO  SetFieldValue Set: array[key][0]=?:int = 10.0 - Closed
+2011-06-28 23:56:53,998+0530 DEBUG vdl:mains FOREACH_IT_START line=5 thread=0-1-0
+2011-06-28 23:56:53,999+0530 DEBUG vdl:mains SCOPE thread=0-1-0
+2011-06-28 23:56:53,999+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-1-0-1 name=trace
+2011-06-28 23:56:54,001+0530 WARN  trace SwiftScript trace: array.[key][0]:int = 10.0 - Closed
+2011-06-28 23:56:54,001+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-1-0-1
+2011-06-28 23:56:54,001+0530 DEBUG vdl:mains FOREACH_IT_END line=5 thread=0-1-0
+2011-06-28 23:56:54,041+0530 DEBUG vdl:mains Starting cleanups
+2011-06-28 23:56:54,043+0530 INFO  vdl:cleanups START cleanups=[]
+2011-06-28 23:56:54,043+0530 INFO  vdl:cleanups END cleanups=[]
+2011-06-28 23:56:54,044+0530 DEBUG vdl:mains Ending cleanups
+2011-06-28 23:56:54,045+0530 INFO  Loader Swift finished with no errors

@@ -1,0 +1,22 @@
+2011-06-28 20:06:07,043+0530 DEBUG Loader Max heap: 238616576
+2011-06-28 20:06:07,044+0530 INFO  Loader language.swift: source file is new. Recompiling.
+2011-06-28 20:06:07,044+0530 DEBUG Loader kmlversion is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-28 20:06:07,044+0530 DEBUG Loader build version is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-28 20:06:07,962+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-06-28 20:06:08,277+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@b1aebf
+
+
+2011-06-28 20:06:09,047+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-06-28 20:06:09,108+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-06-28 20:06:09,251+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-06-28 20:06:09,888+0530 INFO  unknown Swift svn swift-r4525 (swift modified locally) cog-r3167
+
+2011-06-28 20:06:09,889+0530 INFO  unknown RUNID id=run:20110628-2006-3lagylxb
+2011-06-28 20:06:09,953+0530 INFO  Loader Swift finished with no errors

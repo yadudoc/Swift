@@ -1,0 +1,30 @@
+2011-06-28 20:07:36,914+0530 DEBUG Loader Max heap: 238616576
+2011-06-28 20:07:36,915+0530 INFO  Loader language.swift: source file is new. Recompiling.
+2011-06-28 20:07:36,915+0530 DEBUG Loader kmlversion is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-28 20:07:36,915+0530 DEBUG Loader build version is >19937e78-991a-4cb9-babe-c9ccbb8e64c4<
+2011-06-28 20:07:37,092+0530 ERROR VDLt2VDLx Could not compile SwiftScript source: line 1:11: expecting ']', found 'int'
+2011-06-28 20:07:37,094+0530 DEBUG VDLt2VDLx Full parser exception
+line 1:11: expecting ']', found 'int'
+	at antlr.Parser.match(Parser.java:211)
+	at org.globus.swift.parser.SwiftScriptParser.declpart(SwiftScriptParser.java:1208)
+	at org.globus.swift.parser.SwiftScriptParser.declaration(SwiftScriptParser.java:777)
+	at org.globus.swift.parser.SwiftScriptParser.topLevelStatement(SwiftScriptParser.java:296)
+	at org.globus.swift.parser.SwiftScriptParser.program(SwiftScriptParser.java:121)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:62)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:45)
+	at org.griphyn.vdl.karajan.Loader.compile(Loader.java:297)
+	at org.griphyn.vdl.karajan.Loader.main(Loader.java:146)
+2011-06-28 20:07:37,097+0530 DEBUG Loader Exception when compiling language.swift
+org.griphyn.vdl.toolkit.VDLt2VDLx$ParsingException: Could not compile SwiftScript source: expecting ']', found 'int'
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:67)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:45)
+	at org.griphyn.vdl.karajan.Loader.compile(Loader.java:297)
+	at org.griphyn.vdl.karajan.Loader.main(Loader.java:146)
+Caused by: line 1:11: expecting ']', found 'int'
+	at antlr.Parser.match(Parser.java:211)
+	at org.globus.swift.parser.SwiftScriptParser.declpart(SwiftScriptParser.java:1208)
+	at org.globus.swift.parser.SwiftScriptParser.declaration(SwiftScriptParser.java:777)
+	at org.globus.swift.parser.SwiftScriptParser.topLevelStatement(SwiftScriptParser.java:296)
+	at org.globus.swift.parser.SwiftScriptParser.program(SwiftScriptParser.java:121)
+	at org.griphyn.vdl.toolkit.VDLt2VDLx.compile(VDLt2VDLx.java:62)
+	... 3 more
