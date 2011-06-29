@@ -1,17 +1,5 @@
 <program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <variable name="array" type="int[]" isGlobal="false" xsi:nil="true"/>
-  <call proc="autoIndex" src="line 3">
-    <output><variableReference>array</variableReference></output>
-  </call>
-  <call proc="autoIndex" src="line 4">
-    <output><variableReference>array</variableReference></output>
-  </call>
-  <foreach var="v"  src="line 6">
-  <in><variableReference>array</variableReference></in>
-  <body><call proc="trace" src="line 7">
-      <input><variableReference>v</variableReference></input>
-    </call></body>
-  </foreach>
+  <variable name="array" type="int[int][int][string]" isGlobal="false" xsi:nil="true"/>
 </program>

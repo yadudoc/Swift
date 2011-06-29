@@ -51,7 +51,6 @@ public class Misc extends FunctionsCollection {
 		setArguments("swiftscript_dirname", new Arg[] { Arg.VARGS });
 		setArguments("swiftscript_length", new Arg[] { Arg.VARGS });
 		setArguments("swiftscript_exists", new Arg[] { Arg.VARGS });
-		setArguments("swiftscript_autoIndex", new Arg[] { Arg.VARGS });
 	}
 
 	private static final Logger traceLogger =
@@ -143,14 +142,14 @@ public class Misc extends FunctionsCollection {
 		return handle;
 	}
 	
-	public DSHandle swiftscript_autoIndex(VariableStack stack)
+	public DSHandle swiftscript_autoindex(VariableStack stack)
     throws ExecutionException {
         logger.debug(stack);        
                 
         Object[] args = SwiftArg.VARGS.asArray(stack);
         if (args.length != 0)
             throw new ExecutionException
-            ("Wrong number of arguments to @autoIndex()");
+            ("Wrong number of arguments to @autoindex()");
 
         DSHandle handle = new RootDataNode(Types.INT);
                   

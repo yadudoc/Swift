@@ -212,10 +212,14 @@ declpart [StringTemplate code, StringTemplate t, boolean isGlobal]
         String thisType = (String) t.getAttribute("name");
         StringTemplate variable=null;
         StringTemplate m = null;
+        StringTemplate sTemp = null;
+        String sType = "int";
     }
     :
      n=declarator
-     (LBRACK RBRACK {thisType = thisType + "[]"; } )*
+     (LBRACK
+      (sTemp=type {sType = (String) sTemp.getAttribute("name"); })?
+      RBRACK {thisType = thisType + "["+ sType +"]" ;sType = "int"; } )*
      {
         thisTypeTemplate=template("type");
         thisTypeTemplate.setAttribute("name", thisType);
@@ -498,6 +502,7 @@ innerStatement[StringTemplate code]
        s=ll1statement
     |  (procedurecallCode) => s=procedurecallCode
     |  (predictAssignStat) => s=assignStat
+    |  (predictAppendStat) => s=appendStat
     )
        {
         code.setAttribute("statements",s);
@@ -511,6 +516,7 @@ caseInnerStatement [StringTemplate statements]
     (  code=ll1statement
     |  (procedurecallCode) => code=procedurecallCode
     |  (predictAssignStat) => code=assignStat
+    |  (predictAppendStat) => code=appendStat
     ) {statements.setAttribute("statements",code);}
     |   (procedurecallStatAssignManyReturnParam[statements]) => procedurecallStatAssignManyReturnParam[statements]
     ;
@@ -659,7 +665,7 @@ appendStat returns [StringTemplate code=null]
        	  // We append ["!"] to the back of the array and assign it the lhs 
        	  StringTemplate c = template("arraySubscript");
        	  StringTemplate st = template("sConst");
-          st.setAttribute("value","!");       	         	 
+          st.setAttribute("value","_SWIFT_AUTO_INCREMENT");       	         	 
        	  c.setAttribute("subscript",st);
        	  c.setAttribute("array", id);
           code.setAttribute("lhs",c);          

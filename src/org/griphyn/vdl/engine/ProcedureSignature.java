@@ -318,11 +318,11 @@ public class ProcedureSignature {
 		exists.addOutputArg(existsOut1);
 		functionsMap.put(exists.getName(), exists);
 		
-		ProcedureSignature autoIndex = new ProcedureSignature("autoIndex");
-        autoIndex.setAnyNumOfInputArgs();
+		ProcedureSignature autoindex = new ProcedureSignature("autoindex");
+        autoindex.setAnyNumOfInputArgs();
         FormalArgumentSignature autoIndexOut1 = new FormalArgumentSignature("int");
-        autoIndex.addOutputArg(autoIndexOut1);
-        functionsMap.put(autoIndex.getName(), autoIndex);
+        autoindex.addOutputArg(autoIndexOut1);
+        functionsMap.put(autoindex.getName(), autoindex);
 
 		return functionsMap;
 	}

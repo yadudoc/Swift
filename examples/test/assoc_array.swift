@@ -1,7 +1,14 @@
-int array[][];
+int array[];
 
-array["key"] += 10;
 
-foreach value, index in array["key"] {
-	trace ( value );
+foreach outer in [1:2]{
+foreach inner in [1:10]{
+	array += inner;
+}
+}
+
+foreach outer in [1:2]{
+foreach inner, index  in [1:10]{
+	trace (index);
+}
 }

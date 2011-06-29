@@ -1,9 +1,0 @@
-int array[][];
-
-array["key"] += 10;
-array["key"] += 20;
-array["key"] += 30;
-
-foreach value, index in array["key"] {
-	trace ( value );
-}

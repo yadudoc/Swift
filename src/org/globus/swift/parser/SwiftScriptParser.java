@@ -615,10 +615,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		id=identifier();
 		match(ASSIGN);
 		{
-		boolean synPredMatched151 = false;
+		boolean synPredMatched156 = false;
 		if (((LA(1)==ID) && (LA(2)==LPAREN))) {
-			int _m151 = mark();
-			synPredMatched151 = true;
+			int _m156 = mark();
+			synPredMatched156 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -626,12 +626,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched151 = false;
+				synPredMatched156 = false;
 			}
-			rewind(_m151);
+			rewind(_m156);
 			inputState.guessing--;
 		}
-		if ( synPredMatched151 ) {
+		if ( synPredMatched156 ) {
 			code=procedurecallCode();
 			if ( inputState.guessing==0 ) {
 				StringTemplate o = template("returnParam");
@@ -672,10 +672,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		id=identifier();
 		match(APPEND);
 		{
-		boolean synPredMatched155 = false;
+		boolean synPredMatched160 = false;
 		if (((LA(1)==ID) && (LA(2)==LPAREN))) {
-			int _m155 = mark();
-			synPredMatched155 = true;
+			int _m160 = mark();
+			synPredMatched160 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -683,12 +683,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched155 = false;
+				synPredMatched160 = false;
 			}
-			rewind(_m155);
+			rewind(_m160);
 			inputState.guessing--;
 		}
-		if ( synPredMatched155 ) {
+		if ( synPredMatched160 ) {
 			code=procedurecallCode();
 			if ( inputState.guessing==0 ) {
 				StringTemplate o = template("returnParam");
@@ -704,7 +704,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					  // We append ["!"] to the back of the array and assign it the lhs 
 					  StringTemplate c = template("arraySubscript");
 					  StringTemplate st = template("sConst");
-				st.setAttribute("value","!");       	         	 
+				st.setAttribute("value","_SWIFT_AUTO_INCREMENT");       	         	 
 					  c.setAttribute("subscript",st);
 					  c.setAttribute("array", id);
 				code.setAttribute("lhs",c);          
@@ -809,14 +809,14 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		match(LPAREN);
 		procedurecallStatAssignManyReturnOutput(s,code);
 		{
-		_loop173:
+		_loop178:
 		do {
 			if ((LA(1)==COMMA)) {
 				match(COMMA);
 				procedurecallStatAssignManyReturnOutput(s,code);
 			}
 			else {
-				break _loop173;
+				break _loop178;
 			}
 			
 		} while (true);
@@ -853,7 +853,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				
 			}
 			{
-			_loop93:
+			_loop94:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -866,7 +866,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop93;
+					break _loop94;
 				}
 				
 			} while (true);
@@ -901,7 +901,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				
 			}
 			{
-			_loop96:
+			_loop97:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -913,7 +913,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop96;
+					break _loop97;
 				}
 				
 			} while (true);
@@ -937,13 +937,13 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			app.setAttribute("exec",exec);
 		}
 		{
-		_loop98:
+		_loop99:
 		do {
 			if ((_tokenSet_5.member(LA(1)))) {
 				appArg(app);
 			}
 			else {
-				break _loop98;
+				break _loop99;
 			}
 			
 		} while (true);
@@ -980,14 +980,14 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			{
 				f=formalParameter();
 				{
-				_loop78:
+				_loop79:
 				do {
 					if ((LA(1)==COMMA)) {
 						match(COMMA);
 						f=formalParameter();
 					}
 					else {
-						break _loop78;
+						break _loop79;
 					}
 					
 				} while (true);
@@ -1015,14 +1015,14 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			match(LPAREN);
 			f=formalParameter();
 			{
-			_loop81:
+			_loop82:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
 					f=formalParameter();
 				}
 				else {
-					break _loop81;
+					break _loop82;
 				}
 				
 			} while (true);
@@ -1059,7 +1059,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				
 			}
 			{
-			_loop85:
+			_loop86:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -1072,7 +1072,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop85;
+					break _loop86;
 				}
 				
 			} while (true);
@@ -1107,7 +1107,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				
 			}
 			{
-			_loop88:
+			_loop89:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -1119,7 +1119,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop88;
+					break _loop89;
 				}
 				
 			} while (true);
@@ -1197,21 +1197,43 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		String thisType = (String) t.getAttribute("name");
 		StringTemplate variable=null;
 		StringTemplate m = null;
+		StringTemplate sTemp = null;
+		String sType = "int";
 		
 		
 		n=declarator();
 		{
-		_loop48:
+		_loop49:
 		do {
 			if ((LA(1)==LBRACK)) {
 				match(LBRACK);
+				{
+				switch ( LA(1)) {
+				case ID:
+				{
+					sTemp=type();
+					if ( inputState.guessing==0 ) {
+						sType = (String) sTemp.getAttribute("name");
+					}
+					break;
+				}
+				case RBRACK:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
 				match(RBRACK);
 				if ( inputState.guessing==0 ) {
-					thisType = thisType + "[]";
+					thisType = thisType + "["+ sType +"]" ;sType = "int";
 				}
 			}
 			else {
-				break _loop48;
+				break _loop49;
 			}
 			
 		} while (true);
@@ -1275,10 +1297,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		}
 		}
 		{
-		boolean synPredMatched53 = false;
+		boolean synPredMatched54 = false;
 		if (((LA(1)==ASSIGN) && (LA(2)==ID))) {
-			int _m53 = mark();
-			synPredMatched53 = true;
+			int _m54 = mark();
+			synPredMatched54 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -1286,12 +1308,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched53 = false;
+				synPredMatched54 = false;
 			}
-			rewind(_m53);
+			rewind(_m54);
 			inputState.guessing--;
 		}
-		if ( synPredMatched53 ) {
+		if ( synPredMatched54 ) {
 			procedurecallDecl(code, thisTypeTemplate, n, variable);
 		}
 		else if ((_tokenSet_6.member(LA(1))) && (_tokenSet_7.member(LA(2)))) {
@@ -1411,10 +1433,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		match(LBRACK);
 		{
-		boolean synPredMatched61 = false;
+		boolean synPredMatched62 = false;
 		if (((_tokenSet_3.member(LA(1))) && (_tokenSet_8.member(LA(2))))) {
-			int _m61 = mark();
-			synPredMatched61 = true;
+			int _m62 = mark();
+			synPredMatched62 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -1423,12 +1445,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched61 = false;
+				synPredMatched62 = false;
 			}
-			rewind(_m61);
+			rewind(_m62);
 			inputState.guessing--;
 		}
-		if ( synPredMatched61 ) {
+		if ( synPredMatched62 ) {
 			{
 			from=expression();
 			match(COLON);
@@ -1470,7 +1492,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				code.setAttribute("elements", e);
 			}
 			{
-			_loop66:
+			_loop67:
 			do {
 				if ((LA(1)==COMMA) && (_tokenSet_3.member(LA(2)))) {
 					match(COMMA);
@@ -1480,7 +1502,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop66;
+					break _loop67;
 				}
 				
 			} while (true);
@@ -1530,7 +1552,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				code.setAttribute("params", p);
 			}
 			{
-			_loop72:
+			_loop73:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -1540,7 +1562,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop72;
+					break _loop73;
 				}
 				
 			} while (true);
@@ -1606,7 +1628,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			
 		}
 		{
-		_loop102:
+		_loop103:
 		do {
 			if ((LA(1)==LBRACK)) {
 				match(LBRACK);
@@ -1616,7 +1638,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop102;
+				break _loop103;
 			}
 			
 		} while (true);
@@ -1680,13 +1702,13 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		
 		{
-		_loop110:
+		_loop111:
 		do {
 			if ((_tokenSet_10.member(LA(1)))) {
 				innerStatement(code);
 			}
 			else {
-				break _loop110;
+				break _loop111;
 			}
 			
 		} while (true);
@@ -1823,13 +1845,13 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		match(LCURLY);
 		{
-		_loop107:
+		_loop108:
 		do {
 			if ((_tokenSet_10.member(LA(1)))) {
 				innerStatement(code);
 			}
 			else {
-				break _loop107;
+				break _loop108;
 			}
 			
 		} while (true);
@@ -1843,10 +1865,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		StringTemplate s=null;
 		
-		boolean synPredMatched113 = false;
+		boolean synPredMatched114 = false;
 		if (((LA(1)==ID||LA(1)==LITERAL_global) && (LA(2)==ID))) {
-			int _m113 = mark();
-			synPredMatched113 = true;
+			int _m114 = mark();
+			synPredMatched114 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -1854,12 +1876,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched113 = false;
+				synPredMatched114 = false;
 			}
-			rewind(_m113);
+			rewind(_m114);
 			inputState.guessing--;
 		}
-		if ( synPredMatched113 ) {
+		if ( synPredMatched114 ) {
 			declaration(code);
 		}
 		else if ((_tokenSet_11.member(LA(1))) && (_tokenSet_12.member(LA(2)))) {
@@ -1869,10 +1891,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				s=ll1statement();
 			}
 			else {
-				boolean synPredMatched117 = false;
+				boolean synPredMatched118 = false;
 				if (((LA(1)==ID) && (LA(2)==LPAREN))) {
-					int _m117 = mark();
-					synPredMatched117 = true;
+					int _m118 = mark();
+					synPredMatched118 = true;
 					inputState.guessing++;
 					try {
 						{
@@ -1880,19 +1902,19 @@ public SwiftScriptParser(ParserSharedInputState state) {
 						}
 					}
 					catch (RecognitionException pe) {
-						synPredMatched117 = false;
+						synPredMatched118 = false;
 					}
-					rewind(_m117);
+					rewind(_m118);
 					inputState.guessing--;
 				}
-				if ( synPredMatched117 ) {
+				if ( synPredMatched118 ) {
 					s=procedurecallCode();
 				}
 				else {
-					boolean synPredMatched119 = false;
+					boolean synPredMatched120 = false;
 					if (((LA(1)==ID) && (_tokenSet_1.member(LA(2))))) {
-						int _m119 = mark();
-						synPredMatched119 = true;
+						int _m120 = mark();
+						synPredMatched120 = true;
 						inputState.guessing++;
 						try {
 							{
@@ -1900,52 +1922,72 @@ public SwiftScriptParser(ParserSharedInputState state) {
 							}
 						}
 						catch (RecognitionException pe) {
-							synPredMatched119 = false;
+							synPredMatched120 = false;
 						}
-						rewind(_m119);
+						rewind(_m120);
 						inputState.guessing--;
 					}
-					if ( synPredMatched119 ) {
+					if ( synPredMatched120 ) {
 						s=assignStat();
 					}
 					else {
-						throw new NoViableAltException(LT(1), getFilename());
-					}
-					}}
-					}
-					if ( inputState.guessing==0 ) {
-						
-						code.setAttribute("statements",s);
-						
-					}
-					}
-				}
-				else {
-					boolean synPredMatched121 = false;
-					if (((LA(1)==LPAREN))) {
-						int _m121 = mark();
-						synPredMatched121 = true;
-						inputState.guessing++;
-						try {
-							{
-							procedurecallStatAssignManyReturnParam(code);
+						boolean synPredMatched122 = false;
+						if (((LA(1)==ID) && (_tokenSet_2.member(LA(2))))) {
+							int _m122 = mark();
+							synPredMatched122 = true;
+							inputState.guessing++;
+							try {
+								{
+								predictAppendStat();
+								}
 							}
+							catch (RecognitionException pe) {
+								synPredMatched122 = false;
+							}
+							rewind(_m122);
+							inputState.guessing--;
 						}
-						catch (RecognitionException pe) {
-							synPredMatched121 = false;
+						if ( synPredMatched122 ) {
+							s=appendStat();
 						}
-						rewind(_m121);
-						inputState.guessing--;
-					}
-					if ( synPredMatched121 ) {
-						procedurecallStatAssignManyReturnParam(code);
+						else {
+							throw new NoViableAltException(LT(1), getFilename());
+						}
+						}}}
+						}
+						if ( inputState.guessing==0 ) {
+							
+							code.setAttribute("statements",s);
+							
+						}
+						}
 					}
 					else {
-						throw new NoViableAltException(LT(1), getFilename());
+						boolean synPredMatched124 = false;
+						if (((LA(1)==LPAREN))) {
+							int _m124 = mark();
+							synPredMatched124 = true;
+							inputState.guessing++;
+							try {
+								{
+								procedurecallStatAssignManyReturnParam(code);
+								}
+							}
+							catch (RecognitionException pe) {
+								synPredMatched124 = false;
+							}
+							rewind(_m124);
+							inputState.guessing--;
+						}
+						if ( synPredMatched124 ) {
+							procedurecallStatAssignManyReturnParam(code);
+						}
+						else {
+							throw new NoViableAltException(LT(1), getFilename());
+						}
+						}
 					}
-					}
-				}
-				
+					
 	public final void caseInnerStatement(
 		StringTemplate statements
 	) throws RecognitionException, TokenStreamException {
@@ -1964,10 +2006,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				code=ll1statement();
 			}
 			else {
-				boolean synPredMatched125 = false;
+				boolean synPredMatched128 = false;
 				if (((LA(1)==ID) && (LA(2)==LPAREN))) {
-					int _m125 = mark();
-					synPredMatched125 = true;
+					int _m128 = mark();
+					synPredMatched128 = true;
 					inputState.guessing++;
 					try {
 						{
@@ -1975,19 +2017,19 @@ public SwiftScriptParser(ParserSharedInputState state) {
 						}
 					}
 					catch (RecognitionException pe) {
-						synPredMatched125 = false;
+						synPredMatched128 = false;
 					}
-					rewind(_m125);
+					rewind(_m128);
 					inputState.guessing--;
 				}
-				if ( synPredMatched125 ) {
+				if ( synPredMatched128 ) {
 					code=procedurecallCode();
 				}
 				else {
-					boolean synPredMatched127 = false;
+					boolean synPredMatched130 = false;
 					if (((LA(1)==ID) && (_tokenSet_1.member(LA(2))))) {
-						int _m127 = mark();
-						synPredMatched127 = true;
+						int _m130 = mark();
+						synPredMatched130 = true;
 						inputState.guessing++;
 						try {
 							{
@@ -1995,36 +2037,56 @@ public SwiftScriptParser(ParserSharedInputState state) {
 							}
 						}
 						catch (RecognitionException pe) {
-							synPredMatched127 = false;
+							synPredMatched130 = false;
 						}
-						rewind(_m127);
+						rewind(_m130);
 						inputState.guessing--;
 					}
-					if ( synPredMatched127 ) {
+					if ( synPredMatched130 ) {
 						code=assignStat();
 					}
 					else {
+						boolean synPredMatched132 = false;
+						if (((LA(1)==ID) && (_tokenSet_2.member(LA(2))))) {
+							int _m132 = mark();
+							synPredMatched132 = true;
+							inputState.guessing++;
+							try {
+								{
+								predictAppendStat();
+								}
+							}
+							catch (RecognitionException pe) {
+								synPredMatched132 = false;
+							}
+							rewind(_m132);
+							inputState.guessing--;
+						}
+						if ( synPredMatched132 ) {
+							code=appendStat();
+						}
+						else {
+							throw new NoViableAltException(LT(1), getFilename());
+						}
+						}}}
+						}
+						if ( inputState.guessing==0 ) {
+							statements.setAttribute("statements",code);
+						}
+						break;
+					}
+					case LPAREN:
+					{
+						procedurecallStatAssignManyReturnParam(statements);
+						break;
+					}
+					default:
+					{
 						throw new NoViableAltException(LT(1), getFilename());
 					}
-					}}
 					}
-					if ( inputState.guessing==0 ) {
-						statements.setAttribute("statements",code);
-					}
-					break;
 				}
-				case LPAREN:
-				{
-					procedurecallStatAssignManyReturnParam(statements);
-					break;
-				}
-				default:
-				{
-					throw new NoViableAltException(LT(1), getFilename());
-				}
-				}
-			}
-			
+				
 	public final StringTemplate  ifStat() throws RecognitionException, TokenStreamException {
 		StringTemplate code=template("if");
 		
@@ -2149,7 +2211,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		}
 		match(LCURLY);
 		{
-		_loop138:
+		_loop143:
 		do {
 			if ((LA(1)==LITERAL_case||LA(1)==LITERAL_default)) {
 				b=casesGroup();
@@ -2158,7 +2220,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop138;
+				break _loop143;
 			}
 			
 		} while (true);
@@ -2247,13 +2309,13 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		StringTemplate s=null;
 		
 		{
-		_loop145:
+		_loop150:
 		do {
 			if ((_tokenSet_14.member(LA(1)))) {
 				caseInnerStatement(code);
 			}
 			else {
-				break _loop145;
+				break _loop150;
 			}
 			
 		} while (true);
@@ -2275,7 +2337,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			code.setAttribute("name",base.getText());
 		}
 		{
-		_loop235:
+		_loop240:
 		do {
 			if ((LA(1)==LBRACK) && (_tokenSet_15.member(LA(2)))) {
 				{
@@ -2294,7 +2356,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop235;
+				break _loop240;
 			}
 			
 		} while (true);
@@ -2369,7 +2431,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				
 			}
 			{
-			_loop163:
+			_loop168:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -2381,7 +2443,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop163;
+					break _loop168;
 				}
 				
 			} while (true);
@@ -2407,10 +2469,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		StringTemplate d=null, id=null, ai=null;
 		
 		{
-		boolean synPredMatched184 = false;
+		boolean synPredMatched189 = false;
 		if (((LA(1)==ID) && (LA(2)==ASSIGN))) {
-			int _m184 = mark();
-			synPredMatched184 = true;
+			int _m189 = mark();
+			synPredMatched189 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -2419,12 +2481,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched184 = false;
+				synPredMatched189 = false;
 			}
-			rewind(_m184);
+			rewind(_m189);
 			inputState.guessing--;
 		}
-		if ( synPredMatched184 ) {
+		if ( synPredMatched189 ) {
 			{
 			d=declarator();
 			match(ASSIGN);
@@ -2486,7 +2548,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					
 			}
 			{
-			_loop167:
+			_loop172:
 			do {
 				if ((LA(1)==COMMA)) {
 					match(COMMA);
@@ -2498,7 +2560,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				else {
-					break _loop167;
+					break _loop172;
 				}
 				
 			} while (true);
@@ -2616,13 +2678,13 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			code.setAttribute("exec", exec);
 		}
 		{
-		_loop189:
+		_loop194:
 		do {
 			if ((_tokenSet_5.member(LA(1)))) {
 				appArg(code);
 			}
 			else {
-				break _loop189;
+				break _loop194;
 			}
 			
 		} while (true);
@@ -2687,10 +2749,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		match(AT);
 		{
-		boolean synPredMatched195 = false;
+		boolean synPredMatched200 = false;
 		if (((LA(1)==ID) && (LA(2)==LPAREN))) {
-			int _m195 = mark();
-			synPredMatched195 = true;
+			int _m200 = mark();
+			synPredMatched200 = true;
 			inputState.guessing++;
 			try {
 				{
@@ -2699,12 +2761,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			catch (RecognitionException pe) {
-				synPredMatched195 = false;
+				synPredMatched200 = false;
 			}
-			rewind(_m195);
+			rewind(_m200);
 			inputState.guessing--;
 		}
-		if ( synPredMatched195 ) {
+		if ( synPredMatched200 ) {
 			{
 			func=declarator();
 			if ( inputState.guessing==0 ) {
@@ -2730,14 +2792,14 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			{
 				functionInvocationArgument(code);
 				{
-				_loop199:
+				_loop204:
 				do {
 					if ((LA(1)==COMMA)) {
 						match(COMMA);
 						functionInvocationArgument(code);
 					}
 					else {
-						break _loop199;
+						break _loop204;
 					}
 					
 				} while (true);
@@ -2816,7 +2878,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		code=andExpr();
 		{
-		_loop208:
+		_loop213:
 		do {
 			if ((LA(1)==OR)) {
 				match(OR);
@@ -2831,7 +2893,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop208;
+				break _loop213;
 			}
 			
 		} while (true);
@@ -2846,7 +2908,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		code=equalExpr();
 		{
-		_loop211:
+		_loop216:
 		do {
 			if ((LA(1)==AND)) {
 				match(AND);
@@ -2861,7 +2923,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop211;
+				break _loop216;
 			}
 			
 		} while (true);
@@ -3025,7 +3087,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		code=multiExpr();
 		{
-		_loop221:
+		_loop226:
 		do {
 			if ((LA(1)==PLUS||LA(1)==MINUS) && (_tokenSet_3.member(LA(2)))) {
 				if ( inputState.guessing==0 ) {
@@ -3061,7 +3123,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop221;
+				break _loop226;
 			}
 			
 		} while (true);
@@ -3079,7 +3141,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		
 		code=unaryExpr();
 		{
-		_loop225:
+		_loop230:
 		do {
 			if (((LA(1) >= STAR && LA(1) <= MOD))) {
 				if ( inputState.guessing==0 ) {
@@ -3125,7 +3187,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 			}
 			else {
-				break _loop225;
+				break _loop230;
 			}
 			
 		} while (true);
@@ -3220,10 +3282,10 @@ public SwiftScriptParser(ParserSharedInputState state) {
 			break;
 		}
 		default:
-			boolean synPredMatched229 = false;
+			boolean synPredMatched234 = false;
 			if (((LA(1)==ID) && (LA(2)==LPAREN))) {
-				int _m229 = mark();
-				synPredMatched229 = true;
+				int _m234 = mark();
+				synPredMatched234 = true;
 				inputState.guessing++;
 				try {
 					{
@@ -3231,12 +3293,12 @@ public SwiftScriptParser(ParserSharedInputState state) {
 					}
 				}
 				catch (RecognitionException pe) {
-					synPredMatched229 = false;
+					synPredMatched234 = false;
 				}
-				rewind(_m229);
+				rewind(_m234);
 				inputState.guessing--;
 			}
-			if ( synPredMatched229 ) {
+			if ( synPredMatched234 ) {
 				code=procedureCallExpr();
 			}
 			else if ((LA(1)==ID) && (_tokenSet_18.member(LA(2)))) {
@@ -3477,7 +3539,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 	}
 	public static final BitSet _tokenSet_11 = new BitSet(mk_tokenSet_11());
 	private static final long[] mk_tokenSet_12() {
-		long[] data = { 1125899909466144L, 0L};
+		long[] data = { 1125904204433440L, 0L};
 		return data;
 	}
 	public static final BitSet _tokenSet_12 = new BitSet(mk_tokenSet_12());
