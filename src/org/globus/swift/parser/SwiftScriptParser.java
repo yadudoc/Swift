@@ -1198,7 +1198,8 @@ public SwiftScriptParser(ParserSharedInputState state) {
 		StringTemplate variable=null;
 		StringTemplate m = null;
 		StringTemplate sTemp = null;
-		String sType = "int";
+		String sType = "";
+		
 		
 		
 		n=declarator();
@@ -1213,7 +1214,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				{
 					sTemp=type();
 					if ( inputState.guessing==0 ) {
-						sType = (String) sTemp.getAttribute("name");
+						sType = (String) sTemp.getAttribute("name") ;
 					}
 					break;
 				}
@@ -1229,7 +1230,7 @@ public SwiftScriptParser(ParserSharedInputState state) {
 				}
 				match(RBRACK);
 				if ( inputState.guessing==0 ) {
-					thisType = thisType + "["+ sType +"]" ;sType = "int";
+					thisType = thisType + "[" + sType + "]" ; sType = "";
 				}
 			}
 			else {

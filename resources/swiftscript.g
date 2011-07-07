@@ -213,13 +213,14 @@ declpart [StringTemplate code, StringTemplate t, boolean isGlobal]
         StringTemplate variable=null;
         StringTemplate m = null;
         StringTemplate sTemp = null;
-        String sType = "int";
+        String sType = "";
+                       
     }
     :
      n=declarator
      (LBRACK
-      (sTemp=type {sType = (String) sTemp.getAttribute("name"); })?
-      RBRACK {thisType = thisType + "["+ sType +"]" ;sType = "int"; } )*
+      (sTemp=type {sType = (String) sTemp.getAttribute("name") ;} )? 
+      RBRACK {thisType = thisType + "[" + sType + "]" ; sType = ""; } )*
      {
         thisTypeTemplate=template("type");
         thisTypeTemplate.setAttribute("name", thisType);
@@ -1151,7 +1152,7 @@ LT      :   '<' ;
 LE        :   "<=" ;
 GT        :   ">" ;
 GE        :   ">=";
-APPEND    :   "+=";
+APPEND    :   "<<";
 ASSIGN  :   '=' ;
 AND        :   "&&";
 OR        :   "||";

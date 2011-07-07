@@ -1,13 +1,13 @@
-<project><!-- CACHE ID 0c7d87d2-ec25-4876-86ab-c8ab14723765 -->
+<project><!-- CACHE ID f4d49bf2-7e24-4b39-b420-90340af01cfe -->
   <import file="sys.xml"/>
   <import file="scheduler.xml"/>
   <import file="rlog.xml"/>
   <import file="vdl.k"/>
-  <global name="swift#string#17000">
-    <vdl:new type="string" value="!" />
-  </global>
   <global name="swift#string#17001">
     <vdl:new type="string" value="hi" />
+  </global>
+  <global name="swift#string#17000">
+    <vdl:new type="string" value="_SWIFT_AUTO_INCREMENT" />
   </global>
   <global name="swift#int#20">
     <vdl:new type="int" value="20" />
@@ -21,7 +21,7 @@
   <set name="a">
     <vdl:new type="int[][]" dbgname="a" waitfor="88000 88001 88002">
       <vdl:mapping descriptor="concurrent_mapper">
-        <vdl:parameter name="prefix">a-488e1259-678f-4c85-9374-a0d3e5067ff7</vdl:parameter>
+        <vdl:parameter name="prefix">a-e5e2f9df-1ed6-46a0-8ee6-83f7c7b20820</vdl:parameter>
       </vdl:mapping>
     </vdl:new>
   </set>
@@ -96,9 +96,7 @@
 		            <set names="$$, value">
 		              <each items="{$}"/>
 		            </set>
-		              <set name="index">
-		                <vdl:new type="int" value="{$$}"/>
-		              </set>	<log level="debug" message="FOREACH_IT_START line=7 thread={#thread}"/>
+		          	<log level="debug" message="FOREACH_IT_START line=7 thread={#thread}"/>
 		          <log level="debug"><string>SCOPE thread={#thread}</string></log>
 
 		                <sequentialWithID>

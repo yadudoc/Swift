@@ -85,6 +85,12 @@ tryAgain:
 					theRetToken=_returnToken;
 					break;
 				}
+				case '+':
+				{
+					mPLUS(true);
+					theRetToken=_returnToken;
+					break;
+				}
 				case '-':
 				{
 					mMINUS(true);
@@ -233,7 +239,7 @@ tryAgain:
 						mGE(true);
 						theRetToken=_returnToken;
 					}
-					else if ((LA(1)=='+') && (LA(2)=='=')) {
+					else if ((LA(1)=='<') && (LA(2)=='<')) {
 						mAPPEND(true);
 						theRetToken=_returnToken;
 					}
@@ -243,10 +249,6 @@ tryAgain:
 					}
 					else if ((LA(1)=='/') && (LA(2)=='*')) {
 						mML_COMMENT(true);
-						theRetToken=_returnToken;
-					}
-					else if ((LA(1)=='+') && (true)) {
-						mPLUS(true);
 						theRetToken=_returnToken;
 					}
 					else if ((LA(1)=='/') && (true)) {
@@ -455,7 +457,7 @@ tryAgain:
 		_ttype = APPEND;
 		int _saveIndex;
 		
-		match("+=");
+		match("<<");
 		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
 			_token = makeToken(_ttype);
 			_token.setText(new String(text.getBuffer(), _begin, text.length()-_begin));

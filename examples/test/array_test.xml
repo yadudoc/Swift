@@ -8,7 +8,7 @@
      <variableReference>a</variableReference>
      <stringConstant>hi</stringConstant>
     </arraySubscript>
-    <stringConstant>!</stringConstant>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
    </arraySubscript>
    <integerConstant>10</integerConstant>
   </assign>
@@ -18,7 +18,7 @@
      <variableReference>a</variableReference>
      <stringConstant>hi</stringConstant>
     </arraySubscript>
-    <stringConstant>!</stringConstant>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
    </arraySubscript>
    <integerConstant>20</integerConstant>
   </assign>
@@ -28,11 +28,11 @@
      <variableReference>a</variableReference>
      <stringConstant>hi</stringConstant>
     </arraySubscript>
-    <stringConstant>!</stringConstant>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
    </arraySubscript>
    <integerConstant>30</integerConstant>
   </assign>
-  <foreach var="value"  indexVar="index" src="line 7">
+  <foreach var="value"  src="line 7">
   <in><arraySubscript>
    <variableReference>a</variableReference>
    <stringConstant>hi</stringConstant>

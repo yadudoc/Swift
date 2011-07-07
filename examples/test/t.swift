@@ -1,5 +1,3 @@
-int array[];
-
-array["1"] = 5;
-array[1] = 10;
-
+int a[];
+int b[][];
+string c[];

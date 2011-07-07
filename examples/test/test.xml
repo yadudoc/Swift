@@ -1,5 +1,44 @@
 <program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <variable name="array" type="int[int][int][string]" isGlobal="false" xsi:nil="true"/>
+  <variable name="array" type="int[int][string]" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 4">
+   <arraySubscript>
+    <arraySubscript>
+     <variableReference>array</variableReference>
+     <integerConstant>5</integerConstant>
+    </arraySubscript>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
+   </arraySubscript>
+   <integerConstant>10</integerConstant>
+  </assign>
+  <assign src="line 6">
+   <arraySubscript>
+    <arraySubscript>
+     <variableReference>array</variableReference>
+     <integerConstant>5</integerConstant>
+    </arraySubscript>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
+   </arraySubscript>
+   <integerConstant>20</integerConstant>
+  </assign>
+  <foreach var="v"  indexVar="index" src="line 6">
+  <in><arraySubscript>
+   <variableReference>array</variableReference>
+   <integerConstant>5</integerConstant>
+  </arraySubscript></in>
+  <body><call proc="trace" src="line 7">
+      <input><variableReference>v</variableReference></input>
+      <input><variableReference>index</variableReference></input>
+    </call>
+    <call proc="trace" src="line 8">
+      <input><arraySubscript>
+       <arraySubscript>
+        <variableReference>array</variableReference>
+        <integerConstant>5</integerConstant>
+       </arraySubscript>
+       <variableReference>index</variableReference>
+      </arraySubscript></input>
+    </call></body>
+  </foreach>
 </program>

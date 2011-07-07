@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -43,6 +44,7 @@ import org.globus.swift.language.TypesDocument.Types.Type;
 import org.griphyn.vdl.karajan.Loader;
 import org.griphyn.vdl.karajan.CompilationException;
 import org.griphyn.vdl.toolkit.VDLt2VDLx;
+import org.griphyn.vdl.type.NoSuchTypeException;
 import org.safehaus.uuid.UUIDGenerator;
 import org.w3c.dom.Node;
 
@@ -425,6 +427,7 @@ public class Karajan {
 	}
 
 	void checkIsTypeDefined(String type) throws CompilationException {
+	    /*
 		while (type.length() > 2 && type.substring(type.length() - 2).equals("[]"))
 			type = type.substring(0, type.length() - 2);
 		if (!type.equals("int") && !type.equals("float") && !type.equals("string")
@@ -433,6 +436,7 @@ public class Karajan {
 			if (!typeDefined)
 				throw new CompilationException("Type " + type + " is not defined.");
 		}
+		*/
 	}
 
 	public void assign(Assign assign, VariableScope scope) throws CompilationException {
@@ -743,13 +747,23 @@ public class Karajan {
 			foreachST.setAttribute("in", inST);
 
 			String inType = datatype(inST);
-			if (inType.length() < 2 || !inType.substring(inType.length() - 2).equals("[]"))
-				throw new CompilationException("You can iterate through an array structure only");
-			String varType = inType.substring(0, inType.length() - 2);
+			// TODO Add checks here for inType being on the new array type structure
+			//if (inType.length() < 2 || !inType.substring(inType.length() - 2).equals("[]"))
+			//	throw new CompilationException("You can iterate through an array structure only");
+			String temp = scope.getVariableType("array");
+			String varType = getParentLevel(inType);
+			//String varType = inType.substring(0, inType.length() - 2);
 			innerScope.addVariable(foreach.getVar(), varType);
 			foreachST.setAttribute("indexVar", foreach.getIndexVar());
-			if(foreach.getIndexVar() != null) {
-				innerScope.addVariable(foreach.getIndexVar(), "int");
+			if(foreach.getIndexVar() != null) {			    
+			    String predef[] = {"int","string","float"}; 
+	            int i;	            
+	            for (i=0; i < 2 ; i++){
+	                String end = "[" + predef[i] + "]" ;
+	                if (temp.startsWith(end,inType.length())){	                    
+	                    innerScope.addVariable(foreach.getIndexVar(), predef[i]);
+	                }
+	            }				
 			}
 
 			innerScope.bodyTemplate = foreachST;
@@ -1119,8 +1133,9 @@ public class Karajan {
 				    newst.setAttribute("arraychild", arrayST);
 				    newst.setAttribute("parent", parentST);
 				    
-				    String arrayType = datatype(parentST);				    
-				    newst.setAttribute("datatype", arrayType.substring(0, arrayType.length()-2));
+				    String arrayType = datatype(parentST);			
+				    newst.setAttribute("datatype", getParentLevel(arrayType));
+				    //newst.setAttribute("datatype", arrayType.substring(0, arrayType.length()-2));
 				    return newst;
 				    // End of EDITS
 				}
@@ -1133,7 +1148,8 @@ public class Karajan {
 
 				String arrayType = datatype(parentST);
 				if (datatype(arrayST).equals("int")) {
-					newst.setAttribute("datatype", arrayType.substring(0, arrayType.length()-2));
+					//newst.setAttribute("datatype", arrayType.substring(0, arrayType.length()-2));
+				    newst.setAttribute("datatype", getParentLevel(arrayType));
 				} else {
 				    throw new CompilationException("Array index must be of type int, or *.");
 				}
@@ -1402,4 +1418,37 @@ public class Karajan {
 	    }
 	    return result;
 	}
+	
+	String getParentLevel(String type){
+	    if ( type.endsWith("[]")){
+	        return type.substring(0, type.length() - 2);
+	    }else{
+	        
+	        String predef[] = {"int","string","float"}; 
+	        int i;
+	        
+	        for (i=0; i < 2 ; i++){
+	            String end = "[" + predef[i] + "]" ;
+	            if (type.endsWith(end)){
+	                return (type.substring(0,type.length() - end.length() ));
+	            }
+	        }
+	        
+	        // For the future cases when we may use type defined in the code as
+	        // subscripts, eg structs as subscripts
+	        Iterator itr = typesMap.keySet().iterator();                                                       
+            String it;
+            while ( itr.hasNext() ){
+                    it = itr.next().toString();
+                    String end = "[" + it + "]" ;
+                    if (type.endsWith(end)){
+                        String base = type.substring(0, type.length() - end.length() );                        
+                        return base;
+                    }
+            }
+            throw new RuntimeException("Not typed properly: " + type);
+	    }     
+	    	   
+	}
+	
 }

@@ -1,7 +1,9 @@
 package org.griphyn.vdl.type;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Collection;
 
 public abstract class Types {
 
@@ -10,19 +12,39 @@ public abstract class Types {
 	    new HashMap<String, Type>();
 
 	public synchronized static Type getType(String name) throws NoSuchTypeException {
-		Type type = (Type) types.get(name);
-		if (type == null) {
+		Type type = (Type) types.get(name);		
+		
+		if (type == null) {		    
+		    // if this matches, we have the default subscript type of int
 			if(name.endsWith("[]")) {
 				String base = name.substring(0, name.length() - 2);
 				Type baseType = getType(base);
 				Type arrayType = baseType.arrayType();
 				addType(arrayType);
 				return arrayType;
+										
 			} else {
-				throw new NoSuchTypeException(name);
+			    			    
+			    // Try to match subscript to existing types.
+			    // Which means that any type used as array subscript must be
+			    // defined in advance. (makes sense in the c-style) 
+			    Iterator itr = types.keySet().iterator();			    
+			    int flag = 0 ;			    			    
+			    String it;
+			    while ( itr.hasNext() ){
+			            it = itr.next().toString();
+			            String end = "[" + it + "]" ;
+			            if (name.endsWith(end)){
+			                String base = name.substring(0, name.length() - end.length() );
+			                Type baseType = getType(base);
+			                Type arrayType = baseType.arrayType();
+			                addType(arrayType);
+			                return arrayType;
+			            }
+			    }			    			    			       
+			    throw new NoSuchTypeException(name);
 			}
-		}
-		else {
+		} else {
 			return type;
 		}
 	}

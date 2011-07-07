@@ -205,7 +205,7 @@ foreach(var,in,indexVar,declarations,statements,line,selfClose) ::= <<
   </set>
 $if(indexVar)$
     <set name="$indexVar$">
-      <vdl:new type="string" value="{\$\$}"/>
+      <vdl:new type="int" value="{\$\$}"/>
     </set>
 $endif$
 	<log level="debug" message="FOREACH_IT_START line=$line$ thread={#thread}"/>
