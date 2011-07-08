@@ -1,9 +1,9 @@
-int array[int][string];
+int a[int][string][string];
 
-array[5] << 10;
-array[5] << 20;
+a[5]["a"] << 10;
+a[5]["a"] << 20;
 
-foreach v,index in array[5]{
+foreach v,index in a[5]["a"]{
 	trace (v,index);
-	trace (array[5][index]);
+	trace (a[5]["a"][index]);
 }

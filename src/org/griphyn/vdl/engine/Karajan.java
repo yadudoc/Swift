@@ -427,6 +427,7 @@ public class Karajan {
 	}
 
 	void checkIsTypeDefined(String type) throws CompilationException {
+	    //TODO Get checks fixed
 	    /*
 		while (type.length() > 2 && type.substring(type.length() - 2).equals("[]"))
 			type = type.substring(0, type.length() - 2);
@@ -747,23 +748,38 @@ public class Karajan {
 			foreachST.setAttribute("in", inST);
 
 			String inType = datatype(inST);
+			
+			// We extract the array identifier
+			String varName = inST.getAttribute("parent").toString();
+			if ( varName.startsWith("<variable>") && varName.endsWith("</variable>") ){
+			    varName = varName.substring(10, varName.length() - 11) ;
+			}
+			
+			int indBegin = varName.indexOf("<variable>", 0);
+			int indEnd   = varName.indexOf("</variable>", indBegin);
+			if ( indBegin > 0 && indEnd > indBegin ){
+			    varName = varName.substring(indBegin + 10, indEnd);
+			}
+			
+			
+			
 			// TODO Add checks here for inType being on the new array type structure
 			//if (inType.length() < 2 || !inType.substring(inType.length() - 2).equals("[]"))
 			//	throw new CompilationException("You can iterate through an array structure only");
-			String temp = scope.getVariableType("array");
+			String temp = scope.getVariableType(varName);
 			String varType = getParentLevel(inType);
 			//String varType = inType.substring(0, inType.length() - 2);
 			innerScope.addVariable(foreach.getVar(), varType);
 			foreachST.setAttribute("indexVar", foreach.getIndexVar());
 			if(foreach.getIndexVar() != null) {			    
-			    String predef[] = {"int","string","float"}; 
-	            int i;	            
-	            for (i=0; i < 2 ; i++){
-	                String end = "[" + predef[i] + "]" ;
-	                if (temp.startsWith(end,inType.length())){	                    
-	                    innerScope.addVariable(foreach.getIndexVar(), predef[i]);
+			        String predef[] = {"int","string","float","boolean","external"}; 
+			        int i;	            
+			        for (i=0; i < 4 ; i++){
+			                String end = "[" + predef[i] + "]" ;
+			                if (temp.startsWith(end,inType.length())){	                    
+			                        innerScope.addVariable(foreach.getIndexVar(), predef[i]);
 	                }
-	            }				
+		    }				
 			}
 
 			innerScope.bodyTemplate = foreachST;
@@ -1423,11 +1439,11 @@ public class Karajan {
 	    if ( type.endsWith("[]")){
 	        return type.substring(0, type.length() - 2);
 	    }else{
-	        
-	        String predef[] = {"int","string","float"}; 
+	        // Trying the usual primtives
+	        String predef[] = {"int","string","float","boolean","external"}; 
 	        int i;
 	        
-	        for (i=0; i < 2 ; i++){
+	        for (i=0; i < 4 ; i++){
 	            String end = "[" + predef[i] + "]" ;
 	            if (type.endsWith(end)){
 	                return (type.substring(0,type.length() - end.length() ));
