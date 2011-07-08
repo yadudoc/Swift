@@ -428,16 +428,18 @@ public class Karajan {
 
 	void checkIsTypeDefined(String type) throws CompilationException {
 	    //TODO Get checks fixed
-	    /*
-		while (type.length() > 2 && type.substring(type.length() - 2).equals("[]"))
-			type = type.substring(0, type.length() - 2);
+	    //Confirm if there are any other situations in which a type might 
+	    //end with "]" besides array 
+	    while (type.endsWith("]")) {	        
+	        type = getParentLevel(type);
+	    }
+		
 		if (!type.equals("int") && !type.equals("float") && !type.equals("string")
 				&& !type.equals("boolean") && !type.equals("external")) {
 			boolean typeDefined = typesMap.containsKey(type);
 			if (!typeDefined)
 				throw new CompilationException("Type " + type + " is not defined.");
-		}
-		*/
+		}		
 	}
 
 	public void assign(Assign assign, VariableScope scope) throws CompilationException {
@@ -760,12 +762,7 @@ public class Karajan {
 			if ( indBegin > 0 && indEnd > indBegin ){
 			    varName = varName.substring(indBegin + 10, indEnd);
 			}
-			
-			
-			
-			// TODO Add checks here for inType being on the new array type structure
-			//if (inType.length() < 2 || !inType.substring(inType.length() - 2).equals("[]"))
-			//	throw new CompilationException("You can iterate through an array structure only");
+												
 			String temp = scope.getVariableType(varName);
 			String varType = getParentLevel(inType);
 			//String varType = inType.substring(0, inType.length() - 2);
