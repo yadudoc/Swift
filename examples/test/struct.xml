@@ -1,0 +1,36 @@
+<program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <types>
+     	<type>
+     		<typename>details</typename>
+     		<typealias></typealias>
+     		<typestructure>
+     			    <member>
+     					<membername>a</membername>
+     					<membertype>int</membertype>
+     				</member>
+     			    <member>
+     					<membername>s</membername>
+     					<membertype>string</membertype>
+     				</member>
+     		</typestructure>
+     	</type>   
+  </types>  
+  <variable name="person" type="details" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 9">
+   <structureMember>
+     <variableReference>person</variableReference>
+     <memberName>a</memberName>
+   </structureMember>
+   <integerConstant>11</integerConstant>
+  </assign>
+  <assign src="line 10">
+   <structureMember>
+     <variableReference>person</variableReference>
+     <memberName>s</memberName>
+   </structureMember>
+   <stringConstant>kevin</stringConstant>
+  </assign>
+</program>
