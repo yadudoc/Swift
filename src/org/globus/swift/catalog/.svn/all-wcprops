@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/4525/trunk/src/org/globus/swift/catalog
+END
+TransformationCatalog.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/3821/trunk/src/org/globus/swift/catalog/TransformationCatalog.java
+END
+TransformationCatalogEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/3672/trunk/src/org/globus/swift/catalog/TransformationCatalogEntry.java
+END
+TCEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/3829/trunk/src/org/globus/swift/catalog/TCEntry.java
+END
+Catalog.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/3214/trunk/src/org/globus/swift/catalog/Catalog.java
+END
+CatalogEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/3214/trunk/src/org/globus/swift/catalog/CatalogEntry.java
+END

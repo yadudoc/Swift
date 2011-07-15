@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/3723/trunk/tests/language/should-not-work
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/3710/trunk/tests/language/should-not-work/title.txt
+END
+033-assign.swift
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/3716/trunk/tests/language/should-not-work/033-assign.swift
+END
+closes.swift
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/3663/trunk/tests/language/should-not-work/closes.swift
+END
+117-empty-program.swift
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/3663/trunk/tests/language/should-not-work/117-empty-program.swift
+END
+1151-bad-comment.swift
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/3663/trunk/tests/language/should-not-work/1151-bad-comment.swift
+END
+case-broken2.swift
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vdl2/!svn/ver/3663/trunk/tests/language/should-not-work/case-broken2.swift
+END
+119-missing-semi.swift
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/3723/trunk/tests/language/should-not-work/119-missing-semi.swift
+END
+201-hang.swift
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vdl2/!svn/ver/3669/trunk/tests/language/should-not-work/201-hang.swift
+END
+118-keyword-misuse-stdout.swift
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/3686/trunk/tests/language/should-not-work/118-keyword-misuse-stdout.swift
+END
+116-keyword-misuse-in.swift
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3663/trunk/tests/language/should-not-work/116-keyword-misuse-in.swift
+END
+0341-whitespace.swift
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/3719/trunk/tests/language/should-not-work/0341-whitespace.swift
+END

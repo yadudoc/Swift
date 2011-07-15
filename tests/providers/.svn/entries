@@ -1,0 +1,58 @@
+10
+
+dir
+4697
+https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers
+https://svn.ci.uchicago.edu/svn/vdl2
+
+
+
+2011-06-02T21:27:03.994022Z
+4544
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
+
+ssh-pbs-coasters
+dir
+
+persistent-coasters
+dir
+
+sge-local
+dir
+
+local-sge-coasters
+dir
+
+local
+dir
+
+local-coasters
+dir
+
+local-cobalt
+dir
+
+local-pbs
+dir
+
+local-pbs-coasters
+dir
+
+ssh
+dir
+

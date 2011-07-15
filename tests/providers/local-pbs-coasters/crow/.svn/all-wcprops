@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vdl2/!svn/ver/4518/trunk/tests/providers/local-pbs-coasters/crow/title.txt
+END
+001-catsn.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4520/trunk/tests/providers/local-pbs-coasters/crow/001-catsn.clean.sh
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4519/trunk/tests/providers/local-pbs-coasters/crow/sites.template.xml
+END
+001-catsn.swift
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4520/trunk/tests/providers/local-pbs-coasters/crow/001-catsn.swift
+END
+data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4516/trunk/tests/providers/local-pbs-coasters/crow/data.txt
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4519/trunk/tests/providers/local-pbs-coasters/crow/tc.template.data
+END
+001-catsn.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4520/trunk/tests/providers/local-pbs-coasters/crow/001-catsn.check.sh
+END
+001-catsn.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/vdl2/!svn/ver/4517/trunk/tests/providers/local-pbs-coasters/crow/001-catsn.timeout
+END
+001-catsn.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4514/trunk/tests/providers/local-pbs-coasters/crow/001-catsn.setup.sh
+END

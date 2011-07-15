@@ -1,0 +1,77 @@
+2011-07-10 23:24:58,830+0530 DEBUG Loader Max heap: 238616576
+2011-07-10 23:24:58,831+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][int][int];
+
+array[1][2][0] = 5;
+array[1][2][1] = 10;
+array[1][2][2] = 15;
+array[1][2][3] = 20;
+array[1][2][4] = 25;
+
+
+foreach v,i in array[1][2]{
+	trace( array[1][2][i], i);
+}
+
+
+2011-07-10 23:24:58,831+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-10 23:24:58,832+0530 INFO  Loader foreach4.swift: source file is new. Recompiling.
+2011-07-10 23:24:58,832+0530 DEBUG Loader KML file is empty. Recompiling.
+2011-07-10 23:24:59,849+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-10 23:25:42,367+0530 DEBUG textfiles using default sites file
+2011-07-10 23:25:42,401+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@1991de1
+
+
+2011-07-10 23:25:43,428+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-10 23:25:43,500+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-10 23:25:43,664+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-10 23:25:44,502+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-10 23:25:44,504+0530 INFO  unknown RUNID id=run:20110710-2324-gmyl0f12
+2011-07-10 23:25:44,668+0530 INFO  SetFieldValue Set: array[1][2][3]=20.0
+2011-07-10 23:25:44,669+0530 INFO  SetFieldValue Set: array[1][2][4]=25.0
+2011-07-10 23:25:44,678+0530 INFO  SetFieldValue Set: array[1][2][0]=5.0
+2011-07-10 23:25:44,671+0530 INFO  SetFieldValue Set: array[1][2][2]=15.0
+2011-07-10 23:25:44,690+0530 INFO  SetFieldValue Set: array[1][2][1]=10.0
+2011-07-10 23:25:44,697+0530 DEBUG vdl:mains FOREACH_IT_START line=10 thread=0-5-2
+2011-07-10 23:25:44,697+0530 DEBUG vdl:mains FOREACH_IT_START line=10 thread=0-5-4
+2011-07-10 23:25:44,698+0530 DEBUG vdl:mains FOREACH_IT_START line=10 thread=0-5-1
+2011-07-10 23:25:44,698+0530 DEBUG vdl:mains SCOPE thread=0-5-2
+2011-07-10 23:25:44,698+0530 DEBUG vdl:mains SCOPE thread=0-5-4
+2011-07-10 23:25:44,698+0530 DEBUG vdl:mains SCOPE thread=0-5-1
+2011-07-10 23:25:44,699+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5-2-1 name=trace
+2011-07-10 23:25:44,699+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5-4-1 name=trace
+2011-07-10 23:25:44,699+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5-1-1 name=trace
+2011-07-10 23:25:44,700+0530 DEBUG vdl:mains FOREACH_IT_START line=10 thread=0-5-3
+2011-07-10 23:25:44,701+0530 DEBUG vdl:mains SCOPE thread=0-5-3
+2011-07-10 23:25:44,702+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5-3-1 name=trace
+2011-07-10 23:25:44,704+0530 DEBUG vdl:mains FOREACH_IT_START line=10 thread=0-5-0
+2011-07-10 23:25:44,706+0530 DEBUG vdl:mains SCOPE thread=0-5-0
+2011-07-10 23:25:44,708+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5-0-1 name=trace
+2011-07-10 23:25:44,717+0530 WARN  trace SwiftScript trace: 10.0, 1.0
+2011-07-10 23:25:44,717+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5-2-1
+2011-07-10 23:25:44,718+0530 DEBUG vdl:mains FOREACH_IT_END line=10 thread=0-5-2
+2011-07-10 23:25:44,720+0530 WARN  trace SwiftScript trace: 5.0, 0.0
+2011-07-10 23:25:44,720+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5-0-1
+2011-07-10 23:25:44,720+0530 DEBUG vdl:mains FOREACH_IT_END line=10 thread=0-5-0
+2011-07-10 23:25:44,722+0530 WARN  trace SwiftScript trace: 25.0, 4.0
+2011-07-10 23:25:44,722+0530 WARN  trace SwiftScript trace: 20.0, 3.0
+2011-07-10 23:25:44,723+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5-4-1
+2011-07-10 23:25:44,723+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5-3-1
+2011-07-10 23:25:44,723+0530 DEBUG vdl:mains FOREACH_IT_END line=10 thread=0-5-4
+2011-07-10 23:25:44,723+0530 DEBUG vdl:mains FOREACH_IT_END line=10 thread=0-5-3
+2011-07-10 23:25:44,723+0530 WARN  trace SwiftScript trace: 15.0, 2.0
+2011-07-10 23:25:44,724+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5-1-1
+2011-07-10 23:25:44,724+0530 DEBUG vdl:mains FOREACH_IT_END line=10 thread=0-5-1
+2011-07-10 23:25:44,739+0530 DEBUG vdl:mains Starting cleanups
+2011-07-10 23:25:44,744+0530 INFO  vdl:cleanups START cleanups=[]
+2011-07-10 23:25:44,745+0530 INFO  vdl:cleanups END cleanups=[]
+2011-07-10 23:25:44,745+0530 DEBUG vdl:mains Ending cleanups
+2011-07-10 23:25:44,747+0530 INFO  Loader Swift finished with no errors

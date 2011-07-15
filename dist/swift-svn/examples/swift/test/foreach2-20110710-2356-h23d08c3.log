@@ -1,0 +1,16 @@
+2011-07-10 23:56:45,345+0530 DEBUG Loader Max heap: 238616576
+2011-07-10 23:56:45,346+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][string];
+
+array[1] << 5;
+array[1] << 10;
+array[1] << 20;
+
+foreach v,i in array[1]{
+	trace( array[1][i], i);
+}
+
+
+2011-07-10 23:56:45,346+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-10 23:56:45,347+0530 DEBUG Loader KML file is empty. Recompiling.
+2011-07-10 23:56:46,395+0530 INFO  Karajan Validation of XML intermediate file was successful

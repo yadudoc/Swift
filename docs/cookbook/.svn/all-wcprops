@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vdl2/!svn/ver/4694/trunk/docs/cookbook
+END
+cookbook-asciidoc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4579/trunk/docs/cookbook/cookbook-asciidoc.txt
+END
+swift_basics
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/4579/trunk/docs/cookbook/swift_basics
+END
+coasters
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/4579/trunk/docs/cookbook/coasters
+END
+diverse_infrastructures
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/4694/trunk/docs/cookbook/diverse_infrastructures
+END
+figures
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/4671/trunk/docs/cookbook/figures
+END
+images
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/4595/trunk/docs/cookbook/images
+END
+overview
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/4689/trunk/docs/cookbook/overview
+END
+debugging_swift
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/4579/trunk/docs/cookbook/debugging_swift
+END
+log_processing
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/4579/trunk/docs/cookbook/log_processing
+END

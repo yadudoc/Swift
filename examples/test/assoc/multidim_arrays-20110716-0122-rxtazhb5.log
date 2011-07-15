@@ -1,0 +1,383 @@
+2011-07-16 01:22:22,759+0530 DEBUG Loader Max heap: 238616576
+2011-07-16 01:22:22,769+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+string greetings[int][int];
+
+greetings = [ [ "left", "right" ], ["up", "down"]];
+
+trace (greetings[1][0]);
+
+
+2011-07-16 01:22:22,769+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-16 01:22:22,770+0530 INFO  Loader multidim_arrays.swift: source file is new. Recompiling.
+2011-07-16 01:22:23,923+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-16 01:22:27,406+0530 DEBUG textfiles using default sites file
+2011-07-16 01:22:27,437+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@da3772
+
+
+2011-07-16 01:22:28,525+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-16 01:22:28,589+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-16 01:22:28,768+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-16 01:22:29,524+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-16 01:22:29,525+0530 INFO  unknown RUNID id=run:20110716-0122-rxtazhb5
+2011-07-16 01:22:29,704+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-1 name=trace
+2011-07-16 01:22:29,719+0530 INFO  CreateArray CREATEARRAY START array=dataset:20110716-0122-xfrf0ru6:720000000008
+2011-07-16 01:22:29,719+0530 INFO  CreateArray CREATEARRAY MEMBER array=dataset:20110716-0122-xfrf0ru6:720000000008 index=0 member=dataset:20110716-0122-xfrf0ru6:720000000001
+2011-07-16 01:22:29,719+0530 INFO  CreateArray CREATEARRAY MEMBER array=dataset:20110716-0122-xfrf0ru6:720000000008 index=1 member=dataset:20110716-0122-xfrf0ru6:720000000003
+2011-07-16 01:22:29,719+0530 INFO  CreateArray CREATEARRAY COMPLETED array=dataset:20110716-0122-xfrf0ru6:720000000008
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY START array=dataset:20110716-0122-xfrf0ru6:720000000011
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY MEMBER array=dataset:20110716-0122-xfrf0ru6:720000000011 index=0 member=dataset:20110716-0122-xfrf0ru6:720000000004
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY MEMBER array=dataset:20110716-0122-xfrf0ru6:720000000011 index=1 member=dataset:20110716-0122-xfrf0ru6:720000000002
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY COMPLETED array=dataset:20110716-0122-xfrf0ru6:720000000011
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY START array=dataset:20110716-0122-xfrf0ru6:720000000014
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY MEMBER array=dataset:20110716-0122-xfrf0ru6:720000000014 index=0 member=dataset:20110716-0122-xfrf0ru6:720000000008
+2011-07-16 01:22:29,720+0530 INFO  CreateArray CREATEARRAY MEMBER array=dataset:20110716-0122-xfrf0ru6:720000000014 index=1 member=dataset:20110716-0122-xfrf0ru6:720000000011
+2011-07-16 01:22:29,721+0530 INFO  CreateArray CREATEARRAY COMPLETED array=dataset:20110716-0122-xfrf0ru6:720000000014
+2011-07-16 01:22:47,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:22:47,453+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:22:57,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:22:57,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:22:57,472+0530 INFO  SetFieldValue Set: greetings={1={1=?:string = down - Closed, 0=?:string = up - Closed}, 0={1=?:string = right - Closed, 0=?:string = left - Closed}}
+2011-07-16 01:23:07,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:23:07,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:23:17,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:23:17,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:23:27,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:23:27,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:23:37,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:23:37,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:23:47,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:23:47,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:23:57,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:23:57,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:24:07,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:24:07,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:24:17,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:24:17,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:24:27,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:24:27,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:24:37,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:24:37,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:24:47,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:24:47,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:24:57,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:24:57,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:25:07,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:25:07,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:25:17,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:25:17,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:25:27,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:25:27,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:25:37,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:25:37,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:25:47,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:25:47,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:25:57,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:25:57,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:26:07,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:26:07,439+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:26:17,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:26:17,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:26:27,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:26:27,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:26:37,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:26:37,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:26:47,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:26:47,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:26:57,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:26:57,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:27:07,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:27:07,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:27:17,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:27:17,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:27:27,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:27:27,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:27:37,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:27:37,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:27:47,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:27:47,437+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:27:57,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:27:57,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:28:07,437+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:28:07,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+
+2011-07-16 01:28:17,438+0530 WARN  HangChecker No events in 10s.
+2011-07-16 01:28:17,438+0530 WARN  HangChecker 
+Registered futures:
+string greetings - Open, 1 listeners
+----
+
+Waiting threads:
+0-1
+----
+

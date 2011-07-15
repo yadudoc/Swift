@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/vdl2/!svn/ver/4204/trunk/tests/cdm/ps
+END
+201-direct-output.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/201-direct-output.setup.sh
+END
+swift.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/swift.properties
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/tc.template.data
+END
+202-direct-io.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/202-direct-io.setup.sh
+END
+fs.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/fs.template.data
+END
+201-direct-output.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/201-direct-output.check.sh
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/3710/trunk/tests/cdm/ps/title.txt
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/4204/trunk/tests/cdm/ps/sites.template.xml
+END
+201-direct-output.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/201-direct-output.clean.sh
+END
+201-direct-output.swift
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/201-direct-output.swift
+END
+202-direct-io.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/202-direct-io.check.sh
+END
+merge.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/merge.sh
+END
+202-direct-io.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/202-direct-io.clean.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/README.txt
+END
+202-direct-io.swift
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/3616/trunk/tests/cdm/ps/202-direct-io.swift
+END

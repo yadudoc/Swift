@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/vdl2/!svn/ver/4560/trunk/tests/functions
+END
+202-sprintf-k-array.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/202-sprintf-k-array.timeout
+END
+202-sprintf-k-array.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/202-sprintf-k-array.check.sh
+END
+200-sprintf.swift
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/3647/trunk/tests/functions/200-sprintf.swift
+END
+400-fprintf.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3648/trunk/tests/functions/400-fprintf.setup.sh
+END
+100-assert-int.swift
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3644/trunk/tests/functions/100-assert-int.swift
+END
+100-assert-bool.swift
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/3644/trunk/tests/functions/100-assert-bool.swift
+END
+202-sprintf-k-array.swift
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/202-sprintf-k-array.swift
+END
+swift.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/swift.properties
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/tc.template.data
+END
+500-exists.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4248/trunk/tests/functions/500-exists.setup.sh
+END
+106-assert-iter.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4254/trunk/tests/functions/106-assert-iter.check.sh
+END
+400-fprintf.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3648/trunk/tests/functions/400-fprintf.check.sh
+END
+450-tracef.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4560/trunk/tests/functions/450-tracef.check.sh
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3710/trunk/tests/functions/title.txt
+END
+105-assert-loop.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4253/trunk/tests/functions/105-assert-loop.check.sh
+END
+106-assert-iter.swift
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/4259/trunk/tests/functions/106-assert-iter.swift
+END
+201-sprintf-k.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/201-sprintf-k.timeout
+END
+201-sprintf-k.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/201-sprintf-k.check.sh
+END
+400-fprintf.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3648/trunk/tests/functions/400-fprintf.clean.sh
+END
+400-fprintf.swift
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/3648/trunk/tests/functions/400-fprintf.swift
+END
+450-tracef.swift
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/4560/trunk/tests/functions/450-tracef.swift
+END
+105-assert-loop.swift
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/4253/trunk/tests/functions/105-assert-loop.swift
+END
+500-exists.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4250/trunk/tests/functions/500-exists.check.sh
+END
+201-sprintf-k.swift
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/3650/trunk/tests/functions/201-sprintf-k.swift
+END
+500-exists.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4248/trunk/tests/functions/500-exists.clean.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3647/trunk/tests/functions/README.txt
+END
+100-assert-int.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/4258/trunk/tests/functions/100-assert-int.check.sh
+END
+500-exists.swift
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/4251/trunk/tests/functions/500-exists.swift
+END
+100-assert-bool.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/3644/trunk/tests/functions/100-assert-bool.check.sh
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/vdl2/!svn/ver/4692/trunk/tests
+END
+meta.sh
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vdl2/!svn/ver/4263/trunk/tests/meta.sh
+END
+array_index.swift
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/3515/trunk/tests/array_index.swift
+END
+suite.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/vdl2/!svn/ver/4692/trunk/tests/suite.sh
+END
+run
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/vdl2/!svn/ver/1742/trunk/tests/run
+END
+run-suite.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/4263/trunk/tests/run-suite.sh
+END
+sitetester
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/vdl2/!svn/ver/4263/trunk/tests/sitetester
+END
+USAGENOTES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/4621/trunk/tests/USAGENOTES.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/vdl2/!svn/ver/4622/trunk/tests/README.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/vdl2/!svn/ver/4620/trunk/tests/README
+END
+addtests.html
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vdl2/!svn/ver/11/trunk/tests/addtests.html
+END

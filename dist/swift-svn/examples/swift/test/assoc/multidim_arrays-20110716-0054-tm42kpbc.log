@@ -1,0 +1,13 @@
+2011-07-16 00:54:49,198+0530 DEBUG Loader Max heap: 238616576
+2011-07-16 00:54:49,200+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+string greetings[int][int];
+
+greetings = [ [ "left", "right" ], ["up", "down"]];
+
+trace ( greetings[0][0], greetings[0][1],
+        greetings[1][0], greetings[1][1] );
+
+
+2011-07-16 00:54:49,201+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-16 00:54:49,201+0530 INFO  Loader multidim_arrays.swift: source file is new. Recompiling.
+2011-07-16 00:54:50,270+0530 INFO  Karajan Validation of XML intermediate file was successful

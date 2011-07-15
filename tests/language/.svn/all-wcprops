@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/vdl2/!svn/ver/4484/trunk/tests/language
+END
+run
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/2514/trunk/tests/language/run
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/4204/trunk/tests/cdm/ps/pinned
+END
+201-direct-output.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/201-direct-output.setup.sh
+END
+swift.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3619/trunk/tests/cdm/ps/pinned/swift.properties
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/tc.template.data
+END
+202-direct-io.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/202-direct-io.setup.sh
+END
+fs.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/fs.template.data
+END
+201-direct-output.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/201-direct-output.check.sh
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/3710/trunk/tests/cdm/ps/pinned/title.txt
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/4204/trunk/tests/cdm/ps/pinned/sites.template.xml
+END
+201-direct-output.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/201-direct-output.clean.sh
+END
+201-direct-output.swift
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/201-direct-output.swift
+END
+202-direct-io.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/202-direct-io.check.sh
+END
+merge.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/merge.sh
+END
+202-direct-io.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/202-direct-io.clean.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/README.txt
+END
+202-direct-io.swift
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/3618/trunk/tests/cdm/ps/pinned/202-direct-io.swift
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/vdl2/!svn/ver/4667/trunk/libexec
+END
+_swiftwrap.staging
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3850/trunk/libexec/_swiftwrap.staging
+END
+vdl-sc.k
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/vdl2/!svn/ver/4204/trunk/libexec/vdl-sc.k
+END
+cdm_cleanup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/3260/trunk/libexec/cdm_cleanup.sh
+END
+_swiftwrap
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/3851/trunk/libexec/_swiftwrap
+END
+vdl-lib.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/4487/trunk/libexec/vdl-lib.xml
+END
+cdm_broadcast.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/3737/trunk/libexec/cdm_broadcast.sh
+END
+vdl-int-staging.k
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/4667/trunk/libexec/vdl-int-staging.k
+END
+svn-revision
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/4202/trunk/libexec/svn-revision
+END
+cdm_lib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/3823/trunk/libexec/cdm_lib.sh
+END
+generate-buildid
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/2583/trunk/libexec/generate-buildid
+END
+_swiftseq
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vdl2/!svn/ver/2747/trunk/libexec/_swiftseq
+END
+vdl-int.k
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vdl2/!svn/ver/4616/trunk/libexec/vdl-int.k
+END
+vdl-xs.k
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/vdl2/!svn/ver/1538/trunk/libexec/vdl-xs.k
+END
+execute-typecheck.k
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vdl2/!svn/ver/2093/trunk/libexec/execute-typecheck.k
+END
+execute-dryrun.k
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/2093/trunk/libexec/execute-dryrun.k
+END
+scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/4618/trunk/libexec/scheduler.xml
+END
+operators.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/2737/trunk/libexec/operators.xml
+END
+execute-default.k
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/4045/trunk/libexec/execute-default.k
+END
+cdm.pl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/vdl2/!svn/ver/3654/trunk/libexec/cdm.pl
+END
+_swiftwrap.vbs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/3176/trunk/libexec/_swiftwrap.vbs
+END
+vdl.k
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vdl2/!svn/ver/4045/trunk/libexec/vdl.k
+END

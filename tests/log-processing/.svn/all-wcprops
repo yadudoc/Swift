@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/3727/trunk/tests/log-processing
+END
+run
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/2683/trunk/tests/log-processing/run
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vdl2/!svn/ver/2683/trunk/tests/log-processing/README
+END

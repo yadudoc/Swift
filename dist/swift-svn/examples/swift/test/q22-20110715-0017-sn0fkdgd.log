@@ -1,0 +1,112 @@
+2011-07-15 00:17:28,555+0530 DEBUG Loader Max heap: 238616576
+2011-07-15 00:17:28,557+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+type messagefile {} 
+type countfile {} 
+
+(countfile t) countwords (messagefile f) {   
+    app {
+        wc "-w" @filename(f) stdout=@filename(t);
+    }
+}
+
+string inputNames = "one.txt two.txt three.txt";
+string outputNames = "one.count two.count three.count";
+
+messagefile inputfiles[] <array_mapper;files=inputNames>;
+countfile outputfiles[] <array_mapper;files=outputNames>;
+
+outputfiles[0] = countwords(inputfiles[0]);
+outputfiles[1] = countwords(inputfiles[1]);
+outputfiles[2] = countwords(inputfiles[2]);
+
+
+
+2011-07-15 00:17:28,557+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-15 00:17:28,558+0530 DEBUG Loader kmlversion is >83809d12-764a-4575-884a-afbb0de58dcb<
+2011-07-15 00:17:28,558+0530 DEBUG Loader build version is >b3305a49-4542-4625-90b8-dbc489684419<
+2011-07-15 00:17:28,558+0530 INFO  Loader q22.swift: source file was compiled with a different version of Swift. Recompiling.
+2011-07-15 00:17:29,549+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-15 00:17:29,883+0530 DEBUG textfiles using default sites file
+2011-07-15 00:17:29,911+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@1cef4f7
+
+
+2011-07-15 00:17:30,690+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-15 00:17:30,740+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-15 00:17:30,885+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-15 00:17:31,554+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-15 00:17:31,555+0530 INFO  unknown RUNID id=run:20110715-0017-sn0fkdgd
+2011-07-15 00:17:31,701+0530 INFO  SetFieldValue Set: inputNames=one.txt two.txt three.txt
+2011-07-15 00:17:31,703+0530 INFO  SetFieldValue Set: outputNames=one.count two.count three.count
+2011-07-15 00:17:31,730+0530 DEBUG VDL2ExecutionContext org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+Caused by: org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:52)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.AbstractFunction.post(AbstractFunction.java:28)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+	at org.griphyn.vdl.mapping.AbstractDataNode.getFields(AbstractDataNode.java:222)
+	at org.griphyn.vdl.mapping.AbstractDataNode.getFields(AbstractDataNode.java:197)
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:45)
+	... 23 more
+2011-07-15 00:17:31,771+0530 INFO  ExecutionContext Detailed exception: 
+org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+Caused by: org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:52)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.AbstractFunction.post(AbstractFunction.java:28)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.griphyn.vdl.mapping.InvalidPathException: Invalid path ([1]) for inputfiles:messagefile[0] - Closed
+	at org.griphyn.vdl.mapping.AbstractDataNode.getFields(AbstractDataNode.java:222)
+	at org.griphyn.vdl.mapping.AbstractDataNode.getFields(AbstractDataNode.java:197)
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:45)
+	... 23 more
+2011-07-15 00:17:31,771+0530 INFO  Loader Swift finished with errors

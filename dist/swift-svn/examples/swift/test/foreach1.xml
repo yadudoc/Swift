@@ -1,0 +1,36 @@
+<program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <variable name="array" type="int[int]" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 4">
+   <arraySubscript>
+    <variableReference>array</variableReference>
+    <integerConstant>1</integerConstant>
+   </arraySubscript>
+   <integerConstant>10</integerConstant>
+  </assign>
+  <assign src="line 5">
+   <arraySubscript>
+    <variableReference>array</variableReference>
+    <integerConstant>2</integerConstant>
+   </arraySubscript>
+   <integerConstant>20</integerConstant>
+  </assign>
+  <assign src="line 7">
+   <arraySubscript>
+    <variableReference>array</variableReference>
+    <integerConstant>3</integerConstant>
+   </arraySubscript>
+   <integerConstant>30</integerConstant>
+  </assign>
+  <foreach var="v"  indexVar="i" src="line 7">
+  <in><variableReference>array</variableReference></in>
+  <body><call proc="trace" src="line 8">
+      <input><arraySubscript>
+       <variableReference>array</variableReference>
+       <variableReference>i</variableReference>
+      </arraySubscript></input>
+      <input><variableReference>i</variableReference></input>
+    </call></body>
+  </foreach>
+</program>

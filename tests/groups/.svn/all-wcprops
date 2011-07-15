@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/vdl2/!svn/ver/4625/trunk/tests/groups
+END
+group-sge.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3817/trunk/tests/groups/group-sge.sh
+END
+group-intrepid.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/group-intrepid.sh
+END
+local-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4208/trunk/tests/groups/local-coasters.sh
+END
+crayxt-pbs-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4426/trunk/tests/groups/crayxt-pbs-coasters.sh
+END
+group-pbs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3817/trunk/tests/groups/group-pbs.sh
+END
+group-mpi.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3839/trunk/tests/groups/group-mpi.sh
+END
+group-pads.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/group-pads.sh
+END
+group-queenbee.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/group-queenbee.sh
+END
+local-sge-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/local-sge-coasters.sh
+END
+group-ssh.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3830/trunk/tests/groups/group-ssh.sh
+END
+group-surveyor.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/group-surveyor.sh
+END
+group-all-local.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/4625/trunk/tests/groups/group-all-local.sh
+END
+group-pc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/3954/trunk/tests/groups/group-pc.sh
+END
+local-pbs-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/local-pbs-coasters.sh
+END
+group-cdm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/4332/trunk/tests/groups/group-cdm.sh
+END
+group-functions.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/4257/trunk/tests/groups/group-functions.sh
+END

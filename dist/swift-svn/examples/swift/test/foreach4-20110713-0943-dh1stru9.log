@@ -1,0 +1,41 @@
+2011-07-13 09:43:51,369+0530 DEBUG Loader Max heap: 238616576
+2011-07-13 09:43:51,372+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][string];
+
+array[1]["a"] = 5;
+array[1]["b"] = 10;
+array[1]["c"] = 15;
+array[1]["d"] = 20;
+array[1]["e"] = 25;
+
+
+foreach v,i in array[1]{
+	trace( v, i);
+}
+
+
+2011-07-13 09:43:51,372+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-13 09:43:51,372+0530 DEBUG Loader KML file is empty. Recompiling.
+2011-07-13 09:43:52,379+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-13 09:44:06,419+0530 DEBUG textfiles using default sites file
+2011-07-13 09:44:06,453+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@14c4d61
+
+
+2011-07-13 09:44:07,408+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-13 09:44:07,468+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-13 09:44:07,643+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-13 09:44:08,420+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-13 09:44:08,421+0530 INFO  unknown RUNID id=run:20110713-0943-dh1stru9
+2011-07-13 09:44:48,521+0530 INFO  SetFieldValue Set: array[1][a]=5.0
+2011-07-13 09:44:48,521+0530 INFO  SetFieldValue Set: array[1][b]=10.0
+2011-07-13 09:44:48,521+0530 INFO  SetFieldValue Set: array[1][c]=15.0
+2011-07-13 09:44:48,522+0530 INFO  SetFieldValue Set: array[1][d]=20.0
+2011-07-13 09:44:48,522+0530 INFO  SetFieldValue Set: array[1][e]=25.0

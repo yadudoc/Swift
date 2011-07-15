@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/vdl2/!svn/ver/4682/trunk/etc
+END
+MANIFEST.MF.tail
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/10/trunk/etc/MANIFEST.MF.tail
+END
+coaster-service.conf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/4682/trunk/etc/coaster-service.conf
+END
+karajan.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/10/trunk/etc/karajan.properties
+END
+error.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/1994/trunk/etc/error.properties
+END
+sites.xml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vdl2/!svn/ver/2915/trunk/etc/sites.xml
+END
+MANIFEST.MF.head
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/10/trunk/etc/MANIFEST.MF.head
+END
+swift.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/3614/trunk/etc/swift.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/4609/trunk/etc/log4j.properties
+END
+tc.data
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/vdl2/!svn/ver/4677/trunk/etc/tc.data
+END

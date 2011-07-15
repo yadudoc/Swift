@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables
+END
+120-local-vars.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/120-local-vars.check.sh
+END
+084-declare-many-at-once.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/084-declare-many-at-once.clean.sh
+END
+084-declare-many-at-once.swift
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/084-declare-many-at-once.swift
+END
+120-local-vars.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/120-local-vars.clean.sh
+END
+1232-global-separate-assign.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/1232-global-separate-assign.check.sh
+END
+120-local-vars.swift
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/120-local-vars.swift
+END
+123-global-vars.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/123-global-vars.check.sh
+END
+1232-global-separate-assign.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/1232-global-separate-assign.clean.sh
+END
+1232-global-separate-assign.swift
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/1232-global-separate-assign.swift
+END
+123-global-vars.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/123-global-vars.clean.sh
+END
+121-multi-return-vars.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/121-multi-return-vars.check.sh
+END
+123-global-vars.swift
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/123-global-vars.swift
+END
+121-multi-return-vars.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/121-multi-return-vars.clean.sh
+END
+122-multi-return-vars.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/122-multi-return-vars.clean.sh
+END
+121-multi-return-vars.swift
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/4653/trunk/tests/language-behaviour/variables/121-multi-return-vars.swift
+END
+122-multi-return-vars.swift
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/variables/122-multi-return-vars.swift
+END

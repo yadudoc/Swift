@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs
+END
+coaster-service.conf
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/coaster-service.conf
+END
+data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/data.txt
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/tc.template.data
+END
+001-catsn.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/001-catsn.timeout
+END
+001-catsn.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/001-catsn.check.sh
+END
+catsn.0010.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0010.out.expected
+END
+catsn.0001.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0001.out.expected
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/README
+END
+catsn.0002.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0002.out.expected
+END
+catsn.0003.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0003.out.expected
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/title.txt
+END
+catsn.0004.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0004.out.expected
+END
+001-catsn.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/001-catsn.clean.sh
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/sites.template.xml
+END
+catsn.0005.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0005.out.expected
+END
+001-catsn.swift
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/001-catsn.swift
+END
+catsn.0006.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0006.out.expected
+END
+catsn.0007.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0007.out.expected
+END
+catsn.0008.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0008.out.expected
+END
+catsn.0009.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/catsn.0009.out.expected
+END
+001-catsn.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4531/trunk/tests/providers/persistent-coasters/mcs/001-catsn.setup.sh
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4511/trunk/tests/providers/local-coasters
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/title.txt
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/sites.template.xml
+END
+200-cp.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/200-cp.check.sh
+END
+201-cp.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4511/trunk/tests/providers/local-coasters/201-cp.check.sh
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/tc.template.data
+END
+200-cp.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/200-cp.setup.sh
+END
+201-cp.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4503/trunk/tests/providers/local-coasters/201-cp.setup.sh
+END
+200-cp.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/200-cp.clean.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/README.txt
+END
+200-cp.swift
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4207/trunk/tests/providers/local-coasters/200-cp.swift
+END
+201-cp.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4503/trunk/tests/providers/local-coasters/201-cp.clean.sh
+END
+201-cp.swift
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4503/trunk/tests/providers/local-coasters/201-cp.swift
+END

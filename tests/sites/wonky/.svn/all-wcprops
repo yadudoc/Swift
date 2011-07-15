@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vdl2/!svn/ver/2597/trunk/tests/sites/wonky
+END
+slow-queue-fast-queue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/2180/trunk/tests/sites/wonky/slow-queue-fast-queue.xml
+END
+relative-absolute-wrapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/2597/trunk/tests/sites/wonky/relative-absolute-wrapper.xml
+END
+wonky-runawayjob.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/2551/trunk/tests/sites/wonky/wonky-runawayjob.xml
+END
+wonky-failfirst.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2248/trunk/tests/sites/wonky/wonky-failfirst.xml
+END
+wrongdir.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2544/trunk/tests/sites/wonky/wrongdir.xml
+END
+wonky-80percent.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2168/trunk/tests/sites/wonky/wonky-80percent.xml
+END
+wonky-good.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/2152/trunk/tests/sites/wonky/wonky-good.xml
+END
+wonky-90percent.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2152/trunk/tests/sites/wonky/wonky-90percent.xml
+END

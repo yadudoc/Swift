@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/vdl2/!svn/ver/2940/trunk/tests/misc
+END
+restart2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/1982/trunk/tests/misc/restart2.sh
+END
+workernode-local.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2051/trunk/tests/misc/workernode-local.sh
+END
+external-mapper-args.mapper
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/2150/trunk/tests/misc/external-mapper-args.mapper
+END
+restart4.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/2034/trunk/tests/misc/restart4.sh
+END
+path-prefix.swift
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/1799/trunk/tests/misc/path-prefix.swift
+END
+wonky-replication.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/2243/trunk/tests/misc/wonky-replication.sh
+END
+restart-iterate.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/2068/trunk/tests/misc/restart-iterate.sh
+END
+typecheck.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/1741/trunk/tests/misc/typecheck.sh
+END
+wonky80.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/2153/trunk/tests/misc/wonky80.sh
+END
+external-mapper-args.args.expected
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vdl2/!svn/ver/2150/trunk/tests/misc/external-mapper-args.args.expected
+END
+dryrun.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/1741/trunk/tests/misc/dryrun.sh
+END
+asserts.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/2400/trunk/tests/misc/asserts.sh
+END
+restart5-helper-fail
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/2009/trunk/tests/misc/restart5-helper-fail
+END
+wonky-runawayjob.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2513/trunk/tests/misc/wonky-runawayjob.sh
+END
+restart-extern.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/2097/trunk/tests/misc/restart-extern.sh
+END
+no-retries.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/1678/trunk/tests/misc/no-retries.sh
+END
+wonky-slow-queue-fast-queue.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/2549/trunk/tests/misc/wonky-slow-queue-fast-queue.sh
+END
+path-prefix-helper
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/1800/trunk/tests/misc/path-prefix-helper
+END
+arg-mode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/2940/trunk/tests/misc/arg-mode.sh
+END
+restart-external.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2095/trunk/tests/misc/restart-external.in
+END
+coaster.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/2031/trunk/tests/misc/coaster.sh
+END
+wonky-wrongdir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/2544/trunk/tests/misc/wonky-wrongdir.sh
+END
+restart-iterate.swift
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/2071/trunk/tests/misc/restart-iterate.swift
+END
+restart.swift
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/1822/trunk/tests/misc/restart.swift
+END
+extract-int-delayed.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/2372/trunk/tests/misc/extract-int-delayed.sh
+END
+restart3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/2005/trunk/tests/misc/restart3.sh
+END
+wonky.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/2152/trunk/tests/misc/wonky.sh
+END
+restart-extern.swift
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/2095/trunk/tests/misc/restart-extern.swift
+END
+arg.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vdl2/!svn/ver/2937/trunk/tests/misc/arg.sh
+END
+restart5.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/2009/trunk/tests/misc/restart5.sh
+END
+arg-nodefault.swift
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2937/trunk/tests/misc/arg-nodefault.swift
+END
+ordering-extern-notlazy.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2096/trunk/tests/misc/ordering-extern-notlazy.sh
+END
+wonky-relative-absolute-wrapper.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vdl2/!svn/ver/2597/trunk/tests/misc/wonky-relative-absolute-wrapper.sh
+END
+ordering-extern.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/2097/trunk/tests/misc/ordering-extern.sh
+END
+path-prefix-helper2
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/1800/trunk/tests/misc/path-prefix-helper2
+END
+arg-default.swift
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/2937/trunk/tests/misc/arg-default.swift
+END
+restart.in
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/1822/trunk/tests/misc/restart.in
+END
+external-mapper-args.swift
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2150/trunk/tests/misc/external-mapper-args.swift
+END
+wonky-wrongdir-relative-fail.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/2597/trunk/tests/misc/wonky-wrongdir-relative-fail.sh
+END
+restart5-helper-success
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/2009/trunk/tests/misc/restart5-helper-success
+END
+restart.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/1822/trunk/tests/misc/restart.sh
+END
+path-prefix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/1802/trunk/tests/misc/path-prefix.sh
+END
+restart2.swift
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/1982/trunk/tests/misc/restart2.swift
+END
+wonky-failfirst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/2248/trunk/tests/misc/wonky-failfirst.sh
+END
+relative-wrapper.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2597/trunk/tests/misc/relative-wrapper.sh
+END
+extract-int-delayed.swift
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/2372/trunk/tests/misc/extract-int-delayed.swift
+END
+restart3.swift
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/2005/trunk/tests/misc/restart3.swift
+END
+restart4.swift
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/2005/trunk/tests/misc/restart4.swift
+END
+restart5.swift
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/2009/trunk/tests/misc/restart5.swift
+END
+run
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/vdl2/!svn/ver/2940/trunk/tests/misc/run
+END
+restart-helper-success
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/1822/trunk/tests/misc/restart-helper-success
+END
+external-mapper-args.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/2150/trunk/tests/misc/external-mapper-args.sh
+END
+run-wonky
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/2597/trunk/tests/misc/run-wonky
+END
+restart-helper-fail
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/1822/trunk/tests/misc/restart-helper-fail
+END
+wonky-clusters-wrongdir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2548/trunk/tests/misc/wonky-clusters-wrongdir.sh
+END
+clusters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vdl2/!svn/ver/2547/trunk/tests/misc/clusters.sh
+END
+extract-int-delayed-slowint.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/2372/trunk/tests/misc/extract-int-delayed-slowint.sh
+END

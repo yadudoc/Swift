@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vdl2/!svn/ver/4696/trunk/src/org/griphyn/vdl/karajan
+END
+VDL2ExecutionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/VDL2ExecutionContext.java
+END
+ScalabilityTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/ScalabilityTest.java
+END
+FuturePairIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/4471/trunk/src/org/griphyn/vdl/karajan/FuturePairIterator.java
+END
+HangChecker.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/4171/trunk/src/org/griphyn/vdl/karajan/HangChecker.java
+END
+VDSTaskTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/4470/trunk/src/org/griphyn/vdl/karajan/VDSTaskTransformer.java
+END
+PairIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/karajan/PairIterator.java
+END
+Loader.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/4533/trunk/src/org/griphyn/vdl/karajan/Loader.java
+END
+VDSAdaptiveScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/3146/trunk/src/org/griphyn/vdl/karajan/VDSAdaptiveScheduler.java
+END
+DSHandleFutureWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4626/trunk/src/org/griphyn/vdl/karajan/DSHandleFutureWrapper.java
+END
+WrapperMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4666/trunk/src/org/griphyn/vdl/karajan/WrapperMap.java
+END
+VDL2FutureException.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/VDL2FutureException.java
+END
+Mergeable.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/karajan/Mergeable.java
+END
+AssertFailedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4256/trunk/src/org/griphyn/vdl/karajan/AssertFailedException.java
+END
+WaitingThreadsMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/1306/trunk/src/org/griphyn/vdl/karajan/WaitingThreadsMonitor.java
+END
+InHook.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/3477/trunk/src/org/griphyn/vdl/karajan/InHook.java
+END
+Monitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4171/trunk/src/org/griphyn/vdl/karajan/Monitor.java
+END
+TCCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/3821/trunk/src/org/griphyn/vdl/karajan/TCCache.java
+END
+VDL2ErrorTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/3212/trunk/src/org/griphyn/vdl/karajan/VDL2ErrorTranslator.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/karajan/Pair.java
+END
+CompilationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/1686/trunk/src/org/griphyn/vdl/karajan/CompilationException.java
+END
+ArrayIndexFutureList.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4626/trunk/src/org/griphyn/vdl/karajan/ArrayIndexFutureList.java
+END

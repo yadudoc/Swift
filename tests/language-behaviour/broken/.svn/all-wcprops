@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/1314/trunk/tests/language-behaviour/broken
+END
+111-array-range-exprs.swift
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vdl2/!svn/ver/1068/trunk/tests/language-behaviour/broken/111-array-range-exprs.swift
+END
+112-array-range.swift
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/1069/trunk/tests/language-behaviour/broken/112-array-range.swift
+END
+0753-filesystem-mapper.swift
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/1314/trunk/tests/language-behaviour/broken/0753-filesystem-mapper.swift
+END

@@ -1,0 +1,54 @@
+2011-07-10 23:27:56,085+0530 DEBUG Loader Max heap: 238616576
+2011-07-10 23:27:56,087+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][int][int];
+
+array[1][2][0] = 5;
+array[1][2][1] = 10;
+array[1][2][2] = 15;
+array[1][2][3] = 20;
+array[1][2][4] = 25;
+
+
+foreach v,i in array[1]{
+	trace( v, i);
+}
+
+
+2011-07-10 23:27:56,087+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-10 23:27:56,088+0530 INFO  Loader foreach4.swift: source file is new. Recompiling.
+2011-07-10 23:27:56,088+0530 DEBUG Loader kmlversion is >9605f8d0-3292-4841-8f39-0c0743d5bad6<
+2011-07-10 23:27:56,088+0530 DEBUG Loader build version is >9605f8d0-3292-4841-8f39-0c0743d5bad6<
+2011-07-10 23:27:57,035+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-10 23:27:57,359+0530 DEBUG textfiles using default sites file
+2011-07-10 23:27:57,390+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@ab444
+
+
+2011-07-10 23:27:58,175+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-10 23:27:58,219+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-10 23:27:58,369+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-10 23:27:59,127+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-10 23:27:59,128+0530 INFO  unknown RUNID id=run:20110710-2327-pfo053f4
+2011-07-10 23:27:59,233+0530 INFO  SetFieldValue Set: array[1][2][0]=5.0
+2011-07-10 23:27:59,233+0530 INFO  SetFieldValue Set: array[1][2][1]=10.0
+2011-07-10 23:27:59,233+0530 INFO  SetFieldValue Set: array[1][2][3]=20.0
+2011-07-10 23:27:59,234+0530 INFO  SetFieldValue Set: array[1][2][4]=25.0
+2011-07-10 23:27:59,243+0530 INFO  SetFieldValue Set: array[1][2][2]=15.0
+2011-07-10 23:27:59,247+0530 DEBUG vdl:mains FOREACH_IT_START line=10 thread=0-5-0
+2011-07-10 23:27:59,247+0530 DEBUG vdl:mains SCOPE thread=0-5-0
+2011-07-10 23:27:59,247+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5-0-1 name=trace
+2011-07-10 23:27:59,249+0530 WARN  trace SwiftScript trace: {3=array[1][2][3]:int = 20.0 - Closed, 2=array[1][2][2]:int = 15.0 - Closed, 1=array[1][2][1]:int = 10.0 - Closed, 0=array[1][2][0]:int = 5.0 - Closed, 4=array[1][2][4]:int = 25.0 - Closed}, 2.0
+2011-07-10 23:27:59,250+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5-0-1
+2011-07-10 23:27:59,250+0530 DEBUG vdl:mains FOREACH_IT_END line=10 thread=0-5-0
+2011-07-10 23:27:59,263+0530 DEBUG vdl:mains Starting cleanups
+2011-07-10 23:27:59,264+0530 INFO  vdl:cleanups START cleanups=[]
+2011-07-10 23:27:59,265+0530 INFO  vdl:cleanups END cleanups=[]
+2011-07-10 23:27:59,265+0530 DEBUG vdl:mains Ending cleanups
+2011-07-10 23:27:59,266+0530 INFO  Loader Swift finished with no errors

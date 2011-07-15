@@ -1,0 +1,139 @@
+<project><!-- CACHE ID c9d15478-0e4b-40e9-980d-0b47d258dc4c -->
+  <import file="sys.xml"/>
+  <import file="scheduler.xml"/>
+  <import file="rlog.xml"/>
+  <import file="vdl.k"/>
+  <global name="swift#int#0">
+    <vdl:new type="int" value="0" />
+  </global>
+  <global name="swift#int#1">
+    <vdl:new type="int" value="1" />
+  </global>
+  <global name="swift#int#2">
+    <vdl:new type="int" value="2" />
+  </global>
+  <global name="swift#int#5">
+    <vdl:new type="int" value="5" />
+  </global>
+  <global name="swift#int#10">
+    <vdl:new type="int" value="10" />
+  </global>
+  <global name="swift#int#15">
+    <vdl:new type="int" value="15" />
+  </global>
+  <set name="array">
+    <vdl:new type="int[int]" dbgname="array" waitfor="88000 88001 88002">
+      <vdl:mapping descriptor="concurrent_mapper">
+        <vdl:parameter name="prefix">array-e673fc9f-19f4-4b28-ac61-e27bb44962ba</vdl:parameter>
+      </vdl:mapping>
+    </vdl:new>
+  </set>
+  <parameterlog>
+  <string>intermediate</string>
+  <string>array</string>
+  <vdl:getdatasetprovenanceid var="{array}" />
+  <string>{#thread}</string>
+  </parameterlog>
+  <restartLog>
+  	<vdl:mains>
+		<vdl:startprogressticker />
+		<vdl:mainp>
+		    <parallel>
+		        <sequential>
+		             <vdl:setfieldvalue>
+		               <argument name="var">
+		                 <vdl:getfieldsubscript>
+		                   <argument name="var"><variable>array</variable></argument>
+		                   <argument name="subscript"><variable>swift#int#0</variable></argument>
+		                 </vdl:getfieldsubscript>
+		               </argument>
+		               <argument name="value">
+		                 <variable>swift#int#5</variable>
+		               </argument>
+		             </vdl:setfieldvalue>
+		            <partialCloseDataset var="{array}" closeID="88000" />
+		        </sequential>
+		        <sequential>
+		             <vdl:setfieldvalue>
+		               <argument name="var">
+		                 <vdl:getfieldsubscript>
+		                   <argument name="var"><variable>array</variable></argument>
+		                   <argument name="subscript"><variable>swift#int#1</variable></argument>
+		                 </vdl:getfieldsubscript>
+		               </argument>
+		               <argument name="value">
+		                 <variable>swift#int#10</variable>
+		               </argument>
+		             </vdl:setfieldvalue>
+		            <partialCloseDataset var="{array}" closeID="88001" />
+		        </sequential>
+		        <sequential>
+		             <vdl:setfieldvalue>
+		               <argument name="var">
+		                 <vdl:getfieldsubscript>
+		                   <argument name="var"><variable>array</variable></argument>
+		                   <argument name="subscript"><variable>swift#int#2</variable></argument>
+		                 </vdl:getfieldsubscript>
+		               </argument>
+		               <argument name="value">
+		                 <variable>swift#int#15</variable>
+		               </argument>
+		             </vdl:setfieldvalue>
+		            <partialCloseDataset var="{array}" closeID="88002" />
+		        </sequential>
+		        <sequential>
+		          <vdl:tparallelFor name="$">
+		            <getarrayiterator><variable>array</variable></getarrayiterator>
+		            <set names="$$, value">
+		              <each items="{$}"/>
+		            </set>
+		              <set name="index">
+		                <vdl:new type="int" value="{$$}"/>
+		              </set>	<log level="debug" message="FOREACH_IT_START line=7 thread={#thread}"/>
+		          <log level="debug"><string>SCOPE thread={#thread}</string></log>
+
+		                <sequentialWithID>
+		                    <sequential>
+		                      <sequential>
+		                      <log level="debug" message="INTERNALPROC_START thread={#thread} name=trace"/>
+		                      <set name="swift#cs"><variable>#thread</variable></set>
+		                      <trace>
+		                        <parallel>
+		                          <sequential>
+		                            <set name="swift#callInternalValue"><variable>index</variable></set>
+		                            <parameterlog>
+		                              <string>input</string>
+		                              <string>TODO_name_or_pos</string>
+		                              <vdl:getdatasetprovenanceid var="{swift#callInternalValue}" />
+		                              <string>{swift#cs}</string>
+		                            </parameterlog>
+		                            <variable>swift#callInternalValue</variable>
+		                          </sequential>
+		                          <sequential>
+		                            <set name="swift#callInternalValue"><vdl:getfieldsubscript>
+		                            <argument name="var"><variable>array</variable></argument>
+		                            <argument name="subscript"><variable>index</variable></argument>
+		                          </vdl:getfieldsubscript></set>
+		                            <parameterlog>
+		                              <string>input</string>
+		                              <string>TODO_name_or_pos</string>
+		                              <vdl:getdatasetprovenanceid var="{swift#callInternalValue}" />
+		                              <string>{swift#cs}</string>
+		                            </parameterlog>
+		                            <variable>swift#callInternalValue</variable>
+		                          </sequential>
+		                        </parallel>
+		                      </trace>
+		                      <log level="debug" message="INTERNALPROC_END thread={#thread}"/>
+		                      </sequential>
+		                    </sequential>
+		                </sequentialWithID>
+		              <log level="debug" message="FOREACH_IT_END line=7 thread={#thread}"/>
+		          </vdl:tparallelFor>
+		        </sequential>
+		    </parallel>
+		</vdl:mainp>
+		<vdl:stopprogressticker />
+	</vdl:mains>
+  </restartLog>  
+</project>

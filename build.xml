@@ -1,0 +1,388 @@
+<!-- ===================================================================
+ This code is developed as part of the Java CoG Kit project
+ The terms of the license can be found at http://www.cogkit.org/license
+ This message may not be removed or altered.
+==================================================================== -->
+
+<project name="Java CoG Kit" default="redist" basedir=".">
+
+	<property file="project.properties"/>
+	<property name="cog.dir"		value="${basedir}/../../"/>
+	<property name="main.buildfile"	value="${cog.dir}/mbuild.xml"/>
+	<property name="dist.dir" 		value="${cog.dir}/modules/${module.name}/dist/${module.name}-${version}"/>
+	<property name="build.dir" 		value="${cog.dir}/modules/${module.name}/build"/>
+
+	<!-- ================================================ -->
+	<!-- Help                                             -->
+	<!-- ================================================ -->
+
+	<target name="help">
+		<echo>
+	Available targets:
+		help:
+			prints out this help message
+
+		dist:
+			creates a distribution directory of the 
+			${project} ${long.name}
+			
+		redist:
+			does a distclean and then a dist. This is the safest
+			way of building Swift.
+
+		jar:
+			creates a jar file for the ${project} ${long.name}
+			named ${jar.filename}
+
+		javadoc:
+			creates the documentation
+
+		clean:
+			removes the compiled classes
+
+		distclean:
+			deletes the distribution directory
+
+		all:
+			dist and javadoc
+
+		deploy.webstart:
+			deploys the module as a webstart application
+
+		dist.joint:
+			builds everything into one jar file. Should only
+			be used globally (from all)
+
+		fixeol:
+			change newlines to the unix standard.
+		</echo>
+	</target>
+
+
+	<!-- ================================================ -->
+	<!-- Dist                                             -->
+	<!-- ================================================ -->
+
+	<target name="etc">
+		<copy todir="${dist.dir}/etc">
+			<fileset dir="${cog.dir}/modules/${module.name}/etc"/>
+		</copy>
+	</target>
+
+	<target name="dist" depends="generateVersion, antlr, compileSchema">
+		<ant antfile="${main.buildfile}" target="dist"/>
+		<mkdir dir="${dist.dir}/libexec"/>
+		<copy todir="${dist.dir}/libexec">
+			<fileset dir="${cog.dir}/modules/${module.name}/libexec"/>
+		</copy>
+		<copy todir="${dist.dir}/bin">
+			<fileset dir="${cog.dir}/modules/${module.name}/bin"/>
+		</copy>
+		<copy todir="${dist.dir}/lib/perl">
+			<fileset dir="${cog.dir}/modules/${module.name}/lib/perl"/>
+                </copy>
+		<chmod perm="+x" file="${dist.dir}/bin/VDL2Karajan"/>
+		<chmod perm="+x" file="${dist.dir}/bin/vdlc"/>
+		<chmod perm="+x" file="${dist.dir}/bin/swift-plot-log"/>
+		<chmod perm="+x" file="${dist.dir}/bin/swiftconfig"/>
+		<chmod perm="+x" file="${dist.dir}/bin/swiftrun"/>
+                <chmod perm="+x" file="${dist.dir}/bin/gensites"/>
+                <chmod perm="+x" file="${dist.dir}/bin/chxml"/>
+                <chmod perm="+x" file="${dist.dir}/bin/start-coaster-service"/>
+                <chmod perm="+x" file="${dist.dir}/bin/stop-coaster-service"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/active-state-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/add-runid-as-prefix"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/affine-transform"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/all-kickstarts-to-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/all-logs-active-jobsubmissions-count-graph"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/annotate-karatasks-with-execute2-id"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/autospace-data"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/cli-finished"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/cli-version"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/cluster-report"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/cluster-stats"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/colour-execute2"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/colour-execute2-by-falkon"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/colour-karatasks"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/coloured-event-plot"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/combine-execute-start-last-times"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/combine-karajan-tasks-and-load-average"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/combine-start-last-times"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/combine-start-last-times-to-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/compute-t-inf"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/create-everylog-vs-versions-data"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/duration-of-workflow"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/error-summary"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/event-duration-stats"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/events-in-progress"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/events-in-progress-first-loop.pl"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/events-in-progress-second-loop.pl"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/events-in-progress-third-loop.pl"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/everylog-durations-of-workflows"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/everylog-to-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/everylog-vs-versions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/execstages-plot"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/execute2-status-from-log"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/execute2-summary-from-log"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/execution-summaries"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-activity-for-subthreads-of"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-activity-for-task"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-activity-for-thread"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-completed-time-for-run-id"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-end-time"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-execute-start-times"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-failed-time-for-run-id"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-jobid-karajanid-bindings"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-last-time-for-execute"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-start-time"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/extract-start-times"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/falkon-to-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/generate-karatasks-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/get-jobid-for-karajanid"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/get-replicationid-for-execute2id"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/get-site-for-run-id"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/get-thread-for-run-id"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/info-and-karajan-actives"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/info-to-md5"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/info-to-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/info-to-zeroed-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/iso-to-secs"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/karatasks-only"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/kickstarts-to-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/kickstarts-to-plot"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/last-times"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/last-transition-line"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/list-known-tasks"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/list-known-threads"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-createdirset-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-dostagein-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-dostageout-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-execute-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-execute2-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-initshareddir-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-karatasks-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-compound-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/log-to-internal-proc-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/logs-for-all"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/lookup-colour"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/max-duration"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/normalise-event-start-time"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/normalise-event-start-time-to-any"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/number-events"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/number-sites-list"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/overview-reports.sh"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/per-site-execute2-durations"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/plot-duration-histogram"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/plot-everylogs"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/queue-state-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/retrycounts"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/sec-to-utc"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/sec-to-utc-day"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/simple-event-plot"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/sort-preserve"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/split-start-times-shifted"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/start-last-times-and-kickstart"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/sum-tt1.pl"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/swap-and-sort"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/swap-and-sort-and-swap"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/swift-standard-log-to-transition"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/table-jobs-sites"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/task-status-to-transitions"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/tasks-in-cluster"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/temporal-join"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/tie-url-filenames"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/times-for-all-tasks"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/total-event-plot"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/trail"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/trail-freex"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/transitions-to-cedps"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/transitions-to-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/tscore.sh"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/weights.sh"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/whole-workflow-event"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/log-processing/whole-workflow-time"/>
+
+		<!--<delete file="${dist.dir}/lib/jaxrpc.jar" quiet="true"/>-->
+		<delete includeEmptyDirs="true">
+			<fileset dir="${dist.dir}/bin/examples"/>
+		</delete>
+		<delete>
+			<fileset dir="${dist.dir}/bin" 
+				includes="examples, cog-checkpoint*, cog-file-operation*, cog-register*"/>
+			<fileset dir="${dist.dir}/bin" 
+				includes="cog-task2xml*, globus-gass-server*, globus-personal-gatekeeper*"/>
+			<fileset dir="${dist.dir}/bin" 
+				includes="globus2jks*, grid-info-search*, cogrun*, globus-gass-server-shutdown*"/>
+		</delete>
+		<antcall target="remove-supporting" />
+		<copy todir="${dist.dir}/etc" 
+			file="${cog.dir}/modules/${module.name}/etc/karajan.properties" 
+			overwrite="true"/>
+		<copy todir="${dist.dir}/etc" 
+			file="${cog.dir}/modules/${module.name}/etc/log4j.properties" 
+			overwrite="true"/>
+		<copy todir="${dist.dir}/etc/sites">
+			<fileset dir="${cog.dir}/modules/${module.name}/etc/sites"/>
+		</copy>
+		<copy todir="${dist.dir}/etc/apps">
+			<fileset dir="${cog.dir}/modules/${module.name}/etc/apps"/>
+		</copy>
+		<copy todir="${dist.dir}/etc/certificate">
+			<fileset dir="${cog.dir}/modules/${module.name}/etc/certificate"/>
+		</copy>
+		<chmod perm="+x" file="${dist.dir}/bin/swift"/>
+		<chmod perm="+x" file="${dist.dir}/bin/swift-osg-ress-site-catalog"/>
+		<chmod perm="+x" file="${dist.dir}/libexec/cdm_broadcast.sh"/>
+	</target>
+
+	<target name="antlr">
+		<java classname="antlr.Tool" fork="true" failonerror="true">
+			<arg value="-o"/>
+			<arg value="${cog.dir}/modules/${module.name}/src/org/globus/swift/parser"/>
+			<arg value="resources/swiftscript.g"/>
+			<classpath>
+				<pathelement location="${cog.dir}/modules/${module.name}/lib/antlr-2.7.5.jar"/>
+				<pathelement location="${cog.dir}/modules/${module.name}/lib/stringtemplate.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	<target name="compileSchema">
+		<java classname="org.apache.xmlbeans.impl.tool.SchemaCompiler" fork="true" failonerror="true">
+			<arg value="-src"/><arg value="src"/>
+			<arg value="-javasource"/><arg value="1.4"/>
+			<arg value="-out"/><arg value="${cog.dir}/modules/${module.name}/lib/vdldefinitions.jar"/>
+			<arg value="resources/swiftscript.xsd"/>
+			<arg value="resources/swiftscript.xsdconfig"/>
+			<classpath>
+				<pathelement location="${cog.dir}/modules/${module.name}/lib/xbean.jar"/>
+				<pathelement location="${cog.dir}/modules/${module.name}/lib/resolver.jar"/>
+				<pathelement location="${cog.dir}/modules/${module.name}/lib/jsr173_1.0_api.jar"/>
+			</classpath>
+		</java>
+	</target>
+
+	<!-- ================================================ -->
+	<!-- Compile                                          -->
+	<!-- ================================================ -->
+
+	<target name="compile">
+		<ant antfile="${main.buildfile}" target="compile"/>
+	</target>
+	
+	<!-- ================================================ -->
+	<!-- Clean                                            -->
+	<!-- ================================================ -->
+
+	<target name="clean" depends="cleanGenerated">
+		<ant antfile="${main.buildfile}" target="clean"/>
+	</target>
+
+
+	<!-- ================================================ -->
+	<!-- Distclean                                        -->
+	<!-- ================================================ -->
+
+	<target name="distclean" depends="cleanGenerated">
+		<ant antfile="${main.buildfile}" target="distclean"/>
+	</target>
+
+
+	<target name="cleanGenerated">
+		<delete includeEmptyDirs="true">
+			<fileset dir="src/org/griphyn/vdl/model/" includes="**/*.java"/>
+		</delete>
+		<delete file="lib/vdldefinitions.jar"/>
+	</target>
+
+	<!-- ================================================ -->
+	<!-- Jar                                              -->
+	<!-- ================================================ -->
+
+	<target name="jar">
+		<ant antfile="${main.buildfile}" target="jar"/>
+	</target>
+
+
+
+	<!-- ================================================ -->
+	<!-- Javadoc                                          -->
+	<!-- ================================================ -->
+
+	<target name="javadoc">
+		<ant antfile="${main.buildfile}" target="javadoc"/>
+	</target>
+
+
+
+	<!-- ================================================ -->
+	<!-- PMD                                              -->
+	<!-- ================================================ -->
+
+	<target name="pmd">
+		<ant antfile="${main.buildfile}" target="pmd"/>
+	</target>
+
+	<!-- ================================================ -->
+	<!-- deploy.webstart                                  -->
+	<!-- ================================================ -->
+
+	<target name="deploy.webstart">
+		<ant antfile="${main.buildfile}" target="deploy.webstart"/>
+	</target>
+
+	<!-- ================================================ -->
+	<!-- replacelibs                                      -->
+	<!-- ================================================ -->
+
+	<target name="replacelibs">
+		<ant antfile="${main.buildfile}" target="replacelibs"/>
+	</target>
+
+	<!-- ================================================ -->
+	<!-- webstart.launchers                               -->
+	<!-- ================================================ -->
+
+	<target name="webstart.launchers">
+		<ant antfile="${main.buildfile}" target="webstart.launchers"/>
+	</target>
+
+	<!-- ================================================ -->
+	<!-- dist.joint                                       -->
+	<!-- ================================================ -->
+
+	<target name="dist.joint">
+		<ant antfile="${main.buildfile}" target="dist.all"/>
+	</target>
+	<!-- ================================================ -->
+	<!-- fixeol                                           -->
+	<!-- ================================================ -->
+
+	<target name="fixeol">
+		<ant antfile="${main.buildfile}" target="fixeol"/>
+	</target>
+
+
+	<target name="module.package">
+		<ant antfile="${main.buildfile}" target="module.package"/>
+	</target>
+
+	<target name="generateVersion">
+		<echo file="libexec/version.txt">Swift ${version} </echo>
+		<exec os="Linux, Mac OS X" executable="libexec/svn-revision" append="true" output="libexec/version.txt"/>
+		<exec os="Linux, Mac OS X" executable="libexec/generate-buildid" append="false" output="libexec/buildid.txt"/>
+	</target>
+	
+	<target name="redist" depends="distclean, dist">
+	</target>
+
+       <target name="remove-supporting" if="no-supporting">
+ 		<delete>
+			<fileset dir="${dist.dir}/bin" 
+				includes="cog*, globus*, grid*"/>
+		</delete>
+        </target>
+
+</project>
+
+

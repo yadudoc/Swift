@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big
+END
+201-cps.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/201-cps.clean.sh
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/title.txt
+END
+201-cps.swift
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/201-cps.swift
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/sites.template.xml
+END
+data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/data.txt
+END
+201-cps.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/201-cps.check.sh
+END
+201-cps.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/201-cps.timeout
+END
+201-cps.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/201-cps.setup.sh
+END
+cps.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters/crow/big/cps.sh
+END

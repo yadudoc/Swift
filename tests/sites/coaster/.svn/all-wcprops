@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/2874/trunk/tests/sites/coaster
+END
+fletch-coaster-gram2-gram2-condor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/vdl2/!svn/ver/2073/trunk/tests/sites/coaster/fletch-coaster-gram2-gram2-condor.xml
+END
+tgncsa-hg-coaster-pbs-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/1829/trunk/tests/sites/coaster/tgncsa-hg-coaster-pbs-gram2.xml
+END
+renci-engage-coaster.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/2453/trunk/tests/sites/coaster/renci-engage-coaster.xml
+END
+tgncsa-hg-coaster-pbs-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/1829/trunk/tests/sites/coaster/tgncsa-hg-coaster-pbs-gram4.xml
+END
+teraport-gt2-gt2-pbs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/2874/trunk/tests/sites/coaster/teraport-gt2-gt2-pbs.xml
+END
+uj-pbs-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/2867/trunk/tests/sites/coaster/uj-pbs-gram2.xml
+END
+coaster-local.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/2155/trunk/tests/sites/coaster/coaster-local.xml
+END
+fletch-coaster-gram2-gram2-fork.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/2073/trunk/tests/sites/coaster/fletch-coaster-gram2-gram2-fork.xml
+END

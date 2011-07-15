@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4544/trunk/tests/providers/local-pbs/pads
+END
+data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/data.txt
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/tc.template.data
+END
+catsn.0010.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0010.out.expected
+END
+catsn.0001.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0001.out.expected
+END
+catsn.0002.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0002.out.expected
+END
+catsn.0003.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0003.out.expected
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/title.txt
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vdl2/!svn/ver/4544/trunk/tests/providers/local-pbs/pads/sites.template.xml
+END
+catsn.0004.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0004.out.expected
+END
+catsn.0005.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0005.out.expected
+END
+catsn.0006.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0006.out.expected
+END
+001-catsn-pads-pbs.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/001-catsn-pads-pbs.timeout
+END
+001-catsn-pads-pbs.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/001-catsn-pads-pbs.check.sh
+END
+catsn.0007.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0007.out.expected
+END
+catsn.0008.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0008.out.expected
+END
+catsn.0009.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/catsn.0009.out.expected
+END
+001-catsn-pads-pbs.swift
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs/pads/001-catsn-pads-pbs.swift
+END

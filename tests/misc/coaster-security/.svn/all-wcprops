@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vdl2/!svn/ver/2011/trunk/tests/misc/coaster-security
+END
+key.pem
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/2011/trunk/tests/misc/coaster-security/key.pem
+END
+0a1da797.signing_policy
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/2011/trunk/tests/misc/coaster-security/0a1da797.signing_policy
+END
+0a1da797.0
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/2011/trunk/tests/misc/coaster-security/0a1da797.0
+END
+cert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/2011/trunk/tests/misc/coaster-security/cert.pem
+END

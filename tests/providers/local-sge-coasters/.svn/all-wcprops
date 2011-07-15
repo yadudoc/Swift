@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4204/trunk/tests/providers/local-sge-coasters
+END
+001-catsn-local-sge-coasters.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/001-catsn-local-sge-coasters.timeout
+END
+001-catsn-local-sge-coasters.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/001-catsn-local-sge-coasters.check.sh
+END
+001-catsn-local-sge-coasters.swift
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/001-catsn-local-sge-coasters.swift
+END
+data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/data.txt
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/tc.template.data
+END
+catsn.0010.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0010.out.expected
+END
+catsn.0001.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0001.out.expected
+END
+catsn.0002.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0002.out.expected
+END
+catsn.0003.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0003.out.expected
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/title.txt
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4204/trunk/tests/providers/local-sge-coasters/sites.template.xml
+END
+catsn.0004.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0004.out.expected
+END
+catsn.0005.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0005.out.expected
+END
+catsn.0006.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0006.out.expected
+END
+catsn.0007.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0007.out.expected
+END
+001-catsn-local-sge-coasters.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/001-catsn-local-sge-coasters.setup.sh
+END
+catsn.0008.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0008.out.expected
+END
+catsn.0009.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-sge-coasters/catsn.0009.out.expected
+END

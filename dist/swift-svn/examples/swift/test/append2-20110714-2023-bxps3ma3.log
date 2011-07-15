@@ -1,0 +1,34 @@
+2011-07-14 20:23:06,138+0530 DEBUG Loader Max heap: 238616576
+2011-07-14 20:23:06,144+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[string];
+
+foreach v in [0:9]{
+	array << v;
+}
+
+foreach v,i in array{
+	trace (v,i, array[i]);
+}
+
+
+2011-07-14 20:23:06,144+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-14 20:23:06,144+0530 DEBUG Loader kmlversion is >f7a51da6-dcb3-496b-9ac5-2fc69ef32cbf<
+2011-07-14 20:23:06,144+0530 DEBUG Loader build version is >f7a51da6-dcb3-496b-9ac5-2fc69ef32cbf<
+2011-07-14 20:23:06,145+0530 DEBUG Loader Recompilation suppressed.
+2011-07-14 20:23:06,406+0530 DEBUG textfiles using default sites file
+2011-07-14 20:23:06,467+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@5d391d
+
+
+2011-07-14 20:23:07,623+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-14 20:23:07,669+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-14 20:23:07,826+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-14 20:23:08,643+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-14 20:23:08,644+0530 INFO  unknown RUNID id=run:20110714-2023-bxps3ma3

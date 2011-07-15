@@ -1,0 +1,51 @@
+<program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <variable name="greetings" type="string[int][int]" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 5">
+   <variableReference>greetings</variableReference>
+
+     <array>
+
+         <array>
+           <stringConstant>left</stringConstant><stringConstant>right</stringConstant>
+         </array>
+
+         <array>
+           <stringConstant>up</stringConstant><stringConstant>down</stringConstant>
+         </array>
+
+     </array>
+
+  </assign>
+  <call proc="trace" src="line 6">
+    <input><arraySubscript>
+     <arraySubscript>
+      <variableReference>greetings</variableReference>
+      <integerConstant>0</integerConstant>
+     </arraySubscript>
+     <integerConstant>0</integerConstant>
+    </arraySubscript></input>
+    <input><arraySubscript>
+     <arraySubscript>
+      <variableReference>greetings</variableReference>
+      <integerConstant>0</integerConstant>
+     </arraySubscript>
+     <integerConstant>1</integerConstant>
+    </arraySubscript></input>
+    <input><arraySubscript>
+     <arraySubscript>
+      <variableReference>greetings</variableReference>
+      <integerConstant>1</integerConstant>
+     </arraySubscript>
+     <integerConstant>0</integerConstant>
+    </arraySubscript></input>
+    <input><arraySubscript>
+     <arraySubscript>
+      <variableReference>greetings</variableReference>
+      <integerConstant>1</integerConstant>
+     </arraySubscript>
+     <integerConstant>1</integerConstant>
+    </arraySubscript></input>
+  </call>
+</program>

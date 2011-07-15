@@ -1,0 +1,200 @@
+2011-07-10 23:30:53,836+0530 DEBUG Loader Max heap: 238616576
+2011-07-10 23:30:53,838+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][string];
+
+array[1]["a"] = 5;
+array[1]["b"] = 10;
+array[1]["c"] = 15;
+array[1]["d"] = 20;
+array[1]["e"] = 25;
+
+
+foreach v,i in array[1]{
+	trace( v, i);
+}
+
+
+2011-07-10 23:30:53,838+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-10 23:30:53,838+0530 INFO  Loader foreach4.swift: source file is new. Recompiling.
+2011-07-10 23:30:53,838+0530 DEBUG Loader kmlversion is >9605f8d0-3292-4841-8f39-0c0743d5bad6<
+2011-07-10 23:30:53,838+0530 DEBUG Loader build version is >9605f8d0-3292-4841-8f39-0c0743d5bad6<
+2011-07-10 23:30:54,785+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-10 23:30:55,123+0530 DEBUG textfiles using default sites file
+2011-07-10 23:30:55,147+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@a98932
+
+
+2011-07-10 23:30:55,931+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-10 23:30:55,978+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-10 23:30:56,126+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-10 23:30:56,766+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-10 23:30:56,768+0530 INFO  unknown RUNID id=run:20110710-2330-th5ymljc
+2011-07-10 23:30:56,942+0530 INFO  SetFieldValue Set: array[1][c]=15.0
+2011-07-10 23:30:56,942+0530 INFO  SetFieldValue Set: array[1][d]=20.0
+2011-07-10 23:30:56,942+0530 INFO  SetFieldValue Set: array[1][e]=25.0
+2011-07-10 23:30:56,943+0530 INFO  SetFieldValue Set: array[1][b]=10.0
+2011-07-10 23:30:56,944+0530 INFO  SetFieldValue Set: array[1][a]=5.0
+2011-07-10 23:30:56,949+0530 DEBUG VDL2ExecutionContext org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+Caused by: org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:87)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.internalValue(VDLFunction.java:166)
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:129)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.NumberFormatException: For input string: "c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:554)
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:77)
+	... 17 more
+
+Caused by: java.lang.NumberFormatException: For input string: "c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:554)
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:77)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.internalValue(VDLFunction.java:166)
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:129)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:138)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:87)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.internalValue(VDLFunction.java:166)
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:129)
+	... 15 more
+Caused by: java.lang.NumberFormatException: For input string: "c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:554)
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:77)
+	... 17 more
+2011-07-10 23:30:56,976+0530 INFO  ExecutionContext Detailed exception: 
+org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+Caused by: org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:87)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.internalValue(VDLFunction.java:166)
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:129)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.NumberFormatException: For input string: "c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:554)
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:77)
+	... 17 more
+
+Caused by: java.lang.NumberFormatException: For input string: "c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:554)
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:77)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.internalValue(VDLFunction.java:166)
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:129)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:138)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.globus.cog.karajan.workflow.KarajanRuntimeException: Could not convert value to number: c
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:87)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.internalValue(VDLFunction.java:166)
+	at org.griphyn.vdl.karajan.lib.New.function(New.java:129)
+	... 15 more
+Caused by: java.lang.NumberFormatException: For input string: "c"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:48)
+	at java.lang.Integer.parseInt(Integer.java:449)
+	at java.lang.Integer.valueOf(Integer.java:554)
+	at org.globus.cog.karajan.util.TypeUtil.toInt(TypeUtil.java:77)
+	... 17 more
+2011-07-10 23:30:56,989+0530 INFO  Loader Swift finished with errors

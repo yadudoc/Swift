@@ -1,0 +1,28 @@
+2011-07-14 14:27:32,534+0530 DEBUG Loader Max heap: 238616576
+2011-07-14 14:27:32,542+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+type file;
+
+app (file o) echo (string msg)
+{
+  echo msg stdout=@o;
+}
+
+file out[]<simple_mapper; location=".", prefix="057-foreach-twice-range.first.",suffix=".out">;
+file out2[]<simple_mapper; location=".", prefix="057-foreach-twice-range.second.",suffix=".out">;
+
+foreach a,i in [0:9] {
+  string s = @strcat("test1-", i);
+  out[i] = echo(s);
+}
+
+foreach a,i in [0:9] {
+  string s = @strcat("test2-", i);
+  out2[i] = echo(s);
+}
+
+
+
+
+2011-07-14 14:27:32,543+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-14 14:27:32,543+0530 INFO  Loader foreach_range.swift: source file is new. Recompiling.
+2011-07-14 14:27:33,610+0530 INFO  Karajan Validation of XML intermediate file was successful

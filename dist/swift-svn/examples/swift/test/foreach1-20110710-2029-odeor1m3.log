@@ -1,0 +1,28 @@
+2011-07-10 20:29:30,874+0530 DEBUG Loader Max heap: 238616576
+2011-07-10 20:29:30,876+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int];
+
+array[1] = 10;
+array[2] = 20;
+array[3] = 30;
+
+foreach v,i in array{
+	trace ( array[i], i );
+}
+
+
+2011-07-10 20:29:30,876+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-10 20:29:30,876+0530 INFO  Loader foreach1.swift: source file is new. Recompiling.
+2011-07-10 20:29:31,868+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-10 20:29:31,990+0530 DEBUG Loader Detailed exception:
+org.griphyn.vdl.karajan.CompilationException: Compile error in foreach statement at line 7: You can iterate through an array structure only
+	at org.griphyn.vdl.engine.Karajan.foreachStat(Karajan.java:917)
+	at org.griphyn.vdl.engine.Karajan.statement(Karajan.java:578)
+	at org.griphyn.vdl.engine.Karajan.statements(Karajan.java:542)
+	at org.griphyn.vdl.engine.Karajan.program(Karajan.java:291)
+	at org.griphyn.vdl.engine.Karajan.compile(Karajan.java:109)
+	at org.griphyn.vdl.karajan.Loader.compile(Loader.java:306)
+	at org.griphyn.vdl.karajan.Loader.main(Loader.java:147)
+Caused by: org.griphyn.vdl.karajan.CompilationException: You can iterate through an array structure only
+	at org.griphyn.vdl.engine.Karajan.foreachStat(Karajan.java:878)
+	... 6 more

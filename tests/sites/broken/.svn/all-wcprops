@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/2880/trunk/tests/sites/broken
+END
+osg-ucsdt2-fork.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/2055/trunk/tests/sites/broken/osg-ucsdt2-fork.xml
+END
+osg-ucsdt2-b2-fork.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/vdl2/!svn/ver/2056/trunk/tests/sites/broken/osg-ucsdt2-b2-fork.xml
+END
+osg-ucsdt2-condor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/2055/trunk/tests/sites/broken/osg-ucsdt2-condor.xml
+END
+osg-ucsdt2-b2-condor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/2056/trunk/tests/sites/broken/osg-ucsdt2-b2-condor.xml
+END
+tp-pbs-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/2880/trunk/tests/sites/broken/tp-pbs-gram4.xml
+END

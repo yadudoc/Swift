@@ -1,0 +1,52 @@
+2011-07-12 01:26:52,348+0530 DEBUG Loader Max heap: 238616576
+2011-07-12 01:26:52,349+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][string][string];
+
+array[1]["heyy"]["a"] = 11;
+array[1]["heyy"]["b"] = 12;
+array[1]["heyy"]["c"] = 13;
+
+trace ( array[1]["heyy"]["a"] );
+trace ( array[1]["heyy"]["b"] );
+trace ( array[1]["heyy"]["c"] );
+
+
+2011-07-12 01:26:52,349+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-12 01:26:52,375+0530 DEBUG Loader kmlversion is >b8283172-a0b0-48a2-b954-f129f36b66e6<
+2011-07-12 01:26:52,375+0530 DEBUG Loader build version is >18893a0e-68db-4d53-9463-1ef121a237ab<
+2011-07-12 01:26:52,375+0530 INFO  Loader assoc.swift: source file was compiled with a different version of Swift. Recompiling.
+2011-07-12 01:26:53,376+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-12 01:26:53,752+0530 DEBUG textfiles using default sites file
+2011-07-12 01:26:53,777+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@19eda2c
+
+
+2011-07-12 01:26:54,553+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-12 01:26:54,593+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-12 01:26:54,749+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-12 01:26:55,493+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-12 01:26:55,494+0530 INFO  unknown RUNID id=run:20110712-0126-ou4qvukc
+2011-07-12 01:26:55,580+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-4 name=trace
+2011-07-12 01:26:55,580+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-3 name=trace
+2011-07-12 01:26:55,581+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5 name=trace
+2011-07-12 01:26:55,586+0530 INFO  SetFieldValue Set: array[1][heyy][a]=11.0
+2011-07-12 01:26:55,586+0530 INFO  SetFieldValue Set: array[1][heyy][c]=13.0
+2011-07-12 01:26:55,588+0530 WARN  trace SwiftScript trace: 11.0
+2011-07-12 01:26:55,588+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-3
+2011-07-12 01:26:55,586+0530 INFO  SetFieldValue Set: array[1][heyy][b]=12.0
+2011-07-12 01:26:55,588+0530 WARN  trace SwiftScript trace: 13.0
+2011-07-12 01:26:55,588+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5
+2011-07-12 01:26:55,590+0530 WARN  trace SwiftScript trace: 12.0
+2011-07-12 01:26:55,591+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-4
+2011-07-12 01:26:55,605+0530 DEBUG vdl:mains Starting cleanups
+2011-07-12 01:26:55,606+0530 INFO  vdl:cleanups START cleanups=[]
+2011-07-12 01:26:55,606+0530 INFO  vdl:cleanups END cleanups=[]
+2011-07-12 01:26:55,606+0530 DEBUG vdl:mains Ending cleanups
+2011-07-12 01:26:55,608+0530 INFO  Loader Swift finished with no errors

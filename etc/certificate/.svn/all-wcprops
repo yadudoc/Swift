@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/vdl2/!svn/ver/3602/trunk/etc/certificate
+END
+b0cb24a8.signing_policy
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/3602/trunk/etc/certificate/b0cb24a8.signing_policy
+END
+swift.userkey.pem
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/3602/trunk/etc/certificate/swift.userkey.pem
+END
+b0cb24a8.0
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3602/trunk/etc/certificate/b0cb24a8.0
+END
+x509up_swift
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3602/trunk/etc/certificate/x509up_swift
+END
+swift.usercert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/3602/trunk/etc/certificate/swift.usercert.pem
+END

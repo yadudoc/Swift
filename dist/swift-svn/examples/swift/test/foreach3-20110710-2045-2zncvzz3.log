@@ -1,0 +1,16 @@
+2011-07-10 20:45:48,907+0530 DEBUG Loader Max heap: 238616576
+2011-07-10 20:45:48,925+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int array[int][string][string];
+
+array[1]["hey"] << 5;
+array[1]["hey"] << 10;
+array[1]["hey"] << 20;
+
+foreach v,i in array[1]["hey"]{
+	trace( array[1]["hey"][i], i);
+}
+
+
+2011-07-10 20:45:48,925+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-10 20:45:48,925+0530 INFO  Loader foreach3.swift: source file is new. Recompiling.
+2011-07-10 20:45:50,117+0530 INFO  Karajan Validation of XML intermediate file was successful

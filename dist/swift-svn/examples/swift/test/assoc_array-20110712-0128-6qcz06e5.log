@@ -1,0 +1,37 @@
+2011-07-12 01:28:46,181+0530 DEBUG Loader Max heap: 238616576
+2011-07-12 01:28:46,189+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int a[];
+a[5] = 10;
+trace(a[5]);
+
+int b[string];
+b["hey"] = 23;
+trace(b["hey"]);
+
+int c[];
+c["key"] = 100;
+trace(c["key"]);
+
+string d[string];
+d["a"] = 121;
+trace(d["a"]);
+
+
+2011-07-12 01:28:46,189+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-12 01:28:46,189+0530 INFO  Loader assoc_array.swift: source file is new. Recompiling.
+2011-07-12 01:28:46,190+0530 DEBUG Loader kmlversion is >b8283172-a0b0-48a2-b954-f129f36b66e6<
+2011-07-12 01:28:46,190+0530 DEBUG Loader build version is >18893a0e-68db-4d53-9463-1ef121a237ab<
+2011-07-12 01:28:46,190+0530 INFO  Loader assoc_array.swift: source file was compiled with a different version of Swift. Recompiling.
+2011-07-12 01:28:47,123+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-12 01:28:47,233+0530 DEBUG Loader Detailed exception:
+org.griphyn.vdl.karajan.CompilationException: Compile error in assignment at line 15: You cannot assign value of type int to a variable of type string
+	at org.griphyn.vdl.engine.Karajan.assign(Karajan.java:521)
+	at org.griphyn.vdl.engine.Karajan.statement(Karajan.java:572)
+	at org.griphyn.vdl.engine.Karajan.statements(Karajan.java:542)
+	at org.griphyn.vdl.engine.Karajan.program(Karajan.java:291)
+	at org.griphyn.vdl.engine.Karajan.compile(Karajan.java:109)
+	at org.griphyn.vdl.karajan.Loader.compile(Loader.java:306)
+	at org.griphyn.vdl.karajan.Loader.main(Loader.java:147)
+Caused by: org.griphyn.vdl.karajan.CompilationException: You cannot assign value of type int to a variable of type string
+	at org.griphyn.vdl.engine.Karajan.assign(Karajan.java:509)
+	... 6 more

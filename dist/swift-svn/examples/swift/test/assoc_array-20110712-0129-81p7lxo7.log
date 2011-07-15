@@ -1,0 +1,225 @@
+2011-07-12 01:29:42,012+0530 DEBUG Loader Max heap: 238616576
+2011-07-12 01:29:42,013+0530 DEBUG textfiles BEGIN SWIFTSCRIPT:
+int a[];
+a[5] = 10;
+trace(a[5]);
+
+int b[string];
+b["hey"] = 23;
+trace(b["hey"]);
+
+int c[];
+c["key"] = 100;
+trace(c["key"]);
+
+string d[string];
+d["a"] = "hello";
+trace(d["a"]);
+
+int e[boolean];
+e[true] = 1001;
+trace(e[true]);
+
+
+2011-07-12 01:29:42,013+0530 DEBUG textfiles END SWIFTSCRIPT:
+2011-07-12 01:29:42,014+0530 INFO  Loader assoc_array.swift: source file is new. Recompiling.
+2011-07-12 01:29:42,014+0530 DEBUG Loader kmlversion is >18893a0e-68db-4d53-9463-1ef121a237ab<
+2011-07-12 01:29:42,014+0530 DEBUG Loader build version is >18893a0e-68db-4d53-9463-1ef121a237ab<
+2011-07-12 01:29:43,002+0530 INFO  Karajan Validation of XML intermediate file was successful
+2011-07-12 01:29:43,358+0530 DEBUG textfiles using default sites file
+2011-07-12 01:29:43,387+0530 INFO  VDL2ExecutionContext Stack dump:
+Level 1
+[iA = 0, iB = 0, bA = false, bB = false]
+	vdl:instanceconfig = Swift configuration []
+	vdl:operation = run
+	PATH_SEPARATOR = /
+	swift.home = /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/..
+	#vdl:futureWrapperMap = org.griphyn.vdl.karajan.WrapperMap@aeea66
+
+
+2011-07-12 01:29:44,221+0530 INFO  unknown Using sites file: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/sites.xml
+2011-07-12 01:29:44,269+0530 INFO  unknown Using tc.data: /home/yadu/bin/cog/modules/swift/dist/swift-svn/bin/../etc/tc.data
+2011-07-12 01:29:44,433+0530 INFO  AbstractScheduler Setting resources to: {localhost=localhost}
+2011-07-12 01:29:45,099+0530 INFO  unknown Swift svn swift-r4697 (swift modified locally) cog-r3167
+
+2011-07-12 01:29:45,100+0530 INFO  unknown RUNID id=run:20110712-0129-81p7lxo7
+2011-07-12 01:29:45,268+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-1 name=trace
+2011-07-12 01:29:45,268+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-3 name=trace
+2011-07-12 01:29:45,268+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-5 name=trace
+2011-07-12 01:29:45,268+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-7 name=trace
+2011-07-12 01:29:45,268+0530 DEBUG vdl:mains INTERNALPROC_START thread=0-9 name=trace
+2011-07-12 01:29:45,274+0530 INFO  SetFieldValue Set: b[hey]=23.0
+2011-07-12 01:29:45,274+0530 INFO  SetFieldValue Set: a[5]=10.0
+2011-07-12 01:29:45,274+0530 INFO  SetFieldValue Set: c[key]=100.0
+2011-07-12 01:29:45,274+0530 INFO  SetFieldValue Set: d[a]=hello
+2011-07-12 01:29:45,277+0530 WARN  trace SwiftScript trace: 10.0
+2011-07-12 01:29:45,277+0530 WARN  trace SwiftScript trace: 23.0
+2011-07-12 01:29:45,278+0530 WARN  trace SwiftScript trace: 100.0
+2011-07-12 01:29:45,278+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-1
+2011-07-12 01:29:45,278+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-3
+2011-07-12 01:29:45,278+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-5
+2011-07-12 01:29:45,278+0530 WARN  trace SwiftScript trace: hello
+2011-07-12 01:29:45,279+0530 DEBUG vdl:mains INTERNALPROC_END thread=0-7
+2011-07-12 01:29:45,280+0530 WARN  FlowNode Ex098
+java.lang.RuntimeException: Cannot handle array index of Java type class java.lang.Boolean
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:39)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:71)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2011-07-12 01:29:45,289+0530 WARN  FlowNode Ex098
+java.lang.RuntimeException: Cannot handle array index of Java type class java.lang.Boolean
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:39)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:71)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2011-07-12 01:29:45,290+0530 DEBUG VDL2ExecutionContext Cannot handle array index of Java type class java.lang.Boolean
+Cannot handle array index of Java type class java.lang.Boolean
+Caused by: java.lang.RuntimeException: Cannot handle array index of Java type class java.lang.Boolean
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:39)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:71)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:158)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.RuntimeException: Cannot handle array index of Java type class java.lang.Boolean
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:39)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:71)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	... 10 more
+2011-07-12 01:29:45,305+0530 INFO  ExecutionContext Detailed exception: 
+Cannot handle array index of Java type class java.lang.Boolean
+Caused by: java.lang.RuntimeException: Cannot handle array index of Java type class java.lang.Boolean
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:39)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:71)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:158)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.start(FlowNode.java:197)
+	at org.globus.cog.karajan.workflow.FlowElementWrapper.start(FlowElementWrapper.java:227)
+	at org.globus.cog.karajan.workflow.events.EventBus.start(EventBus.java:104)
+	at org.globus.cog.karajan.workflow.events.EventTargetPair.run(EventTargetPair.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.RuntimeException: Cannot handle array index of Java type class java.lang.Boolean
+	at org.griphyn.vdl.karajan.lib.GetFieldSubscript.function(GetFieldSubscript.java:39)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:67)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.globus.cog.karajan.workflow.nodes.functions.Argument.post(Argument.java:48)
+	at org.globus.cog.karajan.workflow.nodes.AbstractSequentialWithArguments.completed(AbstractSequentialWithArguments.java:194)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.complete(FlowNode.java:214)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.post(FlowContainer.java:58)
+	at org.griphyn.vdl.karajan.lib.VDLFunction.post(VDLFunction.java:71)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.startNext(Sequential.java:29)
+	at org.globus.cog.karajan.workflow.nodes.Sequential.executeChildren(Sequential.java:20)
+	at org.globus.cog.karajan.workflow.nodes.FlowContainer.execute(FlowContainer.java:63)
+	at org.globus.cog.karajan.workflow.nodes.FlowNode.restart(FlowNode.java:139)
+	... 10 more
+2011-07-12 01:29:45,306+0530 INFO  Loader Swift finished with errors

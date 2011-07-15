@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/vdl2/!svn/ver/3615/trunk/tests/local
+END
+default.swift
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/default.swift
+END
+append.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/append.sh
+END
+array_wildcard.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_wildcard.clean.sh
+END
+array_iteration.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_iteration.check.sh
+END
+range.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3615/trunk/tests/local/range.check.sh
+END
+array_wildcard.swift
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_wildcard.swift
+END
+array_iteration.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/3587/trunk/tests/local/array_iteration.clean.sh
+END
+array_iteration.swift
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_iteration.swift
+END
+range.swift
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/range.swift
+END
+hello.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/hello.check.sh
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/tc.template.data
+END
+filesysmapper.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/filesysmapper.setup.sh
+END
+hello.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/hello.clean.sh
+END
+hello.swift
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/hello.swift
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vdl2/!svn/ver/3585/trunk/tests/local/title.txt
+END
+diamond.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3591/trunk/tests/local/diamond.check.sh
+END
+diamond.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/diamond.clean.sh
+END
+diamond.swift
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/diamond.swift
+END
+filesysmapper.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/filesysmapper.check.sh
+END
+default.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/default.check.sh
+END
+array_wildcard.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_wildcard.check.sh
+END
+filesysmapper.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/filesysmapper.clean.sh
+END
+default.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/default.clean.sh
+END
+filesysmapper.swift
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/filesysmapper.swift
+END

@@ -1,0 +1,66 @@
+<program xmlns="http://ci.uchicago.edu/swift/2009/02/swiftscript"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <variable name="array" type="int[int][string][string]" isGlobal="false" xsi:nil="true"/>
+  <assign src="line 4">
+   <arraySubscript>
+    <arraySubscript>
+     <arraySubscript>
+      <variableReference>array</variableReference>
+      <integerConstant>1</integerConstant>
+     </arraySubscript>
+     <stringConstant>hey</stringConstant>
+    </arraySubscript>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
+   </arraySubscript>
+   <integerConstant>5</integerConstant>
+  </assign>
+  <assign src="line 5">
+   <arraySubscript>
+    <arraySubscript>
+     <arraySubscript>
+      <variableReference>array</variableReference>
+      <integerConstant>1</integerConstant>
+     </arraySubscript>
+     <stringConstant>hey</stringConstant>
+    </arraySubscript>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
+   </arraySubscript>
+   <integerConstant>10</integerConstant>
+  </assign>
+  <assign src="line 9">
+   <arraySubscript>
+    <arraySubscript>
+     <arraySubscript>
+      <variableReference>array</variableReference>
+      <integerConstant>1</integerConstant>
+     </arraySubscript>
+     <stringConstant>hey</stringConstant>
+    </arraySubscript>
+    <stringConstant>_SWIFT_AUTO_INCREMENT</stringConstant>
+   </arraySubscript>
+   <integerConstant>20</integerConstant>
+  </assign>
+  <foreach var="v"  indexVar="i" src="line 9">
+  <in><arraySubscript>
+   <arraySubscript>
+    <variableReference>array</variableReference>
+    <integerConstant>1</integerConstant>
+   </arraySubscript>
+   <stringConstant>hey</stringConstant>
+  </arraySubscript></in>
+  <body><call proc="trace" src="line 10">
+      <input><arraySubscript>
+       <arraySubscript>
+        <arraySubscript>
+         <variableReference>array</variableReference>
+         <integerConstant>1</integerConstant>
+        </arraySubscript>
+        <stringConstant>hey</stringConstant>
+       </arraySubscript>
+       <variableReference>i</variableReference>
+      </arraySubscript></input>
+      <input><variableReference>i</variableReference></input>
+    </call></body>
+  </foreach>
+</program>

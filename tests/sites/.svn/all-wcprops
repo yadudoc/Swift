@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/vdl2/!svn/ver/4202/trunk/tests/sites
+END
+localhost.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3463/trunk/tests/sites/localhost.xml
+END
+tguc-pbs-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2518/trunk/tests/sites/tguc-pbs-gram2.xml
+END
+tguc-pbs-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/2048/trunk/tests/sites/tguc-pbs-gram4.xml
+END
+fletch-condor-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/fletch-condor-gram2.xml
+END
+tguc-pbs-gram2-syntax1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vdl2/!svn/ver/2048/trunk/tests/sites/tguc-pbs-gram2-syntax1.xml
+END
+UCLA_Saxon_Tier3-fork.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/1710/trunk/tests/sites/UCLA_Saxon_Tier3-fork.xml
+END
+tgncsa-hg-pbs-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/tgncsa-hg-pbs-gram2.xml
+END
+tgpurdue-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/1996/trunk/tests/sites/tgpurdue-fork-gram2.xml
+END
+pads-pbs-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/4202/trunk/tests/sites/pads-pbs-coasters.sh
+END
+tgncsa-hg-pbs-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/tgncsa-hg-pbs-gram4.xml
+END
+tgpurdue-fork-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/1996/trunk/tests/sites/tgpurdue-fork-gram4.xml
+END
+renci-engage-condor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/2449/trunk/tests/sites/renci-engage-condor.xml
+END
+run-site
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vdl2/!svn/ver/2736/trunk/tests/sites/run-site
+END
+tgtacc-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/tgtacc-fork-gram2.xml
+END
+tp-pbs-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/2578/trunk/tests/sites/tp-pbs-gram2.xml
+END
+tgncsa-hg-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/tgncsa-hg-fork-gram2.xml
+END
+tgncsa-hg-fork-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/tgncsa-hg-fork-gram4.xml
+END
+uj-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/2866/trunk/tests/sites/uj-fork-gram2.xml
+END
+osg-edu.cs.wisc.edu-fork.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/1710/trunk/tests/sites/osg-edu.cs.wisc.edu-fork.xml
+END
+tgpurdue-condor-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/1995/trunk/tests/sites/tgpurdue-condor-gram2.xml
+END
+tp-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/1996/trunk/tests/sites/tp-fork-gram2.xml
+END
+tgpurdue-condor-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vdl2/!svn/ver/1996/trunk/tests/sites/tgpurdue-condor-gram4.xml
+END
+tp-fork-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/1997/trunk/tests/sites/tp-fork-gram4.xml
+END
+tgtacc-lsf-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/tgtacc-lsf-gram2.xml
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/2868/trunk/tests/sites/README
+END
+uj-pbs-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vdl2/!svn/ver/2866/trunk/tests/sites/uj-pbs-gram2.xml
+END
+tguc-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/2048/trunk/tests/sites/tguc-fork-gram2.xml
+END
+osg-edu.cs.wisc.edu-condor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/1710/trunk/tests/sites/osg-edu.cs.wisc.edu-condor.xml
+END
+tguc-fork-gram4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/2048/trunk/tests/sites/tguc-fork-gram4.xml
+END
+fletch-fork-gram2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vdl2/!svn/ver/1940/trunk/tests/sites/fletch-fork-gram2.xml
+END
+run-all
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/2036/trunk/tests/sites/run-all
+END
+tc.data
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/2449/trunk/tests/sites/tc.data
+END
+local-wrapper-args-file.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/2940/trunk/tests/sites/local-wrapper-args-file.xml
+END

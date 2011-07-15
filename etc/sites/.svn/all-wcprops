@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/vdl2/!svn/ver/4544/trunk/etc/sites
+END
+ssh-pbs-coasters
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/4204/trunk/etc/sites/ssh-pbs-coasters
+END
+persistent-coasters
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vdl2/!svn/ver/4528/trunk/etc/sites/persistent-coasters
+END
+sge-local
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vdl2/!svn/ver/4202/trunk/etc/sites/sge-local
+END
+pads
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/vdl2/!svn/ver/4202/trunk/etc/sites/pads
+END
+queenbee
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/4202/trunk/etc/sites/queenbee
+END
+intrepid
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/4204/trunk/etc/sites/intrepid
+END
+surveyor
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vdl2/!svn/ver/4204/trunk/etc/sites/surveyor
+END

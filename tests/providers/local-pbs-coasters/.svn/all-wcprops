@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4523/trunk/tests/providers/local-pbs-coasters
+END
+001-catsn-pads-local-pbs-coasters.swift
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/001-catsn-pads-local-pbs-coasters.swift
+END
+data.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/data.txt
+END
+tc.template.data
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs-coasters/tc.template.data
+END
+catsn.0010.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0010.out.expected
+END
+catsn.0001.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0001.out.expected
+END
+catsn.0002.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0002.out.expected
+END
+001-catsn-pads-local-pbs-coasters.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/001-catsn-pads-local-pbs-coasters.setup.sh
+END
+catsn.0003.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0003.out.expected
+END
+title.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/title.txt
+END
+catsn.0004.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0004.out.expected
+END
+sites.template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4204/trunk/tests/providers/local-pbs-coasters/sites.template.xml
+END
+catsn.0005.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0005.out.expected
+END
+catsn.0006.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0006.out.expected
+END
+catsn.0007.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0007.out.expected
+END
+catsn.0008.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0008.out.expected
+END
+catsn.0009.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/catsn.0009.out.expected
+END
+001-catsn-pads-local-pbs-coasters.timeout
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/vdl2/!svn/ver/4202/trunk/tests/providers/local-pbs-coasters/001-catsn-pads-local-pbs-coasters.timeout
+END
+001-catsn-pads-local-pbs-coasters.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/vdl2/!svn/ver/3816/trunk/tests/providers/local-pbs-coasters/001-catsn-pads-local-pbs-coasters.check.sh
+END

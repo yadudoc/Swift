@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/file
+END
+FileNameElementMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/996/trunk/src/org/griphyn/vdl/mapping/file/FileNameElementMapper.java
+END
+CSVMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/3487/trunk/src/org/griphyn/vdl/mapping/file/CSVMapper.java
+END
+ConcurrentElementMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/mapping/file/ConcurrentElementMapper.java
+END
+FixedArrayFileMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/mapping/file/FixedArrayFileMapper.java
+END
+DefaultFileNameElementMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/vdl2/!svn/ver/4675/trunk/src/org/griphyn/vdl/mapping/file/DefaultFileNameElementMapper.java
+END
+AbstractFileMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/mapping/file/AbstractFileMapper.java
+END
+ROIFileNameElementMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/mapping/file/ROIFileNameElementMapper.java
+END
+StructuredRegularExpressionMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/vdl2/!svn/ver/3624/trunk/src/org/griphyn/vdl/mapping/file/StructuredRegularExpressionMapper.java
+END
+AirsnMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/mapping/file/AirsnMapper.java
+END
+ArrayFileMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/file/ArrayFileMapper.java
+END
+RegularExpressionMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/vdl2/!svn/ver/3195/trunk/src/org/griphyn/vdl/mapping/file/RegularExpressionMapper.java
+END
+SingleFileMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/1245/trunk/src/org/griphyn/vdl/mapping/file/SingleFileMapper.java
+END
+ExternalMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4527/trunk/src/org/griphyn/vdl/mapping/file/ExternalMapper.java
+END
+ConcurrentMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/3191/trunk/src/org/griphyn/vdl/mapping/file/ConcurrentMapper.java
+END
+FileSystemArrayMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vdl2/!svn/ver/2174/trunk/src/org/griphyn/vdl/mapping/file/FileSystemArrayMapper.java
+END
+AirsnFileNameElementMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/mapping/file/AirsnFileNameElementMapper.java
+END
+SimpleFileMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4494/trunk/src/org/griphyn/vdl/mapping/file/SimpleFileMapper.java
+END
+ROIMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/202/trunk/src/org/griphyn/vdl/mapping/file/ROIMapper.java
+END
