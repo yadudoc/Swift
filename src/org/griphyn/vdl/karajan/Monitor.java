@@ -39,7 +39,6 @@ import org.globus.cog.karajan.stack.VariableStack;
 import org.globus.cog.karajan.util.ThreadingContext;
 import org.globus.cog.karajan.workflow.events.EventTargetPair;
 import org.globus.cog.karajan.workflow.futures.Future;
-import org.griphyn.vdl.karajan.WrapperMap.FutureWrappers;
 import org.griphyn.vdl.mapping.AbstractDataNode;
 import org.griphyn.vdl.mapping.ArrayDataNode;
 import org.griphyn.vdl.mapping.DSHandle;
@@ -52,13 +51,11 @@ public class Monitor implements ActionListener, MouseListener {
 	private JPanel buttons, display;
 	private JTable t;
 	private JButton futures, waiting, tasks;
-	private List wr, wt;
+	private List<Future> wr;
+	private List<VariableStack> wt;
 	private int crtdisp;
 
-	private WrapperMap map;
-
-	public Monitor(WrapperMap map) {
-		this.map = map;
+	public Monitor() {
 		Service s = new Service();
 		new Thread(s, "network debugger").start();
 	}
@@ -97,22 +94,14 @@ public class Monitor implements ActionListener, MouseListener {
 				t.removeMouseListener(this);
 			}
 			crtdisp = VARS;
-			ArrayList al = new ArrayList();
-			wr = new ArrayList();
+			ArrayList<List<Object>> al = new ArrayList<List<Object>>();
+			wr = new ArrayList<Future>();
+			Map<DSHandle, Future> map = FutureTracker.get().getMap();
 			synchronized (map) {
-				Iterator i = map.entrySet().iterator();
-				while (i.hasNext()) {
-					List entry = new ArrayList();
-					Map.Entry en = (Map.Entry) i.next();
-					FutureWrappers fw = (FutureWrappers) en.getValue();
-					Future f = null;
-					if (fw.nodeWrapper != null) {
-						f = fw.nodeWrapper;
-					}
-					else if (fw.arrayWrapper != null) {
-						f = fw.arrayWrapper;
-					}
-					DSHandle handle = (DSHandle) en.getKey();
+			    for (Map.Entry<DSHandle, Future> en : map.entrySet()) {
+					List<Object> entry = new ArrayList<Object>();
+					Future f = en.getValue();
+					DSHandle handle = en.getKey();
 					String value = "-";
 					Object v;
 					try {
@@ -143,8 +132,8 @@ public class Monitor implements ActionListener, MouseListener {
 					entry.add(f.isClosed() ? "Closed" : "Open");
 					entry.add(sz);
 					String fs;
-					if (f instanceof DSHandleFutureWrapper) {
-						fs = String.valueOf(((DSHandleFutureWrapper) f).listenerCount());
+					if (f instanceof FutureWrapper) {
+						fs = String.valueOf(((FutureWrapper) f).listenerCount());
 					}
 					else {
 						fs = f.toString();
@@ -176,12 +165,10 @@ public class Monitor implements ActionListener, MouseListener {
 				t.removeMouseListener(this);
 			}
 			crtdisp = THREADS;
-			ArrayList al = new ArrayList();
-			wt = new ArrayList();
-			Collection c = WaitingThreadsMonitor.getAllThreads();
-			Iterator i = c.iterator();
-			while (i.hasNext()) {
-				VariableStack stack = (VariableStack) i.next();
+			ArrayList<String> al = new ArrayList<String>();
+			wt = new ArrayList<VariableStack>();
+			Collection<VariableStack> c = WaitingThreadsMonitor.getAllThreads();
+			for (VariableStack stack : c) {
 				try {
 					al.add(String.valueOf(ThreadingContext.get(stack)));
 				}
@@ -209,25 +196,13 @@ public class Monitor implements ActionListener, MouseListener {
 	public void dumpVariables() {
 		dumpVariables(System.out);
 	}
-	
-	public void dumpVariables(PrintStream ps) {
-	    dumpVariables(map, ps);
-	}
 
-	public static void dumpVariables(WrapperMap map, PrintStream ps) {
+	public static void dumpVariables(PrintStream ps) {
 		ps.println("\nRegistered futures:");
+		Map<DSHandle, Future> map = FutureTracker.get().getMap();
 		synchronized (map) {
-			Iterator i = map.entrySet().iterator();
-			while (i.hasNext()) {
-				Map.Entry en = (Map.Entry) i.next();
-				FutureWrappers fw = (FutureWrappers) en.getValue();
-				Future f = null;
-				if (fw.nodeWrapper != null) {
-					f = fw.nodeWrapper;
-				}
-				else if (fw.arrayWrapper != null) {
-					f = fw.arrayWrapper;
-				}
+			for (Map.Entry<DSHandle, Future> en : map.entrySet()) {
+				Future f = en.getValue();
 				AbstractDataNode handle = (AbstractDataNode) en.getKey();
 				String value = "-";
 				try {
@@ -236,7 +211,10 @@ public class Monitor implements ActionListener, MouseListener {
 					}
 				}
 				catch (DependentException e) {
-					value = "Dependent exception";
+					value = "<dependent exception>";
+				}
+				catch (Exception e) {
+				    value = "<exception>";
 				}
 				ps.println(handle.getType() + " " + handle.getDisplayableName() + " " + value + " " + f);
 			}
@@ -250,10 +228,8 @@ public class Monitor implements ActionListener, MouseListener {
 
 	public static void dumpThreads(PrintStream pw) {
 		pw.println("\nWaiting threads:");
-		Collection c = WaitingThreadsMonitor.getAllThreads();
-		Iterator i = c.iterator();
-		while (i.hasNext()) {
-			VariableStack stack = (VariableStack) i.next();
+		Collection<VariableStack> c = WaitingThreadsMonitor.getAllThreads();
+		for (VariableStack stack : c) {
 			try {
 				pw.println(String.valueOf(ThreadingContext.get(stack)));
 			}
@@ -265,16 +241,14 @@ public class Monitor implements ActionListener, MouseListener {
 	}
 
 	public class VariableModel extends AbstractTableModel {
-		private List l;
+		private List<Object[]> l;
 
-		public VariableModel(List lp) {
-			l = new ArrayList();
-			Iterator i = lp.iterator();
+		public VariableModel(List<List<Object>> lp) {
+			l = new ArrayList<Object[]>();
+			Iterator<List<Object>> i = lp.iterator();
 			while (i.hasNext()) {
-				List s = (List) i.next();
-				Iterator j = s.iterator();
-				Object[] e = new Object[6];
-				e = s.toArray();
+				List<Object> s = i.next();
+				Object[] e = s.toArray();
 				l.add(e);
 			}
 		}
@@ -289,7 +263,7 @@ public class Monitor implements ActionListener, MouseListener {
 
 		public Object getValueAt(int rowIndex, int columnIndex) {
 			if (columnIndex < 6) {
-				return ((Object[]) l.get(rowIndex))[columnIndex];
+				return l.get(rowIndex)[columnIndex];
 			}
 			else {
 				EventTargetPair[] l = Monitor.this.getListeners(rowIndex);
@@ -334,9 +308,9 @@ public class Monitor implements ActionListener, MouseListener {
 	}
 
 	public static class ThreadModel extends AbstractTableModel {
-		private List l;
+		private List<String> l;
 
-		public ThreadModel(List lp) {
+		public ThreadModel(List<String> lp) {
 			l = lp;
 		}
 
@@ -395,13 +369,12 @@ public class Monitor implements ActionListener, MouseListener {
 
 	public EventTargetPair[] getListeners(int wrindex) {
 		Object o = wr.get(wrindex);
-		if (o instanceof DSHandleFutureWrapper) {
-			return ((DSHandleFutureWrapper) o).getListenerEvents();
+		if (o instanceof FutureWrapper) {
+			return ((FutureWrapper) o).getListenerEvents();
 		}
-		else if (o instanceof ArrayIndexFutureList) {
-			return ((ArrayIndexFutureList) o).getListenerEvents();
+		else {
+		    return null;
 		}
-		return null;
 	}
 
 	public void mousePressed(MouseEvent e) {

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/vdl2/!svn/ver/3723/trunk/tests/language/should-not-work
+/svn/vdl2/!svn/ver/4752/trunk/tests/language/should-not-work
 END
 title.txt
 K 25
@@ -13,7 +13,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/3716/trunk/tests/language/should-not-work/033-assign.swift
+/svn/vdl2/!svn/ver/4752/trunk/tests/language/should-not-work/033-assign.swift
 END
 closes.swift
 K 25

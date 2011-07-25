@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/docs/cookbook
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-24T22:57:43.584895Z
-4694
-ketan
+2011-07-06T22:54:21.258311Z
+4786
+wilde
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2011-07-09T22:40:47.000000Z
-03953433f79cf79077f1f5a669c92aac
-2011-06-07T20:47:31.326255Z
-4579
-davidk
+2011-07-25T07:39:43.000000Z
+5a69bcc87a88239cd122e9ccb40083c0
+2011-07-06T22:54:21.258311Z
+4786
+wilde
 
 
 
@@ -58,7 +58,7 @@ davidk
 
 
 
-308
+320
 
 swift_basics
 file

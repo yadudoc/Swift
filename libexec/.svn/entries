@@ -1,14 +1,14 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/libexec
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-23T18:29:16.004090Z
-4667
+2011-07-24T23:04:11.218677Z
+4835
 hategan
 has-props
 
@@ -168,10 +168,10 @@ file
 
 
 
-2011-07-09T22:44:49.000000Z
-9979d21dce18c3592bec8ab9cc1c636c
-2011-05-17T22:48:46.157961Z
-4487
+2011-07-25T08:37:42.000000Z
+e7e7fca4fea8c166f043c9306dab5fe7
+2011-07-24T23:04:11.218677Z
+4835
 hategan
 
 
@@ -194,7 +194,7 @@ hategan
 
 
 
-10414
+10748
 
 log-processing
 dir
@@ -239,10 +239,10 @@ file
 
 
 
-2011-07-09T22:44:49.000000Z
-6aafbb717831d04bc9134c9b922522bc
-2011-06-23T18:29:16.004090Z
-4667
+2011-07-25T08:37:42.000000Z
+df5c3bd2625a5876493235c177c9c35a
+2011-07-24T04:43:21.603389Z
+4834
 hategan
 
 
@@ -265,41 +265,7 @@ hategan
 
 
 
-6020
-
-svn-revision
-file
-
-
-
-
-2011-07-09T22:44:49.000000Z
-a703f0c2f2c8ea590625fbd670f0d9db
-2011-03-21T20:36:06.831029Z
-4202
-wozniak
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-622
+5982
 
 cdm_lib.sh
 file
@@ -335,17 +301,17 @@ wozniak
 
 6010
 
-generate-buildid
+svn-revision
 file
 
 
 
 
 2011-07-09T22:44:49.000000Z
-5de7ef4b23c6b35d79928e7539159f5b
-2009-02-22T17:02:54.315385Z
-2583
-benc
+a703f0c2f2c8ea590625fbd670f0d9db
+2011-03-21T20:36:06.831029Z
+4202
+wozniak
 has-props
 
 
@@ -367,7 +333,7 @@ has-props
 
 
 
-140
+622
 
 _swiftseq
 file
@@ -403,17 +369,18 @@ has-props
 
 1271
 
-vdl-int.k
+generate-buildid
 file
 
 
 
 
 2011-07-09T22:44:49.000000Z
-790fdeb7d4a179b14ed123072c5f2ec5
-2011-06-15T01:00:37.927483Z
-4616
-hategan
+5de7ef4b23c6b35d79928e7539159f5b
+2009-02-22T17:02:54.315385Z
+2583
+benc
+has-props
 
 
 
@@ -434,8 +401,7 @@ hategan
 
 
 
-
-20104
+140
 
 vdl-xs.k
 file
@@ -470,6 +436,40 @@ benc@CI.UCHICAGO.EDU
 
 
 1732
+
+vdl-int.k
+file
+
+
+
+
+2011-07-25T08:37:42.000000Z
+dddea6caeb176163421e9e11c38d0894
+2011-07-03T01:53:28.722816Z
+4734
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19925
 
 execute-typecheck.k
 file
@@ -613,10 +613,10 @@ file
 
 
 
-2011-07-09T22:44:49.000000Z
-ac7e818b44dca71038397a12c041fb60
-2011-01-30T09:03:27.645628Z
-4045
+2011-07-25T08:37:42.000000Z
+ea1bb881875cc9e931a43c1a3e0c22cc
+2011-07-03T01:53:28.722816Z
+4734
 hategan
 
 
@@ -639,7 +639,7 @@ hategan
 
 
 
-2219
+2237
 
 cdm.pl
 file

@@ -47,16 +47,20 @@ public class Range extends VDLFunction {
 			handle = new RootArrayDataNode(type.arrayType()) {
 				final DSHandle h = this;
 				
-				public Collection getFields(Path path)
-						throws InvalidPathException, HandleOpenException {
+				{
+				    closeShallow();
+				}
+				
+				public Collection<DSHandle> getFields(Path path)
+						throws InvalidPathException {
 					if (path.size() > 1) {
 						throw new InvalidPathException(path, this);
 					}
 					else if (path.equals(Path.EMPTY_PATH)) {
-						return Collections.singletonList(this);
+						return Collections.singletonList((DSHandle) this);
 					}
 					else {
-						int index = Integer.parseInt(path.getFirst());
+						int index = (Integer) path.getFirst();
 						DSHandle value = new RootDataNode(type);
 						value.init(null);
 						value.setValue(new Double(start + incr * index));
@@ -65,12 +69,12 @@ public class Range extends VDLFunction {
 					}
 				}
 
-				public Map getArrayValue() {
-					return new AbstractMap() {
-						public Set entrySet() {
-							return new AbstractSet() {
-								public Iterator iterator() {
-									return new Iterator() {
+				public Map<Comparable<?>, DSHandle> getArrayValue() {
+					return new AbstractMap<Comparable<?>, DSHandle>() {
+						public Set<Map.Entry<Comparable<?>, DSHandle>> entrySet() {
+							return new AbstractSet<Map.Entry<Comparable<?>, DSHandle>>() {
+								public Iterator<Map.Entry<Comparable<?>, DSHandle>> iterator() {
+									return new Iterator<Map.Entry<Comparable<?>, DSHandle>>() {
 										private double crt = start;
 										private int index = 0;
 										
@@ -78,36 +82,41 @@ public class Range extends VDLFunction {
 											return crt <= stop;
 										}
 
-										public Object next() {
+										public Map.Entry<Comparable<?>, DSHandle> next() {
 											try {
-												Map.Entry e = new Map.Entry() {
+												Map.Entry<Comparable<?>, DSHandle> e = new Map.Entry<Comparable<?>, DSHandle>() {
 													private DSHandle value;
 													private int key;
 													
 													{
 														value = new RootDataNode(type);
 														value.init(null);
-														value.setValue(new Double(crt));
+														if (type == Types.INT) {
+														    value.setValue(new Integer((int) crt));
+														}
+														else {
+														    value.setValue(new Double(crt));
+														}
 														value.closeShallow();
 														key = index;
 													}
 
-													public Object getKey() {
-														return new Double(key);
+													public Comparable<?> getKey() {
+														return Integer.valueOf(key);
 													}
 
-													public Object getValue() {
+													public DSHandle getValue() {
 														return value;
 													}
 
-													public Object setValue(Object value) {
+													public DSHandle setValue(DSHandle value) {
 														throw new UnsupportedOperationException();
 													}
 												};
 												index++;
 												crt += incr;
 												if (crt > stop) {
-													VDLFunction.closeShallow(stack, h);
+												    h.closeShallow();
 												}
 												return e;
 											}
@@ -128,17 +137,7 @@ public class Range extends VDLFunction {
 							};
 						}
 					};
-				}
-
-				public boolean isClosed() {
-					//the need for this lie arises from:
-					//1. adding fields to a truly closed array throws an exception
-					//2. this is a lazy array not a future array. Consequently, we 
-					//   want the consumer(s) of this array to think that all values
-					//   in the array are available
-					return true;
-				}
-				
+				}				
 			};
 			return handle;
 		}

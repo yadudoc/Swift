@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language/working-base
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -604,40 +604,6 @@ benc
 
 388
 
-q17.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-f531f443bb93872c23a56105b7ae6948
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2230
-
 graph1.dot
 file
 
@@ -671,6 +637,40 @@ benc@CI.UCHICAGO.EDU
 
 
 0
+
+q17.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+f531f443bb93872c23a56105b7ae6948
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2230
 
 029-namespace-bound.xml
 file
@@ -808,40 +808,6 @@ benc
 
 1043
 
-0063-two-functions-in-expr.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-d3097112235fb3ac80b7596b74e19eda
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-534
-
 q5.xml
 file
 
@@ -875,6 +841,40 @@ benc
 
 
 1793
+
+0063-two-functions-in-expr.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+d3097112235fb3ac80b7596b74e19eda
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+534
 
 0471-fmri.xml
 file
@@ -910,40 +910,6 @@ benc
 
 11496
 
-graph.dot
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-d41d8cd98f00b204e9800998ecf8427e
-2007-03-30T22:39:44.690824Z
-597
-benc@CI.UCHICAGO.EDU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-0
-
 q7.xml
 file
 
@@ -977,6 +943,40 @@ benc
 
 
 1545
+
+graph.dot
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-03-30T22:39:44.690824Z
+597
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
 
 procedurecall-assign-multi-named-return-values.xml
 file
@@ -2202,40 +2202,6 @@ benc
 
 1657
 
-062-stdinerrout.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-17bf6611224d14f228b83e145079d4b0
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1657
-
 033-assign.xml
 file
 
@@ -2269,6 +2235,40 @@ benc
 
 
 674
+
+062-stdinerrout.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+17bf6611224d14f228b83e145079d4b0
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1657
 
 q20.dot
 file
@@ -2372,40 +2372,6 @@ benc
 
 1104
 
-031-var-decl.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-077c35b66a4121869202262cb35fd9f0
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-483
-
 035-typedef-empty-braces.xml
 file
 
@@ -2440,16 +2406,16 @@ benc
 
 358
 
-is-complex-type.xml
+031-var-decl.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-a5dbbba5c39fd52de6b80fe6fb36fcbe
-2009-02-05T15:16:59.570133Z
-2498
+077c35b66a4121869202262cb35fd9f0
+2009-06-25T13:08:16.641881Z
+2981
 benc
 
 
@@ -2472,7 +2438,41 @@ benc
 
 
 
-249
+483
+
+three.count
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+02c0ce7592f1140c86f121da4e286086
+2007-03-30T22:39:44.690824Z
+597
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
 
 03101-var-decl.xml
 file
@@ -2508,17 +2508,17 @@ benc
 
 503
 
-three.count
+is-complex-type.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-02c0ce7592f1140c86f121da4e286086
-2007-03-30T22:39:44.690824Z
-597
-benc@CI.UCHICAGO.EDU
+a5dbbba5c39fd52de6b80fe6fb36fcbe
+2009-02-05T15:16:59.570133Z
+2498
+benc
 
 
 
@@ -2540,7 +2540,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-19
+249
 
 030-typedef.xml
 file
@@ -2678,40 +2678,6 @@ benc
 
 1381
 
-049-many-nested-statements.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-68f2d685fd333ccf8662d2542309e742
-2009-02-05T15:16:59.570133Z
-2498
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-353
-
 001-type-with-semi.xml
 file
 
@@ -2746,17 +2712,17 @@ benc
 
 358
 
-051-nika.xml
+049-many-nested-statements.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-82a5795ef164e9c45062a81c5625ec7d
-2008-01-04T00:46:03.460678Z
-1538
-benc@CI.UCHICAGO.EDU
+68f2d685fd333ccf8662d2542309e742
+2009-02-05T15:16:59.570133Z
+2498
+benc
 
 
 
@@ -2778,7 +2744,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-1102
+353
 
 0062-two-param-func.xml
 file
@@ -2813,6 +2779,40 @@ benc@CI.UCHICAGO.EDU
 
 
 260
+
+051-nika.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+82a5795ef164e9c45062a81c5625ec7d
+2008-01-04T00:46:03.460678Z
+1538
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1102
 
 037-numeric-literals.xml
 file
@@ -3086,40 +3086,6 @@ benc
 
 958
 
-q12.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-9c9e3caf1adf2cb3b6c1d903953a13a5
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1668
-
 039-montage.xml
 file
 
@@ -3153,6 +3119,40 @@ benc
 
 
 25951
+
+q12.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+9c9e3caf1adf2cb3b6c1d903953a13a5
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1668
 
 018-comment-c-pairs.xml
 file
@@ -3290,16 +3290,16 @@ benc
 
 1053
 
-procedurecall-assign-named-return-value.xml
+050-many-nested-statements-repeat-var.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-66b5d4393ac14edcf1aca178364b1ba4
-2009-06-25T13:08:16.641881Z
-2981
+1423d47e5ff131f3d4228705ef01ff75
+2009-02-05T15:16:59.570133Z
+2498
 benc
 
 
@@ -3322,7 +3322,7 @@ benc
 
 
 
-738
+672
 
 helloworld_named.xml
 file
@@ -3358,16 +3358,16 @@ benc
 
 1077
 
-050-many-nested-statements-repeat-var.xml
+procedurecall-assign-named-return-value.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-1423d47e5ff131f3d4228705ef01ff75
-2009-02-05T15:16:59.570133Z
-2498
+66b5d4393ac14edcf1aca178364b1ba4
+2009-06-25T13:08:16.641881Z
+2981
 benc
 
 
@@ -3390,41 +3390,7 @@ benc
 
 
 
-672
-
-graph-pqmzm86i.dot
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-0879753fa1a270855f62f60bd17774dd
-2007-03-30T22:39:44.690824Z
-597
-benc@CI.UCHICAGO.EDU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-299
+738
 
 038-identifier-with-keyword-prefix.xml
 file
@@ -3460,17 +3426,17 @@ benc
 
 386
 
-015-mapper-literal.xml
+graph-pqmzm86i.dot
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-cbb55ae7db9c842c0f91ffa9075cdd74
-2009-06-25T13:08:16.641881Z
-2981
-benc
+0879753fa1a270855f62f60bd17774dd
+2007-03-30T22:39:44.690824Z
+597
+benc@CI.UCHICAGO.EDU
 
 
 
@@ -3492,41 +3458,7 @@ benc
 
 
 
-459
-
-010-foreach-array.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-b30dd6e423d430d5cef01135653c83a5
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1038
+299
 
 00615-one-param-func.xml
 file
@@ -3562,6 +3494,74 @@ benc
 
 418
 
+010-foreach-array.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+b30dd6e423d430d5cef01135653c83a5
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1038
+
+015-mapper-literal.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+cbb55ae7db9c842c0f91ffa9075cdd74
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+459
+
 q2.xml
 file
 
@@ -3595,40 +3595,6 @@ benc
 
 
 1113
-
-014-mapper.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-d431943774ffb2b4ef5d8a311e1075b8
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-555
 
 q6.xml
 file
@@ -3664,14 +3630,14 @@ benc
 
 1492
 
-044-multiple-variable-decl.xml
+014-mapper.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-032742e91224494a714093ee4fbaf395
+d431943774ffb2b4ef5d8a311e1075b8
 2009-06-25T13:08:16.641881Z
 2981
 benc
@@ -3696,7 +3662,7 @@ benc
 
 
 
-1137
+555
 
 q8.xml
 file
@@ -3731,6 +3697,40 @@ benc@CI.UCHICAGO.EDU
 
 
 1185
+
+044-multiple-variable-decl.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+032742e91224494a714093ee4fbaf395
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1137
 
 range.xml
 file
@@ -3834,6 +3834,40 @@ benc
 
 273
 
+graph-yr68o86i.dot
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+b4be58bd5b5c750eb04c6e2310f57cd8
+2007-03-30T22:39:44.690824Z
+597
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+546
+
 q21.xml
 file
 
@@ -3868,17 +3902,17 @@ benc
 
 1381
 
-graph-yr68o86i.dot
+024-comment-multiline.xml
 file
 
 
 
 
 2011-07-09T22:41:24.000000Z
-b4be58bd5b5c750eb04c6e2310f57cd8
-2007-03-30T22:39:44.690824Z
-597
-benc@CI.UCHICAGO.EDU
+905c09dcb70af7fec8ec6109a3803864
+2009-02-05T15:16:59.570133Z
+2498
+benc
 
 
 
@@ -3900,7 +3934,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-546
+194
 
 q23.xml
 file
@@ -3936,7 +3970,7 @@ benc
 
 1353
 
-024-comment-multiline.xml
+041-only-semi-r356.xml
 file
 
 
@@ -4003,40 +4037,6 @@ benc
 
 
 4378
-
-041-only-semi-r356.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-905c09dcb70af7fec8ec6109a3803864
-2009-02-05T15:16:59.570133Z
-2498
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-194
 
 009-foreach.xml
 file
@@ -4208,40 +4208,6 @@ benc
 
 674
 
-is-procedurecall.xml
-file
-
-
-
-
-2011-07-09T22:41:24.000000Z
-5475a94d02ea1526adb8d05ac63ecec9
-2009-02-05T15:16:59.570133Z
-2498
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-284
-
 036-typedef-empty-semi.xml
 file
 
@@ -4275,6 +4241,40 @@ benc
 
 
 496
+
+is-procedurecall.xml
+file
+
+
+
+
+2011-07-09T22:41:24.000000Z
+5475a94d02ea1526adb8d05ac63ecec9
+2009-02-05T15:16:59.570133Z
+2498
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+284
 
 0064-fn-in-fn.xml
 file

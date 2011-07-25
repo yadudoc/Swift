@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/misc
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -502,40 +502,6 @@ has-props
 
 254
 
-no-retries.sh
-file
-
-
-
-
-2011-07-09T22:41:42.000000Z
-f599ae66b9df5b00c85fff10b15d7318
-2008-02-24T17:23:10.121121Z
-1678
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-411
-
 restart-extern.sh
 file
 
@@ -569,6 +535,40 @@ has-props
 
 
 2375
+
+no-retries.sh
+file
+
+
+
+
+2011-07-09T22:41:42.000000Z
+f599ae66b9df5b00c85fff10b15d7318
+2008-02-24T17:23:10.121121Z
+1678
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+411
 
 wonky-slow-queue-fast-queue.sh
 file
@@ -604,40 +604,6 @@ has-props
 
 546
 
-path-prefix-helper
-file
-
-
-
-
-2011-07-09T22:41:42.000000Z
-d389bc5a7eee0b19a8f9b3dcbe0d6662
-2008-04-24T18:56:11.692216Z
-1800
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-59
-
 arg-mode.sh
 file
 
@@ -672,20 +638,18 @@ has-props
 
 374
 
-coaster-security
-dir
-
-restart-external.in
+path-prefix-helper
 file
 
 
 
 
 2011-07-09T22:41:42.000000Z
-d3b07384d113edec49eaa6238ad5ff00
-2008-07-08T06:55:32.067859Z
-2095
+d389bc5a7eee0b19a8f9b3dcbe0d6662
+2008-04-24T18:56:11.692216Z
+1800
 benc
+has-props
 
 
 
@@ -706,8 +670,44 @@ benc
 
 
 
+59
+
+coaster-security
+dir
+
+wonky-wrongdir.sh
+file
 
-4
+
+
+
+2011-07-09T22:41:42.000000Z
+b427c54b2f744ac8d210b959ff31253e
+2009-02-16T00:02:19.826994Z
+2544
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+283
 
 coaster.sh
 file
@@ -743,18 +743,17 @@ has-props
 
 320
 
-wonky-wrongdir.sh
+restart-external.in
 file
 
 
 
 
 2011-07-09T22:41:42.000000Z
-b427c54b2f744ac8d210b959ff31253e
-2009-02-16T00:02:19.826994Z
-2544
+d3b07384d113edec49eaa6238ad5ff00
+2008-07-08T06:55:32.067859Z
+2095
 benc
-has-props
 
 
 
@@ -775,7 +774,8 @@ has-props
 
 
 
-283
+
+4
 
 restart-iterate.swift
 file
@@ -845,16 +845,16 @@ benc
 
 352
 
-extract-int-delayed.sh
+wonky.sh
 file
 
 
 
 
 2011-07-09T22:41:42.000000Z
-8fd90fe08e9cabce63c2385d58ec1925
-2008-12-14T21:14:16.622298Z
-2372
+79c6cda4925b311492864a8adf64dc73
+2008-07-28T06:16:17.902010Z
+2152
 benc
 has-props
 
@@ -877,7 +877,7 @@ has-props
 
 
 
-449
+290
 
 restart3.sh
 file
@@ -913,16 +913,16 @@ has-props
 
 1668
 
-wonky.sh
+extract-int-delayed.sh
 file
 
 
 
 
 2011-07-09T22:41:42.000000Z
-79c6cda4925b311492864a8adf64dc73
-2008-07-28T06:16:17.902010Z
-2152
+8fd90fe08e9cabce63c2385d58ec1925
+2008-12-14T21:14:16.622298Z
+2372
 benc
 has-props
 
@@ -945,19 +945,20 @@ has-props
 
 
 
-290
+449
 
-restart-extern.swift
+restart5.sh
 file
 
 
 
 
 2011-07-09T22:41:42.000000Z
-ce7663459b99028db04b6f72f25ac727
-2008-07-08T06:55:32.067859Z
-2095
+f1e1f5d63e402c9087e67ddbd96c0c4f
+2008-05-25T20:33:16.401882Z
+2009
 benc
+has-props
 
 
 
@@ -978,8 +979,7 @@ benc
 
 
 
-
-282
+2901
 
 arg.sh
 file
@@ -1015,18 +1015,17 @@ has-props
 
 243
 
-restart5.sh
+restart-extern.swift
 file
 
 
 
 
 2011-07-09T22:41:42.000000Z
-f1e1f5d63e402c9087e67ddbd96c0c4f
-2008-05-25T20:33:16.401882Z
-2009
+ce7663459b99028db04b6f72f25ac727
+2008-07-08T06:55:32.067859Z
+2095
 benc
-has-props
 
 
 
@@ -1047,7 +1046,8 @@ has-props
 
 
 
-2901
+
+282
 
 ordering-extern-notlazy.sh
 file

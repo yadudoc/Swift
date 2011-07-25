@@ -3,7 +3,7 @@ group Karajan;
 // TODO can move progress ticker start into vdl:mains so karajan files
 // are smaller
 
-program(types,procedures,declarations,statements,constants,buildversion) ::= <<
+program(types,procedures,declarations,statements,constants,buildversion,cleanups) ::= <<
 <project><!-- CACHE ID $buildversion$ -->
   <import file="sys.xml"/>
   <import file="scheduler.xml"/>
@@ -28,8 +28,10 @@ program(types,procedures,declarations,statements,constants,buildversion) ::= <<
 		</vdl:mainp>
 		<vdl:stopprogressticker />
 	</vdl:mains>
-  </restartLog>  
+  </restartLog>
   $endif$
+  $cleanups:vdl_cleandataset();separator="\n"$
+  <vdl:cleandataset shutdown="true"/>
 </project>
 >>
 
@@ -55,7 +57,7 @@ memberdefinition(type,name,sourcelocation) ::= <<
    <xs:element name="$name$" type="$type$"/>
 >>
 
-procedure(name,outputs,inputs,arguments,optargs,binding,declarations,statements,config,line) ::= <<
+procedure(name,outputs,inputs,arguments,optargs,binding,declarations,statements,config,line,cleanups) ::= <<
 <element name="$name$"$if(arguments)$ arguments="$proc_args(args=arguments)$"$endif$$if(optargs)$ optargs="$proc_args(args=optargs)$"$endif$>
   $optargs:default_arg();separator="\n"$
   $inputs:vdl_log_input();separator="\n"$
@@ -63,19 +65,20 @@ procedure(name,outputs,inputs,arguments,optargs,binding,declarations,statements,
 $if(binding)$
   $vdl_execute(outputs=outputs,inputs=inputs,application=binding.application, name=name,line=line)$
 $else$
-  $compound(outputs=outputs,inputs=inputs,declarations=declarations,statements=statements,name=name)$
+  $compound(outputs=outputs,inputs=inputs,declarations=declarations,statements=statements,name=name,cleanups=cleanups)$
 $endif$
 </element>
 
 >>
 
-compound(outputs,inputs,declarations,statements,config,name) ::= <<
+compound(outputs,inputs,declarations,statements,config,name,cleanups) ::= <<
 <log level="info"><string>STARTCOMPOUND thread={#thread} name=$name$</string></log>
 $declarations;separator="\n"$
 $if(statements)$
 $parallel(statements=statements)$
 $endif$
 $outputs:vdl_closedataset();separator="\n"$
+$cleanups:vdl_cleandataset();separator="\n"$
 <log level="info"><string>ENDCOMPOUND thread={#thread}</string></log>
 >>
 
@@ -137,6 +140,10 @@ vdl_closedataset() ::= <<
 <vdl:closedataset var="{$it.name$}"/>
 >>
 
+vdl_cleandataset() ::= <<
+<vdl:cleandataset var="{$it$}"/>
+>>
+
 vdl_arguments(arguments,stdin,stdout,stderr) ::= <<
 <vdl:arguments>
   $arguments;separator="\n"$
@@ -179,16 +186,10 @@ function(name, args, datatype) ::= <<
 </swiftscript:$name$>
 >>
 
-iterate(declarations,statements,cond,var) ::= <<
+iterate(declarations,statements,cond,var,cleanups) ::= <<
 
-<vdl:infinitecountingwhile>
-  <set names="\$\$">
-    <each items="{\$}"/>
-  </set>
-  <set name="$var$">
-    <vdl:new type="int" value="{\$\$}" />
-  </set>
-  $sub_comp(declarations=declarations, statements=statements)$
+<vdl:infinitecountingwhile var="$var$">
+  $sub_comp(declarations=declarations, statements=statements, cleanups=cleanups)$
   <sys:if>
     <vdl:getfieldvalue>$cond$</vdl:getfieldvalue>
     <sys:break/>
@@ -197,7 +198,7 @@ iterate(declarations,statements,cond,var) ::= <<
 </vdl:infinitecountingwhile>
 >>
 
-foreach(var,in,indexVar, indexVarType, declarations,statements,line,selfClose) ::= <<
+foreach(var,in,indexVar,indexVarType,declarations,statements,line,selfClose,cleanups) ::= <<
 <vdl:tparallelFor name="\$"$if(selfClose)$ selfClose="$selfClose$"$endif$>
   <getarrayiterator>$in$</getarrayiterator>
   <set names="\$\$, $var$">
@@ -214,6 +215,7 @@ $endif$
     $declarations;separator="\n"$
     $if(statements)$
       $parallel(statements=statements)$
+      $cleanups:vdl_cleandataset();separator="\n"$
     $endif$
     <log level="debug" message="FOREACH_IT_END line=$line$ thread={#thread}"/>
 </vdl:tparallelFor>
@@ -304,12 +306,16 @@ $if(isGlobal)$<global name="$name$">$else$<set name="$name$">$endif$
     $endif$
   $endif$
 $if(isGlobal)$</global>$else$</set>$endif$
-<parameterlog>
-<string>intermediate</string>
-<string>$name$</string>
-<vdl:getdatasetprovenanceid var="{$name$}" />
-<string>{#thread}</string>
-</parameterlog>
+$variable_log()$
+>>
+
+variable_log() ::= <<
+	<parameterlog>
+		<string>intermediate</string>
+		<string>$name$</string>
+		<vdl:getdatasetprovenanceid var="{$name$}" />
+		<string>{#thread}</string>
+	</parameterlog>
 >>
 
 vdl_mapping(mapping,file,waitfor) ::= <<
@@ -337,13 +343,16 @@ vdl_parameter(name,expr) ::= <<
 
 assign(var,value) ::= <<
    <vdl:setfieldvalue>
-     <argument name="var">
        $var$
-     </argument>
-     <argument name="value">
        $value$
-     </argument>
    </vdl:setfieldvalue>
+>>
+
+append(array, value) ::= <<
+	<vdl:appendArray>
+		$array$
+		$value$
+	</vdl:appendArray>
 >>
 
 callexpr(call, datatype, callID, prefix) ::= <<
@@ -384,23 +393,30 @@ range(from,to,step,datatype) ::= <<
     $endif$
   </vdl:range>
  </set>
- <if><equals><vdl:configProperty><string>provenance.log</string></vdl:configProperty><string>true</string></equals>
- <then>
- <log level="info"><concat>
-    <string>ARRAYRANGE thread={#thread} array=</string>
-    <vdl:getdatasetprovenanceid var="{swift#rangeout}" />
-    <string> from=</string> <vdl:getdatasetprovenanceid var="{swift#from}" />
-    <string> to=</string> <vdl:getdatasetprovenanceid var="{swift#to}" />
-    $if(step)$
-    <string> step=</string> <vdl:getdatasetprovenanceid var="{swift#step}" />
-    $else$
-    <string> step=none</string>
-    $endif$
- </concat></log>
- </then>
- </if>
+ $range_log()$
  <variable>swift#rangeout</variable>
 </sequential>
+>>
+
+range_log() ::= <<
+	<if>
+		<equals><vdl:configProperty><string>provenance.log</string></vdl:configProperty><string>true</string></equals>
+ 		<then>
+ 			<log level="info">
+ 				<concat>
+    				<string>ARRAYRANGE thread={#thread} array=</string>
+    				<vdl:getdatasetprovenanceid var="{swift#rangeout}" />
+    				<string> from=</string> <vdl:getdatasetprovenanceid var="{swift#from}" />
+    				<string> to=</string> <vdl:getdatasetprovenanceid var="{swift#to}" />
+    				$if(step)$
+    					<string> step=</string> <vdl:getdatasetprovenanceid var="{swift#step}" />
+    				$else$
+    					<string> step=none</string>
+    				$endif$
+ 				</concat>
+ 			</log>
+ 		</then>
+ 	</if>
 >>
 
 if(condition,vthen,velse) ::= <<
@@ -419,10 +435,11 @@ if(condition,vthen,velse) ::= <<
 </if>
 >>
 
-sub_comp(declarations,statements) ::= <<
+sub_comp(declarations,statements,cleanups) ::= <<
 $declarations;separator="\n"$
 $if(statements)$
 $parallel(statements=statements)$
+$cleanups:vdl_cleandataset();separator="\n"$
 $endif$
 >>
 

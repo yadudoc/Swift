@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 39
-/svn/vdl2/!svn/ver/3482/trunk/resources
+/svn/vdl2/!svn/ver/4835/trunk/resources
 END
 Karajan.stg
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/vdl2/!svn/ver/3482/trunk/resources/Karajan.stg
+/svn/vdl2/!svn/ver/4835/trunk/resources/Karajan.stg
 END
 swiftscript.xsdconfig
 K 25
@@ -19,7 +19,7 @@ swiftscript.g
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/vdl2/!svn/ver/3431/trunk/resources/swiftscript.g
+/svn/vdl2/!svn/ver/4835/trunk/resources/swiftscript.g
 END
 gvds-poolcfg-1.5.xsd
 K 25
@@ -27,15 +27,21 @@ svn:wc:ra_dav:version-url
 V 59
 /svn/vdl2/!svn/ver/462/trunk/resources/gvds-poolcfg-1.5.xsd
 END
+Karajan-no-provenance.stg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4762/trunk/resources/Karajan-no-provenance.stg
+END
 swiftscript.stg
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/2996/trunk/resources/swiftscript.stg
+/svn/vdl2/!svn/ver/4835/trunk/resources/swiftscript.stg
 END
 swiftscript.xsd
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/2996/trunk/resources/swiftscript.xsd
+/svn/vdl2/!svn/ver/4835/trunk/resources/swiftscript.xsd
 END

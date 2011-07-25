@@ -1,14 +1,14 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language-behaviour/strings
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-22T17:33:36.739100Z
-4654
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -230,6 +230,40 @@ achavez
 
 182
 
+761-dirname.clean.sh
+file
+
+
+
+
+2011-07-25T07:40:33.000000Z
+6a7637379b4a9b1c88c750d7949bf743
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+73
+
 003-strcat.check.sh
 file
 
@@ -263,6 +297,40 @@ has-props
 
 
 69
+
+761-dirname.swift
+file
+
+
+
+
+2011-07-25T07:40:33.000000Z
+c55d33a6765504e899a60e29ae5221ae
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+109
 
 161-star-dot.check.sh
 file
@@ -502,14 +570,14 @@ has-props
 
 90
 
-0053-toint.check.sh
+142-space-and-quotes.clean.sh
 file
 
 
 
 
 2011-07-09T22:42:04.000000Z
-789ad0b399ae009f21207f56cc2630d7
+99e146913d700a72f0c0624371a8d32c
 2011-06-22T17:33:36.739100Z
 4654
 achavez
@@ -534,41 +602,7 @@ has-props
 
 
 
-65
-
-1032-singlequote.check.sh
-file
-
-
-
-
-2011-07-09T22:42:04.000000Z
-7241465d77838ed5df71a5770f2cad7e
-2011-06-22T17:33:36.739100Z
-4654
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-98
+116
 
 0051-regexp.clean.sh
 file
@@ -604,14 +638,14 @@ has-props
 
 88
 
-142-space-and-quotes.clean.sh
+1032-singlequote.check.sh
 file
 
 
 
 
 2011-07-09T22:42:04.000000Z
-99e146913d700a72f0c0624371a8d32c
+7241465d77838ed5df71a5770f2cad7e
 2011-06-22T17:33:36.739100Z
 4654
 achavez
@@ -636,7 +670,41 @@ has-props
 
 
 
-116
+98
+
+0053-toint.check.sh
+file
+
+
+
+
+2011-07-09T22:42:04.000000Z
+789ad0b399ae009f21207f56cc2630d7
+2011-06-22T17:33:36.739100Z
+4654
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+65
 
 0052-regexp.clean.sh
 file
@@ -876,40 +944,6 @@ has-props
 
 97
 
-103-quote.clean.sh
-file
-
-
-
-
-2011-07-09T22:42:04.000000Z
-2c585cc62f014ee7ff33f7d4b5530447
-2011-06-22T17:33:36.739100Z
-4654
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-82
-
 1421-space-and-quotes.clean.sh
 file
 
@@ -944,17 +978,18 @@ has-props
 
 119
 
-103-quote.swift
+103-quote.clean.sh
 file
 
 
 
 
 2011-07-09T22:42:04.000000Z
-cc2163298202d95a8b0496a4466d5f55
+2c585cc62f014ee7ff33f7d4b5530447
 2011-06-22T17:33:36.739100Z
 4654
 achavez
+has-props
 
 
 
@@ -975,8 +1010,7 @@ achavez
 
 
 
-
-158
+82
 
 1421-space-and-quotes.swift
 file
@@ -1011,6 +1045,40 @@ achavez
 
 
 778
+
+103-quote.swift
+file
+
+
+
+
+2011-07-09T22:42:04.000000Z
+cc2163298202d95a8b0496a4466d5f55
+2011-06-22T17:33:36.739100Z
+4654
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+158
 
 003-strcat.clean.sh
 file

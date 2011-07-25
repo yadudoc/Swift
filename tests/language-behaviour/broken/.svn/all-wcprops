@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/vdl2/!svn/ver/1314/trunk/tests/language-behaviour/broken
+/svn/vdl2/!svn/ver/4740/trunk/tests/language-behaviour/broken
 END
 111-array-range-exprs.swift
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 83
 /svn/vdl2/!svn/ver/1069/trunk/tests/language-behaviour/broken/112-array-range.swift
+END
+0753-filesystem-mapper.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4740/trunk/tests/language-behaviour/broken/0753-filesystem-mapper.setup.sh
 END
 0753-filesystem-mapper.swift
 K 25

@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-24T20:41:35.338294Z
-4692
-achavez
+2011-07-25T02:18:54.273627Z
+4837
+hategan
 has-props
 
 
@@ -44,11 +44,39 @@ dir
 local
 dir
 
-log-processing
-dir
-
-misc
-dir
+USAGENOTES.txt
+file
+
+
+
+
+2011-07-09T22:42:18.000000Z
+c88459d682fdd337df0ef1d7d2e5c440
+2011-06-16T16:47:15.695760Z
+4621
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8921
 
 sitetester
 file
@@ -84,39 +112,11 @@ has-props
 
 1791
 
-USAGENOTES.txt
-file
-
-
-
-
-2011-07-09T22:42:18.000000Z
-c88459d682fdd337df0ef1d7d2e5c440
-2011-06-16T16:47:15.695760Z
-4621
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8921
+misc
+dir
+
+log-processing
+dir
 
 README
 file
@@ -220,17 +220,20 @@ wozniak
 
 188
 
+bugs
+dir
+
 suite.sh
 file
 
 
 
 
-2011-07-09T22:42:18.000000Z
-f33eec1a7ec77be111f44e4bae7d5162
-2011-06-24T20:41:35.338294Z
-4692
-achavez
+2011-07-25T07:44:03.000000Z
+8c1d8b99db31194da35d1a998fa45fd4
+2011-07-21T15:47:55.103730Z
+4833
+wozniak
 has-props
 
 
@@ -252,7 +255,7 @@ has-props
 
 
 
-22204
+24609
 
 cdm
 dir

@@ -5,16 +5,23 @@ package org.griphyn.vdl.mapping;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.globus.cog.karajan.workflow.futures.Future;
+import org.globus.cog.karajan.workflow.futures.FutureFault;
+import org.globus.cog.karajan.workflow.futures.FutureNotYetAvailable;
+import org.griphyn.vdl.karajan.DSHandleFutureWrapper;
+import org.griphyn.vdl.karajan.FutureTracker;
+import org.griphyn.vdl.karajan.FutureWrapper;
 import org.griphyn.vdl.karajan.Loader;
-import org.griphyn.vdl.karajan.VDL2FutureException;
 import org.griphyn.vdl.type.Field;
 import org.griphyn.vdl.type.Type;
 import org.griphyn.vdl.util.VDL2Config;
+
 
 
 public abstract class AbstractDataNode implements DSHandle {
@@ -46,19 +53,26 @@ public abstract class AbstractDataNode implements DSHandle {
     private static final String datasetIDPartialID = Loader.getUUID();
 
     private Field field;
-    private Map<String,DSHandle> handles;
+    private Map<Comparable<?>, DSHandle> handles;
     private Object value;
     private boolean closed;
-    private List<DSHandleListener> listeners;
     final String identifierURI = makeIdentifierURIString();
     private Path pathFromRoot;
+    
+    protected FutureWrapper wrapper;
 
     protected AbstractDataNode(Field field) {
         this.field = field;
-        handles = new HashMap<String,DSHandle>();
+        if (field.getType().isComposite()) {
+            handles = new HashMap<Comparable<?>, DSHandle>();
+        }
+        else {
+            handles = Collections.emptyMap();
+        }
     }
 
-    public void init(Map<String,Object> params) {
+    public void init(Map<String, Object> params) {
+        throw new UnsupportedOperationException();
     }
 
     public Type getType() {
@@ -179,48 +193,41 @@ public abstract class AbstractDataNode implements DSHandle {
         }
         try {
             DSHandle handle = getField(path.getFirst());
+            
             if (path.size() > 1) {
                 return handle.getField(path.butFirst());
             }
-            return handle;
+            else {
+                return handle;
+            }
         }
         catch (NoSuchFieldException e) {
-            logger.warn("could not find variable: " + field.getName() + 
+            logger.warn("could not find variable: " + field.getId() + 
                                " " + path);
             throw new InvalidPathException(path, this);
         }
     }
 
-    public Collection<DSHandle> getFields(Path path) 
-    throws InvalidPathException, HandleOpenException {
+    public Collection<DSHandle> getFields(Path path) throws InvalidPathException {
         List<DSHandle> fields = new ArrayList<DSHandle>();
         getFields(fields, path);
         return fields;
     }
 
-    private void getFields(List<DSHandle> fields, Path path) 
-    throws InvalidPathException, HandleOpenException {
+    protected void getFields(List<DSHandle> fields, Path path) throws InvalidPathException {
         if (path.isEmpty()) {
             fields.add(this);
         }
         else {
-            Path rest = path.butFirst();
             if (path.isWildcard(0)) {
-                if (isArray() && !closed) {
-                    throw new HandleOpenException(this);
-                }
-                for (DSHandle handle : handles.values()) {
-                    ((AbstractDataNode) handle).getFields(fields, rest);
-                }
+                throw new InvalidPathException("getFields([*]) only applies to arrays");
             }
-            else {
-                try {
-                    ((AbstractDataNode) getField(path.getFirst())).getFields(
-                        fields, rest);
-                }
-                catch (NoSuchFieldException e) {
-                    throw new InvalidPathException(path, this);
-                }
+            try {
+                ((AbstractDataNode) getField(path.getFirst())).getFields(
+                    fields, path.butFirst());
+            }
+            catch (NoSuchFieldException e) {
+                throw new InvalidPathException(path, this);
             }
         }
     }
@@ -239,30 +246,26 @@ public abstract class AbstractDataNode implements DSHandle {
              */
             throw new RuntimeException("Can't set root data node!");
         }
-        ((AbstractDataNode) getParent()).setField(field.getName(), handle);
+        ((AbstractDataNode) getParent()).setField(field.getId(), handle);
     }
 
-    protected void setField(String name, DSHandle handle) {
+    protected void setField(Comparable<?> id, DSHandle handle) {
         synchronized (handles) {
-            handles.put(name, handle);
+            handles.put(id, handle);
         }
     }
 
-    protected synchronized DSHandle getField(String name)
-    throws NoSuchFieldException {
-        DSHandle handle = getHandle(name);
-        if (handle == null) {
-            if (closed) {
-                throw new NoSuchFieldException(name);
+    protected DSHandle getField(Comparable<?> key)
+        throws NoSuchFieldException {
+        synchronized(handles) {
+            DSHandle handle = handles.get(key);
+            if (handle == null) {
+                if (closed) {
+                    throw new NoSuchFieldException(key.toString());
+                }
+                handle = createField(key);
             }
-            handle = createDSHandle(name);
-        }
-        return handle;
-    }
-
-    protected DSHandle getHandle(String name) {
-        synchronized (handles) {
-            return handles.get(name);
+            return handle;
         }
     }
 
@@ -272,36 +275,49 @@ public abstract class AbstractDataNode implements DSHandle {
         }
     }
 
-    public DSHandle createDSHandle(String fieldName)
+    public DSHandle createField(Comparable<?> key)
     throws NoSuchFieldException {
         if (closed) {
             throw new RuntimeException("Cannot write to closed handle: " + this
-                + " (" + fieldName + ")");
+                + " (" + key + ")");
         }
-
-        AbstractDataNode child;
-        Field childField = getChildField(fieldName);
-        if (childField.getType().isArray()) {
-            child = new ArrayDataNode(getChildField(fieldName), getRoot(), this);
-        }
-        else {
-            child = new DataNode(getChildField(fieldName), getRoot(), this);
-        }
-
+        
+        return addHandle(key, newNode(getChildField(key)));
+    }
+    
+    protected DSHandle addHandle(Comparable<?> id, DSHandle handle) {
         synchronized (handles) {
-            Object o = handles.put(fieldName, child);
+            Object o = handles.put(id, handle);
             if (o != null) {
                 throw new RuntimeException(
                     "Trying to create a handle that already exists ("
-                    + fieldName + ") in " + this);
+                    + id + ") in " + this);
             }
         }
-        return child;
+        return handle;
     }
+    
+    protected AbstractDataNode newNode(Field f) {
+        if (f.getType().isArray()) {
+            return new ArrayDataNode(f, getRoot(), this);
+        }
+        else {
+            return new DataNode(f, getRoot(), this);
+        }
 
-    protected Field getChildField(String fieldName) throws NoSuchFieldException {
-        return Field.Factory.createField(fieldName, field.getType().getField(
-            fieldName).getType());
+    }
+        
+    protected Field getChildField(Comparable<?> key) throws NoSuchFieldException {
+        if (getType().isArray()) {
+            return Field.Factory.createField(key, getType().itemType());
+        }
+        else {
+            return Field.Factory.createField(key, getType().getField((String) key).getType());
+        }
+    }
+    
+    protected Field getArrayChildField(Comparable<?> key) {
+        return Field.Factory.createField(key, getType().itemType());
     }
 
     protected void checkDataException() {
@@ -324,11 +340,10 @@ public abstract class AbstractDataNode implements DSHandle {
         return value;
     }
 
-    public Map<String, DSHandle> getArrayValue() {
+    public Map<Comparable<?>, DSHandle> getArrayValue() {
         checkDataException();        
         if (!field.getType().isArray()) {
-            throw new RuntimeException
-            ("getArrayValue called on a struct: " + this);
+            throw new RuntimeException("getArrayValue called on a non-array: " + this);
         }     
         return handles;
     }
@@ -355,43 +370,39 @@ public abstract class AbstractDataNode implements DSHandle {
         getFringePaths(list, Path.EMPTY_PATH);
         return list;
     }
-
+    
     public void getFringePaths(List<Path> list, Path parentPath)
     throws HandleOpenException {
         checkMappingException();
-        if (getField().getType().getBaseType() != null) {
+        if (getType().getBaseType() != null) {
             list.add(Path.EMPTY_PATH);
         }
         else {
-            for (Field field : getField().getType().getFields()) {
-                AbstractDataNode mapper;
-                String name = field.getName();
+            for (Field field : getType().getFields()) {
+                AbstractDataNode child;
+                String name = (String) field.getId();
                 try {
-                    mapper = (AbstractDataNode) this.getField(name);
+                    child = (AbstractDataNode) this.getField(name);
                 }
                 catch (NoSuchFieldException e) {
                     throw new RuntimeException
                     ("Inconsistency between type declaration and " + 
                         "handle for field '" + name + "'");
                 }
-                // [m] Hmm. Should there be a difference between field and
-                // mapper.getField()?
-                // Path fullPath =
-                // parentPath.addLast(mapper.getField().getName());
-                Path fullPath = parentPath.addLast(field.getName());
-                Type type = mapper.field.getType(); 
+                Path fullPath = parentPath.addLast(name);
+                Type type = child.getType(); 
                 if (!type.isPrimitive() &&
-                        !mapper.isArray() && 
+                        !child.isArray() && 
                         type.getFields().size() == 0) {
                     list.add(fullPath);
                 }
                 else {
-                    mapper.getFringePaths(list, fullPath);
+                    child.getFringePaths(list, fullPath);
                 }
             }
         }
     }
-
+    
     public void closeShallow() {
         synchronized(this) {
             if (this.closed) {
@@ -448,9 +459,10 @@ public abstract class AbstractDataNode implements DSHandle {
             try {
                 m = this.getMapper();
             }
-            catch (VDL2FutureException fe) {
+            catch (FutureFault fe) {
                 m = null; // no mapping info if mapper isn't initialised yet
             }
+
             if (m != null) {
                 // TODO proper type here
                 // Not sure catching exception here is really the right thing to
@@ -548,7 +560,7 @@ public abstract class AbstractDataNode implements DSHandle {
             Path myPath;
             if (parent != null) {
                 myPath = parent.getPathFromRoot();
-                pathFromRoot = myPath.addLast(getField().getName(), parent
+                pathFromRoot = myPath.addLast(getField().getId(), parent
                     .getField().getType().isArray());
             }
             else {
@@ -562,49 +574,10 @@ public abstract class AbstractDataNode implements DSHandle {
         return ((AbstractDataNode) getRoot()).getMapper();
     }
 
-    protected Map<String,DSHandle> getHandles() {
+    protected Map<Comparable<?>, DSHandle> getHandles() {
         return handles;
     }
-
-    public void addListener(DSHandleListener listener) {
-        if (logger.isDebugEnabled()) {
-            logger.debug("Adding handle listener \"" + listener + 
-                "\" to \"" + getIdentifyingString() + "\"");
-        }
-        synchronized(this) {
-            if (listeners == null) {
-                listeners = new ArrayList<DSHandleListener>();
-            }
-            listeners.add(listener);
-            if (!closed) {
-                return;
-            }
-        }
-        // listeners != null, closed
-        notifyListeners();
-    }
-
-    protected void notifyListeners() {
-        List<DSHandleListener> l;
-        
-        synchronized(this) {
-            if (listeners == null) {
-                return;
-            }
-            
-            l = listeners;
-            listeners = null;
-        }
-        
-        for (DSHandleListener listener : l) {  
-            if (logger.isDebugEnabled()) {
-                logger.debug("Notifying listener \"" + listener
-                    + "\" about \"" + getIdentifyingString() + "\"");
-            }
-            listener.handleClosed(this);
-        }
-    }
-
+    
     public String getIdentifier() {
         return identifierURI;
     }
@@ -612,5 +585,66 @@ public abstract class AbstractDataNode implements DSHandle {
     String makeIdentifierURIString() {
         datasetIDCounter++;
         return DATASET_URI_PREFIX + datasetIDPartialID + ":" + datasetIDCounter;
+    }
+       
+    public synchronized void waitFor() {
+        if (!closed) {
+            if (logger.isDebugEnabled()) {
+                logger.debug("Waiting for " + this);
+            }
+            throw new FutureNotYetAvailable(getFutureWrapper());
+        }
+        else {
+            if (logger.isDebugEnabled()) {
+                logger.debug("Do not need to wait for " + this);
+            }
+            if (value instanceof RuntimeException) {
+                throw (RuntimeException) value;
+            }
+        }
+    }
+    
+    public void addListener(DSHandleListener listener) {
+        throw new UnsupportedOperationException();
+    }
+    
+    protected synchronized Future getFutureWrapper() {
+    	if (wrapper == null) {
+    		wrapper = new DSHandleFutureWrapper(this);
+    		FutureTracker.get().add(this, wrapper);
+    	}
+    	return wrapper;
+    }
+    
+    protected void notifyListeners() {
+    	FutureWrapper wrapper;
+    	synchronized(this) {
+    		wrapper = this.wrapper;
+    		if (closed) {
+    		    FutureTracker.get().remove(this);
+    		    this.wrapper = null;
+    		}
+    	}
+    	if (wrapper != null) {
+    		wrapper.notifyListeners();
+    	}
+    }
+
+    public synchronized void clean() {
+        if (!handles.isEmpty()) {
+            for (DSHandle h : handles.values()) {
+                ((AbstractDataNode) h).clean();
+            }
+        }
+        else if (!getType().isArray()) {
+            Mapper mapper = getRoot().getMapper();
+            if (mapper != null) {
+                mapper.clean(getPathFromRoot());
+            }
+        }
+        field = null;
+        handles = null;
+        value = null;
+        pathFromRoot = null;
     }
 }

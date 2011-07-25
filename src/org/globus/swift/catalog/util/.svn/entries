@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/src/org/globus/swift/catalog/util
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2010-12-23T17:35:52.811785Z
-3821
-wozniak
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -134,10 +134,10 @@ file
 
 
 
-2011-07-09T22:40:41.000000Z
-23529da16be6fd7b3bdac149db2d57dd
-2009-10-11T19:26:42.345233Z
-3144
+2011-07-25T07:39:42.000000Z
+2598b92ec67a39ed8213b9ae41e926ca
+2011-07-07T23:36:33.149893Z
+4804
 hategan
 
 
@@ -160,7 +160,7 @@ hategan
 
 
 
-2580
+1219
 
 ProfileParserException.java
 file

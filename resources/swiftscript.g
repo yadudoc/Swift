@@ -475,14 +475,23 @@ formalParameter returns [StringTemplate code=template("parameter")]
         }
     ;
 
-type returns [StringTemplate code=null]
-    :
-     id:ID 
-        {
-        code=template("type");
-        code.setAttribute("name", id.getText());
-        }
-    ;
+type returns [ StringTemplate code = null ] 
+	{ StringBuilder buf = new StringBuilder(); }
+:
+	id:ID {
+		code = template("type");
+		buf.append(id.getText());
+	}
+	(typeSubscript[buf]) * {
+		code.setAttribute("name", buf.toString());
+	}
+;
+    
+typeSubscript[StringBuilder buf] :
+	LBRACK { buf.append('['); }
+	(id:ID { buf.append(id.getText()); })?
+	RBRACK { buf.append(']'); }
+;
 
 compoundStat[StringTemplate code]
     :   LCURLY
@@ -648,30 +657,33 @@ assignStat returns [StringTemplate code=null]
     )
     ;
 
-appendStat returns [StringTemplate code=null]
-{StringTemplate id=null;}
-    :
+appendStat returns [ StringTemplate code = null ]
+	{ StringTemplate id=null; }
+:
     id=identifier
-    APPEND
+    APPEND 
     (
-      (predictProcedurecallAssign) => code=procedurecallCode
-        { StringTemplate o = template("returnParam");
-          o.setAttribute("name",id);
-          code.setAttribute("outputs",o);
+    	(predictProcedurecallAssign) => code=procedurecallCode {
+    		StringTemplate o = template("returnParam");
+			o.setAttribute("name",id);
+			code.setAttribute("outputs",o);
         }
-    |
-      code=variableAssign
-      {
-       	  // We append ["!"] to the back of the array and assign it the lhs 
-       	  StringTemplate c = template("arraySubscript");
-       	  StringTemplate st = template("sConst");
-          st.setAttribute("value","_SWIFT_AUTO_INCREMENT");       	         	 
-       	  c.setAttribute("subscript",st);
-       	  c.setAttribute("array", id);
-          code.setAttribute("lhs",c);          
-      }
+    	|
+      	code=arrayAppend { 
+			code.setAttribute("array", id);          
+		}
     )
-    ;    
+;
+    
+arrayAppend returns [ StringTemplate code = null ]
+	{ StringTemplate a = null, e = null, id = null; }
+:
+	e = expression SEMI {
+		code = template("append");
+		code.setAttribute("value", e);
+	}
+;
+
 
 variableAssign returns [StringTemplate code=null]
 {StringTemplate a=null, e=null, id=null;}
@@ -791,20 +803,27 @@ procedurecallStatAssignManyReturnOutput [StringTemplate s, StringTemplate code]
         }
     ;
 
-returnParameter returns [StringTemplate code=template("returnParam")]
-{StringTemplate t=null, id=null, d=null;}
-    :   (t=type{        code.setAttribute("type", t);})?
-        id=identifier
-        {
-        code.setAttribute("name", id);
-        }
-        (
-          (ASSIGN declarator)=>(ASSIGN d=declarator)
-          {
-          code.setAttribute("bind", d);
-          }
-        )?
-    ;
+returnParameter returns [ StringTemplate code = template("returnParam") ]
+	{ StringTemplate t = null, id = null, d = null; StringBuilder buf = new StringBuilder(); }
+:
+	t = identifier { buf.append(t.getAttribute("name")); }
+	(typeSubscript[buf])*
+	( id = identifier )?
+	{
+		if (id == null) {
+			code.setAttribute("name", t);
+		}
+		else {
+			t = template("type");
+			t.setAttribute("name", buf.toString());
+			code.setAttribute("name", id);
+			code.setAttribute("type", t);
+		}
+	}
+	((ASSIGN declarator) => (ASSIGN d=declarator) {
+		code.setAttribute("bind", d);
+	})?
+;
 
 actualParameter returns [StringTemplate code=template("actualParam")]
 {StringTemplate d=null, id=null, ai=null;}

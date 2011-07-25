@@ -3,34 +3,33 @@
  */
 package org.griphyn.vdl.mapping;
 
-import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-import org.griphyn.vdl.karajan.VDL2FutureException;
+import org.globus.cog.karajan.stack.VariableStack;
+import org.globus.cog.karajan.workflow.futures.Future;
+import org.globus.cog.karajan.workflow.futures.FutureListener;
+import org.globus.cog.karajan.workflow.futures.FutureNotYetAvailable;
 import org.griphyn.vdl.type.Field;
 import org.griphyn.vdl.type.Type;
 
-public class RootDataNode extends AbstractDataNode implements DSHandleListener {
+public class RootDataNode extends AbstractDataNode implements FutureListener {
 
     static Logger logger = Logger.getLogger(RootDataNode.class); 
     
 	private boolean initialized=false;
 	private Mapper mapper;
 	private Map<String, Object> params;
-	private DSHandle waitingMapperParam;
-
-	public static DSHandle newNode(Type type, Object value) {
-		DSHandle handle = new RootDataNode(type);
-		handle.setValue(value);
-		handle.closeShallow();
-		logger.debug("newNode");
-		return handle;
-	}
+	private AbstractDataNode waitingMapperParam;
 
 	public RootDataNode(Type type) {
-		super(Field.Factory.newInstance());
-		getField().setType(type);
+		super(Field.Factory.createField(null, type));
+	}
+	
+	public RootDataNode(Type type, Object value) {
+	    this(type);
+	    initialized();
+	    setValue(value);
 	}
 
 	public void init(Map<String,Object> params) {
@@ -45,12 +44,13 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 	/** must have this.params set to the appropriate parameters before
 	    being called. */
 	private synchronized void innerInit() {
-	    logger.debug("innerInit: " + this);
 	    for (Object v : params.values()) {
-			if(v instanceof DSHandle && !((DSHandle) v).isClosed()) {
-			    logger.debug("addListener: " + this + " " + v);
-			    waitingMapperParam = (DSHandle) v;
-                waitingMapperParam.addListener(this);
+			if(v instanceof AbstractDataNode && !((AbstractDataNode) v).isClosed()) {
+			    if (logger.isDebugEnabled()) {
+			        logger.debug("addListener: " + this + " " + v);
+			    }
+			    waitingMapperParam = (AbstractDataNode) v;
+                waitingMapperParam.getFutureWrapper().addModificationAction(this, null);
 				return;
 			}
 		}
@@ -61,7 +61,7 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		}
 		try {
 			mapper = MapperFactory.getMapper(desc, params);
-			getField().setName(PARAM_PREFIX.getStringValue(mapper));
+			getField().setId(PARAM_PREFIX.getStringValue(mapper));
 			// initialized means that this data has its mapper initialized
 			// this should be called before checkInputs because the latter
 			// may trigger calls to things that try to access this data node's
@@ -82,10 +82,6 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		try {
 			checkInputs(params, mapper, this);
 		}
-		catch (VDL2FutureException e) {
-			logger.warn("Unexpected VDL2FutureException checking inputs for dataset "+this);
-			throw new RuntimeException("Got a VDL2FutureException but all parameters should have their values",e);
-		}
 		catch (DependentException e) {
 			setValue(new MappingDependentException(this, e));
 			closeShallow();
@@ -93,17 +89,15 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		}
 	}
 
-	public void handleClosed(DSHandle handle) {
+	public void futureModified(Future f, VariableStack stack) {
 		innerInit();
 	}
 
 
-	static protected void checkInputs(Map params, Mapper mapper, AbstractDataNode root) {
+	static protected void checkInputs(Map<String, Object> params, Mapper mapper, AbstractDataNode root) {
 		String input = (String) params.get("input");
 		if (input != null && Boolean.valueOf(input.trim()).booleanValue()) {
-			Iterator i = mapper.existing().iterator();
-			while (i.hasNext()) {
-				Path p = (Path) i.next();
+		    for (Path p : mapper.existing()) {
 				try {
 					DSHandle field = root.getField(p);
 					field.closeShallow();
@@ -112,11 +106,11 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 					}
 				}
 				catch (InvalidPathException e) {
-					throw new IllegalStateException("mapper.existing() returned a path " + p
-							+ " that it cannot subsequently map");
+				    throw new IllegalStateException("Structure of mapped data is " +
+				    		"incompatible with the mapped variable type: " + e.getMessage());
 				}
 			}
-			root.closeDeep();
+		    root.closeDeep();
 			checkConsistency(root);
 		}
 		else if (mapper.isStatic()) {
@@ -155,18 +149,7 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		if (handle.getType().isArray()) {
 			// any number of indices is ok
 			try {
-				Iterator i = handle.getFields(Path.CHILDREN).iterator();
-				while (i.hasNext()) {
-					DSHandle dh = (DSHandle) i.next();
-					Path path = dh.getPathFromRoot();
-					String index = path.getElement(path.size() - 1);
-					try {
-						Integer.parseInt(index);
-					}
-					catch (NumberFormatException nfe) {
-						throw new RuntimeException("Array element has index '" + index
-								+ "' that does not parse as an integer.");
-					}
+			    for (DSHandle dh : handle.getFields(Path.CHILDREN)) {
 					checkConsistency(dh);
 				}
 			}
@@ -182,9 +165,7 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		else {
 			// all fields must be present
 			Type type = handle.getType();
-			Iterator i = type.getFieldNames().iterator();
-			while (i.hasNext()) {
-				String fieldName = (String) i.next();
+			for (String fieldName : type.getFieldNames()) {
 				Path fieldPath = Path.parse(fieldName);
 				try {
 					checkConsistency(handle.getField(fieldPath));
@@ -194,7 +175,6 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 							+ ". Missing required field: " + fieldName);
 				}
 			}
-
 		}
 	}
 
@@ -213,12 +193,16 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		return null;
 	}
 
-	public Mapper getMapper() {
+	public synchronized Mapper getMapper() {
 		if (initialized) {
 			return mapper;
 		}
-        assert (waitingMapperParam != null);
-        throw new VDL2FutureException(waitingMapperParam);
+        if (waitingMapperParam == null) {
+            return null;
+        }
+        else {
+            throw new FutureNotYetAvailable(waitingMapperParam.getFutureWrapper());
+        }
 	}
 
 	public boolean isArray() {
@@ -230,8 +214,8 @@ public class RootDataNode extends AbstractDataNode implements DSHandleListener {
 		initialized();
 	}
 
-	private void initialized() {
+	private synchronized void initialized() {
 		initialized = true;
 		waitingMapperParam = null;
-	}    
+	}
 }

@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/local
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2010-09-08T18:59:31.906847Z
-3615
-wozniak
+2011-07-03T21:42:01.292346Z
+4753
+hategan
 
 
 
@@ -94,6 +94,74 @@ has-props
 
 138
 
+range.check.sh
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+e087cb7312e904745e64c5f4ad316a1b
+2011-07-03T21:42:01.292346Z
+4753
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+120
+
+array_iteration.check.sh
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+2d334f898334381f57d0be9ad9924704
+2011-07-03T21:42:01.292346Z
+4753
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+133
+
 array_wildcard.clean.sh
 file
 
@@ -127,74 +195,6 @@ has-props
 
 
 50
-
-array_iteration.check.sh
-file
-
-
-
-
-2011-07-09T22:41:35.000000Z
-dcef8e8e9993d63665a6b332b8238def
-2010-08-10T21:13:25.686495Z
-3515
-wozniak
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-131
-
-range.check.sh
-file
-
-
-
-
-2011-07-09T22:41:35.000000Z
-836480664a4eeb721e55620f46ea32aa
-2010-09-08T18:59:31.906847Z
-3615
-wozniak
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-118
 
 array_wildcard.swift
 file
@@ -264,40 +264,6 @@ has-props
 
 56
 
-array_iteration.swift
-file
-
-
-
-
-2011-07-09T22:41:35.000000Z
-8e13c0c4b94ebcdf750b5fed491cfbc9
-2010-08-10T21:13:25.686495Z
-3515
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-330
-
 range.swift
 file
 
@@ -332,18 +298,17 @@ wozniak
 
 114
 
-hello.check.sh
+array_iteration.swift
 file
 
 
 
 
 2011-07-09T22:41:35.000000Z
-4a9d7972cc8ec6f5233b3036f12dac6f
+8e13c0c4b94ebcdf750b5fed491cfbc9
 2010-08-10T21:13:25.686495Z
 3515
 wozniak
-has-props
 
 
 
@@ -364,7 +329,8 @@ has-props
 
 
 
-60
+
+330
 
 tc.template.data
 file
@@ -399,6 +365,40 @@ wozniak
 
 
 995
+
+hello.check.sh
+file
+
+
+
+
+2011-07-09T22:41:35.000000Z
+4a9d7972cc8ec6f5233b3036f12dac6f
+2010-08-10T21:13:25.686495Z
+3515
+wozniak
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+60
 
 filesysmapper.setup.sh
 file
@@ -644,11 +644,11 @@ file
 
 
 
-2011-07-09T22:41:35.000000Z
-3bdf76ac8004063b06c13660a6fc0e01
-2010-08-10T21:13:25.686495Z
-3515
-wozniak
+2011-07-25T07:39:52.000000Z
+8266e46dbe94c66529acca9aea6cf19a
+2011-07-03T21:42:01.292346Z
+4753
+hategan
 has-props
 
 
@@ -670,7 +670,7 @@ has-props
 
 
 
-129
+131
 
 default.check.sh
 file

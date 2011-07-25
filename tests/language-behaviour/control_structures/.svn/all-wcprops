@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/control_structures
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/control_structures
 END
 bug84-comparisons.swift
 K 25
@@ -61,7 +61,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/control_structures/090-case.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/control_structures/090-case.swift
 END
 105-if.swift
 K 25

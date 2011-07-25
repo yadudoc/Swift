@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/ssh-pbs-coasters
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -94,40 +94,6 @@ davidk
 
 416
 
-001-catsn-ssh-pbs-coasters.timeout
-file
-
-
-
-
-2011-07-09T22:42:16.000000Z
-905f2bb7e8852fb96cb9aeff9568a839
-2010-12-27T23:45:22.566276Z
-3830
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4
-
 001-catsn-ssh-pbs-coasters.check.sh
 file
 
@@ -162,14 +128,14 @@ has-props
 
 239
 
-catsn.0010.out.expected
+001-catsn-ssh-pbs-coasters.timeout
 file
 
 
 
 
 2011-07-09T22:42:16.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
+905f2bb7e8852fb96cb9aeff9568a839
 2010-12-27T23:45:22.566276Z
 3830
 davidk
@@ -194,41 +160,7 @@ davidk
 
 
 
-12
-
-catsn.0001.out.expected
-file
-
-
-
-
-2011-07-09T22:42:16.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2010-12-27T23:45:22.566276Z
-3830
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
+4
 
 README
 file
@@ -264,6 +196,74 @@ davidk
 
 264
 
+catsn.0001.out.expected
+file
+
+
+
+
+2011-07-09T22:42:16.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2010-12-27T23:45:22.566276Z
+3830
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
+
+catsn.0010.out.expected
+file
+
+
+
+
+2011-07-09T22:42:16.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2010-12-27T23:45:22.566276Z
+3830
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
+
 catsn.0002.out.expected
 file
 
@@ -297,74 +297,6 @@ davidk
 
 
 12
-
-catsn.0003.out.expected
-file
-
-
-
-
-2011-07-09T22:42:16.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2010-12-27T23:45:22.566276Z
-3830
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
-
-001-catsn-ssh-pbs-coasters.swift
-file
-
-
-
-
-2011-07-09T22:42:16.000000Z
-5f707ea526eba7821149a66ed66d34b4
-2010-12-27T23:45:22.566276Z
-3830
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-340
 
 title.txt
 file
@@ -400,7 +332,41 @@ davidk
 
 45
 
-catsn.0004.out.expected
+001-catsn-ssh-pbs-coasters.swift
+file
+
+
+
+
+2011-07-09T22:42:16.000000Z
+5f707ea526eba7821149a66ed66d34b4
+2010-12-27T23:45:22.566276Z
+3830
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+340
+
+catsn.0003.out.expected
 file
 
 
@@ -467,6 +433,40 @@ wozniak
 
 
 738
+
+catsn.0004.out.expected
+file
+
+
+
+
+2011-07-09T22:42:16.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2010-12-27T23:45:22.566276Z
+3830
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
 
 catsn.0005.out.expected
 file

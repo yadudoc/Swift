@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/vdl2/!svn/ver/3144/trunk/src/org/globus/swift/catalog/types
+/svn/vdl2/!svn/ver/4804/trunk/src/org/globus/swift/catalog/types
 END
 Os.java
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/vdl2/!svn/ver/3144/trunk/src/org/globus/swift/catalog/types/Os.java
+/svn/vdl2/!svn/ver/4804/trunk/src/org/globus/swift/catalog/types/Os.java
 END
 TCType.java
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/vdl2/!svn/ver/3144/trunk/src/org/globus/swift/catalog/types/TCType.java
+/svn/vdl2/!svn/ver/4804/trunk/src/org/globus/swift/catalog/types/TCType.java
 END
 SysInfo.java
 K 25
@@ -25,5 +25,5 @@ Arch.java
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/vdl2/!svn/ver/3144/trunk/src/org/globus/swift/catalog/types/Arch.java
+/svn/vdl2/!svn/ver/4804/trunk/src/org/globus/swift/catalog/types/Arch.java
 END

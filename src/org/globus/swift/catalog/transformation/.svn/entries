@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/src/org/globus/swift/catalog/transformation
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-05-25T05:00:26.710027Z
-4525
-skenny
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2011-07-09T22:40:39.000000Z
-bf7968e3a9d9b86e194dab6e3ef9ed47
-2011-05-25T05:00:26.710027Z
-4525
-skenny
+2011-07-25T07:39:42.000000Z
+dc855aeda7112a5b3af365508fff8f35
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -58,5 +58,5 @@ skenny
 
 
 
-45633
+45631
 

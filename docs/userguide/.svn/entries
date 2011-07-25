@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/docs/userguide
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-24T01:35:00.252768Z
-4687
-ketan
+2011-07-01T00:01:43.570300Z
+4720
+jonmon
 
 
 
@@ -25,40 +25,6 @@ ketan
 
 
 e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
-
-clustering
-file
-
-
-
-
-2011-07-09T22:40:55.000000Z
-88b6c29dd0f4c618b57f03453d66dc34
-2011-06-07T20:47:31.326255Z
-4579
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1233
 
 swift-site-model.png
 file
@@ -94,14 +60,14 @@ has-props
 
 6887
 
-reliability_mechanisms
+clustering
 file
 
 
 
 
 2011-07-09T22:40:55.000000Z
-9639a27cab7d0f90087b81553a3798ab
+88b6c29dd0f4c618b57f03453d66dc34
 2011-06-07T20:47:31.326255Z
 4579
 davidk
@@ -126,7 +92,7 @@ davidk
 
 
 
-2930
+1233
 
 type-hierarchy.png
 file
@@ -162,82 +128,14 @@ has-props
 
 3123
 
-profiles
+reliability_mechanisms
 file
 
 
 
 
 2011-07-09T22:40:55.000000Z
-65d2da37a60a0a96a276c1c9dff2f012
-2011-06-09T02:16:47.204065Z
-4591
-jonmon
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9694
-
-language
-file
-
-
-
-
-2011-07-09T22:40:55.000000Z
-f1fe6e3ce7170c708ab3f5958de95fce
-2011-06-23T23:14:21.805663Z
-4682
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10639
-
-configuration_properties
-file
-
-
-
-
-2011-07-09T22:40:55.000000Z
-8a1a100eb1afd4e3d897afbc3382e185
+9639a27cab7d0f90087b81553a3798ab
 2011-06-07T20:47:31.326255Z
 4579
 davidk
@@ -262,7 +160,7 @@ davidk
 
 
 
-14709
+2930
 
 coasters
 file
@@ -298,6 +196,108 @@ davidk
 
 4023
 
+configuration_properties
+file
+
+
+
+
+2011-07-09T22:40:55.000000Z
+8a1a100eb1afd4e3d897afbc3382e185
+2011-06-07T20:47:31.326255Z
+4579
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14709
+
+language
+file
+
+
+
+
+2011-07-09T22:40:55.000000Z
+f1fe6e3ce7170c708ab3f5958de95fce
+2011-06-23T23:14:21.805663Z
+4682
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10639
+
+profiles
+file
+
+
+
+
+2011-07-09T22:40:55.000000Z
+65d2da37a60a0a96a276c1c9dff2f012
+2011-06-09T02:16:47.204065Z
+4591
+jonmon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9694
+
 site_catalog
 file
 
@@ -332,40 +332,6 @@ davidk
 
 5225
 
-kickstart
-file
-
-
-
-
-2011-07-09T22:40:55.000000Z
-b3dc7b802df87ab145764e75fa074feb
-2011-06-07T20:47:31.326255Z
-4579
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1164
-
 howto_tips
 file
 
@@ -399,6 +365,40 @@ davidk
 
 
 3678
+
+kickstart
+file
+
+
+
+
+2011-07-09T22:40:55.000000Z
+b3dc7b802df87ab145764e75fa074feb
+2011-06-07T20:47:31.326255Z
+4579
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1164
 
 transformation_catalog
 file
@@ -576,11 +576,11 @@ file
 
 
 
-2011-07-09T22:40:55.000000Z
-e267a1deaea391137a9061b10806113e
-2011-06-24T01:35:00.252768Z
-4687
-ketan
+2011-07-25T07:39:43.000000Z
+cc56b56003980a23c386992da9b36ce2
+2011-06-29T14:49:14.437929Z
+4705
+jonmon
 
 
 
@@ -602,7 +602,7 @@ ketan
 
 
 
-22701
+23748
 
 userguide-shane.jpg
 file
@@ -712,10 +712,10 @@ file
 
 
 
-2011-07-09T22:40:55.000000Z
-51e4bd6d9c4e443048ec65560505bee9
-2011-06-20T14:44:45.748317Z
-4633
+2011-07-25T07:39:43.000000Z
+928d77e5eb6c26da3b92ceec764812b8
+2011-07-01T00:01:43.570300Z
+4720
 jonmon
 
 
@@ -738,7 +738,7 @@ jonmon
 
 
 
-18269
+17180
 
 userguide-rotated.jpg
 file

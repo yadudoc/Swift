@@ -1,47 +1,53 @@
 K 25
 svn:wc:ra_dav:version-url
 V 43
-/svn/vdl2/!svn/ver/4688/trunk/docs/tutorial
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial
 END
 bits
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/svn/vdl2/!svn/ver/4579/trunk/docs/tutorial/bits
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/bits
 END
 introduction
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/vdl2/!svn/ver/4658/trunk/docs/tutorial/introduction
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/introduction
 END
 language_features
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/vdl2/!svn/ver/4658/trunk/docs/tutorial/language_features
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/language_features
 END
 runtime_features
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/vdl2/!svn/ver/4688/trunk/docs/tutorial/runtime_features
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/runtime_features
 END
 tutorial.txt
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/vdl2/!svn/ver/4658/trunk/docs/tutorial/tutorial.txt
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/tutorial.txt
 END
 abstract
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/vdl2/!svn/ver/4658/trunk/docs/tutorial/abstract
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/abstract
+END
+tutorial.html
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/tutorial.html
 END
 hello_world
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/4657/trunk/docs/tutorial/hello_world
+/svn/vdl2/!svn/ver/4831/trunk/docs/tutorial/hello_world
 END

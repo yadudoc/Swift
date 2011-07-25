@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 37
-/svn/vdl2/!svn/ver/4667/trunk/libexec
+/svn/vdl2/!svn/ver/4835/trunk/libexec
 END
 _swiftwrap.staging
 K 25
@@ -31,7 +31,7 @@ vdl-lib.xml
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/svn/vdl2/!svn/ver/4487/trunk/libexec/vdl-lib.xml
+/svn/vdl2/!svn/ver/4835/trunk/libexec/vdl-lib.xml
 END
 cdm_broadcast.sh
 K 25
@@ -43,13 +43,7 @@ vdl-int-staging.k
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/4667/trunk/libexec/vdl-int-staging.k
-END
-svn-revision
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/svn/vdl2/!svn/ver/4202/trunk/libexec/svn-revision
+/svn/vdl2/!svn/ver/4834/trunk/libexec/vdl-int-staging.k
 END
 cdm_lib.sh
 K 25
@@ -57,11 +51,11 @@ svn:wc:ra_dav:version-url
 V 48
 /svn/vdl2/!svn/ver/3823/trunk/libexec/cdm_lib.sh
 END
-generate-buildid
+svn-revision
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/svn/vdl2/!svn/ver/2583/trunk/libexec/generate-buildid
+V 50
+/svn/vdl2/!svn/ver/4202/trunk/libexec/svn-revision
 END
 _swiftseq
 K 25
@@ -69,17 +63,23 @@ svn:wc:ra_dav:version-url
 V 47
 /svn/vdl2/!svn/ver/2747/trunk/libexec/_swiftseq
 END
-vdl-int.k
+generate-buildid
 K 25
 svn:wc:ra_dav:version-url
-V 47
-/svn/vdl2/!svn/ver/4616/trunk/libexec/vdl-int.k
+V 54
+/svn/vdl2/!svn/ver/2583/trunk/libexec/generate-buildid
 END
 vdl-xs.k
 K 25
 svn:wc:ra_dav:version-url
 V 46
 /svn/vdl2/!svn/ver/1538/trunk/libexec/vdl-xs.k
+END
+vdl-int.k
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vdl2/!svn/ver/4734/trunk/libexec/vdl-int.k
 END
 execute-typecheck.k
 K 25
@@ -109,7 +109,7 @@ execute-default.k
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/4045/trunk/libexec/execute-default.k
+/svn/vdl2/!svn/ver/4734/trunk/libexec/execute-default.k
 END
 cdm.pl
 K 25

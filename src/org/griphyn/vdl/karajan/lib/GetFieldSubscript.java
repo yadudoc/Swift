@@ -28,25 +28,20 @@ public class GetFieldSubscript extends VDLFunction {
 		Object index = PA_SUBSCRIPT.getValue(stack);
 
 		try {
-// TODO this is inefficient, but should expose the right semantics
-// so can be fixed up later
 			Path path;
-			if(index instanceof String)
-				path = parsePath("["+index+"]", stack);
-			else if(index instanceof Double)
-				path = parsePath("["+((Double)index).intValue()+"]", stack);
-			else if(index instanceof Boolean)
-                path = parsePath("["+index+"]", stack);
-			//  else if(index == null) {
-			//  path = parse			    
-			//  }
-			else
-				throw new RuntimeException("Cannot handle array index of Java type "+index.getClass());
+			if ("*".equals(index)) {
+			    path = Path.CHILDREN;
+			}
+			else {
+				path = Path.EMPTY_PATH.addFirst((Comparable<?>) index, true);
+			}
 			Collection<DSHandle> fields = var.getFields(path);
-			if(fields.size() == 1)
+			if (fields.size() == 1) {
 				return fields.iterator().next();
-			else
+			}
+			else {
 				return fields;
+			}
 		}
 		catch (InvalidPathException e) {
 			throw new ExecutionException(e);

@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/svn/vdl2/!svn/ver/4202/trunk/tests/sites
+/svn/vdl2/!svn/ver/4742/trunk/tests/sites
 END
 localhost.xml
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/3463/trunk/tests/sites/localhost.xml
+/svn/vdl2/!svn/ver/4742/trunk/tests/sites/localhost.xml
 END
 tguc-pbs-gram2.xml
 K 25
@@ -165,17 +165,17 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/vdl2/!svn/ver/2048/trunk/tests/sites/tguc-fork-gram2.xml
 END
-osg-edu.cs.wisc.edu-condor.xml
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/vdl2/!svn/ver/1710/trunk/tests/sites/osg-edu.cs.wisc.edu-condor.xml
-END
 tguc-fork-gram4.xml
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /svn/vdl2/!svn/ver/2048/trunk/tests/sites/tguc-fork-gram4.xml
+END
+osg-edu.cs.wisc.edu-condor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/1710/trunk/tests/sites/osg-edu.cs.wisc.edu-condor.xml
 END
 fletch-fork-gram2.xml
 K 25

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers
+/svn/vdl2/!svn/ver/4800/trunk/tests/language-behaviour/mappers
 END
 0754-csv-mapper.left-two.in
 K 25
@@ -13,25 +13,25 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 111
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/075551-ext-mapper-twostruct-singleproducer.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/075551-ext-mapper-twostruct-singleproducer.swift
 END
-071-singlefilemapper-input.clean.sh
+07552-ext-mapper-numeric.sh.in
 K 25
 svn:wc:ra_dav:version-url
-V 98
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers/071-singlefilemapper-input.clean.sh
-END
-077-regexp-mapper.swift
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/077-regexp-mapper.swift
+V 93
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07552-ext-mapper-numeric.sh.in
 END
 079-regression-r970-simple-mapper-expr-prefix.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 121
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/079-regression-r970-simple-mapper-expr-prefix.out.expected
+END
+077-regexp-mapper.swift
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/077-regexp-mapper.swift
 END
 078-singlefilemapper-name-expression.out.expected
 K 25
@@ -51,23 +51,17 @@ svn:wc:ra_dav:version-url
 V 99
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07551-ext-mapper-single.out.expected
 END
-0754-csv-mapper.left-one.in
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper.left-one.in
-END
 0753-filesystem-mapper.a.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0753-filesystem-mapper.a.out.expected
 END
-0723-simplemapper-nopadding.75943.out.expected
+0754-csv-mapper.left-one.in
 K 25
 svn:wc:ra_dav:version-url
-V 109
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0723-simplemapper-nopadding.75943.out.expected
+V 90
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper.left-one.in
 END
 0791-regression-r970-simple-mapper-expr-prefix.swift
 K 25
@@ -75,17 +69,29 @@ svn:wc:ra_dav:version-url
 V 115
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0791-regression-r970-simple-mapper-expr-prefix.swift
 END
+0723-simplemapper-nopadding.75943.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0723-simplemapper-nopadding.75943.out.expected
+END
 07511-fixed-array-mapper-input.check.sh
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.check.sh
+/svn/vdl2/!svn/ver/4800/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.check.sh
 END
 0723-simplemapper-nopadding.0.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 105
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0723-simplemapper-nopadding.0.out.expected
+END
+07551-ext-mapper-single.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07551-ext-mapper-single.sh.in
 END
 07511-fixed-array-mapper-input.swift
 K 25
@@ -105,12 +111,6 @@ svn:wc:ra_dav:version-url
 V 96
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0755-ext-mapper.____.out.expected
 END
-0754-csv-mapper-input.swift
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper-input.swift
-END
 0722-simplemapper-padding.000000005.out.expected
 K 25
 svn:wc:ra_dav:version-url
@@ -123,11 +123,11 @@ svn:wc:ra_dav:version-url
 V 122
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0791-regression-r970-simple-mapper-expr-prefix.out.expected
 END
-0754-csv-mapper.csv
+0025-compound.swift
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper.csv
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/mappers/0025-compound.swift
 END
 07514-fixed-array-mapper-filenames.real.out.expected
 K 25
@@ -145,7 +145,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers/0032-strcat-mapper-param.1.out.expected
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0032-strcat-mapper-param.1.out.expected
 END
 T077-simplemapper-bug80.beth.out.expected
 K 25
@@ -153,17 +153,29 @@ svn:wc:ra_dav:version-url
 V 104
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/T077-simplemapper-bug80.beth.out.expected
 END
+0752-csv-mapper.csv.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0752-csv-mapper.csv.in
+END
+0754-csv-mapper.csv.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0754-csv-mapper.csv.in
+END
 0755-ext-mapper.swift
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0755-ext-mapper.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0755-ext-mapper.swift
 END
-0756-ext-mapper-slow.sh
+0757-ext-mapper-array.sh.in
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0756-ext-mapper-slow.sh
+V 90
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0757-ext-mapper-array.sh.in
 END
 076-structured-regexp-mapper.b.out.expected
 K 25
@@ -183,11 +195,11 @@ svn:wc:ra_dav:version-url
 V 92
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0753-filesystem-mapper.red.in
 END
-07554-ext-mapper-struct.swift
+07592-ext-mapper-multidimensional-array-structs.sh.in
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07554-ext-mapper-struct.swift
+V 116
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07592-ext-mapper-multidimensional-array-structs.sh.in
 END
 T074-simplemapper.beth.out.expected
 K 25
@@ -195,17 +207,41 @@ svn:wc:ra_dav:version-url
 V 98
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/T074-simplemapper.beth.out.expected
 END
+07554-ext-mapper-struct.swift
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07554-ext-mapper-struct.swift
+END
+0756-ext-mapper-slow.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0756-ext-mapper-slow.sh.in
+END
 0751-fixed-array-mapper.first.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 105
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0751-fixed-array-mapper.first.out.expected
 END
+07511-fixed-array-mapper-input.third.in
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.third.in
+END
 T077-simplemapper-bug80_subordinate.sigma.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 117
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/T077-simplemapper-bug80_subordinate.sigma.out.expected
+END
+tc.template.mix.data
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/tc.template.mix.data
 END
 0754-csv-mapper.left-zero.in
 K 25
@@ -217,7 +253,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 108
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07591-ext-mapper-multidimensional-array.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07591-ext-mapper-multidimensional-array.swift
 END
 0753-filesystem-mapper.b.out.expected
 K 25
@@ -225,17 +261,17 @@ svn:wc:ra_dav:version-url
 V 100
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0753-filesystem-mapper.b.out.expected
 END
-07551-ext-mapper-single.sh
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07551-ext-mapper-single.sh
-END
 0722-simplemapper-padding.000075943.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 111
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0722-simplemapper-padding.000075943.out.expected
+END
+0759-ext-mapper-array.swift
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0759-ext-mapper-array.swift
 END
 07552-ext-mapper-numeric.mapper.out.expected
 K 25
@@ -243,29 +279,11 @@ svn:wc:ra_dav:version-url
 V 107
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07552-ext-mapper-numeric.mapper.out.expected
 END
-0759-ext-mapper-array.swift
+07555-ext-mapper-twostruct.sh.in
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0759-ext-mapper-array.swift
-END
-07511-fixed-array-mapper-input.clean.sh
-K 25
-svn:wc:ra_dav:version-url
-V 102
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.clean.sh
-END
-07554-ext-mapper-struct.sh
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07554-ext-mapper-struct.sh
-END
-070-singlefilemapper.out.expected
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers/070-singlefilemapper.out.expected
+V 95
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07555-ext-mapper-twostruct.sh.in
 END
 073-simplemapper.swift
 K 25
@@ -273,11 +291,11 @@ svn:wc:ra_dav:version-url
 V 85
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/073-simplemapper.swift
 END
-07514-fixed-array-mapper-filenames.b.in
+070-singlefilemapper.out.expected
 K 25
 svn:wc:ra_dav:version-url
-V 102
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07514-fixed-array-mapper-filenames.b.in
+V 96
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/070-singlefilemapper.out.expected
 END
 0723-simplemapper-nopadding.5.out.expected
 K 25
@@ -285,17 +303,17 @@ svn:wc:ra_dav:version-url
 V 105
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0723-simplemapper-nopadding.5.out.expected
 END
+07514-fixed-array-mapper-filenames.b.in
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07514-fixed-array-mapper-filenames.b.in
+END
 075-array-mapper.swift
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/075-array-mapper.swift
-END
-0751-fixed-array-mapper.third.out.expected
-K 25
-svn:wc:ra_dav:version-url
-V 105
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0751-fixed-array-mapper.third.out.expected
 END
 T078-simplemapper-nosuffix_nodot.out.expected
 K 25
@@ -303,11 +321,17 @@ svn:wc:ra_dav:version-url
 V 108
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/T078-simplemapper-nosuffix_nodot.out.expected
 END
+0751-fixed-array-mapper.third.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0751-fixed-array-mapper.third.out.expected
+END
 T079-simplemapper-nosuffix_exception.swift
 K 25
 svn:wc:ra_dav:version-url
 V 105
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/T079-simplemapper-nosuffix_exception.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/T079-simplemapper-nosuffix_exception.swift
 END
 0752-csv-mapper.right-one.out.expected
 K 25
@@ -327,12 +351,6 @@ svn:wc:ra_dav:version-url
 V 92
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/073-simplemapper.out.expected
 END
-07511-fixed-array-mapper-input.setup.sh
-K 25
-svn:wc:ra_dav:version-url
-V 102
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.setup.sh
-END
 T076-simplemapper-bug80.aleph.out.expected
 K 25
 svn:wc:ra_dav:version-url
@@ -345,11 +363,11 @@ svn:wc:ra_dav:version-url
 V 87
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/150-filesys_mapper.swift
 END
-0751-fixed-array-mapper.swift
+760-csv-mapper.swift
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0751-fixed-array-mapper.swift
+V 83
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/760-csv-mapper.swift
 END
 07552-ext-mapper-numeric.inside.out.expected
 K 25
@@ -357,23 +375,23 @@ svn:wc:ra_dav:version-url
 V 107
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07552-ext-mapper-numeric.inside.out.expected
 END
-760-csv-mapper.swift
+0751-fixed-array-mapper.swift
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/760-csv-mapper.swift
-END
-071-singlefilemapper-input.swift
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/071-singlefilemapper-input.swift
+V 92
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0751-fixed-array-mapper.swift
 END
 0723-simplemapper-nopadding.swift
 K 25
 svn:wc:ra_dav:version-url
 V 96
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0723-simplemapper-nopadding.swift
+END
+071-singlefilemapper-input.swift
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/071-singlefilemapper-input.swift
 END
 0752-csv-mapper.left-zero.out.expected
 K 25
@@ -409,7 +427,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0758-ext-mapper-array.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0758-ext-mapper-array.swift
 END
 0721-simplemapper-array.swift
 K 25
@@ -439,7 +457,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07552-ext-mapper-numeric.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07552-ext-mapper-numeric.swift
 END
 072-simplemapper.swift
 K 25
@@ -453,23 +471,29 @@ svn:wc:ra_dav:version-url
 V 102
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07514-fixed-array-mapper-filenames.a.in
 END
+07511-fixed-array-mapper-input.first.in
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.first.in
+END
 0754-csv-mapper.right-two.in
 K 25
 svn:wc:ra_dav:version-url
 V 91
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper.right-two.in
 END
-0752-csv-mapper.csv
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0752-csv-mapper.csv
-END
 0781-singlefilemapper-name-expression.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 113
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0781-singlefilemapper-name-expression.out.expected
+END
+07554-ext-mapper-struct.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07554-ext-mapper-struct.sh.in
 END
 075-array-mapper.first.out.expected
 K 25
@@ -501,17 +525,17 @@ svn:wc:ra_dav:version-url
 V 91
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper.right-one.in
 END
+07591-ext-mapper-multidimensional-array.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07591-ext-mapper-multidimensional-array.sh.in
+END
 07551-ext-mapper-single.swift
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07551-ext-mapper-single.swift
-END
-07552-ext-mapper-numeric.sh
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07552-ext-mapper-numeric.sh
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07551-ext-mapper-single.swift
 END
 T077-simplemapper-bug80.swift
 K 25
@@ -525,17 +549,17 @@ svn:wc:ra_dav:version-url
 V 97
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0754-csv-mapper-input.out.expected
 END
-071-singlefilemapper-input.check.sh
-K 25
-svn:wc:ra_dav:version-url
-V 98
-/svn/vdl2/!svn/ver/4652/trunk/tests/language-behaviour/mappers/071-singlefilemapper-input.check.sh
-END
 0752-csv-mapper.left-two.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 100
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0752-csv-mapper.left-two.out.expected
+END
+0759-ext-mapper-array.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0759-ext-mapper-array.sh.in
 END
 07513-fixed-array-mapper-filename.real.out.expected
 K 25
@@ -554,6 +578,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 97
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/076-structured-regexp-mapper.swift
+END
+07511-fixed-array-mapper-input.second.in
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/mappers/07511-fixed-array-mapper-input.second.in
 END
 0722-simplemapper-padding.swift
 K 25
@@ -595,7 +625,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0757-ext-mapper-array.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0757-ext-mapper-array.swift
 END
 0781-singlefilemapper-name-expression.swift
 K 25
@@ -609,12 +639,6 @@ svn:wc:ra_dav:version-url
 V 104
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0721-simplemapper-array.0005.out.expected
 END
-07555-ext-mapper-twostruct.sh
-K 25
-svn:wc:ra_dav:version-url
-V 92
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07555-ext-mapper-twostruct.sh
-END
 0032-strcat-mapper-param.swift
 K 25
 svn:wc:ra_dav:version-url
@@ -625,7 +649,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 116
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07592-ext-mapper-multidimensional-array-structs.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07592-ext-mapper-multidimensional-array-structs.swift
 END
 T077-simplemapper-bug80_subordinate.epsilon.out.expected
 K 25
@@ -649,7 +673,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0756-ext-mapper-slow.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0756-ext-mapper-slow.swift
 END
 760-csv-mapper.sh
 K 25
@@ -661,13 +685,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0752-csv-mapper.swift
-END
-07591-ext-mapper-multidimensional-array.sh
-K 25
-svn:wc:ra_dav:version-url
-V 105
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07591-ext-mapper-multidimensional-array.sh
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0752-csv-mapper.swift
 END
 0753-filesystem-mapper.green.in
 K 25
@@ -693,29 +711,11 @@ svn:wc:ra_dav:version-url
 V 95
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0755-ext-mapper.AAA.out.expected
 END
-0757-ext-mapper-array.sh
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0757-ext-mapper-array.sh
-END
-0758-ext-mapper-array.sh
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0758-ext-mapper-array.sh
-END
 078-singlefilemapper-name-expression.swift
 K 25
 svn:wc:ra_dav:version-url
 V 105
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/078-singlefilemapper-name-expression.swift
-END
-0759-ext-mapper-array.sh
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/0759-ext-mapper-array.sh
 END
 072-simplemapper.out.expected
 K 25
@@ -723,17 +723,17 @@ svn:wc:ra_dav:version-url
 V 92
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/072-simplemapper.out.expected
 END
-07592-ext-mapper-multidimensional-array-structs.sh
-K 25
-svn:wc:ra_dav:version-url
-V 113
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07592-ext-mapper-multidimensional-array-structs.sh
-END
 07555-ext-mapper-twostruct.swift
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/mappers/07555-ext-mapper-twostruct.swift
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/07555-ext-mapper-twostruct.swift
+END
+0758-ext-mapper-array.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4757/trunk/tests/language-behaviour/mappers/0758-ext-mapper-array.sh.in
 END
 T077-simplemapper-bug80.aleph.out.expected
 K 25

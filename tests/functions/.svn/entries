@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/functions
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -26,16 +26,16 @@ wozniak
 
 e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
 
-202-sprintf-k-array.timeout
+200-sprintf.swift
 file
 
 
 
 
 2011-07-09T22:42:15.000000Z
-ecf27a776cdfc771defab1c5d19de9ab
-2010-09-29T17:05:12.580931Z
-3650
+3f18e676541d29ddf7e408d52a98f021
+2010-09-27T17:56:09.379676Z
+3647
 wozniak
 
 
@@ -58,7 +58,7 @@ wozniak
 
 
 
-3
+97
 
 202-sprintf-k-array.check.sh
 file
@@ -94,16 +94,16 @@ has-props
 
 449
 
-200-sprintf.swift
+202-sprintf-k-array.timeout
 file
 
 
 
 
 2011-07-09T22:42:15.000000Z
-3f18e676541d29ddf7e408d52a98f021
-2010-09-27T17:56:09.379676Z
-3647
+ecf27a776cdfc771defab1c5d19de9ab
+2010-09-29T17:05:12.580931Z
+3650
 wozniak
 
 
@@ -126,7 +126,7 @@ wozniak
 
 
 
-97
+3
 
 400-fprintf.setup.sh
 file
@@ -434,40 +434,6 @@ has-props
 
 269
 
-450-tracef.check.sh
-file
-
-
-
-
-2011-07-09T22:42:15.000000Z
-6ad0c578c221f66d16948ebc8f7c566a
-2011-06-03T19:13:53.184034Z
-4560
-wozniak
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-451
-
 title.txt
 file
 
@@ -501,6 +467,40 @@ wozniak
 
 
 16
+
+450-tracef.check.sh
+file
+
+
+
+
+2011-07-09T22:42:15.000000Z
+6ad0c578c221f66d16948ebc8f7c566a
+2011-06-03T19:13:53.184034Z
+4560
+wozniak
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+451
 
 105-assert-loop.check.sh
 file

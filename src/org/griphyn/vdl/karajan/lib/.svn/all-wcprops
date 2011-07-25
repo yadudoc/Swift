@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/vdl2/!svn/ver/4696/trunk/src/org/griphyn/vdl/karajan/lib
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib
 END
 Kickstart.java
 K 25
@@ -25,7 +25,7 @@ UnwrapClosedList.java
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svn/vdl2/!svn/ver/4669/trunk/src/org/griphyn/vdl/karajan/lib/UnwrapClosedList.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/UnwrapClosedList.java
 END
 IsFileBound.java
 K 25
@@ -43,13 +43,19 @@ InfiniteCountingWhile.java
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svn/vdl2/!svn/ver/4674/trunk/src/org/griphyn/vdl/karajan/lib/InfiniteCountingWhile.java
+/svn/vdl2/!svn/ver/4774/trunk/src/org/griphyn/vdl/karajan/lib/InfiniteCountingWhile.java
 END
 ExpandArguments.java
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/karajan/lib/ExpandArguments.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/ExpandArguments.java
+END
+AppendArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/AppendArray.java
 END
 CacheAddAndLockFile.java
 K 25
@@ -61,13 +67,13 @@ FringePaths.java
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/karajan/lib/FringePaths.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/FringePaths.java
 END
 CloseDataset.java
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svn/vdl2/!svn/ver/3836/trunk/src/org/griphyn/vdl/karajan/lib/CloseDataset.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/CloseDataset.java
 END
 PathUtils.java
 K 25
@@ -99,17 +105,17 @@ svn:wc:ra_dav:version-url
 V 74
 /svn/vdl2/!svn/ver/657/trunk/src/org/griphyn/vdl/karajan/lib/FileName.java
 END
-Log.java
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/lib/Log.java
-END
 Executable.java
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /svn/vdl2/!svn/ver/3821/trunk/src/org/griphyn/vdl/karajan/lib/Executable.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/lib/Log.java
 END
 Parameterlog.java
 K 25
@@ -117,23 +123,23 @@ svn:wc:ra_dav:version-url
 V 79
 /svn/vdl2/!svn/ver/3475/trunk/src/org/griphyn/vdl/karajan/lib/Parameterlog.java
 END
-GetField.java
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/vdl2/!svn/ver/3821/trunk/src/org/griphyn/vdl/karajan/lib/GetField.java
-END
 SequentialWithID.java
 K 25
 svn:wc:ra_dav:version-url
 V 83
 /svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/lib/SequentialWithID.java
 END
+GetField.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/GetField.java
+END
 SwiftArg.java
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svn/vdl2/!svn/ver/4473/trunk/src/org/griphyn/vdl/karajan/lib/SwiftArg.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/SwiftArg.java
 END
 TCProfile.java
 K 25
@@ -141,59 +147,59 @@ svn:wc:ra_dav:version-url
 V 76
 /svn/vdl2/!svn/ver/3821/trunk/src/org/griphyn/vdl/karajan/lib/TCProfile.java
 END
+GetArrayIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/GetArrayIterator.java
+END
 InFileDirs.java
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /svn/vdl2/!svn/ver/3598/trunk/src/org/griphyn/vdl/karajan/lib/InFileDirs.java
 END
-GetArrayIterator.java
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/karajan/lib/GetArrayIterator.java
-END
 New.java
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/karajan/lib/New.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/New.java
 END
 Mark.java
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/vdl2/!svn/ver/3568/trunk/src/org/griphyn/vdl/karajan/lib/Mark.java
-END
-Stageout.java
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/vdl2/!svn/ver/4587/trunk/src/org/griphyn/vdl/karajan/lib/Stageout.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/Mark.java
 END
 VDLFunction.java
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svn/vdl2/!svn/ver/4533/trunk/src/org/griphyn/vdl/karajan/lib/VDLFunction.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/VDLFunction.java
+END
+Stageout.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/Stageout.java
 END
 Range.java
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/vdl2/!svn/ver/2732/trunk/src/org/griphyn/vdl/karajan/lib/Range.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/Range.java
 END
 SliceArray.java
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/karajan/lib/SliceArray.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/SliceArray.java
 END
 CreateArray.java
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svn/vdl2/!svn/ver/2960/trunk/src/org/griphyn/vdl/karajan/lib/CreateArray.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/CreateArray.java
 END
 Execute.java
 K 25
@@ -211,7 +217,7 @@ WaitFieldValue.java
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/karajan/lib/WaitFieldValue.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/WaitFieldValue.java
 END
 AbsFileName.java
 K 25
@@ -229,7 +235,7 @@ DoRestartLog.java
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svn/vdl2/!svn/ver/3475/trunk/src/org/griphyn/vdl/karajan/lib/DoRestartLog.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/DoRestartLog.java
 END
 CacheAddFile.java
 K 25
@@ -247,19 +253,19 @@ Operators.java
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/vdl2/!svn/ver/2927/trunk/src/org/griphyn/vdl/karajan/lib/Operators.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/Operators.java
 END
 GetFieldValue.java
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svn/vdl2/!svn/ver/2606/trunk/src/org/griphyn/vdl/karajan/lib/GetFieldValue.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/GetFieldValue.java
 END
 IsDone.java
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/vdl2/!svn/ver/3475/trunk/src/org/griphyn/vdl/karajan/lib/IsDone.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/IsDone.java
 END
 FileCopier.java
 K 25
@@ -271,13 +277,13 @@ GetFieldSubscript.java
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/vdl2/!svn/ver/4532/trunk/src/org/griphyn/vdl/karajan/lib/GetFieldSubscript.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/GetFieldSubscript.java
 END
 SetFutureFault.java
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/svn/vdl2/!svn/ver/220/trunk/src/org/griphyn/vdl/karajan/lib/SetFutureFault.java
+V 81
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/SetFutureFault.java
 END
 GetDatasetProvenanceID.java
 K 25
@@ -295,7 +301,7 @@ SiteProfile.java
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svn/vdl2/!svn/ver/3821/trunk/src/org/griphyn/vdl/karajan/lib/SiteProfile.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/SiteProfile.java
 END
 ThreadPrefix.java
 K 25
@@ -308,6 +314,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 86
 /svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/karajan/lib/PartialCloseDataset.java
+END
+CleanDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/CleanDataset.java
 END
 OutFileDirs.java
 K 25
@@ -331,13 +343,13 @@ Stagein.java
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/lib/Stagein.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/Stagein.java
 END
 SetFieldValue.java
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/svn/vdl2/!svn/ver/4672/trunk/src/org/griphyn/vdl/karajan/lib/SetFieldValue.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/SetFieldValue.java
 END
 IsLogged.java
 K 25

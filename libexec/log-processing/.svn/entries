@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/libexec/log-processing
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-14T01:44:12.952869Z
-4610
-jonmon
+2011-07-08T15:39:32.872864Z
+4811
+ketan
 has-props
 
 
@@ -638,40 +638,6 @@ has-props
 
 203
 
-sp.plot.template
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-3e5f1bb03dd457b87c467a5e03dd5f88
-2009-05-13T13:52:50.336899Z
-2925
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1219
-
 trail-freex.plot.template
 file
 
@@ -706,16 +672,16 @@ has-props
 
 146
 
-lookup-colour
+sp.plot.template
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-06c5a240379dc635622f668c28213f88
-2009-02-27T11:42:31.657664Z
-2620
+3e5f1bb03dd457b87c467a5e03dd5f88
+2009-05-13T13:52:50.336899Z
+2925
 benc
 has-props
 
@@ -738,7 +704,7 @@ has-props
 
 
 
-313
+1219
 
 get-jobid-for-karajanid
 file
@@ -773,6 +739,40 @@ has-props
 
 
 260
+
+lookup-colour
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+06c5a240379dc635622f668c28213f88
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+313
 
 extract-jobid-karajanid-bindings
 file
@@ -842,40 +842,6 @@ wozniak
 
 76
 
-kickstarts-to-event
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-65420db2e80acb358557f58790e9a2f6
-2009-04-01T02:46:26.045444Z
-2794
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-804
-
 extract-coaster-utilization
 file
 
@@ -909,6 +875,40 @@ has-props
 
 
 946
+
+kickstarts-to-event
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+65420db2e80acb358557f58790e9a2f6
+2009-04-01T02:46:26.045444Z
+2794
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+804
 
 sec-to-utc
 file
@@ -1562,11 +1562,11 @@ file
 
 
 
-2011-07-09T22:44:48.000000Z
-3d5d23fdc348f414ac0401463b62e27a
-2011-06-14T01:44:12.952869Z
-4610
-jonmon
+2011-07-25T08:37:42.000000Z
+aeacab29a325516288d78a89ac48a4ab
+2011-07-08T15:39:32.872864Z
+4811
+ketan
 
 
 
@@ -1588,7 +1588,7 @@ jonmon
 
 
 
-3119
+3536
 
 overview-reports.sh
 file
@@ -2168,14 +2168,14 @@ has-props
 
 355
 
-autospace-data
+scheduler.html.template
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-35c0277db64851d3a76698dfb0f6925c
+46ae9b849ef3e73c4d58158b63e73538
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -2200,7 +2200,7 @@ has-props
 
 
 
-473
+305
 
 everylog-to-event
 file
@@ -2236,14 +2236,14 @@ has-props
 
 598
 
-scheduler.html.template
+autospace-data
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-46ae9b849ef3e73c4d58158b63e73538
+35c0277db64851d3a76698dfb0f6925c
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -2268,7 +2268,7 @@ has-props
 
 
 
-305
+473
 
 extract-activity-for-thread
 file
@@ -2338,40 +2338,6 @@ has-props
 
 633
 
-duration-of-workflow
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-c37c8c703a04567ca3e63b0714e16739
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-356
-
 everylog.html
 file
 
@@ -2405,6 +2371,40 @@ has-props
 
 
 32334
+
+duration-of-workflow
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+c37c8c703a04567ca3e63b0714e16739
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+356
 
 event-duration-stats
 file
@@ -2474,40 +2474,6 @@ has-props
 
 775
 
-get-thread-for-run-id
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-9d5b369cfcd22cfa5edc86e9f29a4ff8
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-424
-
 active-state-transitions
 file
 
@@ -2542,17 +2508,17 @@ has-props
 
 573
 
-info.html.template
+get-thread-for-run-id
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-773812d038c4f9cf6834b7f7ac0f45db
-2009-10-15T19:54:45.217185Z
-3164
-hategan
+9d5b369cfcd22cfa5edc86e9f29a4ff8
+2009-02-27T11:42:31.657664Z
+2620
+benc
 has-props
 
 
@@ -2574,7 +2540,41 @@ has-props
 
 
 
-883
+424
+
+coaster-qwait-size.plot
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+8262827c4bea9ea0b6ed89c9d297d1bb
+2009-10-15T19:54:45.217185Z
+3164
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+163
 
 extract-failed-time-for-run-id
 file
@@ -2610,17 +2610,18 @@ has-props
 
 436
 
-coaster-qwait-size.plot
+info.html.template
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-8262827c4bea9ea0b6ed89c9d297d1bb
+773812d038c4f9cf6834b7f7ac0f45db
 2009-10-15T19:54:45.217185Z
 3164
 hategan
+has-props
 
 
 
@@ -2641,8 +2642,7 @@ hategan
 
 
 
-
-163
+883
 
 info-and-karajan-actives.plot
 file
@@ -2712,40 +2712,6 @@ has-props
 
 855
 
-log-to-execute-transitions
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-7cbb3bf05deab61a64029972a507ee6b
-2009-04-23T08:15:03.875239Z
-2872
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3348
-
 kickstart.html.template
 file
 
@@ -2779,6 +2745,40 @@ has-props
 
 
 795
+
+log-to-execute-transitions
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+7cbb3bf05deab61a64029972a507ee6b
+2009-04-23T08:15:03.875239Z
+2872
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3348
 
 execute.html.template
 file
@@ -2882,40 +2882,6 @@ has-props
 
 484
 
-combine-start-last-times
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-01cd3d8b2e78099a050ef2a7cbc26534
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-633
-
 start-last-times-and-kickstart.plot
 file
 
@@ -2950,16 +2916,16 @@ has-props
 
 582
 
-colour.plot.template
+combine-start-last-times
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-9aacc9a15b9701ff516983a1b6ced44f
-2009-05-13T13:52:50.336899Z
-2925
+01cd3d8b2e78099a050ef2a7cbc26534
+2009-02-27T11:42:31.657664Z
+2620
 benc
 has-props
 
@@ -2982,7 +2948,7 @@ has-props
 
 
 
-1143
+633
 
 start-last-times.plot
 file
@@ -3018,16 +2984,16 @@ has-props
 
 842
 
-info-and-karajan-actives
+colour.plot.template
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-04eb450e408a0a6439d234f9c3378211
-2009-02-27T11:42:31.657664Z
-2620
+9aacc9a15b9701ff516983a1b6ced44f
+2009-05-13T13:52:50.336899Z
+2925
 benc
 has-props
 
@@ -3050,7 +3016,7 @@ has-props
 
 
 
-2241
+1143
 
 extract-activity-for-subthreads-of
 file
@@ -3086,14 +3052,14 @@ has-props
 
 45
 
-info-to-md5
+info-and-karajan-actives
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-518b55c0e023fd2fde72641efea34378
+04eb450e408a0a6439d234f9c3378211
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -3118,7 +3084,7 @@ has-props
 
 
 
-586
+2241
 
 b.plot
 file
@@ -3154,17 +3120,18 @@ has-props
 
 156
 
-coasters.html.template
+info-to-md5
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-60619a7a7dbb6ea7b3b70a969513e900
-2009-10-15T19:54:45.217185Z
-3164
-hategan
+518b55c0e023fd2fde72641efea34378
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
 
 
 
@@ -3185,8 +3152,7 @@ hategan
 
 
 
-
-978
+586
 
 makefile.karatasks
 file
@@ -3222,18 +3188,17 @@ has-props
 
 1793
 
-get-site-for-run-id
+coasters.html.template
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-00dea37f2beecd88dafe406d08316083
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
+60619a7a7dbb6ea7b3b70a969513e900
+2009-10-15T19:54:45.217185Z
+3164
+hategan
 
 
 
@@ -3254,7 +3219,8 @@ has-props
 
 
 
-675
+
+978
 
 execute2.html.template
 file
@@ -3290,14 +3256,14 @@ has-props
 
 1460
 
-karatasks-only
+get-site-for-run-id
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-373e86b53784b04acb12c9e8d12c3cbe
+00dea37f2beecd88dafe406d08316083
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -3322,7 +3288,7 @@ has-props
 
 
 
-148
+675
 
 aggregate.html.template
 file
@@ -3357,6 +3323,40 @@ has-props
 
 
 365
+
+karatasks-only
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+373e86b53784b04acb12c9e8d12c3cbe
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+148
 
 coaster-block-timeline.plot
 file
@@ -3460,40 +3460,6 @@ has-props
 
 527
 
-info-to-zeroed-transitions
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-171c8f6594ae6a24c775e0019f98e816
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-613
-
 extract-coaster-timeline
 file
 
@@ -3528,14 +3494,14 @@ has-props
 
 885
 
-annotate-karatasks-with-execute2-id
+info-to-zeroed-transitions
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-6b3fca1efa3e4574097c9e92093bf3b3
+171c8f6594ae6a24c775e0019f98e816
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -3560,7 +3526,7 @@ has-props
 
 
 
-551
+613
 
 temporal-join
 file
@@ -3596,6 +3562,40 @@ has-props
 
 318
 
+annotate-karatasks-with-execute2-id
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+6b3fca1efa3e4574097c9e92093bf3b3
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+551
+
 everylog-time-cumulative.plot
 file
 
@@ -3629,74 +3629,6 @@ has-props
 
 
 259
-
-last-times
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-75756a3e1a3f856b4459f480f0d1db6f
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-221
-
-kj-vs-loadavg.plot
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-3863501f473ff896393f2d8ded8e86da
-2009-02-27T11:42:31.657664Z
-2620
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-460
 
 tie-url-filenames
 file
@@ -3732,18 +3664,17 @@ has-props
 
 314
 
-index.html.template
+kj-vs-loadavg.plot
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-c0d435ecbe87aecf4c9bf56f5b5b9d52
+3863501f473ff896393f2d8ded8e86da
 2009-02-27T11:42:31.657664Z
 2620
 benc
-has-props
 
 
 
@@ -3764,16 +3695,17 @@ has-props
 
 
 
-1574
+
+460
 
-extract-start-times
+last-times
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-d68b886737edc20dbbdbba167c93831c
+75756a3e1a3f856b4459f480f0d1db6f
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -3798,7 +3730,7 @@ has-props
 
 
 
-267
+221
 
 sum-tt1.pl
 file
@@ -3834,14 +3766,14 @@ has-props
 
 377
 
-makefile.falkon
+extract-start-times
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-766983dd9f99bb8c46c9d4c65b0d92ba
+d68b886737edc20dbbdbba167c93831c
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -3866,7 +3798,41 @@ has-props
 
 
 
-561
+267
+
+index.html.template
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+c0d435ecbe87aecf4c9bf56f5b5b9d52
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1574
 
 makefile.webpage
 file
@@ -3902,6 +3868,40 @@ has-props
 
 2967
 
+makefile.falkon
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+766983dd9f99bb8c46c9d4c65b0d92ba
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+561
+
 extract-activity-for-task
 file
 
@@ -3936,14 +3936,14 @@ has-props
 
 135
 
-logs-for-all
+sec-to-utc-day
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-a9d3864160500f26ebf6b478373e9b0f
+89a0e4e79ddd18b6ac840058c4a78731
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -3968,41 +3968,7 @@ has-props
 
 
 
-367
-
-execute2-by-falkon.channels
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-3aa260b234f30ea53b42e996710d30a0
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-35
+164
 
 buckets.cfg
 file
@@ -4038,14 +4004,14 @@ wozniak
 
 150
 
-sec-to-utc-day
+execute2-by-falkon.channels
 file
 
 
 
 
 2011-07-09T22:44:48.000000Z
-89a0e4e79ddd18b6ac840058c4a78731
+3aa260b234f30ea53b42e996710d30a0
 2009-02-27T11:42:31.657664Z
 2620
 benc
@@ -4070,7 +4036,41 @@ has-props
 
 
 
-164
+35
+
+logs-for-all
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+a9d3864160500f26ebf6b478373e9b0f
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+367
 
 karatasks-coloured.channels.nm
 file
@@ -4174,40 +4174,6 @@ has-props
 
 118
 
-max-duration
-file
-
-
-
-
-2011-07-09T22:44:48.000000Z
-159314fc8bfa7e6b3d3de60e8c41e955
-2009-02-27T11:42:31.657664Z
-2620
-benc
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-177
-
 tscore.sh
 file
 
@@ -4241,6 +4207,40 @@ has-props
 
 
 834
+
+max-duration
+file
+
+
+
+
+2011-07-09T22:44:48.000000Z
+159314fc8bfa7e6b3d3de60e8c41e955
+2009-02-27T11:42:31.657664Z
+2620
+benc
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+177
 
 accumulate-load.pl
 file

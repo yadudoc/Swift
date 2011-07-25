@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/local-pbs/pads
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -94,7 +94,7 @@ wozniak
 
 360
 
-catsn.0010.out.expected
+catsn.0001.out.expected
 file
 
 
@@ -128,7 +128,7 @@ wozniak
 
 12
 
-catsn.0001.out.expected
+catsn.0010.out.expected
 file
 
 
@@ -196,40 +196,6 @@ wozniak
 
 12
 
-catsn.0003.out.expected
-file
-
-
-
-
-2011-07-09T22:42:17.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2011-03-21T20:36:06.831029Z
-4202
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
-
 title.txt
 file
 
@@ -264,17 +230,17 @@ wozniak
 
 28
 
-sites.template.xml
+catsn.0003.out.expected
 file
 
 
 
 
 2011-07-09T22:42:17.000000Z
-4b68512fd0cca34f7a829c0e5b0251f5
-2011-06-02T21:27:03.994022Z
-4544
-davidk
+f0ef7081e1539ac00ef5b761b4fb01b3
+2011-03-21T20:36:06.831029Z
+4202
+wozniak
 
 
 
@@ -296,7 +262,7 @@ davidk
 
 
 
-327
+12
 
 catsn.0004.out.expected
 file
@@ -332,6 +298,40 @@ wozniak
 
 12
 
+sites.template.xml
+file
+
+
+
+
+2011-07-09T22:42:17.000000Z
+4b68512fd0cca34f7a829c0e5b0251f5
+2011-06-02T21:27:03.994022Z
+4544
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+327
+
 catsn.0005.out.expected
 file
 
@@ -366,17 +366,18 @@ wozniak
 
 12
 
-catsn.0006.out.expected
+001-catsn-pads-pbs.check.sh
 file
 
 
 
 
 2011-07-09T22:42:17.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
+68ad592ad650ae7c29220e3c0b87c735
 2011-03-21T20:36:06.831029Z
 4202
 wozniak
+has-props
 
 
 
@@ -397,8 +398,7 @@ wozniak
 
 
 
-
-12
+82
 
 001-catsn-pads-pbs.timeout
 file
@@ -434,18 +434,17 @@ wozniak
 
 4
 
-001-catsn-pads-pbs.check.sh
+catsn.0006.out.expected
 file
 
 
 
 
 2011-07-09T22:42:17.000000Z
-68ad592ad650ae7c29220e3c0b87c735
+f0ef7081e1539ac00ef5b761b4fb01b3
 2011-03-21T20:36:06.831029Z
 4202
 wozniak
-has-props
 
 
 
@@ -466,7 +465,8 @@ has-props
 
 
 
-82
+
+12
 
 catsn.0007.out.expected
 file

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/svn/vdl2/!svn/ver/4575/trunk/bin
+/svn/vdl2/!svn/ver/4797/trunk/bin
 END
 VDL2Karajan
 K 25
@@ -13,7 +13,7 @@ gensites
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/svn/vdl2/!svn/ver/4565/trunk/bin/gensites
+/svn/vdl2/!svn/ver/4779/trunk/bin/gensites
 END
 stop-coaster-service
 K 25
@@ -67,13 +67,13 @@ start-coaster-service
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/vdl2/!svn/ver/4575/trunk/bin/start-coaster-service
+/svn/vdl2/!svn/ver/4779/trunk/bin/start-coaster-service
 END
 chxml
 K 25
 svn:wc:ra_dav:version-url
 V 39
-/svn/vdl2/!svn/ver/4388/trunk/bin/chxml
+/svn/vdl2/!svn/ver/4714/trunk/bin/chxml
 END
 swift
 K 25

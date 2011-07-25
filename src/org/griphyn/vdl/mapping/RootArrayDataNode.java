@@ -1,28 +1,29 @@
 package org.griphyn.vdl.mapping;
 
-import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-import org.griphyn.vdl.karajan.VDL2FutureException;
+import org.globus.cog.karajan.stack.VariableStack;
+import org.globus.cog.karajan.workflow.futures.Future;
+import org.globus.cog.karajan.workflow.futures.FutureListener;
+import org.globus.cog.karajan.workflow.futures.FutureNotYetAvailable;
 import org.griphyn.vdl.type.Field;
 import org.griphyn.vdl.type.Type;
 
-public class RootArrayDataNode extends ArrayDataNode implements DSHandleListener {
+public class RootArrayDataNode extends ArrayDataNode implements FutureListener {
 
     Logger logger = Logger.getLogger(RootArrayDataNode.class);
     
 	private boolean initialized = false;
 	private Mapper mapper;
 	private Map<String, Object> params;
-	private DSHandle waitingMapperParam;
+	private AbstractDataNode waitingMapperParam;
 
 	/**
 	 * Instantiate a root array data node with specified type.
 	 */
 	public RootArrayDataNode(Type type) {
-		super(Field.Factory.newInstance(), null, null);
-		getField().setType(type);
+		super(Field.Factory.createField(null, type), null, null);
 	}
 
 	public void init(Map<String, Object> params) {
@@ -37,13 +38,12 @@ public class RootArrayDataNode extends ArrayDataNode implements DSHandleListener
 
 	private synchronized void innerInit() {
 	    logger.debug("innerInit: " + this);
-		Iterator i = params.entrySet().iterator();
-		while(i.hasNext()) {
-			Map.Entry entry = (Map.Entry) i.next();
+	    
+	    for (Map.Entry<String, Object> entry : params.entrySet()) {
 			Object v = entry.getValue();
-			if (v instanceof DSHandle && !((DSHandle) v).isClosed()) {
-				waitingMapperParam = (DSHandle) v;
-				waitingMapperParam.addListener(this);
+			if (v instanceof AbstractDataNode && !((AbstractDataNode) v).isClosed()) {
+				waitingMapperParam = (AbstractDataNode) v;
+				waitingMapperParam.getFutureWrapper().addModificationAction(this, null);
 				return;
 			}
 		}
@@ -54,7 +54,7 @@ public class RootArrayDataNode extends ArrayDataNode implements DSHandleListener
 		}
 		try {
 			mapper = MapperFactory.getMapper(desc, params);
-			getField().setName(PARAM_PREFIX.getStringValue(mapper));
+			getField().setId(PARAM_PREFIX.getStringValue(mapper));
 			initialized();
 			checkInputs();
 		}
@@ -70,18 +70,15 @@ public class RootArrayDataNode extends ArrayDataNode implements DSHandleListener
 		try {
 			RootDataNode.checkInputs(params, mapper, this);
 		}
-		catch (VDL2FutureException e) {
-			e.getHandle().addListener(this);
-		}
 		catch (DependentException e) {
 			setValue(new MappingDependentException(this, e));
 			closeShallow();
 		}
 	}
-
-	public void handleClosed(DSHandle handle) {
-		innerInit();
-	}
+	
+	public void futureModified(Future f, VariableStack stack) {
+	    innerInit();
+    }
 
 	public String getParam(String name) {
 		if (params == null) {
@@ -102,8 +99,12 @@ public class RootArrayDataNode extends ArrayDataNode implements DSHandleListener
 		if (initialized) {
 			return mapper;
 		}
-        assert(waitingMapperParam != null);
-        throw new VDL2FutureException(waitingMapperParam);
+        if (waitingMapperParam == null) {
+            return null;
+        }
+        else {
+            throw new FutureNotYetAvailable(waitingMapperParam.getFutureWrapper());
+        }
 	}
 
 	public boolean isArray() {
@@ -115,7 +116,8 @@ public class RootArrayDataNode extends ArrayDataNode implements DSHandleListener
         initialized();
     }
 
-    private void initialized() {
+    private synchronized void initialized() {
         initialized = true;
+        waitingMapperParam = null;
     }
 }

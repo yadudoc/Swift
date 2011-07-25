@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/vdl2/!svn/ver/3741/trunk/src/org/globus/swift/data/policy
+/svn/vdl2/!svn/ver/4808/trunk/src/org/globus/swift/data/policy
 END
 Policy.java
 K 25
@@ -31,7 +31,7 @@ AllocationHook.java
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svn/vdl2/!svn/ver/3737/trunk/src/org/globus/swift/data/policy/AllocationHook.java
+/svn/vdl2/!svn/ver/4808/trunk/src/org/globus/swift/data/policy/AllocationHook.java
 END
 Direct.java
 K 25

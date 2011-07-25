@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language-behaviour/arrays
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-22T14:58:34.501756Z
-4652
-achavez
+2011-07-04T07:19:20.605035Z
+4760
+hategan
 
 
 
@@ -60,6 +60,40 @@ has-props
 
 76
 
+111-array-individual-assigns.out.expected
+file
+
+
+
+
+2011-07-25T07:41:04.000000Z
+919d117956d3135c4c683ff021352f5c
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+
 028-array-assignment.check.sh
 file
 
@@ -93,6 +127,40 @@ has-props
 
 
 76
+
+q5.swift
+file
+
+
+
+
+2011-07-25T07:41:04.000000Z
+342ff2ead5a6d2e381d6038f367a41c3
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+221
 
 022-array-with-exprs.clean.sh
 file
@@ -196,6 +264,40 @@ achavez
 
 248
 
+162-dot-on-array.out.expected
+file
+
+
+
+
+2011-07-25T07:41:04.000000Z
+5901cb1555571e091e26e28d8ab49a34
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6
+
 025-array-passing.out.expected
 file
 
@@ -236,11 +338,11 @@ file
 
 
 
-2011-07-09T22:42:02.000000Z
-8f4ebbd1a36471bb32da073f13767444
-2011-06-22T14:58:34.501756Z
-4652
-achavez
+2011-07-25T07:41:04.000000Z
+eee18bc7f0badd76c50060663b73c128
+2011-07-04T07:19:20.605035Z
+4760
+hategan
 has-props
 
 
@@ -262,7 +364,7 @@ has-props
 
 
 
-112
+70
 
 array_multidimensional_index.clean.sh
 file
@@ -338,10 +440,10 @@ file
 
 
 
-2011-07-09T22:42:02.000000Z
-8607be237a795ca70243999cb6c7ac0d
-2011-06-22T14:58:34.501756Z
-4652
+2011-07-25T07:41:04.000000Z
+e0b988b804df0424b8db32a202a44ebc
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -364,7 +466,7 @@ achavez
 
 
 
-256
+264
 
 027-array-assignment.out.expected
 file
@@ -672,17 +774,18 @@ achavez
 
 269
 
-021-array-in-proc-param.swift
+162-dot-on-array.clean.sh
 file
 
 
 
 
 2011-07-09T22:42:02.000000Z
-6547117be96b25f3c7e0991d2e49049c
-2011-06-14T14:02:14.993996Z
-4613
+3a33306bdbba98d8c980ab52c681a845
+2011-06-22T14:58:34.501756Z
+4652
 achavez
+has-props
 
 
 
@@ -703,8 +806,7 @@ achavez
 
 
 
-
-221
+103
 
 022-array-with-exprs.check.sh
 file
@@ -740,18 +842,17 @@ has-props
 
 75
 
-162-dot-on-array.clean.sh
+021-array-in-proc-param.swift
 file
 
 
 
 
 2011-07-09T22:42:02.000000Z
-3a33306bdbba98d8c980ab52c681a845
-2011-06-22T14:58:34.501756Z
-4652
+6547117be96b25f3c7e0991d2e49049c
+2011-06-14T14:02:14.993996Z
+4613
 achavez
-has-props
 
 
 
@@ -772,7 +873,8 @@ has-props
 
 
 
-103
+
+221
 
 162-dot-on-array.swift
 file
@@ -876,6 +978,40 @@ achavez
 
 214
 
+q5.clean.sh
+file
+
+
+
+
+2011-07-25T07:41:04.000000Z
+832726c07de2d948e350737f038309bc
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+61
+
 022-array-with-exprs.swift
 file
 
@@ -978,40 +1114,6 @@ has-props
 
 141
 
-028-array-assignment.clean.sh
-file
-
-
-
-
-2011-07-09T22:42:02.000000Z
-70369c1d551bbb02c165af7185d6877b
-2011-06-22T14:58:34.501756Z
-4652
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-141
-
 027-array-assignment.swift
 file
 
@@ -1046,16 +1148,16 @@ achavez
 
 222
 
-array_multidimensional_index.check.sh
+028-array-assignment.clean.sh
 file
 
 
 
 
-2011-07-09T22:42:02.000000Z
-94dafead2fd9f1aaddd9617af62192fe
-2011-06-22T14:58:34.501756Z
-4652
+2011-07-25T07:41:04.000000Z
+5190e69faa0750bd447e11c4b5a027f9
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 has-props
 
@@ -1078,7 +1180,7 @@ has-props
 
 
 
-95
+117
 
 021-array-in-proc-param.out.expected
 file
@@ -1154,10 +1256,10 @@ file
 
 
 
-2011-07-09T22:42:02.000000Z
-6e26d93a82db9b4d3359dfe0f4a63e35
-2011-06-22T14:58:34.501756Z
-4652
+2011-07-25T07:41:04.000000Z
+0caf3a1a72a52dd5bda5c196482c632b
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 has-props
 
@@ -1180,7 +1282,7 @@ has-props
 
 
 
-80
+84
 
 111-array-individual-assigns.swift
 file
@@ -1284,6 +1386,40 @@ has-props
 
 96
 
+array_multidimensional_index.out.expected
+file
+
+
+
+
+2011-07-25T07:41:04.000000Z
+d1e95ae928a5cdf73cf2d10df7617f6f
+2011-07-04T07:19:20.605035Z
+4760
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
+
 025-array-passing.check.sh
 file
 
@@ -1317,6 +1453,40 @@ has-props
 
 
 73
+
+q5.check.sh
+file
+
+
+
+
+2011-07-25T07:41:04.000000Z
+ed6ab9c9137aed35221df80cb1907958
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67
 
 021-array-in-proc-param.clean.sh
 file

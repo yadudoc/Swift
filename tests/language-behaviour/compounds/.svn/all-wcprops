@@ -1,25 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/compounds
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/compounds
 END
 0024-compound.swift
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/compounds/0024-compound.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/compounds/0024-compound.swift
 END
 00241-nested-single-compound.swift
 K 25
 svn:wc:ra_dav:version-url
 V 99
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/compounds/00241-nested-single-compound.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/compounds/00241-nested-single-compound.swift
 END
 00242-compound-with-vars.swift
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/compounds/00242-compound-with-vars.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/compounds/00242-compound-with-vars.swift
 END
 0024-compound.Q.out.expected
 K 25

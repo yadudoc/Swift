@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/sge-local
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -25,40 +25,6 @@ davidk
 
 
 e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
-
-001-catsn-local.timeout
-file
-
-
-
-
-2011-07-09T22:42:17.000000Z
-d5b4c7d9b06b60a7846c4529834c9812
-2010-12-21T23:57:20.408218Z
-3816
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3
 
 001-catsn-local.check.sh
 file
@@ -93,6 +59,40 @@ has-props
 
 
 239
+
+001-catsn-local.timeout
+file
+
+
+
+
+2011-07-09T22:42:17.000000Z
+d5b4c7d9b06b60a7846c4529834c9812
+2010-12-21T23:57:20.408218Z
+3816
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3
 
 data.txt
 file
@@ -196,7 +196,7 @@ davidk
 
 340
 
-catsn.0010.out.expected
+catsn.0001.out.expected
 file
 
 
@@ -230,7 +230,7 @@ davidk
 
 12
 
-catsn.0001.out.expected
+catsn.0010.out.expected
 file
 
 
@@ -298,40 +298,6 @@ davidk
 
 12
 
-catsn.0003.out.expected
-file
-
-
-
-
-2011-07-09T22:42:17.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2010-12-21T23:57:20.408218Z
-3816
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
-
 title.txt
 file
 
@@ -366,14 +332,14 @@ davidk
 
 29
 
-sites.template.xml
+catsn.0003.out.expected
 file
 
 
 
 
 2011-07-09T22:42:17.000000Z
-a3f4c657030baf6889fb7745d0ccd176
+f0ef7081e1539ac00ef5b761b4fb01b3
 2010-12-21T23:57:20.408218Z
 3816
 davidk
@@ -398,7 +364,7 @@ davidk
 
 
 
-374
+12
 
 catsn.0004.out.expected
 file
@@ -433,6 +399,40 @@ davidk
 
 
 12
+
+sites.template.xml
+file
+
+
+
+
+2011-07-09T22:42:17.000000Z
+a3f4c657030baf6889fb7745d0ccd176
+2010-12-21T23:57:20.408218Z
+3816
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+374
 
 catsn.0005.out.expected
 file

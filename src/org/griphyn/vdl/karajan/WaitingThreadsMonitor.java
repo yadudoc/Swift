@@ -11,15 +11,17 @@ import java.util.Set;
 import org.globus.cog.karajan.stack.VariableStack;
 
 public class WaitingThreadsMonitor {
-	private static Set threads;
+	private static Set<VariableStack> threads;
 	
 	public synchronized static void addThread(VariableStack stack) {
-		getThreads().add(stack);
+	    if (stack != null) {
+	        getThreads().add(stack);
+	    }
 	}
 	
-	private static synchronized Set getThreads() {
+	private static synchronized Set<VariableStack> getThreads() {
 		if (threads == null) {
-			threads = new HashSet();
+			threads = new HashSet<VariableStack>();
 		}
 		return threads;
 	}
@@ -28,12 +30,12 @@ public class WaitingThreadsMonitor {
 		getThreads().remove(stack);
 	}
 	
-	public synchronized static Collection getAllThreads() {
+	public synchronized static Collection<VariableStack> getAllThreads() {
 		if (threads == null) {
-			return Collections.EMPTY_SET;
+			return Collections.emptySet();
 		}
 		else {
-			return new HashSet(threads);
+			return new HashSet<VariableStack>(threads);
 		}
 	}
 }

@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping
+END
+PathParsingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/PathParsingException.java
 END
 MappingDependentException.java
 K 25
@@ -19,19 +25,25 @@ AbstractDataNode.java
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/AbstractDataNode.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/AbstractDataNode.java
 END
 AbsFile.java
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/vdl2/!svn/ver/1305/trunk/src/org/griphyn/vdl/mapping/AbsFile.java
+/svn/vdl2/!svn/ver/4796/trunk/src/org/griphyn/vdl/mapping/AbsFile.java
 END
 AbstractMapper.java
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/4527/trunk/src/org/griphyn/vdl/mapping/AbstractMapper.java
+/svn/vdl2/!svn/ver/4803/trunk/src/org/griphyn/vdl/mapping/AbstractMapper.java
+END
+PathParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/PathParser.java
 END
 InvalidMapperException.java
 K 25
@@ -39,29 +51,23 @@ svn:wc:ra_dav:version-url
 V 83
 /svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/mapping/InvalidMapperException.java
 END
-MapperFactory.java
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/MapperFactory.java
-END
 MappingParam.java
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svn/vdl2/!svn/ver/4524/trunk/src/org/griphyn/vdl/mapping/MappingParam.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/mapping/MappingParam.java
+END
+MapperFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/vdl2/!svn/ver/4773/trunk/src/org/griphyn/vdl/mapping/MapperFactory.java
 END
 ArrayDataNode.java
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/ArrayDataNode.java
-END
-DataNode.java
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/vdl2/!svn/ver/10/trunk/src/org/griphyn/vdl/mapping/DataNode.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/ArrayDataNode.java
 END
 DataDependentException.java
 K 25
@@ -69,17 +75,17 @@ svn:wc:ra_dav:version-url
 V 84
 /svn/vdl2/!svn/ver/223/trunk/src/org/griphyn/vdl/mapping/DataDependentException.java
 END
-RootArrayDataNode.java
+DataNode.java
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/RootArrayDataNode.java
+V 71
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/DataNode.java
 END
-InvalidPathException.java
+ExternalDataNode.java
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/2375/trunk/src/org/griphyn/vdl/mapping/InvalidPathException.java
+V 79
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/mapping/ExternalDataNode.java
 END
 InvalidMappingParameterException.java
 K 25
@@ -87,29 +93,41 @@ svn:wc:ra_dav:version-url
 V 94
 /svn/vdl2/!svn/ver/531/trunk/src/org/griphyn/vdl/mapping/InvalidMappingParameterException.java
 END
-ExternalDataNode.java
+InvalidPathException.java
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/svn/vdl2/!svn/ver/3727/trunk/src/org/griphyn/vdl/mapping/ExternalDataNode.java
+V 83
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/InvalidPathException.java
+END
+RootArrayDataNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/RootArrayDataNode.java
 END
 DSHandle.java
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/DSHandle.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/DSHandle.java
 END
 RootDataNode.java
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svn/vdl2/!svn/ver/4680/trunk/src/org/griphyn/vdl/mapping/RootDataNode.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/RootDataNode.java
 END
 Mapper.java
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/vdl2/!svn/ver/4527/trunk/src/org/griphyn/vdl/mapping/Mapper.java
+/svn/vdl2/!svn/ver/4803/trunk/src/org/griphyn/vdl/mapping/Mapper.java
+END
+PathComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/PathComparator.java
 END
 DependentException.java
 K 25
@@ -121,7 +139,7 @@ PhysicalFormat.java
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/1103/trunk/src/org/griphyn/vdl/mapping/PhysicalFormat.java
+/svn/vdl2/!svn/ver/4773/trunk/src/org/griphyn/vdl/mapping/PhysicalFormat.java
 END
 DSHandleListener.java
 K 25
@@ -139,5 +157,11 @@ Path.java
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/vdl2/!svn/ver/4676/trunk/src/org/griphyn/vdl/mapping/Path.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/Path.java
+END
+PathElementComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/mapping/PathElementComparator.java
 END

@@ -10,10 +10,10 @@ import org.apache.log4j.Logger;
 import org.globus.cog.karajan.arguments.Arg;
 import org.globus.cog.karajan.stack.VariableStack;
 import org.globus.cog.karajan.workflow.ExecutionException;
+import org.globus.cog.karajan.workflow.futures.FutureFault;
 import org.globus.cog.karajan.workflow.futures.FutureNotYetAvailable;
 import org.griphyn.vdl.karajan.Pair;
 import org.griphyn.vdl.karajan.PairIterator;
-import org.griphyn.vdl.karajan.VDL2FutureException;
 import org.griphyn.vdl.mapping.AbstractDataNode;
 import org.griphyn.vdl.mapping.DSHandle;
 import org.griphyn.vdl.mapping.InvalidPathException;
@@ -33,7 +33,7 @@ public class SetFieldValue extends VDLFunction {
 		try {
 		    Path path = parsePath(OA_PATH.getValue(stack), stack);
 			DSHandle leaf = var.getField(path);
-			DSHandle value = (DSHandle) PA_VALUE.getValue(stack);
+			AbstractDataNode value = (AbstractDataNode) PA_VALUE.getValue(stack);
 			
 			log(leaf, value);
 			    
@@ -42,27 +42,13 @@ public class SetFieldValue extends VDLFunction {
             // is a DSHandle. There is no need (I think? maybe numerical casting?)
             // for type conversion here; but would be useful to have
             // type checking.
-			synchronized (value.getRoot()) {
-				if (!value.isClosed()) {
-					throw new FutureNotYetAvailable(addFutureListener(stack, value));
-				}
-			}
-			try {
-    			synchronized (var.getRoot()) {
-    				deepCopy(leaf, value, stack);
-    				if (var.getParent() != null && var.getParent().getType().isArray()) {
-    				    markAsAvailable(stack, leaf.getParent(), leaf.getPathFromRoot().getLast());
-    				}
-    			}
-			}
-			catch (VDL2FutureException e) {
-			    throw new FutureNotYetAvailable(addFutureListener(stack, e.getHandle()));
-			}
+			
+   			deepCopy(leaf, value, stack, 0);
 			
 			return null;
 		}
-		catch (FutureNotYetAvailable fnya) {
-			throw fnya;
+		catch (FutureFault f) {
+			throw f;
 		}
 		catch (Exception e) { // TODO tighten this
 			throw new ExecutionException(e);
@@ -82,23 +68,24 @@ public class SetFieldValue extends VDLFunction {
 	            if (p.equals("$"))
 	                p = "";
 	            String name = data.getDisplayableName() + p;
-	            Object v = value.getValue();
-	            if (! (v instanceof Map))
-	                logger.info("Set: " + name + "=" + v);
-	            else
+	            if (value.getType().isArray()) {
 	                logger.info("Set: " + name + "=" + 
-	                            unpackHandles((Map<String, DSHandle>) v));
+                                unpackHandles(value.getArrayValue()));
+	            }
+	            else {
+	                logger.info("Set: " + name + "=" + value.getValue());
+	            }
 	        }
 	    }
     }
 
-	String unpackHandles(Map<String,DSHandle> handles) { 
+	String unpackHandles(Map<Comparable<?>, DSHandle> handles) { 
 	    StringBuilder sb = new StringBuilder();
 	    sb.append("{");
-	    Iterator<Map.Entry<String,DSHandle>> it = 
+	    Iterator<Map.Entry<Comparable<?>, DSHandle>> it = 
 	        handles.entrySet().iterator();
 	    while (it.hasNext()) { 
-	        Map.Entry<String,DSHandle> entry = it.next();
+	        Map.Entry<Comparable<?>, DSHandle> entry = it.next();
 	        sb.append(entry.getKey());
 	        sb.append('=');
 	        sb.append(entry.getValue().getValue());
@@ -111,40 +98,36 @@ public class SetFieldValue extends VDLFunction {
 	
     /** make dest look like source - if its a simple value, copy that
 	    and if its an array then recursively copy */
-	void deepCopy(DSHandle dest, DSHandle source, VariableStack stack) throws ExecutionException {
+	void deepCopy(DSHandle dest, DSHandle source, VariableStack stack, int level) throws ExecutionException {
+	    ((AbstractDataNode) source).waitFor();
 		if (source.getType().isPrimitive()) {
 			dest.setValue(source.getValue());
 		}
 		else if (source.getType().isArray()) {
 			PairIterator it;
-			if (stack.isDefined("it")) {
-			    it = (PairIterator) stack.getVar("it");
+			if (stack.isDefined("it" + level)) {
+			    it = (PairIterator) stack.getVar("it" + level);
 			}
 			else {
 			    it = new PairIterator(source.getArrayValue());
-			    stack.setVar("it", it);
+			    stack.setVar("it" + level, it);
 			}
 			while (it.hasNext()) {
 				Pair pair = (Pair) it.next();
-				Object lhs = pair.get(0);
+				Comparable<?> lhs = (Comparable<?>) pair.get(0);
 				DSHandle rhs = (DSHandle) pair.get(1);
-				Path memberPath;
-				if (lhs instanceof Double) {
-				    memberPath = Path.EMPTY_PATH.addLast(String.valueOf(((Double) lhs).intValue()), true);
-				}
-				else {
-				    memberPath = Path.EMPTY_PATH.addLast(String.valueOf(lhs), true);
-				}
+				Path memberPath = Path.EMPTY_PATH.addLast(lhs, true);
 				DSHandle field;
 				try {
 					field = dest.getField(memberPath);
 				}
 				catch (InvalidPathException ipe) {
-					throw new ExecutionException("Could not get destination field",ipe);
+					throw new ExecutionException("Could not get destination field", ipe);
 				}
-				deepCopy(field, rhs, stack);
+				deepCopy(field, rhs, stack, level + 1);
 			}
-			closeShallow(stack, dest);
+			stack.currentFrame().deleteVar("it" + level);
+			dest.closeShallow();
 		} 
 		else if (!source.getType().isComposite()) {
 		    Path dpath = dest.getPathFromRoot();
@@ -152,7 +135,9 @@ public class SetFieldValue extends VDLFunction {
 		        if (logger.isDebugEnabled()) {
 		            logger.debug("Remapping " + dest + " to " + source);
 		        }
-		        dest.getMapper().remap(dpath, source.getMapper().map(source.getPathFromRoot()));
+		        
+		        dest.getMapper().remap(dpath, source.getMapper(), source.getPathFromRoot());
+
 		        dest.closeShallow();
 		    }
 		    else {
@@ -174,14 +159,11 @@ public class SetFieldValue extends VDLFunction {
 		            stack.setVar("fc", fc);
 		            try {
 		                fc.start();
-		                throw new FutureNotYetAvailable(fc);
-		            }
-		            catch (FutureNotYetAvailable e) {
-		                throw e;
 		            }
 		            catch (Exception e) {
 		                throw new ExecutionException("Failed to start file copy", e);
 		            }
+		            throw new FutureNotYetAvailable(fc);
 		        }
 		    }
 		}

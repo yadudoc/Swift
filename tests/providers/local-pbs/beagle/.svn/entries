@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/local-pbs/beagle
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -94,40 +94,6 @@ wozniak
 
 373
 
-001-catsn.timeout
-file
-
-
-
-
-2011-07-09T22:42:17.000000Z
-e42002e140b29fc482ab0390cda6bdef
-2011-04-12T18:27:19.407502Z
-4342
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4
-
 001-catsn.check.sh
 file
 
@@ -162,7 +128,41 @@ has-props
 
 135
 
-catsn.0010.out.expected
+001-catsn.timeout
+file
+
+
+
+
+2011-07-09T22:42:17.000000Z
+e42002e140b29fc482ab0390cda6bdef
+2011-04-12T18:27:19.407502Z
+4342
+wozniak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+
+catsn.0001.out.expected
 file
 
 
@@ -196,7 +196,7 @@ wozniak
 
 12
 
-catsn.0001.out.expected
+catsn.0010.out.expected
 file
 
 
@@ -298,40 +298,6 @@ wozniak
 
 12
 
-sites.template.xml
-file
-
-
-
-
-2011-07-09T22:42:17.000000Z
-2cd3f5a7c7f953b9090a06bd9e2cd5d1
-2011-05-20T03:32:49.535378Z
-4501
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-520
-
 catsn.0004.out.expected
 file
 
@@ -366,16 +332,16 @@ wozniak
 
 12
 
-catsn.0005.out.expected
+sites.template.xml
 file
 
 
 
 
 2011-07-09T22:42:17.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2011-04-12T18:27:19.407502Z
-4342
+2cd3f5a7c7f953b9090a06bd9e2cd5d1
+2011-05-20T03:32:49.535378Z
+4501
 wozniak
 
 
@@ -398,7 +364,7 @@ wozniak
 
 
 
-12
+520
 
 001-catsn.swift
 file
@@ -433,6 +399,40 @@ wozniak
 
 
 346
+
+catsn.0005.out.expected
+file
+
+
+
+
+2011-07-09T22:42:17.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2011-04-12T18:27:19.407502Z
+4342
+wozniak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
 
 catsn.0006.out.expected
 file

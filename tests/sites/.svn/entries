@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/sites
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-03-21T20:36:06.831029Z
-4202
-wozniak
+2011-07-03T02:37:10.702468Z
+4742
+hategan
 
 
 
@@ -38,11 +38,11 @@ file
 
 
 
-2011-07-09T22:41:34.000000Z
-ae43c4aaf990e8bde446b87c9c2e1044
-2010-07-22T17:35:05.083065Z
-3463
-wozniak
+2011-07-25T07:39:52.000000Z
+5ca4dc6cb9c05ef1e15a2db29a7731fb
+2011-07-03T02:37:10.702468Z
+4742
+hategan
 
 
 
@@ -64,7 +64,7 @@ wozniak
 
 
 
-262
+396
 
 tguc-pbs-gram2.xml
 file
@@ -443,6 +443,9 @@ benc
 
 326
 
+gwynn.bsd.uchicago.edu
+dir
+
 run-site
 file
 
@@ -476,9 +479,6 @@ has-props
 
 
 441
-
-gwynn.bsd.uchicago.edu
-dir
 
 tgtacc-fork-gram2.xml
 file

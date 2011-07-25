@@ -98,12 +98,12 @@ public class New extends VDLFunction {
 							 "with a list of values");
 						}
 						int index = 0;
-						Iterator i = ((List) value).iterator();
+						Iterator<?> i = ((List<?>) value).iterator();
 						while (i.hasNext()) {
 							// TODO check type consistency of elements with
 							// the type of the array
 							Object n = i.next();
-							Path p = Path.EMPTY_PATH.addLast(String.valueOf(index), true);
+							Path p = Path.EMPTY_PATH.addLast(index, true);
 							if (n instanceof DSHandle) {
 								handle.getField(p).set((DSHandle) n);
 							}
@@ -114,7 +114,7 @@ public class New extends VDLFunction {
 							index++;
 						}
 					}
-					closeShallow(stack, handle);
+					handle.closeShallow();
 				}
 
 				handle.init(mapping);
@@ -127,7 +127,6 @@ public class New extends VDLFunction {
 				handle.init(mapping);
 				if (value != null) {
 					handle.setValue(internalValue(type, value));
-					closeShallow(stack, handle);
 				}
 			}
 			

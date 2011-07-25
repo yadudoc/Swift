@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/local-pbs-coasters
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -131,40 +131,6 @@ wozniak
 
 465
 
-catsn.0010.out.expected
-file
-
-
-
-
-2011-07-09T22:42:18.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2010-12-21T23:57:20.408218Z
-3816
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
-
 catsn.0001.out.expected
 file
 
@@ -199,7 +165,7 @@ davidk
 
 12
 
-catsn.0002.out.expected
+catsn.0010.out.expected
 file
 
 
@@ -267,7 +233,7 @@ has-props
 
 82
 
-catsn.0003.out.expected
+catsn.0002.out.expected
 file
 
 
@@ -335,7 +301,7 @@ davidk
 
 43
 
-catsn.0004.out.expected
+catsn.0003.out.expected
 file
 
 
@@ -402,6 +368,40 @@ wozniak
 
 
 823
+
+catsn.0004.out.expected
+file
+
+
+
+
+2011-07-09T22:42:18.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2010-12-21T23:57:20.408218Z
+3816
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
 
 catsn.0005.out.expected
 file

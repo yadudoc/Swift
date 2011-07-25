@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 35
-/svn/vdl2/!svn/ver/4692/trunk/tests
+/svn/vdl2/!svn/ver/4837/trunk/tests
 END
 meta.sh
 K 25
@@ -19,7 +19,7 @@ suite.sh
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/vdl2/!svn/ver/4692/trunk/tests/suite.sh
+/svn/vdl2/!svn/ver/4833/trunk/tests/suite.sh
 END
 run
 K 25

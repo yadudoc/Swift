@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/strings
 END
 005-strcut.clean.sh
 K 25
@@ -39,11 +39,23 @@ svn:wc:ra_dav:version-url
 V 81
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/143-newlines.swift
 END
+761-dirname.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/strings/761-dirname.clean.sh
+END
 003-strcat.check.sh
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/003-strcat.check.sh
+END
+761-dirname.swift
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/strings/761-dirname.swift
 END
 161-star-dot.check.sh
 K 25
@@ -87,17 +99,11 @@ svn:wc:ra_dav:version-url
 V 93
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/141-space-in-filename.check.sh
 END
-0053-toint.check.sh
+0051-regexp.clean.sh
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/0053-toint.check.sh
-END
-1032-singlequote.check.sh
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/1032-singlequote.check.sh
+V 83
+/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/0051-regexp.clean.sh
 END
 142-space-and-quotes.clean.sh
 K 25
@@ -105,11 +111,17 @@ svn:wc:ra_dav:version-url
 V 92
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/142-space-and-quotes.clean.sh
 END
-0051-regexp.clean.sh
+1032-singlequote.check.sh
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/0051-regexp.clean.sh
+V 88
+/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/1032-singlequote.check.sh
+END
+0053-toint.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/0053-toint.check.sh
 END
 0052-regexp.clean.sh
 K 25
@@ -153,29 +165,29 @@ svn:wc:ra_dav:version-url
 V 86
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/0031-strcat-op.clean.sh
 END
-103-quote.clean.sh
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/103-quote.clean.sh
-END
 1421-space-and-quotes.clean.sh
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/1421-space-and-quotes.clean.sh
 END
-103-quote.swift
+103-quote.clean.sh
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/103-quote.swift
+V 81
+/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/103-quote.clean.sh
 END
 1421-space-and-quotes.swift
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/1421-space-and-quotes.swift
+END
+103-quote.swift
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4654/trunk/tests/language-behaviour/strings/103-quote.swift
 END
 003-strcat.clean.sh
 K 25

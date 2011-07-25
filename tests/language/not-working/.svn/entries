@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language/not-working
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -638,40 +638,6 @@ benc
 
 27
 
-1231-global-assign-inside.swift
-file
-
-
-
-
-2011-07-09T22:41:28.000000Z
-69109eae5308dd82561f411587f61d09
-2009-06-25T13:08:16.641881Z
-2981
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-225
-
 procedure_arg_type_check_01.swift
 file
 
@@ -705,6 +671,40 @@ benc
 
 
 57
+
+1231-global-assign-inside.swift
+file
+
+
+
+
+2011-07-09T22:41:28.000000Z
+69109eae5308dd82561f411587f61d09
+2009-06-25T13:08:16.641881Z
+2981
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+225
 
 procedure_arg_type_check_02.swift
 file
@@ -740,40 +740,6 @@ benc
 
 49
 
-120-many-nested-statements-missing-semi-nbnulpy9eqno0.log
-file
-
-
-
-
-2011-07-09T22:41:28.000000Z
-10673577c44ea0d7008e7e8e665f210d
-2007-03-30T22:39:44.690824Z
-597
-benc@CI.UCHICAGO.EDU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1644
-
 procedure_arg_type_check_03.swift
 file
 
@@ -808,16 +774,16 @@ benc
 
 69
 
-113-assign-without-semi.swift
+120-many-nested-statements-missing-semi-nbnulpy9eqno0.log
 file
 
 
 
 
 2011-07-09T22:41:28.000000Z
-deda98446a11243396f399f14f922cc9
-2008-02-09T18:07:48.245196Z
-1631
+10673577c44ea0d7008e7e8e665f210d
+2007-03-30T22:39:44.690824Z
+597
 benc@CI.UCHICAGO.EDU
 
 
@@ -840,7 +806,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-53
+1644
 
 procedure_arg_type_check_04.swift
 file
@@ -875,6 +841,40 @@ benc
 
 
 60
+
+113-assign-without-semi.swift
+file
+
+
+
+
+2011-07-09T22:41:28.000000Z
+deda98446a11243396f399f14f922cc9
+2008-02-09T18:07:48.245196Z
+1631
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+53
 
 procedure_arg_type_check_05.swift
 file

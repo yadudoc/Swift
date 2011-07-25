@@ -33,8 +33,13 @@ ALWAYS_EXITONFAILURE=0
 VERBOSE=0
 TOTAL_TIME=0
 INDIVIDUAL_TEST_TIME=0
+COLORIZE=0
 # The directory in which to start:
-TOPDIR=$PWD
+TOPDIR=`readlink -f $PWD/../../../..`
+CRTDIR=`pwd`
+
+# Disable usage stats in test suite
+export SWIFT_USAGE_STATS=0
 
 while [ $# -gt 0 ]; do
   case $1 in
@@ -78,6 +83,9 @@ while [ $# -gt 0 ]; do
     -v)
       VERBOSE=1
       shift;;
+    -l)
+      COLORIZE=1
+      shift;;
     *)
       GROUPARG=$1
       shift;;
@@ -88,6 +96,19 @@ if (( VERBOSE )); then
   set -x
   HTML_COMMENTS=1
 fi
+
+if (( $COLORIZE )); then
+	LGREEN="\033[1;32m"
+	YELLOW="\033[1;33m"
+	RED="\033[1;31m"
+	GRAY="\033[0;37m"
+else
+	LGREEN=""
+	YELLOW=""
+	RED=""
+	GRAY=""
+fi
+
 
 # Iterations per test (may want to run each test multiple times?)
 ITERS_LOCAL=1
@@ -347,7 +368,7 @@ output_report() {
 			if [ "$RESULT" == "Passed" ]; then
 				printf %-10.10s "success">>$REPORT
 			else
-				echo "FAILED"
+				echo -e "${RED}FAILED${GRAY}"
 				cat $RUNDIR/$TEST_LOG < /dev/null
 				printf %-10.10s "failure">>$REPORT
 			fi
@@ -363,8 +384,12 @@ output_report() {
 	    	if [ "$RESULT" == "Passed" ]; then
 	      		html_td class "success" width 25 title "$CMD"
 	      		html_a_href $TEST_LOG "$LABEL"
+	      	elif [ "$RESULT" == "None" ]; then
+	      		html_td width 25
+		   		html "&nbsp;&nbsp;"
+   				html_~td
 	    	else
-	      		echo "FAILED"
+	      		echo -e "${RED}FAILED${GRAY}"
 	      		cat $RUNDIR/$TEST_LOG < /dev/null
 	      		html_td class "failure" width 25 title "$CMD"
 	      		html_a_href $TEST_LOG $LABEL
@@ -381,7 +406,11 @@ output_report() {
 start_group() {
   G=$1
   echo
-  echo $G
+  echo -e "${LGREEN}/----------------------------------------------------"
+  echo "|"
+  echo "| $G"
+  echo "|"
+  echo -e "\\----------------------------------------------------${GRAY}"
   echo
   if [ $TEXTREPORT == 1 ]; then
   	  stars
@@ -397,7 +426,7 @@ start_group() {
 	  html "$G"
 	  html_~th
 	  html_~tr
-	
+
 	 html_tr group
 	 html_td
 	 html "#"
@@ -655,10 +684,10 @@ monitored_exec()
   rm killed_test > /dev/null 2>&1 && sleep 5
   verbose "killing monitor: $MONITOR_PID..."
   kill $MONITOR_PID
-  
+
   INDIVIDUAL_TEST_TIME=$(( STOP-START ))
   TOTAL_TIME=$(( INDIVIDUAL_TEST_TIME+TOTAL_TIME ))
-  echo "TOOK (seconds): $INDIVIDUAL_TEST_TIME"
+  echo -e "${YELLOW}TOOK (seconds): $INDIVIDUAL_TEST_TIME${GRAY}"
   RESULT=$( result )
 
 #Verifies the value of $RESULT, if the test was successful
@@ -671,8 +700,8 @@ monitored_exec()
   fi
 
 
-  test_log
   LASTCMD="$@"
+  test_log
   output_report test $SEQ "$LASTCMD" $RESULT $TEST_LOG
 
   check_bailout
@@ -694,21 +723,92 @@ script_exec() {
   check_bailout
 }
 
+stage_files() {
+	GROUP=$1
+	NAME=$2
+
+	RESULT="None"
+
+	if [ -f $GROUP/$NAME.in ]; then
+		echo "Copying input: $NAME.in"
+		cp -v $GROUP/$NAME.in . 2>&1 >> $OUTPUT
+		if [ "$?" != 0 ]; then
+			RESULT="Failed"
+		fi
+		if [ "$RESULT" == "None" ]; then
+			RESULT="Passed"
+		fi
+	fi
+	for INPUT in $GROUP/$NAME.*.in; do
+		IN=`basename $INPUT`
+		echo "Copying input: $IN"
+		cp -v $INPUT . 2>&1 >> $OUTPUT
+		if [ "$?" != 0 ]; then
+			RESULT="Failed"
+		fi
+		if [ "$RESULT" == "None" ]; then
+			RESULT="Passed"
+		fi
+	done
+
+	output_report test "s" "setup" $RESULT
+
+	check_bailout
+}
+
+check_outputs() {
+	GROUP=$1
+	NAME=$2
+
+	RESULT="None"
+
+	for EXPECTED in $GROUP/$NAME.*.expected; do
+		BNE=`basename $EXPECTED .expected`
+		echo -n "Checking output: $BNE "
+		diff $BNE $EXPECTED 2>&1 >> $OUTPUT
+		if [ "$?" != "0" ]; then
+			RESULT="Failed"
+                        echo Failed
+                else
+                        echo OK
+                fi
+		if [ "$RESULT" == "None" ]; then
+			RESULT="Passed"
+		fi
+	done
+
+	if [ "$RESULT" == "None" ]; then
+		html_td width 25
+   		html "&nbsp;&nbsp;"
+   		html_~td
+	fi
+
+	output_report test "&#8730;" "check" $RESULT
+
+	check_bailout
+}
+
 # Execute Swift test case w/ setup, check, clean
 swift_test_case() {
   SWIFTSCRIPT=$1
-  SETUPSCRIPT=${SWIFTSCRIPT%.swift}.setup.sh
-  CHECKSCRIPT=${SWIFTSCRIPT%.swift}.check.sh
-  CLEANSCRIPT=${SWIFTSCRIPT%.swift}.clean.sh
-  TIMEOUTFILE=${SWIFTSCRIPT%.swift}.timeout
+  NAME=${SWIFTSCRIPT%.swift}
+
+  SETUPSCRIPT=$NAME.setup.sh
+  CHECKSCRIPT=$NAME.check.sh
+  CLEANSCRIPT=$NAME.clean.sh
+  TIMEOUTFILE=$NAME.timeout
+  ARGSFILE=$NAME.args
 
   TEST_SHOULD_FAIL=0
   if [ -x $GROUP/$SETUPSCRIPT ]; then
     script_exec $GROUP/$SETUPSCRIPT "S"
   else
-   html_td  width 25
-   html "&nbsp;&nbsp;"
-   html_~td
+    stage_files $GROUP $NAME
+  fi
+
+  ARGS=""
+  if [ -f $GROUP/$ARGSFILE ]; then
+  	ARGS=`cat $GROUP/$ARGSFILE`
   fi
 
   CDM=
@@ -721,21 +821,20 @@ swift_test_case() {
   grep THIS-SCRIPT-SHOULD-FAIL $SWIFTSCRIPT > /dev/null
   TEST_SHOULD_FAIL=$(( ! $?  ))
 
-  monitored_exec $TIMEOUT swift                         \
+  monitored_exec $TIMEOUT swift     \
                        -wrapperlog.always.transfer true \
                        -sitedir.keep true               \
                        -config swift.properties         \
                        -sites.file sites.xml            \
                        -tc.file tc.data                 \
-                       $CDM $SWIFTSCRIPT
+                       $CDM $SWIFTSCRIPT $ARGS
 
   TEST_SHOULD_FAIL=0
   if [ -x $GROUP/$CHECKSCRIPT ]; then
+  	export OUTPUT
     script_exec $GROUP/$CHECKSCRIPT "&#8730;"
   else
-   html_td width 25
-   html "&nbsp;&nbsp;"
-   html_~td
+    check_outputs $GROUP $NAME
   fi
 
   if [ -x $GROUP/$CLEANSCRIPT ]; then
@@ -746,14 +845,17 @@ swift_test_case() {
    html_~td
   fi
 }
-
 # Execute shell test case w/ setup, check, clean
 script_test_case() {
   SHELLSCRIPT=$1
-  SETUPSCRIPT=${SHELLSCRIPT%.test.sh}.setup.sh
-  CHECKSCRIPT=${SHELLSCRIPT%.test.sh}.check.sh
-  CLEANSCRIPT=${SHELLSCRIPT%.test.sh}.clean.sh
-  TIMEOUTFILE=${SHELLSCRIPT%.test.sh}.timeout
+  NAME=${SWIFTSCRIPT%.swift}
+
+  stage_files $GROUP $NAME
+
+  SETUPSCRIPT=$NAME.setup.sh
+  CHECKSCRIPT=$NAME.check.sh
+  CLEANSCRIPT=$NAME.clean.sh
+  TIMEOUTFILE=$NAME.timeout
 
   TEST_SHOULD_FAIL=0
   if [ -x $GROUP/$SETUPSCRIPT ]; then
@@ -890,6 +992,11 @@ group_tc_data() {
     cp -v $SWIFT_HOME/etc/tc.data .
     [ $? != 0 ] && crash "Could not copy tc.data!"
   fi
+  if [ -f $GROUP/tc.template.mix.data ]; then
+    sed "s@_DIR_@$GROUP@" < $GROUP/tc.template.mix.data >> tc.data
+    [ $? != 0 ] && crash "Could not create tc.data!"
+    echo "Mixing: $GROUP/tc.template.mix.data"
+  fi
 }
 
 # Generate the CDM file, fs.data
@@ -919,7 +1026,14 @@ group_title() {
   if [ -r $GROUP/title.txt ]; then
     cat $GROUP/title.txt
   else
-    echo "untitled"
+  	G=$GROUP
+	PIECES=""
+	while [ "$G" != "$CRTDIR" ]; do
+		PIECE=`basename $G`
+		PIECES="$PIECE $PIECES"
+		G=`dirname $G`
+	done
+	echo $PIECES
   fi
 }
 
@@ -936,7 +1050,11 @@ group_statistics(){
 		 html_td class "success"
 		 html "$TESTSPASSED Tests succeeded."
 		 html_~td
-		 html_td class "failure"
+		 if [ "$TESTSFAILED" == "0" ]; then
+		 	html_td class "success"
+		 else
+		 	html_td class "failure"
+		 fi
 		 html "$TESTSFAILED Tests failed."
 		 html_~td
 		 html_td class "neutral" align left
@@ -963,9 +1081,14 @@ test_group() {
 
     TESTNAME=$( basename $TEST )
 
-    echo -e "\nTest case: $TESTNAME"
+	echo
+	echo
+	echo "/--------------------------------------------------------------"
+    echo -e "|   Test case: $LGREEN$TESTNAME$GRAY"
+    echo "\--------------------------------------------------------------"
+    echo
 
-    cp -v $GROUP/$TESTNAME .
+    cp $GROUP/$TESTNAME .
     TESTLINK=$TESTNAME
     start_row
     for (( i=0; $i<$ITERS_LOCAL; i=$i+1 )); do
@@ -1108,6 +1231,7 @@ for G in ${GROUPLIST[@]}; do
   echo "GROUP: $GROUP"
   [ -d $GROUP ] || crash "Could not find GROUP: $GROUP"
   TITLE=$( group_title )
+
   start_group "Group $GROUPCOUNT: $TITLE"
   test_group
   (( GROUPCOUNT++ ))

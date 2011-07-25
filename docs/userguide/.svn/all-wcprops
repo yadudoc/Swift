@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/vdl2/!svn/ver/4687/trunk/docs/userguide
-END
-clustering
-K 25
-svn:wc:ra_dav:version-url
-V 55
-/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/clustering
+/svn/vdl2/!svn/ver/4720/trunk/docs/userguide
 END
 swift-site-model.png
 K 25
@@ -15,11 +9,11 @@ svn:wc:ra_dav:version-url
 V 65
 /svn/vdl2/!svn/ver/4480/trunk/docs/userguide/swift-site-model.png
 END
-reliability_mechanisms
+clustering
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/reliability_mechanisms
+V 55
+/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/clustering
 END
 type-hierarchy.png
 K 25
@@ -27,23 +21,11 @@ svn:wc:ra_dav:version-url
 V 63
 /svn/vdl2/!svn/ver/4480/trunk/docs/userguide/type-hierarchy.png
 END
-profiles
+reliability_mechanisms
 K 25
 svn:wc:ra_dav:version-url
-V 53
-/svn/vdl2/!svn/ver/4591/trunk/docs/userguide/profiles
-END
-language
-K 25
-svn:wc:ra_dav:version-url
-V 53
-/svn/vdl2/!svn/ver/4682/trunk/docs/userguide/language
-END
-configuration_properties
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/configuration_properties
+V 67
+/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/reliability_mechanisms
 END
 coasters
 K 25
@@ -51,23 +33,41 @@ svn:wc:ra_dav:version-url
 V 53
 /svn/vdl2/!svn/ver/4579/trunk/docs/userguide/coasters
 END
+configuration_properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/configuration_properties
+END
+language
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/4682/trunk/docs/userguide/language
+END
+profiles
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vdl2/!svn/ver/4591/trunk/docs/userguide/profiles
+END
 site_catalog
 K 25
 svn:wc:ra_dav:version-url
 V 57
 /svn/vdl2/!svn/ver/4579/trunk/docs/userguide/site_catalog
 END
-kickstart
-K 25
-svn:wc:ra_dav:version-url
-V 54
-/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/kickstart
-END
 howto_tips
 K 25
 svn:wc:ra_dav:version-url
 V 55
 /svn/vdl2/!svn/ver/4579/trunk/docs/userguide/howto_tips
+END
+kickstart
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vdl2/!svn/ver/4579/trunk/docs/userguide/kickstart
 END
 transformation_catalog
 K 25
@@ -103,7 +103,7 @@ mappers
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/vdl2/!svn/ver/4687/trunk/docs/userguide/mappers
+/svn/vdl2/!svn/ver/4705/trunk/docs/userguide/mappers
 END
 userguide-shane.jpg
 K 25
@@ -127,7 +127,7 @@ app_procedures
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/vdl2/!svn/ver/4633/trunk/docs/userguide/app_procedures
+/svn/vdl2/!svn/ver/4720/trunk/docs/userguide/app_procedures
 END
 userguide-rotated.jpg
 K 25

@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/svn/vdl2/!svn/ver/4625/trunk/tests/groups
-END
-group-sge.sh
-K 25
-svn:wc:ra_dav:version-url
-V 55
-/svn/vdl2/!svn/ver/3817/trunk/tests/groups/group-sge.sh
+/svn/vdl2/!svn/ver/4836/trunk/tests/groups
 END
 group-intrepid.sh
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svn/vdl2/!svn/ver/4202/trunk/tests/groups/group-intrepid.sh
+END
+group-sge.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vdl2/!svn/ver/3817/trunk/tests/groups/group-sge.sh
 END
 local-coasters.sh
 K 25
@@ -51,17 +51,17 @@ svn:wc:ra_dav:version-url
 V 60
 /svn/vdl2/!svn/ver/4202/trunk/tests/groups/group-queenbee.sh
 END
-local-sge-coasters.sh
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/vdl2/!svn/ver/4202/trunk/tests/groups/local-sge-coasters.sh
-END
 group-ssh.sh
 K 25
 svn:wc:ra_dav:version-url
 V 55
 /svn/vdl2/!svn/ver/3830/trunk/tests/groups/group-ssh.sh
+END
+local-sge-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/local-sge-coasters.sh
 END
 group-surveyor.sh
 K 25
@@ -73,7 +73,7 @@ group-all-local.sh
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/vdl2/!svn/ver/4625/trunk/tests/groups/group-all-local.sh
+/svn/vdl2/!svn/ver/4836/trunk/tests/groups/group-all-local.sh
 END
 group-pc.sh
 K 25
@@ -81,21 +81,27 @@ svn:wc:ra_dav:version-url
 V 54
 /svn/vdl2/!svn/ver/3954/trunk/tests/groups/group-pc.sh
 END
-local-pbs-coasters.sh
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/vdl2/!svn/ver/4202/trunk/tests/groups/local-pbs-coasters.sh
-END
 group-cdm.sh
 K 25
 svn:wc:ra_dav:version-url
 V 55
 /svn/vdl2/!svn/ver/4332/trunk/tests/groups/group-cdm.sh
 END
+local-pbs-coasters.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vdl2/!svn/ver/4202/trunk/tests/groups/local-pbs-coasters.sh
+END
 group-functions.sh
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /svn/vdl2/!svn/ver/4257/trunk/tests/groups/group-functions.sh
+END
+group-documentation.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4831/trunk/tests/groups/group-documentation.sh
 END

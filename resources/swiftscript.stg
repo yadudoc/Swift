@@ -266,10 +266,10 @@ assign(lhs,rhs,sourcelocation) ::= <<
 </assign>
 >>
 
-append(lhs,rhs,sourcelocation) ::= <<
+append(array,value,sourcelocation) ::= <<
 <append src="$sourcelocation$">
- $lhs$
- $rhs$
+ $array$
+ $value$
 </append>
 >>
 

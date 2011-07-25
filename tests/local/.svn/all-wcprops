@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/svn/vdl2/!svn/ver/3615/trunk/tests/local
+/svn/vdl2/!svn/ver/4753/trunk/tests/local
 END
 default.swift
 K 25
@@ -15,23 +15,23 @@ svn:wc:ra_dav:version-url
 V 51
 /svn/vdl2/!svn/ver/3515/trunk/tests/local/append.sh
 END
-array_wildcard.clean.sh
+range.check.sh
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_wildcard.clean.sh
+V 56
+/svn/vdl2/!svn/ver/4753/trunk/tests/local/range.check.sh
 END
 array_iteration.check.sh
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_iteration.check.sh
+/svn/vdl2/!svn/ver/4753/trunk/tests/local/array_iteration.check.sh
 END
-range.check.sh
+array_wildcard.clean.sh
 K 25
 svn:wc:ra_dav:version-url
-V 56
-/svn/vdl2/!svn/ver/3615/trunk/tests/local/range.check.sh
+V 65
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_wildcard.clean.sh
 END
 array_wildcard.swift
 K 25
@@ -45,29 +45,29 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/vdl2/!svn/ver/3587/trunk/tests/local/array_iteration.clean.sh
 END
-array_iteration.swift
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_iteration.swift
-END
 range.swift
 K 25
 svn:wc:ra_dav:version-url
 V 53
 /svn/vdl2/!svn/ver/3515/trunk/tests/local/range.swift
 END
-hello.check.sh
+array_iteration.swift
 K 25
 svn:wc:ra_dav:version-url
-V 56
-/svn/vdl2/!svn/ver/3515/trunk/tests/local/hello.check.sh
+V 63
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/array_iteration.swift
 END
 tc.template.data
 K 25
 svn:wc:ra_dav:version-url
 V 58
 /svn/vdl2/!svn/ver/3515/trunk/tests/local/tc.template.data
+END
+hello.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vdl2/!svn/ver/3515/trunk/tests/local/hello.check.sh
 END
 filesysmapper.setup.sh
 K 25
@@ -115,7 +115,7 @@ filesysmapper.check.sh
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/vdl2/!svn/ver/3515/trunk/tests/local/filesysmapper.check.sh
+/svn/vdl2/!svn/ver/4753/trunk/tests/local/filesysmapper.check.sh
 END
 default.check.sh
 K 25

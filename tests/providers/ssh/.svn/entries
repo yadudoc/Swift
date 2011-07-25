@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/ssh
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -25,40 +25,6 @@ davidk
 
 
 e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
-
-001-catsn-ssh.timeout
-file
-
-
-
-
-2011-07-09T22:42:18.000000Z
-905f2bb7e8852fb96cb9aeff9568a839
-2010-12-27T23:45:22.566276Z
-3830
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4
 
 001-catsn-ssh.check.sh
 file
@@ -93,6 +59,40 @@ has-props
 
 
 239
+
+001-catsn-ssh.timeout
+file
+
+
+
+
+2011-07-09T22:42:18.000000Z
+905f2bb7e8852fb96cb9aeff9568a839
+2010-12-27T23:45:22.566276Z
+3830
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
 
 data.txt
 file
@@ -196,14 +196,14 @@ davidk
 
 340
 
-catsn.0010.out.expected
+README
 file
 
 
 
 
 2011-07-09T22:42:18.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
+0448d41d480327e500dc59a1ce7b89fe
 2010-12-27T23:45:22.566276Z
 3830
 davidk
@@ -228,7 +228,7 @@ davidk
 
 
 
-12
+171
 
 catsn.0001.out.expected
 file
@@ -264,41 +264,7 @@ davidk
 
 12
 
-README
-file
-
-
-
-
-2011-07-09T22:42:18.000000Z
-0448d41d480327e500dc59a1ce7b89fe
-2010-12-27T23:45:22.566276Z
-3830
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-171
-
-catsn.0002.out.expected
+catsn.0010.out.expected
 file
 
 
@@ -332,7 +298,7 @@ davidk
 
 12
 
-catsn.0003.out.expected
+catsn.0002.out.expected
 file
 
 
@@ -400,7 +366,7 @@ davidk
 
 23
 
-catsn.0004.out.expected
+catsn.0003.out.expected
 file
 
 
@@ -467,6 +433,40 @@ davidk
 
 
 279
+
+catsn.0004.out.expected
+file
+
+
+
+
+2011-07-09T22:42:18.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2010-12-27T23:45:22.566276Z
+3830
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
 
 catsn.0005.out.expected
 file

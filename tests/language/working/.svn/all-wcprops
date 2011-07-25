@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/vdl2/!svn/ver/4484/trunk/tests/language/working
+/svn/vdl2/!svn/ver/4798/trunk/tests/language/working
+END
+q5.swift
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q5.swift
 END
 0063-two-functions-in-expr.swift
 K 25
@@ -9,11 +15,11 @@ svn:wc:ra_dav:version-url
 V 85
 /svn/vdl2/!svn/ver/2158/trunk/tests/language/working/0063-two-functions-in-expr.swift
 END
-q5.swift
+q17.setup.sh
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q5.swift
+V 65
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q17.setup.sh
 END
 061-stdoutinerr.swift
 K 25
@@ -25,13 +31,19 @@ q7.swift
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q7.swift
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q7.swift
 END
-case1.swift
+test.in
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svn/vdl2/!svn/ver/2158/trunk/tests/language/working/case1.swift
+V 60
+/svn/vdl2/!svn/ver/4727/trunk/tests/language/working/test.in
+END
+0061-assignment.swift
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/4751/trunk/tests/language/working/0061-assignment.swift
 END
 00618-expr-with-func.swift
 K 25
@@ -39,11 +51,11 @@ svn:wc:ra_dav:version-url
 V 79
 /svn/vdl2/!svn/ver/2158/trunk/tests/language/working/00618-expr-with-func.swift
 END
-0061-assignment.swift
+case1.swift
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/0061-assignment.swift
+V 64
+/svn/vdl2/!svn/ver/4751/trunk/tests/language/working/case1.swift
 END
 006-procedure-invocation-with-assign.swift
 K 25
@@ -51,11 +63,11 @@ svn:wc:ra_dav:version-url
 V 95
 /svn/vdl2/!svn/ver/4484/trunk/tests/language/working/006-procedure-invocation-with-assign.swift
 END
-035-typedef-empty-braces.swift
+case3.swift
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/1636/trunk/tests/language/working/035-typedef-empty-braces.swift
+V 64
+/svn/vdl2/!svn/ver/4751/trunk/tests/language/working/case3.swift
 END
 031-var-decl.swift
 K 25
@@ -63,17 +75,11 @@ svn:wc:ra_dav:version-url
 V 71
 /svn/vdl2/!svn/ver/1636/trunk/tests/language/working/031-var-decl.swift
 END
-case3.swift
+035-typedef-empty-braces.swift
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/case3.swift
-END
-00617-one-param-func-expr.swift
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svn/vdl2/!svn/ver/2158/trunk/tests/language/working/00617-one-param-func-expr.swift
+V 83
+/svn/vdl2/!svn/ver/1636/trunk/tests/language/working/035-typedef-empty-braces.swift
 END
 0042-int-expr-assignment.swift
 K 25
@@ -81,11 +87,23 @@ svn:wc:ra_dav:version-url
 V 83
 /svn/vdl2/!svn/ver/1633/trunk/tests/language/working/0042-int-expr-assignment.swift
 END
+00617-one-param-func-expr.swift
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/2158/trunk/tests/language/working/00617-one-param-func-expr.swift
+END
 030-typedef.swift
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svn/vdl2/!svn/ver/1636/trunk/tests/language/working/030-typedef.swift
+END
+060-stdinouterr.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4728/trunk/tests/language/working/060-stdinouterr.setup.sh
 END
 q21.swift
 K 25
@@ -135,12 +153,6 @@ svn:wc:ra_dav:version-url
 V 70
 /svn/vdl2/!svn/ver/2035/trunk/tests/language/working/009-foreach.swift
 END
-file_counter.swift
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/vdl2/!svn/ver/1648/trunk/tests/language/working/file_counter.swift
-END
 0311-var-decl.swift
 K 25
 svn:wc:ra_dav:version-url
@@ -153,6 +165,12 @@ svn:wc:ra_dav:version-url
 V 72
 /svn/vdl2/!svn/ver/3548/trunk/tests/language/working/050-operators.swift
 END
+q22.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q22.setup.sh
+END
 040-many-namespaces.swift
 K 25
 svn:wc:ra_dav:version-url
@@ -163,7 +181,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/2161/trunk/tests/language/working/016-mapper-noparam.swift
+/svn/vdl2/!svn/ver/4747/trunk/tests/language/working/016-mapper-noparam.swift
 END
 default.swift
 K 25
@@ -177,6 +195,18 @@ svn:wc:ra_dav:version-url
 V 79
 /svn/vdl2/!svn/ver/1636/trunk/tests/language/working/037-numeric-literals.swift
 END
+tc.template.mix.data
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/4746/trunk/tests/language/working/tc.template.mix.data
+END
+015-mapper-literal.in
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/4798/trunk/tests/language/working/015-mapper-literal.in
+END
 036-typedef-empty-semi.swift
 K 25
 svn:wc:ra_dav:version-url
@@ -189,17 +219,17 @@ svn:wc:ra_dav:version-url
 V 72
 /svn/vdl2/!svn/ver/2158/trunk/tests/language/working/0064-fn-in-fn.swift
 END
-034-whitespace.swift
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/vdl2/!svn/ver/1687/trunk/tests/language/working/034-whitespace.swift
-END
 03102-var-decl.swift
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/vdl2/!svn/ver/1636/trunk/tests/language/working/03102-var-decl.swift
+END
+034-whitespace.swift
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/1687/trunk/tests/language/working/034-whitespace.swift
 END
 025-datatypes.swift
 K 25
@@ -207,17 +237,17 @@ svn:wc:ra_dav:version-url
 V 72
 /svn/vdl2/!svn/ver/2158/trunk/tests/language/working/025-datatypes.swift
 END
-018-comment-c-pairs.swift
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/vdl2/!svn/ver/1634/trunk/tests/language/working/018-comment-c-pairs.swift
-END
 q13.swift
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q13.swift
+END
+018-comment-c-pairs.swift
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/1634/trunk/tests/language/working/018-comment-c-pairs.swift
 END
 array_index.swift
 K 25
@@ -225,17 +255,17 @@ svn:wc:ra_dav:version-url
 V 70
 /svn/vdl2/!svn/ver/2035/trunk/tests/language/working/array_index.swift
 END
+q23.args
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q23.args
+END
 q15.swift
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q15.swift
-END
-012-foreach.swift
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/012-foreach.swift
 END
 x.swift
 K 25
@@ -243,11 +273,17 @@ svn:wc:ra_dav:version-url
 V 60
 /svn/vdl2/!svn/ver/2035/trunk/tests/language/working/x.swift
 END
+012-foreach.swift
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/012-foreach.swift
+END
 q17.swift
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/svn/vdl2/!svn/ver/1762/trunk/tests/language/working/q17.swift
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q17.swift
 END
 017-comment-doubleslash.swift
 K 25
@@ -267,17 +303,17 @@ svn:wc:ra_dav:version-url
 V 93
 /svn/vdl2/!svn/ver/1636/trunk/tests/language/working/038-identifier-with-keyword-prefix.swift
 END
+combine
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4730/trunk/tests/language/working/combine
+END
 q2.swift
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q2.swift
-END
-arraymapper.swift
-K 25
-svn:wc:ra_dav:version-url
-V 70
-/svn/vdl2/!svn/ver/2935/trunk/tests/language/working/arraymapper.swift
 END
 escapes.swift
 K 25
@@ -285,17 +321,23 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/vdl2/!svn/ver/2595/trunk/tests/language/working/escapes.swift
 END
+arraymapper.swift
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4747/trunk/tests/language/working/arraymapper.swift
+END
+file_counter.swift.disabled
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/file_counter.swift.disabled
+END
 048-many-namespaces-with-default.swift
 K 25
 svn:wc:ra_dav:version-url
 V 91
 /svn/vdl2/!svn/ver/1637/trunk/tests/language/working/048-many-namespaces-with-default.swift
-END
-014-mapper.swift
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/vdl2/!svn/ver/2161/trunk/tests/language/working/014-mapper.swift
 END
 q6.swift
 K 25
@@ -303,17 +345,23 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q6.swift
 END
-array_wildcard.swift
+014-mapper.swift
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/array_wildcard.swift
+V 69
+/svn/vdl2/!svn/ver/4747/trunk/tests/language/working/014-mapper.swift
 END
 062-stdinerrout.swift
 K 25
 svn:wc:ra_dav:version-url
 V 74
 /svn/vdl2/!svn/ver/1787/trunk/tests/language/working/062-stdinerrout.swift
+END
+array_wildcard.swift
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/array_wildcard.swift
 END
 044-multiple-variable-decl.swift
 K 25
@@ -369,17 +417,17 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q20.swift
 END
+q22.swift
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q22.swift
+END
 045-expr-in-array.swift
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svn/vdl2/!svn/ver/1687/trunk/tests/language/working/045-expr-in-array.swift
-END
-q22.swift
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q22.swift
 END
 title.txt
 K 25
@@ -429,6 +477,12 @@ svn:wc:ra_dav:version-url
 V 77
 /svn/vdl2/!svn/ver/1633/trunk/tests/language/working/001-type-with-semi.swift
 END
+q16.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vdl2/!svn/ver/4732/trunk/tests/language/working/q16.setup.sh
+END
 060-stdinouterr.swift
 K 25
 svn:wc:ra_dav:version-url
@@ -451,7 +505,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 110
-/svn/vdl2/!svn/ver/2035/trunk/tests/language/working/007-procedure-invocation-with-assign-and-whitespace.swift
+/svn/vdl2/!svn/ver/4724/trunk/tests/language/working/007-procedure-invocation-with-assign-and-whitespace.swift
 END
 021-procedure-invocation-assign-no-param.swift
 K 25
@@ -476,6 +530,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 81
 /svn/vdl2/!svn/ver/2158/trunk/tests/language/working/023-leading-whitespace.swift
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vdl2/!svn/ver/4730/trunk/tests/language/working/generate
 END
 type-marker.swift
 K 25
@@ -589,7 +649,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/2161/trunk/tests/language/working/015-mapper-literal.swift
+/svn/vdl2/!svn/ver/4798/trunk/tests/language/working/015-mapper-literal.swift
 END
 q1.swift
 K 25
@@ -602,4 +662,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 61
 /svn/vdl2/!svn/ver/1645/trunk/tests/language/working/q3.swift
+END
+process
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vdl2/!svn/ver/4730/trunk/tests/language/working/process
 END

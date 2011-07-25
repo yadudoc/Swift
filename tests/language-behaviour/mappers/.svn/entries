@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language-behaviour/mappers
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-22T14:58:34.501756Z
-4652
-achavez
+2011-07-07T23:27:17.542584Z
+4800
+hategan
 
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2011-07-09T22:42:09.000000Z
-19951b56786ef6a1c077b3db6b93d971
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+93eb2f5078bc380cceda33570a6a301f
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -92,19 +92,19 @@ achavez
 
 
 
-308
+311
 
-071-singlefilemapper-input.clean.sh
+07552-ext-mapper-numeric.sh.in
 file
 
 
 
 
-2011-07-09T22:42:09.000000Z
-5439b7f498a1189422b596d1c331ca86
-2011-06-22T14:58:34.501756Z
-4652
-achavez
+2011-07-25T07:42:43.000000Z
+a1992e7e8e74dbf64b9ca44a10c50256
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 has-props
 
 
@@ -126,41 +126,7 @@ has-props
 
 
 
-247
-
-077-regexp-mapper.swift
-file
-
-
-
-
-2011-07-09T22:42:09.000000Z
-4dcc363d12a42ce67a2f223a4bc627dd
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-267
+106
 
 079-regression-r970-simple-mapper-expr-prefix.out.expected
 file
@@ -195,6 +161,40 @@ achavez
 
 
 50
+
+077-regexp-mapper.swift
+file
+
+
+
+
+2011-07-09T22:42:09.000000Z
+4dcc363d12a42ce67a2f223a4bc627dd
+2011-06-14T14:02:14.993996Z
+4613
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+267
 
 078-singlefilemapper-name-expression.out.expected
 file
@@ -298,40 +298,6 @@ achavez
 
 7
 
-0754-csv-mapper.left-one.in
-file
-
-
-
-
-2011-07-09T22:42:09.000000Z
-2c27b9f2e28c7e7546d0004b19d0503d
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6
-
 0753-filesystem-mapper.a.out.expected
 file
 
@@ -366,14 +332,14 @@ achavez
 
 31
 
-0723-simplemapper-nopadding.75943.out.expected
+0754-csv-mapper.left-one.in
 file
 
 
 
 
 2011-07-09T22:42:09.000000Z
-9032383b11142714c8bd3fd75e435d90
+2c27b9f2e28c7e7546d0004b19d0503d
 2011-06-14T14:02:14.993996Z
 4613
 achavez
@@ -398,7 +364,7 @@ achavez
 
 
 
-38
+6
 
 0791-regression-r970-simple-mapper-expr-prefix.swift
 file
@@ -434,17 +400,51 @@ achavez
 
 298
 
-07511-fixed-array-mapper-input.check.sh
+0723-simplemapper-nopadding.75943.out.expected
 file
 
 
 
 
 2011-07-09T22:42:09.000000Z
-3585c1483ef245fcfa73361fceb96005
-2011-06-22T14:58:34.501756Z
-4652
+9032383b11142714c8bd3fd75e435d90
+2011-06-14T14:02:14.993996Z
+4613
 achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38
+
+07511-fixed-array-mapper-input.check.sh
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+df627328e6f41303750c3e78cbb13693
+2011-07-07T23:27:17.542584Z
+4800
+hategan
 has-props
 
 
@@ -466,7 +466,7 @@ has-props
 
 
 
-82
+264
 
 0723-simplemapper-nopadding.0.out.expected
 file
@@ -501,6 +501,40 @@ achavez
 
 
 34
+
+07551-ext-mapper-single.sh.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+aef696d5edbb8dee2338b1f0145255f6
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+49
 
 071-singlefilemapper-input.setup.sh
 file
@@ -604,40 +638,6 @@ achavez
 
 7
 
-0754-csv-mapper-input.swift
-file
-
-
-
-
-2011-07-09T22:42:09.000000Z
-397e60f018dfa5a848d8d5a513e1f38e
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-321
-
 0722-simplemapper-padding.000000005.out.expected
 file
 
@@ -706,16 +706,16 @@ achavez
 
 51
 
-0754-csv-mapper.csv
+0025-compound.swift
 file
 
 
 
 
-2011-07-09T22:42:09.000000Z
-afa61f991a25652d8a04e1c1332630f5
-2011-06-14T14:02:14.993996Z
-4613
+2011-07-25T07:42:43.000000Z
+c0168436ab945e855f8327f3b071cce9
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -738,7 +738,7 @@ achavez
 
 
 
-177
+937
 
 07514-fixed-array-mapper-filenames.real.out.expected
 file
@@ -814,11 +814,11 @@ file
 
 
 
-2011-07-09T22:42:09.000000Z
-7320bb009a5724c5a8c87d80bc7af2de
-2011-06-22T14:58:34.501756Z
-4652
-achavez
+2011-07-25T07:42:43.000000Z
+41cde5b828e49428de2ec6fb49c43311
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -840,7 +840,7 @@ achavez
 
 
 
-105
+27
 
 T077-simplemapper-bug80.beth.out.expected
 file
@@ -876,17 +876,85 @@ achavez
 
 4
 
+0752-csv-mapper.csv.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+e37b26ed133c3b12d89d7639804ce908
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+183
+
+0754-csv-mapper.csv.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+afa61f991a25652d8a04e1c1332630f5
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+177
+
 0755-ext-mapper.swift
 file
 
 
 
 
-2011-07-09T22:42:09.000000Z
-a2b52ffe35353d9e6ca2e044b5a7ad48
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+903169df436209033ef6edf15410ae65
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -908,19 +976,19 @@ achavez
 
 
 
-307
+310
 
-0756-ext-mapper-slow.sh
+0757-ext-mapper-array.sh.in
 file
 
 
 
 
-2011-07-09T22:42:09.000000Z
-e1df8f37c8e130c99ba1201d342b1589
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+bfb0c8c1edcd2fb8c86f54b4df704ae9
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 has-props
 
 
@@ -942,7 +1010,7 @@ has-props
 
 
 
-168
+129
 
 076-structured-regexp-mapper.b.out.expected
 file
@@ -1046,6 +1114,74 @@ achavez
 
 0
 
+07592-ext-mapper-multidimensional-array-structs.sh.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+15b0c063a10b94d4ddbaafc7a17fff42
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+149
+
+07554-ext-mapper-struct.swift
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+71db9ad9954664752cc0b1905169093b
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+294
+
 T074-simplemapper.beth.out.expected
 file
 
@@ -1080,17 +1216,18 @@ achavez
 
 4
 
-07554-ext-mapper-struct.swift
+0756-ext-mapper-slow.sh.in
 file
 
 
 
 
-2011-07-09T22:42:10.000000Z
-20fb2c9dec757881a09cb20a4c43acf6
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+e1df8f37c8e130c99ba1201d342b1589
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+has-props
 
 
 
@@ -1111,8 +1248,7 @@ achavez
 
 
 
-
-291
+168
 
 0751-fixed-array-mapper.first.out.expected
 file
@@ -1148,6 +1284,40 @@ achavez
 
 7
 
+07511-fixed-array-mapper-input.third.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
 T077-simplemapper-bug80_subordinate.sigma.out.expected
 file
 
@@ -1181,6 +1351,40 @@ achavez
 
 
 2
+
+tc.template.mix.data
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+e822729ca037059ab9ee78db4814bb02
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+84
 
 0754-csv-mapper.left-zero.in
 file
@@ -1222,11 +1426,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-12831388f47a0d02a52532cd3e4e3032
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+ab410e9efe2760143e4a27574ef18065
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -1248,7 +1452,7 @@ achavez
 
 
 
-174
+177
 
 0753-filesystem-mapper.b.out.expected
 file
@@ -1284,40 +1488,6 @@ achavez
 
 32
 
-07551-ext-mapper-single.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-aef696d5edbb8dee2338b1f0145255f6
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-49
-
 0722-simplemapper-padding.000075943.out.expected
 file
 
@@ -1351,6 +1521,40 @@ achavez
 
 
 40
+
+0759-ext-mapper-array.swift
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+028e88909ac236383368b98dfb8e9ede
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+209
 
 07552-ext-mapper-numeric.mapper.out.expected
 file
@@ -1386,51 +1590,17 @@ achavez
 
 11
 
-0759-ext-mapper-array.swift
+07555-ext-mapper-twostruct.sh.in
 file
 
 
 
 
-2011-07-09T22:42:10.000000Z
-0fd8a7ded9cfe88f6fbd95b1db171073
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-206
-
-07511-fixed-array-mapper-input.clean.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-84c967cf1b08eb6f0729e394bafc1733
-2011-06-22T14:58:34.501756Z
-4652
-achavez
+2011-07-25T07:42:43.000000Z
+36a40e092c7bdfc8f326fdc4a43f4acb
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 has-props
 
 
@@ -1452,75 +1622,7 @@ has-props
 
 
 
-233
-
-07554-ext-mapper-struct.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-74209ea13f7d5ae6065011acf77a8b98
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-99
-
-070-singlefilemapper.out.expected
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-862050df97b97eb3f93b1106833deb41
-2011-06-22T14:58:34.501756Z
-4652
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-97
+212
 
 073-simplemapper.swift
 file
@@ -1556,17 +1658,17 @@ achavez
 
 373
 
-07514-fixed-array-mapper-filenames.b.in
+070-singlefilemapper.out.expected
 file
 
 
 
 
-2011-07-09T22:42:10.000000Z
-d3b07384d113edec49eaa6238ad5ff00
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+bb00e54547296ab177804c0ba45dbbf1
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -1588,7 +1690,7 @@ achavez
 
 
 
-4
+25
 
 0723-simplemapper-nopadding.5.out.expected
 file
@@ -1624,6 +1726,40 @@ achavez
 
 34
 
+07514-fixed-array-mapper-filenames.b.in
+file
+
+
+
+
+2011-07-09T22:42:10.000000Z
+d3b07384d113edec49eaa6238ad5ff00
+2011-06-14T14:02:14.993996Z
+4613
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+
 075-array-mapper.swift
 file
 
@@ -1657,40 +1793,6 @@ achavez
 
 
 364
-
-0751-fixed-array-mapper.third.out.expected
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-460e9542849e4cfd6f174adfadb5a013
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7
 
 T078-simplemapper-nosuffix_nodot.out.expected
 file
@@ -1726,14 +1828,14 @@ achavez
 
 37
 
-T079-simplemapper-nosuffix_exception.swift
+0751-fixed-array-mapper.third.out.expected
 file
 
 
 
 
 2011-07-09T22:42:10.000000Z
-f7be8a695b18e0ef9b530cb9cc2eee7f
+460e9542849e4cfd6f174adfadb5a013
 2011-06-14T14:02:14.993996Z
 4613
 achavez
@@ -1758,7 +1860,41 @@ achavez
 
 
 
-404
+7
+
+T079-simplemapper-nosuffix_exception.swift
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+1bfe125cd043973f5c8482f9172b83dc
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+432
 
 0752-csv-mapper.right-one.out.expected
 file
@@ -1862,40 +1998,6 @@ achavez
 
 21
 
-07511-fixed-array-mapper-input.setup.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-aaaa3ab425d69c47a997a0efeb574041
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-90
-
 T076-simplemapper-bug80.aleph.out.expected
 file
 
@@ -1964,14 +2066,14 @@ achavez
 
 69
 
-0751-fixed-array-mapper.swift
+760-csv-mapper.swift
 file
 
 
 
 
 2011-07-09T22:42:10.000000Z
-aaf2394f34ceed49ffe94a8df47e6eef
+bca4fb5ba48158f7c2d91fd4d6a3a672
 2011-06-14T14:02:14.993996Z
 4613
 achavez
@@ -1996,7 +2098,7 @@ achavez
 
 
 
-374
+307
 
 07552-ext-mapper-numeric.inside.out.expected
 file
@@ -2032,14 +2134,14 @@ achavez
 
 5
 
-760-csv-mapper.swift
+0751-fixed-array-mapper.swift
 file
 
 
 
 
 2011-07-09T22:42:10.000000Z
-bca4fb5ba48158f7c2d91fd4d6a3a672
+aaf2394f34ceed49ffe94a8df47e6eef
 2011-06-14T14:02:14.993996Z
 4613
 achavez
@@ -2064,41 +2166,7 @@ achavez
 
 
 
-307
-
-071-singlefilemapper-input.swift
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-014d48b2efe27dde9ad2397aadf99403
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-243
+374
 
 0723-simplemapper-nopadding.swift
 file
@@ -2133,6 +2201,40 @@ achavez
 
 
 353
+
+071-singlefilemapper-input.swift
+file
+
+
+
+
+2011-07-09T22:42:10.000000Z
+014d48b2efe27dde9ad2397aadf99403
+2011-06-14T14:02:14.993996Z
+4613
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+243
 
 0752-csv-mapper.left-zero.out.expected
 file
@@ -2310,11 +2412,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-78fb440eeb54321d3f0354e8e4a15330
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+5d7adf6877a504243ad1d280edd06e26
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -2336,7 +2438,7 @@ achavez
 
 
 
-230
+233
 
 0721-simplemapper-array.swift
 file
@@ -2480,11 +2582,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-26fca779eaabe6e08f6c7b66b6e2c56d
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+915b4cfbe2587b553fce68179b773cc8
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -2506,7 +2608,7 @@ achavez
 
 
 
-219
+222
 
 072-simplemapper.swift
 file
@@ -2576,6 +2678,40 @@ achavez
 
 4
 
+07511-fixed-array-mapper-input.first.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
 0754-csv-mapper.right-two.in
 file
 
@@ -2610,40 +2746,6 @@ achavez
 
 5
 
-0752-csv-mapper.csv
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-e37b26ed133c3b12d89d7639804ce908
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-183
-
 0781-singlefilemapper-name-expression.out.expected
 file
 
@@ -2677,6 +2779,40 @@ achavez
 
 
 42
+
+07554-ext-mapper-struct.sh.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+74209ea13f7d5ae6065011acf77a8b98
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+99
 
 075-array-mapper.first.out.expected
 file
@@ -2848,51 +2984,17 @@ achavez
 
 6
 
-07551-ext-mapper-single.swift
+07591-ext-mapper-multidimensional-array.sh.in
 file
 
 
 
 
-2011-07-09T22:42:10.000000Z
-6b8f74db452b58c408b4e08e97f14e8f
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-202
-
-07552-ext-mapper-numeric.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-a1992e7e8e74dbf64b9ca44a10c50256
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+c3a720c9066ec5a670c9519618e3ecdd
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 has-props
 
 
@@ -2914,7 +3016,41 @@ has-props
 
 
 
-106
+101
+
+07551-ext-mapper-single.swift
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+cf9c29102a28add2eb452dd761fd0eb7
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+205
 
 T077-simplemapper-bug80.swift
 file
@@ -2984,40 +3120,6 @@ achavez
 
 6
 
-071-singlefilemapper-input.check.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-aef9b6add0eed7b36e88f30cd5a532e7
-2011-06-22T14:58:34.501756Z
-4652
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-78
-
 0752-csv-mapper.left-two.out.expected
 file
 
@@ -3051,6 +3153,40 @@ achavez
 
 
 7
+
+0759-ext-mapper-array.sh.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+25c106efbaa28002912796498511c748
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+86
 
 07513-fixed-array-mapper-filename.real.out.expected
 file
@@ -3153,6 +3289,40 @@ achavez
 
 
 481
+
+07511-fixed-array-mapper-input.second.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-06-28T17:53:57.771241Z
+4699
+achavez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
 
 0722-simplemapper-padding.swift
 file
@@ -3364,11 +3534,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-6adfcd5441388325225654f8f66a45c5
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+51f374b4da7fddaaea2a306f4afe3a11
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -3390,7 +3560,7 @@ achavez
 
 
 
-265
+268
 
 0781-singlefilemapper-name-expression.swift
 file
@@ -3460,40 +3630,6 @@ achavez
 
 33
 
-07555-ext-mapper-twostruct.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-36a40e092c7bdfc8f326fdc4a43f4acb
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-212
-
 0032-strcat-mapper-param.swift
 file
 
@@ -3534,11 +3670,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-0d7dfcb2bd1ac2a83c7c4c4c46c85b5b
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+4aa89e3615579cc11d943aa437dd2cc6
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -3560,7 +3696,7 @@ achavez
 
 
 
-190
+193
 
 T077-simplemapper-bug80_subordinate.epsilon.out.expected
 file
@@ -3670,11 +3806,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-39f4c02f5d577080ba836ed092403f93
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+9c973caf40bf26979ef9129873548ad0
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -3696,7 +3832,7 @@ achavez
 
 
 
-312
+315
 
 760-csv-mapper.sh
 file
@@ -3738,11 +3874,11 @@ file
 
 
 
-2011-07-09T22:42:10.000000Z
-5ae0aa84478de01d594b21a297c2edf9
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+b1d3404babbf1a0294b7905b07294407
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 
 
 
@@ -3764,41 +3900,7 @@ achavez
 
 
 
-313
-
-07591-ext-mapper-multidimensional-array.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-c3a720c9066ec5a670c9519618e3ecdd
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-101
+316
 
 0753-filesystem-mapper.green.in
 file
@@ -3936,74 +4038,6 @@ achavez
 
 7
 
-0757-ext-mapper-array.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-bfb0c8c1edcd2fb8c86f54b4df704ae9
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-129
-
-0758-ext-mapper-array.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-bfb0c8c1edcd2fb8c86f54b4df704ae9
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-129
-
 078-singlefilemapper-name-expression.swift
 file
 
@@ -4037,40 +4071,6 @@ achavez
 
 
 240
-
-0759-ext-mapper-array.sh
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-25c106efbaa28002912796498511c748
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-86
 
 072-simplemapper.out.expected
 file
@@ -4106,17 +4106,51 @@ achavez
 
 21
 
-07592-ext-mapper-multidimensional-array-structs.sh
+07555-ext-mapper-twostruct.swift
 file
 
 
 
 
-2011-07-09T22:42:10.000000Z
-15b0c063a10b94d4ddbaafc7a17fff42
-2011-06-14T14:02:14.993996Z
-4613
-achavez
+2011-07-25T07:42:43.000000Z
+50688357b88d0245016d1068ef821d34
+2011-07-04T00:32:17.496101Z
+4757
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+428
+
+0758-ext-mapper-array.sh.in
+file
+
+
+
+
+2011-07-25T07:42:43.000000Z
+bfb0c8c1edcd2fb8c86f54b4df704ae9
+2011-07-04T00:32:17.496101Z
+4757
+hategan
 has-props
 
 
@@ -4138,41 +4172,7 @@ has-props
 
 
 
-149
-
-07555-ext-mapper-twostruct.swift
-file
-
-
-
-
-2011-07-09T22:42:10.000000Z
-a41ea3329a4ff7d5b6d34e6d5c935437
-2011-06-14T14:02:14.993996Z
-4613
-achavez
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-425
+129
 
 T077-simplemapper-bug80.aleph.out.expected
 file

@@ -1,8 +1,8 @@
-
 Log Processing
 ==============
 
 To properly generate log plots, you must enable VDL/Karajan logging.
+TODO:How?
 
 You should check the scripts that you intend to use to determine
 what log lines they require and ensure that you are generating
@@ -14,9 +14,17 @@ log4j.logger.swift=DEBUG
 log4j.logger.org.globus.cog.abstraction.coaster.service.job.manager.Cpu=DEBUG
 log4j.logger.org.globus.cog.abstraction.coaster.service.job.manager.Block=DEBUG
 --------------------------------------
+TODO: Does it work for coasters-based runs only?
 
 Normalize event times in the log to the run start time
 ------------------------------------------------------
+
+* Convert timestamps in the log from iso to seconds format
+
+------------------------------------------
+./iso-to-secs < original.log > swift-run.log
+------------------------------------------
+
 
 * Generate the log, assuming the log is titled +swift-run.log+
 
@@ -36,8 +44,10 @@ Make a basic load plot from Coasters Cpu log lines
 . Plot with the JFreeChart-based plotter in usertools/plotter:
 +
 ------------------------------------------
-lines.zsh load.cfg load.eps load.data
+swift_plotter.zsh -s load.cfg load.eps load.data
 ------------------------------------------
+Note: The load.cfg is available from swift/libexec/log-processing/
+
 
 Make a basic job completion plot from Coasters Cpu log lines
 ------------------------------------------------------------
@@ -49,11 +59,12 @@ Make a basic job completion plot from Coasters Cpu log lines
 ------------------------------------------
 ./cpu-job-completed.pl < swift-run.norm > completed.data
 ------------------------------------------
+TODO: This file: cpu-job-completed seems to be missing
 
 . Plot with the JFreeChart-based plotter in usertools/plotter:
 +
 ------------------------------------------
-lines.zsh completed.cfg completed.eps completed.data
+swift_plotter.zsh -s completed.cfg completed.eps completed.data
 ------------------------------------------
 
 Make a basic Block allocation plot from Coasters Block log lines
@@ -70,7 +81,7 @@ Make a basic Block allocation plot from Coasters Block log lines
 . Plot with the JFreeChart-based plotter in usertools/plotter:
 +
 ------------------------------------------
-lines.zsh blocks.{cfg,eps,data}
+swift_plotter.zsh -s blocks.{cfg,eps,data}
 ------------------------------------------
 
 Make a job runtime distribution plot from Coasters Cpu log lines
@@ -87,11 +98,11 @@ Make a job runtime distribution plot from Coasters Cpu log lines
 . Put the job runtimes into 1-second buckets:
 +
 ------------------------------------------
-./ buckets.pl 1 times.data > buckets.data
+./buckets.pl 1 times.data > buckets.data
 ------------------------------------------
 
 . Plot with the JFreeChart-based plotter in usertools/plotter:
 +
 ------------------------------------------
-lines.zsh buckets.cfg buckets.eps buckets.data
+swift_plotter.zsh -s buckets.cfg buckets.eps buckets.data
 ------------------------------------------

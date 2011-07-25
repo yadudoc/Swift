@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/cdm/ps/pinned
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -94,40 +94,6 @@ wozniak
 
 11599
 
-tc.template.data
-file
-
-
-
-
-2011-07-09T22:41:50.000000Z
-f993fc86956c1149d10efc88ddcc633e
-2010-09-08T19:55:10.320284Z
-3618
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1015
-
 202-direct-io.setup.sh
 file
 
@@ -161,6 +127,40 @@ has-props
 
 
 129
+
+tc.template.data
+file
+
+
+
+
+2011-07-09T22:41:50.000000Z
+f993fc86956c1149d10efc88ddcc633e
+2010-09-08T19:55:10.320284Z
+3618
+wozniak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1015
 
 fs.template.data
 file
@@ -468,40 +468,6 @@ has-props
 
 48
 
-README.txt
-file
-
-
-
-
-2011-07-09T22:41:50.000000Z
-73e197d3c22f6ef2d06d6ccf89c7ea98
-2010-09-08T19:55:10.320284Z
-3618
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-80
-
 202-direct-io.swift
 file
 
@@ -535,4 +501,38 @@ wozniak
 
 
 278
+
+README.txt
+file
+
+
+
+
+2011-07-09T22:41:50.000000Z
+73e197d3c22f6ef2d06d6ccf89c7ea98
+2010-09-08T19:55:10.320284Z
+3618
+wozniak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+80
 

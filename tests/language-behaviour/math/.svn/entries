@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language-behaviour/math
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -740,40 +740,6 @@ has-props
 
 70
 
-013-mod.clean.sh
-file
-
-
-
-
-2011-07-09T22:42:12.000000Z
-b1790c2629768a40c3ba2356130c9f47
-2011-06-22T14:58:34.501756Z
-4652
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-76
-
 009-multiply.check.sh
 file
 
@@ -807,6 +773,40 @@ has-props
 
 
 66
+
+013-mod.clean.sh
+file
+
+
+
+
+2011-07-09T22:42:12.000000Z
+b1790c2629768a40c3ba2356130c9f47
+2011-06-22T14:58:34.501756Z
+4652
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76
 
 013-mod.swift
 file
@@ -876,40 +876,6 @@ has-props
 
 74
 
-0145-unary-subtact.check.sh
-file
-
-
-
-
-2011-07-09T22:42:12.000000Z
-aaa14da99c99368e2cfb7badb8af353a
-2011-06-22T14:58:34.501756Z
-4652
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-80
-
 030-mix-float-int.check.sh
 file
 
@@ -944,14 +910,14 @@ has-props
 
 73
 
-014-subtract.check.sh
+0145-unary-subtact.check.sh
 file
 
 
 
 
 2011-07-09T22:42:12.000000Z
-7ef7a7b3f8efee8bd87be6d8e90ff40b
+aaa14da99c99368e2cfb7badb8af353a
 2011-06-22T14:58:34.501756Z
 4652
 achavez
@@ -976,7 +942,7 @@ has-props
 
 
 
-70
+80
 
 016-greatereq.swift
 file
@@ -1011,6 +977,40 @@ achavez
 
 
 190
+
+014-subtract.check.sh
+file
+
+
+
+
+2011-07-09T22:42:12.000000Z
+7ef7a7b3f8efee8bd87be6d8e90ff40b
+2011-06-22T14:58:34.501756Z
+4652
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+70
 
 009-multiply.swift
 file

@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/local-pbs/queenbee
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -94,14 +94,14 @@ wozniak
 
 387
 
-catsn.0010.out.expected
+README
 file
 
 
 
 
 2011-07-09T22:42:18.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
+8ae77c85584fa63b139bb0387df145cb
 2011-03-21T20:36:06.831029Z
 4202
 wozniak
@@ -126,7 +126,7 @@ wozniak
 
 
 
-12
+190
 
 catsn.0001.out.expected
 file
@@ -162,41 +162,7 @@ wozniak
 
 12
 
-README
-file
-
-
-
-
-2011-07-09T22:42:18.000000Z
-8ae77c85584fa63b139bb0387df145cb
-2011-03-21T20:36:06.831029Z
-4202
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-190
-
-catsn.0002.out.expected
+catsn.0010.out.expected
 file
 
 
@@ -230,7 +196,7 @@ wozniak
 
 12
 
-catsn.0003.out.expected
+catsn.0002.out.expected
 file
 
 
@@ -298,14 +264,14 @@ wozniak
 
 32
 
-sites.template.xml
+catsn.0003.out.expected
 file
 
 
 
 
 2011-07-09T22:42:18.000000Z
-ebd1094c3d74290d9cc4562e4aab02b3
+f0ef7081e1539ac00ef5b761b4fb01b3
 2011-03-21T20:36:06.831029Z
 4202
 wozniak
@@ -330,7 +296,7 @@ wozniak
 
 
 
-269
+12
 
 catsn.0004.out.expected
 file
@@ -365,6 +331,40 @@ wozniak
 
 
 12
+
+sites.template.xml
+file
+
+
+
+
+2011-07-09T22:42:18.000000Z
+ebd1094c3d74290d9cc4562e4aab02b3
+2011-03-21T20:36:06.831029Z
+4202
+wozniak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+269
 
 catsn.0005.out.expected
 file
@@ -468,40 +468,6 @@ wozniak
 
 12
 
-001-catsn-queenbee-pbs.timeout
-file
-
-
-
-
-2011-07-09T22:42:18.000000Z
-e42002e140b29fc482ab0390cda6bdef
-2011-03-21T20:36:06.831029Z
-4202
-wozniak
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4
-
 001-catsn-queenbee-pbs.check.sh
 file
 
@@ -535,6 +501,40 @@ has-props
 
 
 82
+
+001-catsn-queenbee-pbs.timeout
+file
+
+
+
+
+2011-07-09T22:42:18.000000Z
+e42002e140b29fc482ab0390cda6bdef
+2011-03-21T20:36:06.831029Z
+4202
+wozniak
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
 
 catsn.0008.out.expected
 file

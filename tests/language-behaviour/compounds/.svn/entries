@@ -1,14 +1,14 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language-behaviour/compounds
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-16T19:15:58.055058Z
-4624
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2011-07-09T22:42:11.000000Z
-e37634021973f12c43cf3917d7cef079
-2011-06-16T19:15:58.055058Z
-4624
+2011-07-25T07:41:04.000000Z
+23c254f7d5402ffe94cd9ca088c69d1e
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -58,7 +58,7 @@ achavez
 
 
 
-323
+311
 
 00241-nested-single-compound.swift
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2011-07-09T22:42:11.000000Z
-f24b625e3f0ca8a21e921490aeb51c77
-2011-06-16T19:15:58.055058Z
-4624
+2011-07-25T07:41:04.000000Z
+5b73fd8939e71b574a88ff00c17578c9
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -92,7 +92,7 @@ achavez
 
 
 
-269
+257
 
 00242-compound-with-vars.swift
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2011-07-09T22:42:11.000000Z
-110b2cddeef674b1d70a8db051b4b91e
-2011-06-16T19:15:58.055058Z
-4624
+2011-07-25T07:41:04.000000Z
+aecbad6a5fdda4cdee525f37255be888
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -126,7 +126,7 @@ achavez
 
 
 
-344
+330
 
 0024-compound.Q.out.expected
 file

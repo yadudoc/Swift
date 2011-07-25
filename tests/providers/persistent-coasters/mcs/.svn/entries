@@ -1,7 +1,7 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/providers/persistent-coasters/mcs
 https://svn.ci.uchicago.edu/svn/vdl2
 
@@ -128,40 +128,6 @@ davidk
 
 436
 
-001-catsn.timeout
-file
-
-
-
-
-2011-07-09T22:42:16.000000Z
-e42002e140b29fc482ab0390cda6bdef
-2011-05-27T14:51:12.650698Z
-4531
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4
-
 001-catsn.check.sh
 file
 
@@ -196,14 +162,14 @@ has-props
 
 239
 
-catsn.0010.out.expected
+001-catsn.timeout
 file
 
 
 
 
 2011-07-09T22:42:16.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
+e42002e140b29fc482ab0390cda6bdef
 2011-05-27T14:51:12.650698Z
 4531
 davidk
@@ -228,41 +194,7 @@ davidk
 
 
 
-12
-
-catsn.0001.out.expected
-file
-
-
-
-
-2011-07-09T22:42:16.000000Z
-f0ef7081e1539ac00ef5b761b4fb01b3
-2011-05-27T14:51:12.650698Z
-4531
-davidk
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12
+4
 
 README
 file
@@ -298,7 +230,7 @@ davidk
 
 91
 
-catsn.0002.out.expected
+catsn.0001.out.expected
 file
 
 
@@ -332,7 +264,41 @@ davidk
 
 12
 
-catsn.0003.out.expected
+catsn.0010.out.expected
+file
+
+
+
+
+2011-07-09T22:42:16.000000Z
+f0ef7081e1539ac00ef5b761b4fb01b3
+2011-05-27T14:51:12.650698Z
+4531
+davidk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12
+
+catsn.0002.out.expected
 file
 
 
@@ -400,7 +366,7 @@ davidk
 
 46
 
-catsn.0004.out.expected
+catsn.0003.out.expected
 file
 
 
@@ -433,6 +399,40 @@ davidk
 
 
 12
+
+sites.template.xml
+file
+
+
+
+
+2011-07-09T22:42:16.000000Z
+eddcf7b07352f4b50e8a39f868a1e466
+2011-05-27T14:51:12.650698Z
+4531
+davidk
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+548
 
 001-catsn.clean.sh
 file
@@ -468,18 +468,17 @@ has-props
 
 35
 
-sites.template.xml
+catsn.0004.out.expected
 file
 
 
 
 
 2011-07-09T22:42:16.000000Z
-eddcf7b07352f4b50e8a39f868a1e466
+f0ef7081e1539ac00ef5b761b4fb01b3
 2011-05-27T14:51:12.650698Z
 4531
 davidk
-has-props
 
 
 
@@ -500,7 +499,8 @@ has-props
 
 
 
-548
+
+12
 
 001-catsn.swift
 file

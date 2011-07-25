@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/src/org/globus/swift/catalog
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-05-25T05:00:26.710027Z
-4525
-skenny
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2011-07-09T22:40:41.000000Z
-30ac1d895a907af8fca8888236e47dc9
-2010-12-23T17:35:52.811785Z
-3821
-wozniak
+2011-07-25T07:39:42.000000Z
+17cb8695c2928b367960b04a9b20b86f
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -58,7 +58,7 @@ wozniak
 
 
 
-17376
+17456
 
 TransformationCatalogEntry.java
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2011-07-09T22:40:41.000000Z
-3e330996d71381814facf8acf8952b7a
-2010-10-08T17:00:17.767151Z
-3672
-wozniak
+2011-07-25T07:39:42.000000Z
+51f5b54faae4fc9bc079d210786e6c57
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -92,7 +92,7 @@ wozniak
 
 
 
-15505
+15478
 
 types
 dir
@@ -106,11 +106,11 @@ file
 
 
 
-2011-07-09T22:40:41.000000Z
-9ae5fda4a69b70aefe72e13383b63a50
-2010-12-23T22:48:52.800553Z
-3829
-wozniak
+2011-07-25T07:39:42.000000Z
+3544a5ea80c140ecf9269fc76af3ae8e
+2011-07-07T23:36:33.149893Z
+4804
+hategan
 
 
 
@@ -132,7 +132,7 @@ wozniak
 
 
 
-15395
+15363
 
 Catalog.java
 file

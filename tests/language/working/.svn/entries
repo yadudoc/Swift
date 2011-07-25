@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language/working
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-05-17T21:54:15.573570Z
-4484
-wozniak
+2011-07-07T18:57:30.753993Z
+4798
+hategan
 
 
 
@@ -25,6 +25,40 @@ wozniak
 
 
 e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
+
+q5.swift
+file
+
+
+
+
+2011-07-09T22:41:07.000000Z
+83b2b687296bd9e7f21ee4c391a94bf6
+2008-02-09T18:32:48.392402Z
+1645
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+236
 
 0063-two-functions-in-expr.swift
 file
@@ -60,17 +94,18 @@ benc
 
 31
 
-q5.swift
+q17.setup.sh
 file
 
 
 
 
-2011-07-09T22:41:07.000000Z
-83b2b687296bd9e7f21ee4c391a94bf6
-2008-02-09T18:32:48.392402Z
-1645
-benc@CI.UCHICAGO.EDU
+2011-07-25T07:39:52.000000Z
+3ad256db83ad3e61fc736b68111eb260
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+has-props
 
 
 
@@ -91,8 +126,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-
-236
+89
 
 061-stdoutinerr.swift
 file
@@ -134,11 +168,11 @@ file
 
 
 
-2011-07-09T22:41:07.000000Z
-f98c0573995cf9e96c2756e9c5972a78
-2008-02-09T18:32:48.392402Z
-1645
-benc@CI.UCHICAGO.EDU
+2011-07-25T07:39:52.000000Z
+003f2df2a72111b45c57e7c35d837849
+2011-07-02T22:39:52.611688Z
+4732
+hategan
 
 
 
@@ -160,19 +194,19 @@ benc@CI.UCHICAGO.EDU
 
 
 
-246
+256
 
-case1.swift
+test.in
 file
 
 
 
 
-2011-07-09T22:41:07.000000Z
-a4bab53a2fdff9440c5d8ff947139442
-2008-07-29T09:06:10.715772Z
-2158
-benc
+2011-07-25T07:39:52.000000Z
+3bc34a45d26784b5bea8529db533ae84
+2011-07-02T18:14:51.449918Z
+4727
+hategan
 
 
 
@@ -194,7 +228,41 @@ benc
 
 
 
-197
+12
+
+0061-assignment.swift
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+a17db8256f954454446f7afd3d586b8a
+2011-07-03T21:38:49.400803Z
+4751
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+57
 
 00618-expr-with-func.swift
 file
@@ -230,17 +298,17 @@ benc
 
 21
 
-0061-assignment.swift
+case1.swift
 file
 
 
 
 
-2011-07-09T22:41:07.000000Z
-94b467d721883231724e530a5e9deb91
-2008-05-29T14:08:39.538331Z
-2035
-benc
+2011-07-25T07:39:52.000000Z
+fb657ef3627cf2986a4ce9a310f3f1f9
+2011-07-03T21:38:49.400803Z
+4751
+hategan
 
 
 
@@ -262,7 +330,7 @@ benc
 
 
 
-53
+201
 
 006-procedure-invocation-with-assign.swift
 file
@@ -298,17 +366,17 @@ wozniak
 
 111
 
-035-typedef-empty-braces.swift
+case3.swift
 file
 
 
 
 
-2011-07-09T22:41:07.000000Z
-ff62273857b1dadd83a1d09a5edf58c2
-2008-02-09T18:13:40.524147Z
-1636
-benc@CI.UCHICAGO.EDU
+2011-07-25T07:39:52.000000Z
+35b530a19bc762b2d8e22b11efcf5452
+2011-07-03T21:38:49.400803Z
+4751
+hategan
 
 
 
@@ -330,7 +398,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-13
+242
 
 031-var-decl.swift
 file
@@ -366,17 +434,17 @@ benc@CI.UCHICAGO.EDU
 
 29
 
-case3.swift
+035-typedef-empty-braces.swift
 file
 
 
 
 
 2011-07-09T22:41:07.000000Z
-36f30c65b291ac819b0c606a9e762c82
-2008-05-29T14:08:39.538331Z
-2035
-benc
+ff62273857b1dadd83a1d09a5edf58c2
+2008-02-09T18:13:40.524147Z
+1636
+benc@CI.UCHICAGO.EDU
 
 
 
@@ -398,41 +466,7 @@ benc
 
 
 
-232
-
-00617-one-param-func-expr.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-19ebf4b47600eb66056028493caf20c8
-2008-07-29T09:06:10.715772Z
-2158
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-23
+13
 
 0042-int-expr-assignment.swift
 file
@@ -468,6 +502,40 @@ benc@CI.UCHICAGO.EDU
 
 17
 
+00617-one-param-func-expr.swift
+file
+
+
+
+
+2011-07-09T22:41:07.000000Z
+19ebf4b47600eb66056028493caf20c8
+2008-07-29T09:06:10.715772Z
+2158
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+23
+
 030-typedef.swift
 file
 
@@ -501,6 +569,40 @@ benc@CI.UCHICAGO.EDU
 
 
 92
+
+060-stdinouterr.setup.sh
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+7f210a7a0100cfbcc8f4677e0b02b0b1
+2011-07-02T18:25:54.160435Z
+4728
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19
 
 q21.swift
 file
@@ -774,40 +876,6 @@ benc
 
 79
 
-file_counter.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-f19daa4b2f7fdd29415cb71a026a5b73
-2008-02-09T18:36:52.043110Z
-1648
-benc@CI.UCHICAGO.EDU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-307
-
 0311-var-decl.swift
 file
 
@@ -876,6 +944,40 @@ wozniak
 
 37
 
+q22.setup.sh
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+3ad256db83ad3e61fc736b68111eb260
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+89
+
 040-many-namespaces.swift
 file
 
@@ -916,11 +1018,11 @@ file
 
 
 
-2011-07-09T22:41:07.000000Z
-9bedd326b72b119a978ed842ce56655d
-2008-07-30T15:54:27.648597Z
-2161
-benc
+2011-07-25T07:39:52.000000Z
+a75070c133e3c076dbd47cc26ed91e6e
+2011-07-03T05:55:00.717181Z
+4747
+hategan
 
 
 
@@ -942,7 +1044,7 @@ benc
 
 
 
-39
+43
 
 default.swift
 file
@@ -1012,6 +1114,74 @@ benc@CI.UCHICAGO.EDU
 
 122
 
+tc.template.mix.data
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+c9bb7a3ebe61ef97e5f3bd2e660a3101
+2011-07-03T05:54:36.301945Z
+4746
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+281
+
+015-mapper-literal.in
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-07-07T18:57:30.753993Z
+4798
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
 036-typedef-empty-semi.swift
 file
 
@@ -1080,40 +1250,6 @@ benc
 
 36
 
-034-whitespace.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-a229acaf281ec4bd24955400f7223a9e
-2008-02-26T13:05:18.860138Z
-1687
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-57
-
 03102-var-decl.swift
 file
 
@@ -1147,6 +1283,40 @@ benc@CI.UCHICAGO.EDU
 
 
 45
+
+034-whitespace.swift
+file
+
+
+
+
+2011-07-09T22:41:07.000000Z
+a229acaf281ec4bd24955400f7223a9e
+2008-02-26T13:05:18.860138Z
+1687
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+57
 
 025-datatypes.swift
 file
@@ -1182,40 +1352,6 @@ benc
 
 71
 
-018-comment-c-pairs.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-28da3fa1220e39095404196a0ead1863
-2008-02-09T18:11:15.534320Z
-1634
-benc@CI.UCHICAGO.EDU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-49
-
 q13.swift
 file
 
@@ -1249,6 +1385,40 @@ benc@CI.UCHICAGO.EDU
 
 
 387
+
+018-comment-c-pairs.swift
+file
+
+
+
+
+2011-07-09T22:41:07.000000Z
+28da3fa1220e39095404196a0ead1863
+2008-02-09T18:11:15.534320Z
+1634
+benc@CI.UCHICAGO.EDU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+49
 
 array_index.swift
 file
@@ -1284,6 +1454,40 @@ benc
 
 195
 
+q23.args
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+d128647ff1fc781750ba06e7dd834c82
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11
+
 q15.swift
 file
 
@@ -1317,40 +1521,6 @@ benc@CI.UCHICAGO.EDU
 
 
 352
-
-012-foreach.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-6b61ed99d73b6d2aac2180943602e158
-2008-05-29T14:08:39.538331Z
-2035
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-76
 
 x.swift
 file
@@ -1386,16 +1556,16 @@ benc
 
 45
 
-q17.swift
+012-foreach.swift
 file
 
 
 
 
 2011-07-09T22:41:07.000000Z
-41d15101641e0ec577844ffd9e474677
-2008-03-26T01:44:37.756820Z
-1762
+6b61ed99d73b6d2aac2180943602e158
+2008-05-29T14:08:39.538331Z
+2035
 benc
 
 
@@ -1418,7 +1588,41 @@ benc
 
 
 
-393
+76
+
+q17.swift
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+2dc10b8d3a9937fe704b8141d15efd73
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+403
 
 017-comment-doubleslash.swift
 file
@@ -1522,6 +1726,40 @@ benc@CI.UCHICAGO.EDU
 
 14
 
+combine
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+de92d45c17b56ad8d9767df8c4210231
+2011-07-02T18:53:00.260432Z
+4730
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+334
+
 q2.swift
 file
 
@@ -1555,40 +1793,6 @@ benc@CI.UCHICAGO.EDU
 
 
 191
-
-arraymapper.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-abb80e6da2b79e16c4315a130ecca043
-2009-05-15T11:24:49.488117Z
-2935
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-94
 
 escapes.swift
 file
@@ -1624,6 +1828,74 @@ benc
 
 144
 
+arraymapper.swift
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+aaf18d9879db6f6b13eaef6c86c0b16e
+2011-07-03T05:55:00.717181Z
+4747
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+95
+
+file_counter.swift.disabled
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+f19daa4b2f7fdd29415cb71a026a5b73
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+307
+
 048-many-namespaces-with-default.swift
 file
 
@@ -1657,40 +1929,6 @@ benc@CI.UCHICAGO.EDU
 
 
 125
-
-014-mapper.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-323958e1cfd71d7e45f5ca4cd861c11a
-2008-07-30T15:54:27.648597Z
-2161
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-50
 
 q6.swift
 file
@@ -1726,17 +1964,17 @@ benc@CI.UCHICAGO.EDU
 
 192
 
-array_wildcard.swift
+014-mapper.swift
 file
 
 
 
 
-2011-07-09T22:41:07.000000Z
-f4952ea1dd486319cde81581774503c1
-2008-05-29T14:08:39.538331Z
-2035
-benc
+2011-07-25T07:39:52.000000Z
+91c104e0451908291ec4e2d5b675a5be
+2011-07-03T05:55:00.717181Z
+4747
+hategan
 
 
 
@@ -1758,7 +1996,7 @@ benc
 
 
 
-192
+54
 
 062-stdinerrout.swift
 file
@@ -1793,6 +2031,40 @@ benc
 
 
 317
+
+array_wildcard.swift
+file
+
+
+
+
+2011-07-09T22:41:07.000000Z
+f4952ea1dd486319cde81581774503c1
+2008-05-29T14:08:39.538331Z
+2035
+benc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+192
 
 044-multiple-variable-decl.swift
 file
@@ -2100,40 +2372,6 @@ benc@CI.UCHICAGO.EDU
 
 281
 
-q22.swift
-file
-
-
-
-
-2011-07-09T22:41:07.000000Z
-025fbb2ed4f2a062bc7a0786536968c1
-2008-02-09T18:32:48.392402Z
-1645
-benc@CI.UCHICAGO.EDU
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-512
-
 title.txt
 file
 
@@ -2167,6 +2405,40 @@ wozniak
 
 
 23
+
+q22.swift
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+b8ac034673d26422ba217d27989e76fe
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+532
 
 045-expr-in-array.swift
 file
@@ -2440,6 +2712,40 @@ benc@CI.UCHICAGO.EDU
 
 13
 
+q16.setup.sh
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+cb3f592e78f347ffa4f80c3901c245b4
+2011-07-02T22:39:52.611688Z
+4732
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+44
+
 060-stdinouterr.swift
 file
 
@@ -2548,11 +2854,11 @@ file
 
 
 
-2011-07-09T22:41:07.000000Z
-47718c09f9d9e42062bfd4649a68e351
-2008-05-29T14:08:39.538331Z
-2035
-benc
+2011-07-25T07:39:52.000000Z
+0f49c03c954921b34174865309095aca
+2011-07-02T17:19:35.316199Z
+4724
+hategan
 
 
 
@@ -2574,7 +2880,7 @@ benc
 
 
 
-130
+134
 
 021-procedure-invocation-assign-no-param.swift
 file
@@ -2711,6 +3017,40 @@ benc
 
 
 9
+
+generate
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+fec1edf53d4bfe2e6b4f97554c7c7a6a
+2011-07-02T18:53:00.260432Z
+4730
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+197
 
 type-marker.swift
 file
@@ -3330,11 +3670,11 @@ file
 
 
 
-2011-07-09T22:41:07.000000Z
-ac09174ba103ddeedb6272e2771fd928
-2008-07-30T15:54:27.648597Z
-2161
-benc
+2011-07-25T07:39:52.000000Z
+3860019794cdef94e96ec3b8c4e58fa5
+2011-07-07T18:57:30.753993Z
+4798
+hategan
 
 
 
@@ -3356,7 +3696,7 @@ benc
 
 
 
-46
+48
 
 q1.swift
 file
@@ -3425,4 +3765,38 @@ benc@CI.UCHICAGO.EDU
 
 
 140
+
+process
+file
+
+
+
+
+2011-07-25T07:39:52.000000Z
+26626279c5d69e62299cc52e2653d091
+2011-07-02T18:53:00.260432Z
+4730
+hategan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+244
 

@@ -1,14 +1,14 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/tests/language-behaviour/variables
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-22T15:25:15.329388Z
-4653
+2011-06-28T17:53:57.771241Z
+4699
 achavez
 
 
@@ -25,40 +25,6 @@ achavez
 
 
 e2bb083e-7f23-0410-b3a8-8253ac9ef6d8
-
-120-local-vars.check.sh
-file
-
-
-
-
-2011-07-09T22:42:06.000000Z
-e21ab6645ad7bc26bbeb349e9272ec8e
-2011-06-22T15:25:15.329388Z
-4653
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-68
 
 084-declare-many-at-once.clean.sh
 file
@@ -93,6 +59,40 @@ has-props
 
 
 98
+
+120-local-vars.check.sh
+file
+
+
+
+
+2011-07-09T22:42:06.000000Z
+e21ab6645ad7bc26bbeb349e9272ec8e
+2011-06-22T15:25:15.329388Z
+4653
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+68
 
 084-declare-many-at-once.swift
 file
@@ -162,40 +162,6 @@ has-props
 
 97
 
-1232-global-separate-assign.check.sh
-file
-
-
-
-
-2011-07-09T22:42:06.000000Z
-c0c0ac7312a60fc9247329b392200c56
-2011-06-22T15:25:15.329388Z
-4653
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-81
-
 120-local-vars.swift
 file
 
@@ -229,6 +195,40 @@ achavez
 
 
 245
+
+1232-global-separate-assign.check.sh
+file
+
+
+
+
+2011-07-09T22:42:06.000000Z
+c0c0ac7312a60fc9247329b392200c56
+2011-06-22T15:25:15.329388Z
+4653
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+81
 
 123-global-vars.check.sh
 file
@@ -332,18 +332,17 @@ achavez
 
 199
 
-123-global-vars.clean.sh
+088-sequential-assign.swift
 file
 
 
 
 
-2011-07-09T22:42:06.000000Z
-a8913e231efe2bcba51549765f5e950a
-2011-06-22T15:25:15.329388Z
-4653
+2011-07-25T07:43:44.000000Z
+71ce395f7ff5ec0beb69b58603dca18f
+2011-06-28T17:53:57.771241Z
+4699
 achavez
-has-props
 
 
 
@@ -364,7 +363,8 @@ has-props
 
 
 
-100
+
+50
 
 121-multi-return-vars.check.sh
 file
@@ -399,6 +399,40 @@ has-props
 
 
 131
+
+123-global-vars.clean.sh
+file
+
+
+
+
+2011-07-09T22:42:06.000000Z
+a8913e231efe2bcba51549765f5e950a
+2011-06-22T15:25:15.329388Z
+4653
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100
 
 123-global-vars.swift
 file
@@ -468,40 +502,6 @@ has-props
 
 120
 
-122-multi-return-vars.clean.sh
-file
-
-
-
-
-2011-07-09T22:42:06.000000Z
-b5ad12ed2f7a1fbc313767b98418d6a2
-2011-06-22T15:25:15.329388Z
-4653
-achavez
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-91
-
 121-multi-return-vars.swift
 file
 
@@ -535,6 +535,40 @@ achavez
 
 
 299
+
+122-multi-return-vars.clean.sh
+file
+
+
+
+
+2011-07-09T22:42:06.000000Z
+b5ad12ed2f7a1fbc313767b98418d6a2
+2011-06-22T15:25:15.329388Z
+4653
+achavez
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+91
 
 122-multi-return-vars.swift
 file

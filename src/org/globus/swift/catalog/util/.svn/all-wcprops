@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svn/vdl2/!svn/ver/3821/trunk/src/org/globus/swift/catalog/util
+/svn/vdl2/!svn/ver/4804/trunk/src/org/globus/swift/catalog/util
 END
 Escape.java
 K 25
@@ -25,7 +25,7 @@ Data.java
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/vdl2/!svn/ver/3144/trunk/src/org/globus/swift/catalog/util/Data.java
+/svn/vdl2/!svn/ver/4804/trunk/src/org/globus/swift/catalog/util/Data.java
 END
 ProfileParserException.java
 K 25

@@ -1,19 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO
 END
-q5.swift
+130-fmri.v.template.in
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q5.swift
-END
-q7.swift
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q7.swift
+V 80
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.v.template.in
 END
 060-duplicate.in
 K 25
@@ -21,17 +15,23 @@ svn:wc:ra_dav:version-url
 V 74
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/060-duplicate.in
 END
+q7.swift
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/q7.swift
+END
 060-duplicate.setup.sh
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/060-duplicate.setup.sh
 END
-130-fmri.0002.v.in
+130-fmri.0002.v.input.in
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0002.v.in
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0002.v.input.in
 END
 readData2.in
 K 25
@@ -43,13 +43,25 @@ q21.swift
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q21.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/q21.swift
 END
 q23.swift
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q23.swift
+/svn/vdl2/!svn/ver/4744/trunk/tests/language-behaviour/IO/q23.swift
+END
+062-two-in-a-row.swift
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/062-two-in-a-row.swift
+END
+0012-echo-map.swift
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/0012-echo-map.swift
 END
 readData.int.out.expected
 K 25
@@ -57,17 +69,11 @@ svn:wc:ra_dav:version-url
 V 83
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.int.out.expected
 END
-0012-echo-map.swift
+writeDataStringArray.swift
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0012-echo-map.swift
-END
-0011-echo-20110603-1140-rr21aum3.log
-K 25
-svn:wc:ra_dav:version-url
-V 94
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0011-echo-20110603-1140-rr21aum3.log
+V 84
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStringArray.swift
 END
 testimport.swift
 K 25
@@ -75,29 +81,23 @@ svn:wc:ra_dav:version-url
 V 74
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/testimport.swift
 END
-writeDataStringArray.swift
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStringArray.swift
-END
 001-echo.swift
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/001-echo.swift
-END
-130-fmri.0001.h.in
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0001.h.in
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/001-echo.swift
 END
 writeDataPrimitive.swift
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataPrimitive.swift
+END
+130-fmri.0003.h.input.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0003.h.input.in
 END
 106-import.swift
 K 25
@@ -110,6 +110,18 @@ K 25
 svn:wc:ra_dav:version-url
 V 76
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.circle.in
+END
+q22.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/q22.setup.sh
+END
+061-cattwo.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/vdl2/!svn/ver/4741/trunk/tests/language-behaviour/IO/061-cattwo.setup.sh
 END
 readData.stringArray.out.expected
 K 25
@@ -129,17 +141,11 @@ svn:wc:ra_dav:version-url
 V 84
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0012-echo-map.out.expected
 END
-0011-echo.kml
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0011-echo.kml
-END
 readData2.swift
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData2.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/readData2.swift
 END
 writeDataPrimitive.out.expected
 K 25
@@ -152,6 +158,18 @@ K 25
 svn:wc:ra_dav:version-url
 V 79
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStruct.swift
+END
+130-fmri.0001.v.input.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0001.v.input.in
+END
+tc.template.mix.data
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/tc.template.mix.data
 END
 106-import.setup.sh
 K 25
@@ -169,19 +187,7 @@ writeDataStringArray2.swift
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStringArray2.swift
-END
-130-fmri.0003.v.in
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0003.v.in
-END
-130-fmri.h.template
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.h.template
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/writeDataStringArray2.swift
 END
 writeDataStruct.out.expected
 K 25
@@ -189,17 +195,29 @@ svn:wc:ra_dav:version-url
 V 86
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStruct.out.expected
 END
-readData.swift
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.swift
-END
 130-fmri.0000.jpeg.expected
 K 25
 svn:wc:ra_dav:version-url
 V 85
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0000.jpeg.expected
+END
+readData.swift
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/readData.swift
+END
+0021-param-bind.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/0021-param-bind.out.expected
+END
+q23.args
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/q23.args
 END
 130-fmri.0002.jpeg.expected
 K 25
@@ -207,41 +225,35 @@ svn:wc:ra_dav:version-url
 V 85
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0002.jpeg.expected
 END
-readData.intArray.out.expected
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.intArray.out.expected
-END
 0011-echo.out
 K 25
 svn:wc:ra_dav:version-url
 V 71
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0011-echo.out
 END
-0012-echo-map.xml
+readData.intArray.out.expected
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0012-echo-map.xml
+V 88
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.intArray.out.expected
 END
-130-fmri.0002.h.in
+130-fmri.0002.h.input.in
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0002.h.in
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0002.h.input.in
 END
-0012-echo-map-20110603-1140-n9omdlcb.log
+0013-out-of-order.out.expected
 K 25
 svn:wc:ra_dav:version-url
-V 98
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0012-echo-map-20110603-1140-n9omdlcb.log
+V 88
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/0013-out-of-order.out.expected
 END
 q2.swift
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q2.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/q2.swift
 END
 readData.stringArray.in
 K 25
@@ -259,7 +271,7 @@ q6.swift
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q6.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/q6.swift
 END
 001-echo.out.expected
 K 25
@@ -267,11 +279,17 @@ svn:wc:ra_dav:version-url
 V 79
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/001-echo.out.expected
 END
-761-dirname.swift
+0021-param-bind.swift
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/761-dirname.swift
+V 79
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/0021-param-bind.swift
+END
+130-fmri.0004.v.input.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0004.v.input.in
 END
 0011-echo.swift
 K 25
@@ -283,13 +301,13 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.swift
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.swift
 END
-130-fmri.0004.v.in
+062-two-in-a-row.a.out.expected
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0004.v.in
+V 89
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/062-two-in-a-row.a.out.expected
 END
 q20.swift
 K 25
@@ -301,25 +319,25 @@ q22.swift
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q22.swift
-END
-readData.intArray.in
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.intArray.in
-END
-060-duplicate.check.sh
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/060-duplicate.check.sh
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/q22.swift
 END
 writeDataStringArray2.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 92
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStringArray2.out.expected
+END
+060-duplicate.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/060-duplicate.check.sh
+END
+readData.intArray.in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.intArray.in
 END
 0011-echo.out.expected
 K 25
@@ -333,11 +351,17 @@ svn:wc:ra_dav:version-url
 V 85
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/writeDataStructArray2.swift
 END
+130-fmri.0001.h.input.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0001.h.input.in
+END
 060-duplicate.swift
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/060-duplicate.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/060-duplicate.swift
 END
 readData.circleArray.in
 K 25
@@ -345,17 +369,11 @@ svn:wc:ra_dav:version-url
 V 81
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.circleArray.in
 END
-130-fmri.0003.h.in
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0003.h.in
-END
 087-external-dataset.swift
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/087-external-dataset.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/087-external-dataset.swift
 END
 060-duplicate.out.expected
 K 25
@@ -363,29 +381,35 @@ svn:wc:ra_dav:version-url
 V 84
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/060-duplicate.out.expected
 END
-130-fmri.0001.v.in
+130-fmri.0003.v.input.in
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0001.v.in
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0003.v.input.in
 END
-0012-echo-map.kml
+062-two-in-a-row.b.out.expected
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0012-echo-map.kml
-END
-0011-echo.xml
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/0011-echo.xml
+V 89
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/062-two-in-a-row.b.out.expected
 END
 readData2.out.expected
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData2.out.expected
+END
+0013-out-of-order.swift
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/0013-out-of-order.swift
+END
+061-cattwo.swift
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/061-cattwo.swift
 END
 130-fmri.0001.jpeg.expected
 K 25
@@ -399,11 +423,23 @@ svn:wc:ra_dav:version-url
 V 73
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.int.in
 END
+130-fmri.h.template.in
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.h.template.in
+END
 060-duplicate.clean.sh
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/060-duplicate.clean.sh
+END
+130-fmri.0004.h.input.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/vdl2/!svn/ver/4745/trunk/tests/language-behaviour/IO/130-fmri.0004.h.input.in
 END
 readData.circleArray.out.expected
 K 25
@@ -417,21 +453,9 @@ svn:wc:ra_dav:version-url
 V 86
 /svn/vdl2/!svn/ver/4613/trunk/tests/language-behaviour/IO/readData.circle.out.expected
 END
-130-fmri.0004.h.in
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.0004.h.in
-END
-130-fmri.v.template
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/130-fmri.v.template
-END
 q3.swift
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/IO/q3.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/IO/q3.swift
 END

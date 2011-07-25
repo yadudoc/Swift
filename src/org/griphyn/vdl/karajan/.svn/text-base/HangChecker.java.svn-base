@@ -20,7 +20,6 @@ import org.globus.cog.karajan.stack.VariableStack;
 import org.globus.cog.karajan.workflow.ExecutionException;
 import org.globus.cog.karajan.workflow.events.EventBus;
 import org.globus.cog.karajan.workflow.nodes.grid.SchedulerNode;
-import org.griphyn.vdl.karajan.lib.VDLFunction;
 
 public class HangChecker extends TimerTask {
     public static final Logger logger = Logger.getLogger(HangChecker.class);
@@ -28,12 +27,10 @@ public class HangChecker extends TimerTask {
     public static final int CHECK_INTERVAL = 10000;
     private Timer timer;
     private long lastEventCount;
-    private WrapperMap map;
     private VariableStack stack;
     
     public HangChecker(VariableStack stack) throws ExecutionException {
         this.stack = stack;
-        map = VDLFunction.getFutureWrapperMap(stack);
     }
 
     public void start() {
@@ -51,7 +48,7 @@ public class HangChecker extends TimerTask {
                     logger.warn("No events in " + (CHECK_INTERVAL / 1000) + "s.");
                     ByteArrayOutputStream os = new ByteArrayOutputStream();
                     PrintStream ps = new PrintStream(os);
-                    Monitor.dumpVariables(map, ps);
+                    Monitor.dumpVariables(ps);
                     Monitor.dumpThreads(ps);
                     logger.warn(os.toString());
                     ps.close();

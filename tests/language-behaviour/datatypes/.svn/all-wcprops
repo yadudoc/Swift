@@ -1,31 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes
 END
-0231-complex-type.out.expected
+regress-r2292.clean.sh
 K 25
 svn:wc:ra_dav:version-url
-V 95
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/0231-complex-type.out.expected
+V 87
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/regress-r2292.clean.sh
 END
-032-boolconst.swift
+023-complex-type.swift
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/032-boolconst.swift
-END
-054-pass-int.swift
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/054-pass-int.swift
-END
-055-pass-int.swift
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/055-pass-int.swift
+V 87
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/023-complex-type.swift
 END
 regress-r2292.swift
 K 25
@@ -33,11 +21,11 @@ svn:wc:ra_dav:version-url
 V 84
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/regress-r2292.swift
 END
-0231-complex-type.swift
+028-double-character-typename.clean.sh
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/0231-complex-type.swift
+V 103
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/028-double-character-typename.clean.sh
 END
 028-double-character-typename.swift
 K 25
@@ -45,23 +33,35 @@ svn:wc:ra_dav:version-url
 V 100
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/028-double-character-typename.swift
 END
-053-pass-int.out.expected
+053-pass-int.check.sh
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/053-pass-int.out.expected
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/053-pass-int.check.sh
 END
-054-pass-int.out.expected
+054-pass-int.check.sh
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/054-pass-int.out.expected
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/054-pass-int.check.sh
 END
-055-pass-int.out.expected
+032-boolconst.check.sh
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/055-pass-int.out.expected
+V 87
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/032-boolconst.check.sh
+END
+055-pass-int.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/055-pass-int.check.sh
+END
+027-single-character-typename.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/027-single-character-typename.clean.sh
 END
 027-single-character-typename.swift
 K 25
@@ -69,21 +69,75 @@ svn:wc:ra_dav:version-url
 V 100
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/027-single-character-typename.swift
 END
-032-boolconst.t.out.expected
+053-pass-int.clean.sh
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/032-boolconst.t.out.expected
-END
-032-boolconst.f.out.expected
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/032-boolconst.f.out.expected
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/053-pass-int.clean.sh
 END
 053-pass-int.swift
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/datatypes/053-pass-int.swift
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/053-pass-int.swift
+END
+023-complex-type.out.expected
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/023-complex-type.out.expected
+END
+0231-complex-type.check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/0231-complex-type.check.sh
+END
+032-boolconst.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/032-boolconst.clean.sh
+END
+054-pass-int.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/054-pass-int.clean.sh
+END
+054-pass-int.swift
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/054-pass-int.swift
+END
+032-boolconst.swift
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/032-boolconst.swift
+END
+055-pass-int.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/055-pass-int.clean.sh
+END
+055-pass-int.swift
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/055-pass-int.swift
+END
+0231-complex-type.clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/0231-complex-type.clean.sh
+END
+0231-complex-type.swift
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/datatypes/0231-complex-type.swift
 END

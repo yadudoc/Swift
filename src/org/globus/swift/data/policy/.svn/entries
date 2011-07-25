@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/src/org/globus/swift/data/policy
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2010-12-06T21:52:17.955687Z
-3741
-wozniak
+2011-07-08T00:02:34.572453Z
+4808
+hategan
 
 
 
@@ -168,11 +168,11 @@ file
 
 
 
-2011-07-09T22:40:33.000000Z
-712d5d4b7c109bf5c2b3f6b825af3bf0
-2010-12-06T21:22:28.554894Z
-3737
-wozniak
+2011-07-25T07:39:42.000000Z
+89894c06cdd129233cc342a9ea91fdad
+2011-07-08T00:02:34.572453Z
+4808
+hategan
 
 
 
@@ -194,7 +194,7 @@ wozniak
 
 
 
-619
+565
 
 Direct.java
 file

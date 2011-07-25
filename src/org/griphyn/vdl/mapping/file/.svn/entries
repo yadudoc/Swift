@@ -1,15 +1,15 @@
 10
 
 dir
-4697
+4837
 https://svn.ci.uchicago.edu/svn/vdl2/trunk/src/org/griphyn/vdl/mapping/file
 https://svn.ci.uchicago.edu/svn/vdl2
 
 
 
-2011-06-23T22:22:13.854727Z
-4680
-wozniak
+2011-07-24T23:04:11.218677Z
+4835
+hategan
 
 
 
@@ -60,16 +60,16 @@ benc@CI.UCHICAGO.EDU
 
 882
 
-CSVMapper.java
+FileGarbageCollector.java
 file
 
 
 
 
-2011-07-09T22:40:27.000000Z
-30058cb688535b7e2f9d65525d3ece4e
-2010-07-28T19:41:50.251348Z
-3487
+2011-07-25T07:39:41.000000Z
+259a94cfe4c88ee0837157a68dfedd91
+2011-07-05T22:24:59.254822Z
+4782
 hategan
 
 
@@ -92,7 +92,41 @@ hategan
 
 
 
-5995
+4042
+
+CSVMapper.java
+file
+
+
+
+
+2011-07-25T07:39:41.000000Z
+088b687e67680c6d55c7426b9239cc95
+2011-07-24T23:04:11.218677Z
+4835
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6005
 
 ConcurrentElementMapper.java
 file
@@ -134,11 +168,11 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-4914c5fa78b8eeb935c75ae8fac6ee9c
-2009-02-25T16:09:23.488150Z
-2606
-benc
+2011-07-25T07:39:41.000000Z
+209e065c81b6a99392659761b74c524d
+2011-07-24T23:04:11.218677Z
+4835
+hategan
 
 
 
@@ -160,7 +194,7 @@ benc
 
 
 
-1773
+1988
 
 DefaultFileNameElementMapper.java
 file
@@ -202,10 +236,10 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-f7a6783b6c9c80567aab38093069400b
-2011-01-30T09:03:27.645628Z
-4045
+2011-07-25T07:39:41.000000Z
+93064764d9ab8328af29d8cd84c905e3
+2011-07-24T23:04:11.218677Z
+4835
 hategan
 
 
@@ -228,7 +262,7 @@ hategan
 
 
 
-11489
+12651
 
 ROIFileNameElementMapper.java
 file
@@ -270,11 +304,11 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-2ca3555009d252b7800764fc81e8de93
-2010-09-14T18:07:36.931917Z
-3624
-wozniak
+2011-07-25T07:39:41.000000Z
+664431c059517dc5fcbdecc898be4cbf
+2011-07-24T23:04:11.218677Z
+4835
+hategan
 
 
 
@@ -296,7 +330,7 @@ wozniak
 
 
 
-3472
+3468
 
 AirsnMapper.java
 file
@@ -304,11 +338,11 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-d0b59082048990a3fef255e3139ac23e
-2006-12-06T22:47:34.851962Z
-10
-hategan@CI.UCHICAGO.EDU
+2011-07-25T07:39:41.000000Z
+c0e49c34112f4d43261321cda83eb342
+2011-07-24T23:04:11.218677Z
+4835
+hategan
 
 
 
@@ -330,7 +364,7 @@ hategan@CI.UCHICAGO.EDU
 
 
 
-969
+958
 
 ArrayFileMapper.java
 file
@@ -338,11 +372,11 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-f789fdd75b4525a21416b63eab48e648
-2011-06-23T22:22:13.854727Z
-4680
-wozniak
+2011-07-25T07:39:41.000000Z
+13485aea009250e60571a54844259905
+2011-07-24T23:04:11.218677Z
+4835
+hategan
 
 
 
@@ -364,7 +398,75 @@ wozniak
 
 
 
-2207
+2206
+
+TestMapper.java
+file
+
+
+
+
+2011-07-25T07:39:41.000000Z
+61ec22b3b84971e2d194e67f4c1b469e
+2011-07-07T23:35:39.573407Z
+4803
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2715
+
+SingleFileMapper.java
+file
+
+
+
+
+2011-07-25T07:39:41.000000Z
+72acfff491f7d3221ca846b3f4e6bd28
+2011-07-07T18:23:43.851276Z
+4795
+hategan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+959
 
 RegularExpressionMapper.java
 file
@@ -400,17 +502,17 @@ wozniak
 
 3109
 
-SingleFileMapper.java
+ConcurrentMapper.java
 file
 
 
 
 
-2011-07-09T22:40:27.000000Z
-3fecd7b867bfc2ac8b3eede686576531
-2007-09-19T14:02:22.356556Z
-1245
-benc@CI.UCHICAGO.EDU
+2011-07-25T07:39:41.000000Z
+b2234918896d0fb9339c0cb9a3ecb037
+2011-07-07T23:35:39.573407Z
+4803
+hategan
 
 
 
@@ -432,7 +534,7 @@ benc@CI.UCHICAGO.EDU
 
 
 
-952
+2442
 
 ExternalMapper.java
 file
@@ -468,16 +570,16 @@ hategan
 
 4110
 
-ConcurrentMapper.java
+FileSystemArrayMapper.java
 file
 
 
 
 
-2011-07-09T22:40:27.000000Z
-796250ff83ba10befe9e37e537192538
-2009-11-12T00:44:21.076402Z
-3191
+2011-07-25T07:39:41.000000Z
+50d00042e0d55fb705a6f009da615a93
+2011-07-24T23:04:11.218677Z
+4835
 hategan
 
 
@@ -500,41 +602,7 @@ hategan
 
 
 
-1804
-
-FileSystemArrayMapper.java
-file
-
-
-
-
-2011-07-09T22:40:27.000000Z
-1f6813b74b522aa4b0ea537b8f6a0443
-2008-08-04T18:55:46.037376Z
-2174
-benc
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1160
+1143
 
 AirsnFileNameElementMapper.java
 file
@@ -576,11 +644,11 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-1305f86852daac9552ce8f73800579e1
-2011-05-18T21:03:02.573665Z
-4494
-skenny
+2011-07-25T07:39:41.000000Z
+347573cb4b5a327ec3a106643d6965e1
+2011-07-03T04:12:37.874876Z
+4743
+hategan
 
 
 
@@ -602,7 +670,7 @@ skenny
 
 
 
-1797
+526
 
 ROIMapper.java
 file
@@ -610,11 +678,11 @@ file
 
 
 
-2011-07-09T22:40:27.000000Z
-5f0bf5a5509a3ef4dba458e6ac308ee8
-2007-01-13T00:57:36.016945Z
-202
-hategan@CI.UCHICAGO.EDU
+2011-07-25T07:39:41.000000Z
+0d68719331dbe7f1f6b8bedc3a90d525
+2011-07-24T23:04:11.218677Z
+4835
+hategan
 
 
 
@@ -636,5 +704,5 @@ hategan@CI.UCHICAGO.EDU
 
 
 
-1750
+1748
 

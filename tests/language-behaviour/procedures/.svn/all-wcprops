@@ -1,7 +1,37 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/procedures
+END
+0651-several-delay.swift
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/procedures/0651-several-delay.swift
+END
+00262-function-param-file-many.setup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00262-function-param-file-many.setup.sh
+END
+080-declare-assign-proc.swift
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/procedures/080-declare-assign-proc.swift
+END
+081-declare-assign-proc.swift
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/081-declare-assign-proc.swift
+END
+082-declare-assign-proc-separate.swift
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/082-declare-assign-proc-separate.swift
 END
 00261-function-param-file.clean.sh
 K 25
@@ -15,23 +45,11 @@ svn:wc:ra_dav:version-url
 V 97
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00261-function-param-file.swift
 END
-00262-function-param-file-many.setup.sh
+065-delay.swift
 K 25
 svn:wc:ra_dav:version-url
-V 105
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00262-function-param-file-many.setup.sh
-END
-080-declare-assign-proc.swift
-K 25
-svn:wc:ra_dav:version-url
-V 95
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/080-declare-assign-proc.swift
-END
-0026-function-param.swift
-K 25
-svn:wc:ra_dav:version-url
-V 91
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/0026-function-param.swift
+V 81
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/procedures/065-delay.swift
 END
 00262-function-param-file-many.clean.sh
 K 25
@@ -39,11 +57,11 @@ svn:wc:ra_dav:version-url
 V 105
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00262-function-param-file-many.clean.sh
 END
-081-declare-assign-proc.swift
+0026-function-param.swift
 K 25
 svn:wc:ra_dav:version-url
-V 95
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/081-declare-assign-proc.swift
+V 91
+/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/0026-function-param.swift
 END
 00262-function-param-file-many.swift
 K 25
@@ -57,11 +75,11 @@ svn:wc:ra_dav:version-url
 V 92
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/089-nested-proc-call.swift
 END
-082-declare-assign-proc-separate.swift
+delayedcat.sh
 K 25
 svn:wc:ra_dav:version-url
-V 104
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/082-declare-assign-proc-separate.swift
+V 79
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/procedures/delayedcat.sh
 END
 00261-function-param-file.in
 K 25
@@ -69,11 +87,11 @@ svn:wc:ra_dav:version-url
 V 94
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00261-function-param-file.in
 END
-00261-function-param-file.setup.sh
+proc-in-expr.swift
 K 25
 svn:wc:ra_dav:version-url
-V 100
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00261-function-param-file.setup.sh
+V 84
+/svn/vdl2/!svn/ver/4699/trunk/tests/language-behaviour/procedures/proc-in-expr.swift
 END
 00262-function-param-file-many.in
 K 25
@@ -81,9 +99,9 @@ svn:wc:ra_dav:version-url
 V 99
 /svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00262-function-param-file-many.in
 END
-proc-in-expr.swift
+00261-function-param-file.setup.sh
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/proc-in-expr.swift
+V 100
+/svn/vdl2/!svn/ver/4624/trunk/tests/language-behaviour/procedures/00261-function-param-file.setup.sh
 END

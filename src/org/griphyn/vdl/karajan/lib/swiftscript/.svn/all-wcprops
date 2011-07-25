@@ -1,25 +1,31 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/vdl2/!svn/ver/4696/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript
 END
 FileName.java
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svn/vdl2/!svn/ver/4045/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/FileName.java
+/svn/vdl2/!svn/ver/4789/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/FileName.java
+END
+ReadStructured.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/ReadStructured.java
 END
 Assert.java
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svn/vdl2/!svn/ver/3645/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Assert.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Assert.java
 END
 Java.java
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svn/vdl2/!svn/ver/3463/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Java.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Java.java
 END
 FileNames.java
 K 25
@@ -31,53 +37,47 @@ Tracef.java
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/svn/vdl2/!svn/ver/4559/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Tracef.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Tracef.java
 END
 WriteData.java
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/svn/vdl2/!svn/ver/4696/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/WriteData.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/WriteData.java
 END
 ExtractInt.java
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/svn/vdl2/!svn/ver/2959/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/ExtractInt.java
+/svn/vdl2/!svn/ver/4789/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/ExtractInt.java
 END
 ReadData.java
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/svn/vdl2/!svn/ver/2115/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/ReadData.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/ReadData.java
 END
 Sprintf.java
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svn/vdl2/!svn/ver/4559/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Sprintf.java
-END
-ReadData2.java
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/svn/vdl2/!svn/ver/3433/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/ReadData2.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Sprintf.java
 END
 Fprintf.java
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/svn/vdl2/!svn/ver/3648/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Fprintf.java
+/svn/vdl2/!svn/ver/4738/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Fprintf.java
 END
 Misc.java
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svn/vdl2/!svn/ver/4530/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Misc.java
+/svn/vdl2/!svn/ver/4835/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/Misc.java
 END
 FnArg.java
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/svn/vdl2/!svn/ver/2959/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/FnArg.java
+/svn/vdl2/!svn/ver/4789/trunk/src/org/griphyn/vdl/karajan/lib/swiftscript/FnArg.java
 END
