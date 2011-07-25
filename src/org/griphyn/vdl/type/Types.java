@@ -40,7 +40,8 @@ public abstract class Types {
 			    }                                                  
 			    throw new NoSuchTypeException(name);
 			}
-		} else {
+		} 
+		else {
 		    return type;
 		} 
 	}  
